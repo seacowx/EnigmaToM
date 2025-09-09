@@ -1,0 +1,138 @@
+free-form:
+
+  original:
+
+    vanilla-text: 
+      "Narrative:\n{{narrative}}\n\nBased on the narrative, answer the question without any explanation. You must choose one of the provided options. Write the correct answer strictly in the following format:\nCorrect Answer: [YOUR ANSWER]\n\nQuestion:\n{{question}}"
+
+    toml: 
+      "Narrative:\n{{narrative}}\n\nBased on the TOML narrative, answer the question without any explanation. You must choose one of the provided options. Write the correct answer strictly in the following format:\nCorrect Answer: [YOUR ANSWER]\n\nQuestion:\n{{question}}"
+
+    markdown: 
+      "Narrative:\n{{narrative}}\n\nBased on the markdown narrative, answer the question without any explanation. You must choose one of the provided options. Write the correct answer strictly in the following format:\nCorrect Answer: [YOUR ANSWER]\n\nQuestion:\n{{question}}"
+
+    cot-text: 
+      "Narrative:\n{{narrative}}\n\nBased on the narrative, answer the question. Explicitly list out the reasoning steps before giving the correct answer. You must choose one of the provided options. Write the correct answer in the end with the following format:\nTherefore, the correct answer is [YOUR ANSWER]\n\nQuestion:\n{{question}}"
+
+    simtom-text: 
+      [
+        "The following is a sequence of events:\n\n{{narrative}}\n\nWhich events does {{character}} know about?",
+        "{{character narrative}}\n\nAnswer the following question without any explanation. You must choose one of the provided options. Write the correct answer in the following format:\nCorrect Answer: [YOUR ANSWER]\n\nQuestion:\n{{question}}"
+      ]
+
+    python:
+      "```python\n{{narrative}}\n\n\nquestion = \"{{question}}\"\ncorrect_answer =\n``` \n\nPlease help me to complete the line ```correct_answer =``` without giving any explanation. Write the correct answer in code block as follows:\n```python\ncorrect_answer = [YOUR ANSWER]\n```"
+
+  masktom:
+
+    vanilla-text: 
+      "Narrative:\n{{narrative}}\n\nThe narrative provided above depicts {{character perspective}}. Based on the given narrative, answer the following question without any explanation. Write the correct answer strictly in the following format:\nCorrect Answer: [YOUR ANSWER]\n\nQuestion:\n{{question}}"
+
+    toml: 
+      "Narrative:\n{{narrative}}\n\nThe narrative provided above depicts {{character perspective}}. Based on the given narrative, answer the following question without any explanation. Write the correct answer strictly in the following format:\nCorrect Answer: [YOUR ANSWER]\n\nQuestion:\n{{question}}"
+
+    markdown: 
+      "Narrative:\n{{narrative}}\n\nThe narrative provided above depicts {{character perspective}}. Based on the given narrative, answer the following question without any explanation. Write the correct answer strictly in the following format:\nCorrect Answer: [YOUR ANSWER]\n\nQuestion:\n{{question}}"
+
+    cot-text: 
+      "Narrative:\n{{narrative}}\n\nThe narrative provided above depicts {{character perspective}}. Based on the given narrative, answer the following question. Explicitly list out the reasoning steps before giving the correct answer. Write the correct answer in the end with the following format:\nTherefore, the correct answer is [YOUR ANSWER]\n\nQuestion:\n{{question}}"
+
+    python:
+      "```python\n# {{character perspective}}\n{{narrative}}\n\n# define the perspective that the given narrative is depicting\nperspective = \"{{character perspective}}\"\n\nquestion = \"{{question}}\"\ncorrect_answer =\n``` \n\nPlease help me to complete the line ```correct_answer =``` without giving any explanation. Write the correct answer in code block as follows:\n```python\ncorrect_answer = [YOUR ANSWER]\n```"
+
+multiple-choice:
+
+  original:
+
+    vanilla-text: 
+      "Narrative:\n{{narrative}}\n\nQuestion:\n{{question}}\nChoices:\n{{multiple choice}}\n\nBased on the narrative, select the most suitable choice without any explanation. Write the correct answer strictly in the following format:\nCorrect Answer: [LETTER]"
+
+    toml: 
+      "Narrative:\n{{narrative}}\n\nQuestion:\n{{question}}\nChoices:\n{{multiple choice}}\n\nBased on the TOML narrative, select the most suitable choice without any explanation. Write the correct answer strictly in the following format:\nCorrect Answer: [LETTER]"
+
+    markdown: 
+      "Narrative:\n{{narrative}}\n\nQuestion:\n{{question}}\nChoices:\n{{multiple choice}}\n\nBased on the markdown narrative, select the most suitable choice without any explanation. Write the correct answer strictly in the following format:\nCorrect Answer: [LETTER]"
+
+    cot-text: 
+      "Narrative:\n{{narrative}}\n\nQuestion:\n{{question}}\nChoices:\n{{multiple choice}}\n\nBased on the narrative, select the most suitable choice without any explanation. Write the correct answer strictly in the following format:\nCorrect Answer: [LETTER]"
+
+    simtom-text: 
+      [
+        "The following is a sequence of events:\n\n{{narrative}}\n\nWhich events does {{character}} know about?",
+        "{{character narrative}}\n\nQuestion:\n{{question}}\nChoices:\n{{multiple choice}}\n\nBased on the narrative, select the most suitable choice without any explanation. Write the correct answer strictly in the following format:\nCorrect Answer: [LETTER]"
+      ]
+
+    python:
+      "```python\n{{narrative}}\n\n\nquestion = \"{{question}}\"\nchoices = {{{multiple choice}}}\ncorrect_answer =\n``` \n\nPlease help me to complete the line ```correct_answer =``` without giving any explanation. Write the correct answer in code block as follows:\n```python\ncorrect_answer = [LETTER]\n```"
+
+  masktom:
+
+    vanilla-text: 
+      "Narrative:\n{{narrative}}\n\nThe narrative provided above depicts {{character perspective}}. Based on the given narrative, answer the following question by selecting the most suitable choice without any explanation. Write the correct answer strictly in the following format:\nCorrect Answer: [LETTER]\n\nQuestion:\n{{question}}\nChoices:\n{{multiple choice}}"
+
+    toml: 
+      "Narrative:\n{{narrative}}\n\nThe narrative provided above depicts {{character perspective}}. Based on the given narrative, answer the following question by selecting the most suitable choice without any explanation. Write the correct answer strictly in the following format:\nCorrect Answer: [LETTER]\n\nQuestion:\n{{question}}\nChoices:\n{{multiple choice}}"
+
+    markdown: 
+      "Narrative:\n{{narrative}}\n\nThe narrative provided above depicts {{character perspective}}. Based on the given narrative, answer the following question by selecting the most suitable choice without any explanation. Write the correct answer strictly in the following format:\nCorrect Answer: [LETTER]\n\nQuestion:\n{{question}}\nChoices:\n{{multiple choice}}"
+
+    cot-text: 
+      "Narrative:\n{{narrative}}\n\nThe narrative provided above depicts {{character perspective}}. Based on the given narrative, answer the following question by selecting the most suitable choice without any explanation. Write the correct answer strictly in the following format:\nCorrect Answer: [LETTER]\n\nQuestion:\n{{question}}\nChoices:\n{{multiple choice}}"
+
+    python:
+      "```python\n# {{character perspective}}\n{{narrative}}\n\n# define the perspective that the given narrative is depicting\nperspective = \"{{character perspective}}\"\n\nquestion = \"{{question}}\"\nchoices = {{{multiple choice}}}\ncorrect_answer =\n``` \n\nPlease help me to complete the line ```correct_answer =``` without giving any explanation. Write the correct answer in code block as follows:\n```python\ncorrect_answer = [LETTER]\n```"
+
+opentom:
+
+  original: 
+
+    vanilla-text: 
+      "Narrative:\n{{narrative}}\n\nQuestion:\n{{question}}\n\nBased on the narrative, answer the question without any explanation. {{answer options}}Write the correct answer strictly in the following format:\nCorrect Answer: [YOUR ANSWER]"
+
+    toml: 
+      "Narrative:\n{{narrative}}\n\nQuestion:\n{{question}}\n\nBased on the TOML narrative, answer the question without any explanation. {{answer options}}Write the correct answer strictly in the following format:\nCorrect Answer: [YOUR ANSWER]"
+
+    markdown: 
+      "Narrative:\n{{narrative}}\n\nQuestion:\n{{question}}\n\nBased on the markdown narrative, answer the question without any explanation. {{answer options}}Write the correct answer strictly in the following format:\nCorrect Answer: [YOUR ANSWER]"
+
+    cot-text: 
+      "Narrative:\n{{narrative}}\n\nQuestion:\n{{question}}\n\nBased on the narrative, answer the question. {{answer options}}Explicitly list out the reasoning steps before giving the correct answer. Write the correct answer in the end with the following format:\nTherefore, the correct answer is [YOUR ANSWER]"
+
+    simtom-text: 
+      [
+        "The following is a sequence of events:\n\n{{narrative}}\n\nWhich events does {{character}} know about?",
+        "{{character narrative}}\n\nAnswer the following question without any explanation:\n{{question}}\n{{answer options}}Write the correct answer in the following format:\nCorrect Answer: [YOUR ANSWER]"
+      ]
+
+    python:
+      "```python\n{{narrative}}\n\n\nquestion = \"{{question}}\"\n{{answer options}}correct_answer =\n``` \n\nPlease help me to complete the line ```correct_answer =``` without giving any explanation. Write the correct answer in code block as follows:\n```python\ncorrect_answer = [YOUR ANSWER]\n```"
+
+  masktom:
+
+    vanilla-text: 
+      "Narrative:\n{{narrative}}\n\nThe narrative provided above depicts {{character perspective}}. Based on the given narrative, answer the following question without any explanation. {{answer options}}Write the correct answer strictly in the following format:\nCorrect Answer: [YOUR ANSWER]\n\nQuestion:\n{{question}}"
+
+    toml: 
+      "Narrative:\n{{narrative}}\n\nThe narrative provided above depicts {{character perspective}}. Based on the given narrative, answer the following question without any explanation. {{answer options}}Write the correct answer strictly in the following format:\nCorrect Answer: [YOUR ANSWER]\n\nQuestion:\n{{question}}"
+
+    markdown: 
+      "Narrative:\n{{narrative}}\n\nThe narrative provided above depicts {{character perspective}}. Based on the given narrative, answer the following question without any explanation. {{answer options}}Write the correct answer strictly in the following format:\nCorrect Answer: [YOUR ANSWER]\n\nQuestion:\n{{question}}"
+
+    cot-text: 
+      "Narrative:\n{{narrative}}\n\nThe narrative provided above depicts {{character perspective}}. Based on the given narrative, answer the following question. {{answer options}}Explicitly list out the reasoning steps before giving the correct answer. Write the correct answer in the end with the following format:\nTherefore, the correct answer is [YOUR ANSWER]\n\nQuestion:\n{{question}}"
+
+    python:
+      "```python\n# {{character perspective}}\n{{narrative}}\n\n# define the perspective that the given narrative is depicting\nperspective = \"{{character perspective}}\"\n\nquestion = \"{{question}}\"\n{{answer options}}correct_answer =\n``` \n\nPlease help me to complete the line ```correct_answer =``` without giving any explanation. Write the correct answer in code block as follows:\n```python\ncorrect_answer = [YOUR ANSWER]\n```"
+
+  answer_options:
+    "Answer with one of the following options: {{answer options}}"
+
+  python_answer_options:
+    "candidate_answers = [{{answer options}}]"
+
+  candidate_answers: 
+    attitude: [negative, positive, neutral]
+    location_coarse: [yes, no]
+    location_fine: []
+    fullness: [less full, more full, equally full]
+    accessibility: [less accessible, more accessible, equally accessible]

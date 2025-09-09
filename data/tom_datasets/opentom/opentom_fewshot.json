@@ -1,0 +1,453 @@
+{
+    "9096386562": {
+        "plot": "Leonel entered the master_bedroom.\nNatalia entered the master_bedroom.\nBoth Leonel and Natalia noticed that the coat is in the bathtub in the master_bedroom.\nNatalia exited the master_bedroom.\nLeonel moved the coat to the Coat rack center and Natalia did not witness the event.",
+        "plot_info": {
+            "mover": "Leonel",
+            "affected_char": "Natalia",
+            "eoi": "coat",
+            "original_place": "bathtub",
+            "move_to_place": "Coat rack center"
+        },
+        "preferences": {
+            "mv": "Leonel likes coat.",
+            "ac": "Natalia likes coat.",
+            "mv_ac_sentiment": "Leonel mistakenly think that Natalia hates coat.",
+            "ac_mv_sentiment": ""
+        },
+        "personality": "Leonel is a negativistic person.",
+        "sentiment_statement": "Leonel wants to show-off the coat.",
+        "true_sentiment": "is the most show-off action to the coat",
+        "intention": "make it the focal point and draw attention to it",
+        "new_location": "Coat rack center",
+        "observed": false,
+        "prompt": [
+            {
+                "role": "system",
+                "content": "You are an outstanding narrative writer who writes short narratives according to given plot. You always write narratives with simple vocabularies. The narratives you composed are easy-to-follow and eye-catching."
+            },
+            {
+                "role": "user",
+                "content": "Plot:\nParagraph 1: Leonel likes coat. Natalia likes coat.\nParagraph 2: Leonel entered the master_bedroom. Natalia entered the master_bedroom. Both Leonel and Natalia noticed that the coat is in the bathtub in the master_bedroom. Natalia exited the master_bedroom. \nParagraph 3: Leonel is a negativistic person. Leonel wants to show-off the coat because Leonel mistakenly think that Natalia hates coat. Therefore, Leonel moved the coat to Coat rack center in order to make it the focal point and draw attention to it. Natalia did not witness Leonel's action.\n\nWrite a 200-word, 2-paragraph story according to the plot. Do not depict {affected_char}'s attitude towards {mover}'s action. End the story immediately after the main event."
+            }
+        ],
+        "narrative": "Leonel and Natalia shared a common love for coats. Leonel admired the way they draped elegantly over his shoulders, while Natalia delighted in their warmth and style. They both had an eye for fashion, and a coat was their statement piece.\n\nOne day, as fate would have it, Leonel and Natalia found themselves in the master bedroom at the same time. They couldn't help but notice a coat, a stunning piece of clothing, placed carelessly in the bathtub. It seemed out of place, as if someone had forgotten it there. Natalia, unsure of how it ended up there, decided to leave the room, leaving Leonel alone.\n\nLeonel, a rather pessimistic person, believed that Natalia disliked coats. He wanted to prove her wrong and show her the beauty of this particular coat. With this misguided intention, Leonel carefully moved the coat from the bathtub to the center of the coat rack, hoping it would become the focal point of the room and draw attention. Unbeknownst to him, Natalia had already left and didn't witness his action.\n\nAnd with that, the story comes to an end, leaving the fate of the coat hanging in the balance. Will Leonel's efforts be in vain, or will Natalia be pleasantly surprised by the coat's new position? Only time will tell.",
+        "questions": [
+            {
+                "question": "As Natalia, what is your attitude towards Leonel's action of moving coat from bathtub to Coat rack center?",
+                "answer": "positive",
+                "type": "attitude"
+            },
+            {
+                "question": "From Leonel's perspective, is the coat in its initial location by the end of the story?",
+                "answer": "No",
+                "type": "location-fo"
+            },
+            {
+                "question": "From Natalia's perspective, is the coat in its initial location by the end of the story?",
+                "answer": "Yes",
+                "type": "location-fo"
+            },
+            {
+                "question": "From Leonel's perspective, where precisely does Natalia think that the coat is located by the end of the story?",
+                "answer": "Coat rack center",
+                "type": "location-so"
+            },
+            {
+                "question": "From Natalia's perspective, where precisely does Leonel think that the coat is located by the end of the story?",
+                "answer": "Coat rack center",
+                "type": "location-so"
+            },
+            {
+                "question": "From Leonel's perspective, how does Natalia think bathtub's fullness would change by the end of the story?",
+                "answer": "less full",
+                "type": "multihop_so"
+            },
+            {
+                "question": "From Natalia's perspective, how does Leonel think bathtub's fullness would change by the end of the story?",
+                "answer": "equally full",
+                "type": "multihop_so"
+            },
+            {
+                "question": "From Leonel's perspective, how does Natalia think Coat rack center's fullness would change by the end of the story?",
+                "answer": "more full",
+                "type": "multihop_so"
+            },
+            {
+                "question": "From Natalia's perspective, how does Leonel think Coat rack center's fullness would change by the end of the story?",
+                "answer": "equally full",
+                "type": "multihop_so"
+            },
+            {
+                "question": "From Leonel's perspective, how would coat's accessibility change for Natalia by the end of the story?",
+                "answer": "equally accessible",
+                "type": "multihop_so"
+            },
+            {
+                "question": "From Natalia's perspective, how would coat's accessibility change for Leonel by the end of the story?",
+                "answer": "equally accessible",
+                "type": "multihop_so"
+            },
+            {
+                "question": "From narrator's perspective, where is coat located by the end of the story?",
+                "answer": "Coat rack center",
+                "type": "location-fo"
+            },
+            {
+                "question": "From narrator's perspective, where is coat located in the beginning of the story?",
+                "answer": "bathtub",
+                "type": "location-fo"
+            },
+            {
+                "question": "From Leonel's perspective, where is the coat located precisely by the end of the story?",
+                "answer": "Coat rack center",
+                "type": "location-fo"
+            },
+            {
+                "question": "From Natalia's perspective, where is the coat located precisely by the end of the story?",
+                "answer": "Coat rack center",
+                "type": "location-fo"
+            },
+            {
+                "question": "From Leonel's perspective, how does bathtub's fullness change by the end of the story?",
+                "answer": "less full",
+                "type": "multihop-fo"
+            },
+            {
+                "question": "From Natalia's perspective, how does bathtub's fullness change by the end of the story?",
+                "answer": "equally full",
+                "type": "multihop-fo"
+            },
+            {
+                "question": "From Leonel's perspective, how does Coat rack center's fullness change by the end of the story?",
+                "answer": "more full",
+                "type": "multihop-fo"
+            },
+            {
+                "question": "From Natalia's perspective, how does Coat rack center's fullness change by the end of the story?",
+                "answer": "equally full",
+                "type": "multihop-fo"
+            },
+            {
+                "question": "From Leonel's perspective, how would coat's accessibility change by the end of the story?",
+                "answer": "equally accessible",
+                "type": "multihop-fo"
+            },
+            {
+                "question": "From Natalia's perspective, how would coat's accessibility change by the end of the story?",
+                "answer": "equally accessible",
+                "type": "multihop-fo"
+            },
+            {
+                "question": "From Leonel's perspective, does Natalia think that the coat is in its initial location by the end of the story?",
+                "answer": "No",
+                "type": "location-so"
+            },
+            {
+                "question": "From Natalia's perspective, does Leonel think that the coat is in its initial location by the end of the story?",
+                "answer": "Yes",
+                "type": "location-so"
+            }
+        ]
+    },
+    "2870168443": {
+        "plot": "Oliver entered the closet.\nAngelo entered the closet.\nBoth Angelo and Oliver noticed that the belt is in the envelope in the closet.\nOliver exited the closet.\nAngelo moved the belt to the Home entrance and Oliver did not witness the event.",
+        "plot_info": {
+            "mover": "Angelo",
+            "affected_char": "Oliver",
+            "eoi": "belt",
+            "original_place": "envelope",
+            "move_to_place": "Home entrance"
+        },
+        "preferences": {
+            "mv": "Angelo likes belt.",
+            "ac": "Oliver likes belt.",
+            "mv_ac_sentiment": "",
+            "ac_mv_sentiment": ""
+        },
+        "personality": "Angelo is a considerate person.",
+        "sentiment_statement": "Both Angelo and Oliver like belt.",
+        "true_sentiment": "the most positive",
+        "intention": "grab it quickly before leaving",
+        "new_location": "Home entrance",
+        "observed": false,
+        "prompt": [
+            {
+                "role": "system",
+                "content": "You are an outstanding narrative writer who writes short narratives according to given plot. You always write narratives with simple vocabularies. The narratives you composed are easy-to-follow and eye-catching."
+            },
+            {
+                "role": "user",
+                "content": "Plot:\nParagraph 1: Angelo likes belt. Oliver likes belt.\nParagraph 2: Oliver entered the closet. Angelo entered the closet. Both Angelo and Oliver noticed that the belt is in the envelope in the closet. Oliver exited the closet. \nParagraph 3: Angelo is a considerate person. Both Angelo and Oliver like belt. Therefore, Angelo moved the belt to Home entrance in order to grab it quickly before leaving. Oliver did not witness Angelo's action.\n\nWrite a 200-word, 2-paragraph story according to the plot. Do not depict {affected_char}'s attitude towards {mover}'s action. End the story immediately after the main event."
+            }
+        ],
+        "narrative": "Angelo and Oliver were both fond of belts. They often bonded over their shared passion for fashion accessories. One sunny afternoon, as they found themselves in the same room, they simultaneously expressed their admiration for a particular belt. \n\nIntrigued by their mutual interest, Oliver decided to investigate further. He strolled into the closet, his eyes scanning the shelves for any sign of the coveted accessory. Almost immediately, Angelo followed suit, curious to see if they could uncover the object of their desire together. As they entered the confined space, their eyes were drawn to an envelope placed strategically on the top shelf. It contained the very belt they had been coveting. \n\nWithout a word, Oliver exited the closet, unaware of the intentions brewing in Angelo's considerate mind. As Angelo pondered the situation, he couldn't help but empathize with Oliver's longing for the belt. After all, they both shared the same appreciation for fashionable accessories. Determined to make things easier for both of them, Angelo made a swift decision. \n\nWith a gentle hand, Angelo relocated the belt to the home entrance, ensuring it was ready to be worn. He hoped that this gesture would allow both of them to enjoy the belt before leaving. As Oliver remained unaware of Angelo's actions, the story came to an abrupt end, leaving the outcome of Angelo's kind act hanging in the air.",
+        "questions": [
+            {
+                "question": "As Oliver, what is your attitude towards Angelo's action of moving belt from envelope to Home entrance?",
+                "answer": "neutral",
+                "type": "attitude"
+            },
+            {
+                "question": "From Angelo's perspective, is the belt in its initial location by the end of the story?",
+                "answer": "No",
+                "type": "location-fo"
+            },
+            {
+                "question": "From Oliver's perspective, is the belt in its initial location by the end of the story?",
+                "answer": "Yes",
+                "type": "location-fo"
+            },
+            {
+                "question": "From Angelo's perspective, where precisely does Oliver think that the belt is located by the end of the story?",
+                "answer": "Home entrance",
+                "type": "location-so"
+            },
+            {
+                "question": "From Oliver's perspective, where precisely does Angelo think that the belt is located by the end of the story?",
+                "answer": "Home entrance",
+                "type": "location-so"
+            },
+            {
+                "question": "From Angelo's perspective, how does Oliver think envelope's fullness would change by the end of the story?",
+                "answer": "equally full",
+                "type": "multihop_so"
+            },
+            {
+                "question": "From Oliver's perspective, how does Angelo think envelope's fullness would change by the end of the story?",
+                "answer": "equally full",
+                "type": "multihop_so"
+            },
+            {
+                "question": "From Angelo's perspective, how does Oliver think Home entrance's fullness would change by the end of the story?",
+                "answer": "equally full",
+                "type": "multihop_so"
+            },
+            {
+                "question": "From Oliver's perspective, how does Angelo think Home entrance's fullness would change by the end of the story?",
+                "answer": "equally full",
+                "type": "multihop_so"
+            },
+            {
+                "question": "From Angelo's perspective, how would belt's accessibility change for Oliver by the end of the story?",
+                "answer": "more accessible",
+                "type": "multihop_so"
+            },
+            {
+                "question": "From Oliver's perspective, how would belt's accessibility change for Angelo by the end of the story?",
+                "answer": "equally accessible",
+                "type": "multihop_so"
+            },
+            {
+                "question": "From narrator's perspective, where is belt located by the end of the story?",
+                "answer": "Home entrance",
+                "type": "location-fo"
+            },
+            {
+                "question": "From narrator's perspective, where is belt located in the beginning of the story?",
+                "answer": "envelope",
+                "type": "location-fo"
+            },
+            {
+                "question": "From Angelo's perspective, where is the belt located precisely by the end of the story?",
+                "answer": "Home entrance",
+                "type": "location-fo"
+            },
+            {
+                "question": "From Oliver's perspective, where is the belt located precisely by the end of the story?",
+                "answer": "Home entrance",
+                "type": "location-fo"
+            },
+            {
+                "question": "From Angelo's perspective, how does envelope's fullness change by the end of the story?",
+                "answer": "less full",
+                "type": "multihop-fo"
+            },
+            {
+                "question": "From Oliver's perspective, how does envelope's fullness change by the end of the story?",
+                "answer": "equally full",
+                "type": "multihop-fo"
+            },
+            {
+                "question": "From Angelo's perspective, how does Home entrance's fullness change by the end of the story?",
+                "answer": "more full",
+                "type": "multihop-fo"
+            },
+            {
+                "question": "From Oliver's perspective, how does Home entrance's fullness change by the end of the story?",
+                "answer": "equally full",
+                "type": "multihop-fo"
+            },
+            {
+                "question": "From Angelo's perspective, how would belt's accessibility change by the end of the story?",
+                "answer": "more accessible",
+                "type": "multihop-fo"
+            },
+            {
+                "question": "From Oliver's perspective, how would belt's accessibility change by the end of the story?",
+                "answer": "equally accessible",
+                "type": "multihop-fo"
+            },
+            {
+                "question": "From Angelo's perspective, does Oliver think that the belt is in its initial location by the end of the story?",
+                "answer": "Yes",
+                "type": "location-so"
+            },
+            {
+                "question": "From Oliver's perspective, does Angelo think that the belt is in its initial location by the end of the story?",
+                "answer": "Yes",
+                "type": "location-so"
+            }
+        ]
+    },
+    "6112225921": {
+        "plot": "Paxton entered the pantry.\nHadley entered the pantry.\nBoth Hadley and Paxton noticed that the hat is in the container in the pantry.\nHadley moved the hat to the the trash can and Paxton witnessed the action.",
+        "plot_info": {
+            "mover": "Hadley",
+            "affected_char": "Paxton",
+            "eoi": "hat",
+            "original_place": "container",
+            "move_to_place": "the trash can"
+        },
+        "preferences": {
+            "mv": "Hadley hates hat",
+            "ac": "Paxton likes hat.",
+            "mv_ac_sentiment": "",
+            "ac_mv_sentiment": ""
+        },
+        "personality": "Hadley is a negativistic person.",
+        "sentiment_statement": "Hadley wants to get rid of the hat.",
+        "true_sentiment": "the action that is the most adversarial to the hat",
+        "intention": "dispose of the hat",
+        "new_location": "the trash can",
+        "observed": true,
+        "prompt": [
+            {
+                "role": "system",
+                "content": "You are an outstanding narrative writer who writes short narratives according to given plot. You always write narratives with simple vocabularies. The narratives you composed are easy-to-follow and eye-catching."
+            },
+            {
+                "role": "user",
+                "content": "Plot:\nParagraph 1: Hadley hates hat Paxton likes hat.\nParagraph 2: Paxton entered the pantry. Hadley entered the pantry. Both Hadley and Paxton noticed that the hat is in the container in the pantry. \nParagraph 3: Hadley is a negativistic person. Hadley wants to get rid of the hat because Paxton likes hat. Therefore, Hadley moved the hat to the trash can in order to dispose of the hat. Paxton witnessed Hadley's action.\n\nWrite a 200-word, 2-paragraph story according to the plot. Do not depict {affected_char}'s attitude towards {mover}'s action. End the story immediately after the main event."
+            }
+        ],
+        "narrative": "Hadley had always despised the hat. It was a simple, unremarkable hat, but for some reason, it irked Hadley to no end. On the other hand, Paxton adored the hat. He thought it was stylish and added a touch of flair to any outfit. It was a constant point of disagreement between them.\n\nOne day, as fate would have it, both Hadley and Paxton found themselves in the pantry. Their eyes were drawn to a container on the shelf where the hat sat innocently. The hat seemed to mock Hadley, knowing how much Paxton admired it. \n\nHadley, being a negativistic person, couldn't stand the sight of the hat any longer. Determined to rid themselves of the source of their disagreement, Hadley swiftly snatched the hat and moved towards the trash can. Paxton stood frozen, unable to comprehend what was happening before his eyes. And just like that, the main event unfolded, leaving the air heavy with tension and uncertainty.",
+        "questions": [
+            {
+                "question": "As Paxton, what is your attitude towards Hadley's action of moving hat from container to the trash can?",
+                "answer": "negative",
+                "type": "attitude"
+            },
+            {
+                "question": "From Hadley's perspective, is the hat in its initial location by the end of the story?",
+                "answer": "No",
+                "type": "location-fo"
+            },
+            {
+                "question": "From Paxton's perspective, is the hat in its initial location by the end of the story?",
+                "answer": "No",
+                "type": "location-fo"
+            },
+            {
+                "question": "From Hadley's perspective, where precisely does Paxton think that the hat is located by the end of the story?",
+                "answer": "the trash can",
+                "type": "location-so"
+            },
+            {
+                "question": "From Paxton's perspective, where precisely does Hadley think that the hat is located by the end of the story?",
+                "answer": "the trash can",
+                "type": "location-so"
+            },
+            {
+                "question": "From Hadley's perspective, how does Paxton think container's fullness would change by the end of the story?",
+                "answer": "less full",
+                "type": "multihop_so"
+            },
+            {
+                "question": "From Paxton's perspective, how does Hadley think container's fullness would change by the end of the story?",
+                "answer": "less full",
+                "type": "multihop_so"
+            },
+            {
+                "question": "From Hadley's perspective, how does Paxton think the trash can's fullness would change by the end of the story?",
+                "answer": "more full",
+                "type": "multihop_so"
+            },
+            {
+                "question": "From Paxton's perspective, how does Hadley think the trash can's fullness would change by the end of the story?",
+                "answer": "more full",
+                "type": "multihop_so"
+            },
+            {
+                "question": "From Hadley's perspective, how would hat's accessibility change for Paxton by the end of the story?",
+                "answer": "less accessible",
+                "type": "multihop_so"
+            },
+            {
+                "question": "From Paxton's perspective, how would hat's accessibility change for Hadley by the end of the story?",
+                "answer": "less accessible",
+                "type": "multihop_so"
+            },
+            {
+                "question": "From narrator's perspective, where is hat located by the end of the story?",
+                "answer": "the trash can",
+                "type": "location-fo"
+            },
+            {
+                "question": "From narrator's perspective, where is hat located in the beginning of the story?",
+                "answer": "container",
+                "type": "location-fo"
+            },
+            {
+                "question": "From Hadley's perspective, where is the hat located precisely by the end of the story?",
+                "answer": "the trash can",
+                "type": "location-fo"
+            },
+            {
+                "question": "From Paxton's perspective, where is the hat located precisely by the end of the story?",
+                "answer": "container",
+                "type": "location-fo"
+            },
+            {
+                "question": "From Hadley's perspective, how does container's fullness change by the end of the story?",
+                "answer": "less full",
+                "type": "multihop-fo"
+            },
+            {
+                "question": "From Paxton's perspective, how does container's fullness change by the end of the story?",
+                "answer": "less full",
+                "type": "multihop-fo"
+            },
+            {
+                "question": "From Hadley's perspective, how does the trash can's fullness change by the end of the story?",
+                "answer": "more full",
+                "type": "multihop-fo"
+            },
+            {
+                "question": "From Paxton's perspective, how does the trash can's fullness change by the end of the story?",
+                "answer": "more full",
+                "type": "multihop-fo"
+            },
+            {
+                "question": "From Hadley's perspective, how would hat's accessibility change by the end of the story?",
+                "answer": "less accessible",
+                "type": "multihop-fo"
+            },
+            {
+                "question": "From Paxton's perspective, how would hat's accessibility change by the end of the story?",
+                "answer": "less accessible",
+                "type": "multihop-fo"
+            },
+            {
+                "question": "From Hadley's perspective, does Paxton think that the hat is in its initial location by the end of the story?",
+                "answer": "No",
+                "type": "location-so"
+            },
+            {
+                "question": "From Paxton's perspective, does Hadley think that the hat is in its initial location by the end of the story?",
+                "answer": "No",
+                "type": "location-so"
+            }
+        ],
+        "long_narrative": "In the quaint quarters of a shared apartment, there dwelled two roommates, Hadley and Paxton, whose tastes seldom aligned. Among the myriad of their differing opinions, none was as pronounced as their feelings about a particular hat. This hat, a plain and rather nondescript accessory to most, was the crux of an ongoing discord between the two. It was devoid of extravagant features or bold colors, yet it had somehow become the centerpiece of a silent rivalry.\n\nHadley had always harbored a strong distaste for the hat. It was impossible to pinpoint what exactly spurred such loathing for an inanimate object, but its mere presence in the apartment was enough to spark irritation. Conversely, Paxton cherished the hat with an affection that was palpable. To him, the hat was the epitome of elegance and panache, capable of transforming the mundane into something more refined.\n\nThe hat's usual resting place was atop a shelf in the pantry, among jars of preserves and boxes of tea \u2013 an odd location for a garment, but a neutral territory of sorts. It sat there, quiet and unassuming, as if it had unwittingly become the silent judge of their ongoing quarrel.\n\nOne unforeseen day, the peculiar fate of cohabitation saw both Hadley and Paxton simultaneously venture into the pantry. As if drawn by some unseen force, their gaze gravitated towards the container on the shelf where the hat lay in wait. The hat, unaware of its divisive nature, continued to exist simply as it was \u2013 a woven construct of fibers and fabric, void of sentiment or the capacity for mockery.\n\nHadley, with a disposition that often leaned towards the oppositional, felt an urgency to act upon the distaste that bubbled to the surface at the sight of the hat. With a decisiveness that seemed almost impulsive, Hadley reached out, fingers grasping the fabric of the hat, and proceeded with a swift motion toward the trash can. Intent on eradicating the hat and the conflict it symbolized, Hadley moved with a resolve that was unyielding.\n\nPaxton, meanwhile, stood rooted in place. The movement, the shift in the environment, seemed to unfold in a surreal tableau, challenging the reality of the moment. There was no anticipatory flinch, no audible gasp \u2013 only the starkness of witnessing an action unfold.\n\nAnd so, it came to pass that the hat journeyed from the safety of its perch to the precipice of the garbage receptacle. The air within the confines of the pantry became thick with an unspoken narrative, each roommate enveloped in the stillness of the aftermath. The once silent witness, the hat, now found itself cast in the role of an unwanted protagonist in the midst of a drama it neither asked for nor understood.\n\nThe roommates, surrounded by the stark walls and the ambient hum of the refrigerator, stood at an impasse. The main event had come and gone, its silent echoes reverberating in the pantry, a room designed for the storage of sustenance now a stage for a silent standoff, unmarred by further development. The hat\u2019s fate was left hanging in the balance, the moment frozen in time, as the narrative closed with the weight of unresolved tension, and the memory of the hat's passage towards the bin."
+    }
+}

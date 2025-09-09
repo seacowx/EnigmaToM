@@ -1,0 +1,5596 @@
+[
+    {
+        "id": "5307805707",
+        "prompt": "<Events>\n1: Mila entered the den\n2: Amelia entered the den\n3: Lucas entered the hallway\n4: Peas is in the container in the den\n5: Mila exited the den\n6: Lucas exited the hallway\n7: Amelia moved the peas to the drawer in the den\n\n<Available Rooms>\n- den\n- hallway\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: den",
+            "2: den",
+            "3: hallway",
+            "4: den",
+            "5: none",
+            "6: none",
+            "7: den"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "den"
+            },
+            {
+                "line_number": "2",
+                "location": "den"
+            },
+            {
+                "line_number": "3",
+                "location": "hallway"
+            },
+            {
+                "line_number": "4",
+                "location": "den"
+            },
+            {
+                "line_number": "5",
+                "location": "den"
+            },
+            {
+                "line_number": "6",
+                "location": "den"
+            },
+            {
+                "line_number": "7",
+                "location": "den"
+            }
+        ],
+        "available_location": [
+            "den",
+            "hallway"
+        ],
+        "narrative_location_vec": [
+            "den",
+            "den",
+            "hallway",
+            "den",
+            "den",
+            "den",
+            "den"
+        ]
+    },
+    {
+        "id": "2272023112",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "closet"
+            },
+            {
+                "line_number": 1,
+                "location": "closet"
+            },
+            {
+                "line_number": 2,
+                "location": "closet"
+            },
+            {
+                "line_number": 3,
+                "location": "closet"
+            },
+            {
+                "line_number": 4,
+                "location": "closet"
+            },
+            {
+                "line_number": 5,
+                "location": "closet"
+            },
+            {
+                "line_number": 6,
+                "location": "closet"
+            }
+        ],
+        "available_location": [
+            "closet"
+        ],
+        "narrative_location_vec": [
+            "closet",
+            "closet",
+            "closet",
+            "closet",
+            "closet",
+            "closet",
+            "closet"
+        ]
+    },
+    {
+        "id": "2689760531",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "basement"
+            },
+            {
+                "line_number": 1,
+                "location": "basement"
+            },
+            {
+                "line_number": 2,
+                "location": "basement"
+            },
+            {
+                "line_number": 3,
+                "location": "basement"
+            },
+            {
+                "line_number": 4,
+                "location": "basement"
+            },
+            {
+                "line_number": 5,
+                "location": "basement"
+            },
+            {
+                "line_number": 6,
+                "location": "basement"
+            },
+            {
+                "line_number": 7,
+                "location": "basement"
+            }
+        ],
+        "available_location": [
+            "basement"
+        ],
+        "narrative_location_vec": [
+            "basement",
+            "basement",
+            "basement",
+            "basement",
+            "basement",
+            "basement",
+            "basement",
+            "basement"
+        ]
+    },
+    {
+        "id": "3622116209",
+        "prompt": "<Events>\n1: Ava is in the sunroom\n2: Sophia entered and then exited the sunroom\n3: Corn is initially in the bathtub\n4: Bathtub is located in the sunroom\n5: Ava moved corn from bathtub to treasure_chest\n6: Treasure_chest is in the sunroom\n7: Ava likes the shoes\n\n<Available Rooms>\n- sunroom\n- attic\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: sunroom",
+            "2: sunroom",
+            "3: none",
+            "4: sunroom",
+            "5: sunroom",
+            "6: sunroom",
+            "7: none"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "sunroom"
+            },
+            {
+                "line_number": "2",
+                "location": "sunroom"
+            },
+            {
+                "line_number": "3",
+                "location": "sunroom"
+            },
+            {
+                "line_number": "4",
+                "location": "sunroom"
+            },
+            {
+                "line_number": "5",
+                "location": "sunroom"
+            },
+            {
+                "line_number": "6",
+                "location": "sunroom"
+            },
+            {
+                "line_number": "7",
+                "location": "sunroom"
+            }
+        ],
+        "available_location": [
+            "sunroom",
+            "attic"
+        ],
+        "narrative_location_vec": [
+            "sunroom",
+            "sunroom",
+            "sunroom",
+            "sunroom",
+            "sunroom",
+            "sunroom",
+            "sunroom"
+        ]
+    },
+    {
+        "id": "1570356188",
+        "prompt": "<Events>\n1: Evelyn entered the bedroom\n2: Ava entered the bedroom\n3: Evelyn dislikes the gloves\n4: Moved the gloves from suitcase in bedroom to pantry\n5: The pantry is in the bedroom\n6: Evelyn loves the tangerine\n7: Ava moved from bedroom to basement\n\n<Available Rooms>\n- bedroom\n- basement\n- pantry\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: bedroom",
+            "2: bedroom",
+            "3: bedroom",
+            "4: bedroom",
+            "5: bedroom",
+            "6: bedroom",
+            "7: basement"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "bedroom"
+            },
+            {
+                "line_number": "2",
+                "location": "bedroom"
+            },
+            {
+                "line_number": "3",
+                "location": "bedroom"
+            },
+            {
+                "line_number": "4",
+                "location": "bedroom"
+            },
+            {
+                "line_number": "5",
+                "location": "bedroom"
+            },
+            {
+                "line_number": "6",
+                "location": "bedroom"
+            },
+            {
+                "line_number": "7",
+                "location": "basement"
+            }
+        ],
+        "available_location": [
+            "bedroom",
+            "basement",
+            "pantry"
+        ],
+        "narrative_location_vec": [
+            "bedroom",
+            "bedroom",
+            "bedroom",
+            "bedroom",
+            "bedroom",
+            "bedroom",
+            "basement"
+        ]
+    },
+    {
+        "id": "9059077399",
+        "prompt": "<Events>\n1: William entered the garden\n2: Evelyn entered the garden\n3: James entered the dining_room\n4: sweet_potato is in the envelope\n5: envelope is in the garden\n6: Evelyn exited the garden\n7: James exited the dining_room\n8: William moved sweet_potato to the suitcase\n9: suitcase is in the garden\n\n<Available Rooms>\n- dining room\n- garden\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: garden",
+            "2: garden",
+            "3: dining room",
+            "4: none",
+            "5: garden",
+            "6: none",
+            "7: none",
+            "8: garden",
+            "9: garden"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "garden"
+            },
+            {
+                "line_number": "2",
+                "location": "garden"
+            },
+            {
+                "line_number": "3",
+                "location": "dining room"
+            },
+            {
+                "line_number": "4",
+                "location": "dining room"
+            },
+            {
+                "line_number": "5",
+                "location": "garden"
+            },
+            {
+                "line_number": "6",
+                "location": "garden"
+            },
+            {
+                "line_number": "7",
+                "location": "garden"
+            },
+            {
+                "line_number": "8",
+                "location": "garden"
+            },
+            {
+                "line_number": "9",
+                "location": "garden"
+            }
+        ],
+        "available_location": [
+            "dining room",
+            "garden"
+        ],
+        "narrative_location_vec": [
+            "garden",
+            "garden",
+            "dining room",
+            "dining room",
+            "garden",
+            "garden",
+            "garden",
+            "garden",
+            "garden"
+        ]
+    },
+    {
+        "id": "5780828225",
+        "prompt": "<Events>\n1: Ethan entered the closet\n2: Chloe likes the carrot\n3: Chloe entered the closet\n4: Lemon is in container\n5: Container is in closet\n6: Ethan exited the closet\n7: Chloe moved lemon to pantry\n8: Pantry is in closet\n\n<Available Rooms>\n- closet\n- pantry\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: closet",
+            "2: none",
+            "3: closet",
+            "4: none",
+            "5: closet",
+            "6: none",
+            "7: closet",
+            "8: closet"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "closet"
+            },
+            {
+                "line_number": "2",
+                "location": "closet"
+            },
+            {
+                "line_number": "3",
+                "location": "closet"
+            },
+            {
+                "line_number": "4",
+                "location": "closet"
+            },
+            {
+                "line_number": "5",
+                "location": "closet"
+            },
+            {
+                "line_number": "6",
+                "location": "closet"
+            },
+            {
+                "line_number": "7",
+                "location": "closet"
+            },
+            {
+                "line_number": "8",
+                "location": "closet"
+            }
+        ],
+        "available_location": [
+            "closet",
+            "pantry"
+        ],
+        "narrative_location_vec": [
+            "closet",
+            "closet",
+            "closet",
+            "closet",
+            "closet",
+            "closet",
+            "closet",
+            "closet"
+        ]
+    },
+    {
+        "id": "1034649967",
+        "prompt": "<Events>\n1: Amelia entered the porch\n2: Evelyn entered the porch\n3: Isabella entered the porch\n4: Cherry is in the drawer in the porch\n5: Evelyn exited the porch\n6: Amelia moved cherry to the bucket in the porch\n7: Isabella exited the porch\n8: Amelia exited the porch\n\n<Available Rooms>\n- playroom\n- porch\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: porch",
+            "2: porch",
+            "3: porch",
+            "4: porch",
+            "5: none",
+            "6: porch",
+            "7: none",
+            "8: none"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "porch"
+            },
+            {
+                "line_number": "2",
+                "location": "porch"
+            },
+            {
+                "line_number": "3",
+                "location": "porch"
+            },
+            {
+                "line_number": "4",
+                "location": "porch"
+            },
+            {
+                "line_number": "5",
+                "location": "porch"
+            },
+            {
+                "line_number": "6",
+                "location": "porch"
+            },
+            {
+                "line_number": "7",
+                "location": "porch"
+            },
+            {
+                "line_number": "8",
+                "location": "porch"
+            }
+        ],
+        "available_location": [
+            "playroom",
+            "porch"
+        ],
+        "narrative_location_vec": [
+            "porch",
+            "porch",
+            "porch",
+            "porch",
+            "porch",
+            "porch",
+            "porch",
+            "porch"
+        ]
+    },
+    {
+        "id": "7404019547",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "staircase"
+            },
+            {
+                "line_number": 1,
+                "location": "staircase"
+            },
+            {
+                "line_number": 2,
+                "location": "staircase"
+            },
+            {
+                "line_number": 3,
+                "location": "staircase"
+            },
+            {
+                "line_number": 4,
+                "location": "staircase"
+            },
+            {
+                "line_number": 5,
+                "location": "staircase"
+            },
+            {
+                "line_number": 6,
+                "location": "staircase"
+            },
+            {
+                "line_number": 7,
+                "location": "staircase"
+            }
+        ],
+        "available_location": [
+            "staircase"
+        ],
+        "narrative_location_vec": [
+            "staircase",
+            "staircase",
+            "staircase",
+            "staircase",
+            "staircase",
+            "staircase",
+            "staircase",
+            "staircase"
+        ]
+    },
+    {
+        "id": "2732913284",
+        "prompt": "<Events>\n1: Emily entered the crawlspace\n2: Ethan entered the crawlspace\n3: Spinach is in the box\n4: Box is in the crawlspace\n5: Ethan exited the crawlspace, entered the sunroom\n6: Emily moved spinach to envelope\n7: Envelope is in the crawlspace\n\n<Available Rooms>\n- sunroom\n- crawlspace\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: crawlspace",
+            "2: crawlspace",
+            "3: none",
+            "4: crawlspace",
+            "5: sunroom",
+            "6: crawlspace",
+            "7: crawlspace"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "crawlspace"
+            },
+            {
+                "line_number": "2",
+                "location": "crawlspace"
+            },
+            {
+                "line_number": "3",
+                "location": "crawlspace"
+            },
+            {
+                "line_number": "4",
+                "location": "crawlspace"
+            },
+            {
+                "line_number": "5",
+                "location": "sunroom"
+            },
+            {
+                "line_number": "6",
+                "location": "crawlspace"
+            },
+            {
+                "line_number": "7",
+                "location": "crawlspace"
+            }
+        ],
+        "available_location": [
+            "sunroom",
+            "crawlspace"
+        ],
+        "narrative_location_vec": [
+            "crawlspace",
+            "crawlspace",
+            "crawlspace",
+            "crawlspace",
+            "sunroom",
+            "crawlspace",
+            "crawlspace"
+        ]
+    },
+    {
+        "id": "3552923540",
+        "prompt": "<Events>\n1: Emily entered the staircase\n2: Isla entered the staircase\n3: Persimmon is in the bathtub\n4: Bathtub is in the staircase\n5: Jacob likes the slacks\n6: Isla moved from staircase to garage\n7: Emily moved persimmon to box\n8: Box is in the staircase\n\n<Available Rooms>\n- staircase\n- garage\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: staircase",
+            "2: staircase",
+            "3: none",
+            "4: staircase",
+            "5: none",
+            "6: garage",
+            "7: staircase",
+            "8: staircase"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "staircase"
+            },
+            {
+                "line_number": "2",
+                "location": "staircase"
+            },
+            {
+                "line_number": "3",
+                "location": "staircase"
+            },
+            {
+                "line_number": "4",
+                "location": "staircase"
+            },
+            {
+                "line_number": "5",
+                "location": "staircase"
+            },
+            {
+                "line_number": "6",
+                "location": "garage"
+            },
+            {
+                "line_number": "7",
+                "location": "staircase"
+            },
+            {
+                "line_number": "8",
+                "location": "staircase"
+            }
+        ],
+        "available_location": [
+            "staircase",
+            "garage"
+        ],
+        "narrative_location_vec": [
+            "staircase",
+            "staircase",
+            "staircase",
+            "staircase",
+            "staircase",
+            "garage",
+            "staircase",
+            "staircase"
+        ]
+    },
+    {
+        "id": "4355270030",
+        "prompt": "<Events>\n1: Noah entered the front_yard\n2: Hunter entered the front_yard\n3: Peas in treasure_chest, treasure_chest in front_yard\n4: Noah moved peas to cupboard in front_yard\n5: Hunter exited then entered the closet\n6: Noah exited the front_yard\n7: Hunter hates the belt\n\n<Available Rooms>\n- closet\n- front yard\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: front_yard",
+            "2: front_yard",
+            "3: front_yard",
+            "4: front_yard",
+            "5: closet",
+            "6: none",
+            "7: none"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "front yard"
+            },
+            {
+                "line_number": "2",
+                "location": "front yard"
+            },
+            {
+                "line_number": "3",
+                "location": "front yard"
+            },
+            {
+                "line_number": "4",
+                "location": "front yard"
+            },
+            {
+                "line_number": "5",
+                "location": "closet"
+            },
+            {
+                "line_number": "6",
+                "location": "closet"
+            },
+            {
+                "line_number": "7",
+                "location": "closet"
+            }
+        ],
+        "available_location": [
+            "closet",
+            "front yard"
+        ],
+        "narrative_location_vec": [
+            "front yard",
+            "front yard",
+            "front yard",
+            "front yard",
+            "closet",
+            "closet",
+            "closet"
+        ]
+    },
+    {
+        "id": "4315856127",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "pantry"
+            },
+            {
+                "line_number": 1,
+                "location": "pantry"
+            },
+            {
+                "line_number": 2,
+                "location": "pantry"
+            },
+            {
+                "line_number": 3,
+                "location": "pantry"
+            },
+            {
+                "line_number": 4,
+                "location": "pantry"
+            },
+            {
+                "line_number": 5,
+                "location": "pantry"
+            },
+            {
+                "line_number": 6,
+                "location": "pantry"
+            }
+        ],
+        "available_location": [
+            "pantry"
+        ],
+        "narrative_location_vec": [
+            "pantry",
+            "pantry",
+            "pantry",
+            "pantry",
+            "pantry",
+            "pantry",
+            "pantry"
+        ]
+    },
+    {
+        "id": "8523675747",
+        "prompt": "<Events>\n1: Carter dislikes lettuce\n2: Carter moved to back_yard\n3: Carter left back_yard\n4: Mila entered back_yard\n5: Ella entered back_yard\n6: Trousers moved from bucket to pantry\n7: Mila moved to basement\n8: Trousers are in pantry, pantry in back_yard\n\n<Available Rooms>\n- basement\n- back yard\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: none",
+            "2: back_yard",
+            "3: none",
+            "4: back_yard",
+            "5: back_yard",
+            "6: none",
+            "7: basement",
+            "8: back_yard"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "back yard"
+            },
+            {
+                "line_number": "2",
+                "location": "back yard"
+            },
+            {
+                "line_number": "3",
+                "location": "back yard"
+            },
+            {
+                "line_number": "4",
+                "location": "back yard"
+            },
+            {
+                "line_number": "5",
+                "location": "back yard"
+            },
+            {
+                "line_number": "6",
+                "location": "back yard"
+            },
+            {
+                "line_number": "7",
+                "location": "basement"
+            },
+            {
+                "line_number": "8",
+                "location": "back yard"
+            }
+        ],
+        "available_location": [
+            "basement",
+            "back yard"
+        ],
+        "narrative_location_vec": [
+            "back yard",
+            "back yard",
+            "back yard",
+            "back yard",
+            "back yard",
+            "back yard",
+            "basement",
+            "back yard"
+        ]
+    },
+    {
+        "id": "1660503769",
+        "prompt": "<Events>\n1: Hannah moved to the hallway\n2: Sophia entered the study\n3: Noah entered the study\n4: Hannah left the hallway\n5: Cabbage is in bottle\n6: Bottle is in study\n7: Noah left the study\n8: Sophia moved cabbage from bottle to treasure_chest\n9: Treasure_chest is in study\n\n<Available Rooms>\n- hallway\n- study\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: hallway",
+            "2: study",
+            "3: study",
+            "4: none",
+            "5: none",
+            "6: study",
+            "7: none",
+            "8: study",
+            "9: study"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "hallway"
+            },
+            {
+                "line_number": "2",
+                "location": "study"
+            },
+            {
+                "line_number": "3",
+                "location": "study"
+            },
+            {
+                "line_number": "4",
+                "location": "study"
+            },
+            {
+                "line_number": "5",
+                "location": "study"
+            },
+            {
+                "line_number": "6",
+                "location": "study"
+            },
+            {
+                "line_number": "7",
+                "location": "study"
+            },
+            {
+                "line_number": "8",
+                "location": "study"
+            },
+            {
+                "line_number": "9",
+                "location": "study"
+            }
+        ],
+        "available_location": [
+            "hallway",
+            "study"
+        ],
+        "narrative_location_vec": [
+            "hallway",
+            "study",
+            "study",
+            "study",
+            "study",
+            "study",
+            "study",
+            "study",
+            "study"
+        ]
+    },
+    {
+        "id": "1577988233",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "bathroom"
+            },
+            {
+                "line_number": 1,
+                "location": "bathroom"
+            },
+            {
+                "line_number": 2,
+                "location": "bathroom"
+            },
+            {
+                "line_number": 3,
+                "location": "bathroom"
+            },
+            {
+                "line_number": 4,
+                "location": "bathroom"
+            },
+            {
+                "line_number": 5,
+                "location": "bathroom"
+            },
+            {
+                "line_number": 6,
+                "location": "bathroom"
+            },
+            {
+                "line_number": 7,
+                "location": "bathroom"
+            }
+        ],
+        "available_location": [
+            "bathroom"
+        ],
+        "narrative_location_vec": [
+            "bathroom",
+            "bathroom",
+            "bathroom",
+            "bathroom",
+            "bathroom",
+            "bathroom",
+            "bathroom",
+            "bathroom"
+        ]
+    },
+    {
+        "id": "5004833019",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "workshop"
+            },
+            {
+                "line_number": 1,
+                "location": "workshop"
+            },
+            {
+                "line_number": 2,
+                "location": "workshop"
+            },
+            {
+                "line_number": 3,
+                "location": "workshop"
+            },
+            {
+                "line_number": 4,
+                "location": "workshop"
+            },
+            {
+                "line_number": 5,
+                "location": "workshop"
+            },
+            {
+                "line_number": 6,
+                "location": "workshop"
+            },
+            {
+                "line_number": 7,
+                "location": "workshop"
+            },
+            {
+                "line_number": 8,
+                "location": "workshop"
+            },
+            {
+                "line_number": 9,
+                "location": "workshop"
+            },
+            {
+                "line_number": 10,
+                "location": "workshop"
+            },
+            {
+                "line_number": 11,
+                "location": "workshop"
+            }
+        ],
+        "available_location": [
+            "workshop"
+        ],
+        "narrative_location_vec": [
+            "workshop",
+            "workshop",
+            "workshop",
+            "workshop",
+            "workshop",
+            "workshop",
+            "workshop",
+            "workshop",
+            "workshop",
+            "workshop",
+            "workshop",
+            "workshop"
+        ]
+    },
+    {
+        "id": "8410062260",
+        "prompt": "<Events>\n1: Hunter entered the attic\n2: Chloe entered the attic\n3: Emma entered the kitchen\n4: Orange is in the basket, basket is in the attic\n5: Emma exited the kitchen\n6: Chloe moved orange from basket to crate\n7: Crate is in the attic\n8: Hunter exited the attic\n\n<Available Rooms>\n- kitchen\n- attic\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: attic",
+            "2: attic",
+            "3: kitchen",
+            "4: attic",
+            "5: none",
+            "6: attic",
+            "7: attic",
+            "8: none"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "attic"
+            },
+            {
+                "line_number": "2",
+                "location": "attic"
+            },
+            {
+                "line_number": "3",
+                "location": "kitchen"
+            },
+            {
+                "line_number": "4",
+                "location": "attic"
+            },
+            {
+                "line_number": "5",
+                "location": "attic"
+            },
+            {
+                "line_number": "6",
+                "location": "attic"
+            },
+            {
+                "line_number": "7",
+                "location": "attic"
+            },
+            {
+                "line_number": "8",
+                "location": "attic"
+            }
+        ],
+        "available_location": [
+            "kitchen",
+            "attic"
+        ],
+        "narrative_location_vec": [
+            "attic",
+            "attic",
+            "kitchen",
+            "attic",
+            "attic",
+            "attic",
+            "attic",
+            "attic"
+        ]
+    },
+    {
+        "id": "7418929068",
+        "prompt": "<Events>\n1: Logan entered the staircase\n2: Emma entered the office\n3: Emma dislikes the slacks\n4: Aria is in the staircase with Logan\n5: The jacket moved from the suitcase to the bottle\n6: Logan exited the staircase\n\n<Available Rooms>\n- staircase\n- office\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: staircase",
+            "2: office",
+            "3: none",
+            "4: staircase",
+            "5: none",
+            "6: none"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "staircase"
+            },
+            {
+                "line_number": "2",
+                "location": "office"
+            },
+            {
+                "line_number": "3",
+                "location": "office"
+            },
+            {
+                "line_number": "4",
+                "location": "staircase"
+            },
+            {
+                "line_number": "5",
+                "location": "staircase"
+            },
+            {
+                "line_number": "6",
+                "location": "staircase"
+            }
+        ],
+        "available_location": [
+            "staircase",
+            "office"
+        ],
+        "narrative_location_vec": [
+            "staircase",
+            "office",
+            "office",
+            "staircase",
+            "staircase",
+            "staircase"
+        ]
+    },
+    {
+        "id": "2775655860",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "staircase"
+            },
+            {
+                "line_number": 1,
+                "location": "staircase"
+            },
+            {
+                "line_number": 2,
+                "location": "staircase"
+            },
+            {
+                "line_number": 3,
+                "location": "staircase"
+            },
+            {
+                "line_number": 4,
+                "location": "staircase"
+            },
+            {
+                "line_number": 5,
+                "location": "staircase"
+            },
+            {
+                "line_number": 6,
+                "location": "staircase"
+            }
+        ],
+        "available_location": [
+            "staircase"
+        ],
+        "narrative_location_vec": [
+            "staircase",
+            "staircase",
+            "staircase",
+            "staircase",
+            "staircase",
+            "staircase",
+            "staircase"
+        ]
+    },
+    {
+        "id": "9900960060",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "sunroom"
+            },
+            {
+                "line_number": 1,
+                "location": "sunroom"
+            },
+            {
+                "line_number": 2,
+                "location": "sunroom"
+            },
+            {
+                "line_number": 3,
+                "location": "sunroom"
+            },
+            {
+                "line_number": 4,
+                "location": "sunroom"
+            },
+            {
+                "line_number": 5,
+                "location": "sunroom"
+            }
+        ],
+        "available_location": [
+            "sunroom"
+        ],
+        "narrative_location_vec": [
+            "sunroom",
+            "sunroom",
+            "sunroom",
+            "sunroom",
+            "sunroom",
+            "sunroom"
+        ]
+    },
+    {
+        "id": "1801611942",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "garden"
+            },
+            {
+                "line_number": 1,
+                "location": "garden"
+            },
+            {
+                "line_number": 2,
+                "location": "garden"
+            },
+            {
+                "line_number": 3,
+                "location": "garden"
+            },
+            {
+                "line_number": 4,
+                "location": "garden"
+            },
+            {
+                "line_number": 5,
+                "location": "garden"
+            }
+        ],
+        "available_location": [
+            "garden"
+        ],
+        "narrative_location_vec": [
+            "garden",
+            "garden",
+            "garden",
+            "garden",
+            "garden",
+            "garden"
+        ]
+    },
+    {
+        "id": "3839044982",
+        "prompt": "<Events>\n1: Jackson entered the crawlspace\n2: Lucas entered the TV_room\n3: Aria entered the crawlspace\n4: Aria likes the lime\n5: Lucas exited the TV_room\n6: The shoes is in the box in the crawlspace\n7: Aria exited the crawlspace\n8: Jackson moved the shoes to the bucket in the crawlspace\n9: Jackson exited the crawlspace\n10: Aria entered the TV_room\n\n<Available Rooms>\n- tv room\n- crawlspace\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: crawlspace",
+            "2: tv room",
+            "3: crawlspace",
+            "4: none",
+            "5: none",
+            "6: crawlspace",
+            "7: none",
+            "8: crawlspace",
+            "9: none",
+            "10: tv room"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "crawlspace"
+            },
+            {
+                "line_number": "2",
+                "location": "tv room"
+            },
+            {
+                "line_number": "3",
+                "location": "crawlspace"
+            },
+            {
+                "line_number": "4",
+                "location": "crawlspace"
+            },
+            {
+                "line_number": "5",
+                "location": "crawlspace"
+            },
+            {
+                "line_number": "6",
+                "location": "crawlspace"
+            },
+            {
+                "line_number": "7",
+                "location": "crawlspace"
+            },
+            {
+                "line_number": "8",
+                "location": "crawlspace"
+            },
+            {
+                "line_number": "9",
+                "location": "crawlspace"
+            },
+            {
+                "line_number": "10",
+                "location": "tv room"
+            }
+        ],
+        "available_location": [
+            "tv room",
+            "crawlspace"
+        ],
+        "narrative_location_vec": [
+            "crawlspace",
+            "tv room",
+            "crawlspace",
+            "crawlspace",
+            "crawlspace",
+            "crawlspace",
+            "crawlspace",
+            "crawlspace",
+            "crawlspace",
+            "tv room"
+        ]
+    },
+    {
+        "id": "4391668758",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "cellar"
+            },
+            {
+                "line_number": 1,
+                "location": "cellar"
+            },
+            {
+                "line_number": 2,
+                "location": "cellar"
+            },
+            {
+                "line_number": 3,
+                "location": "cellar"
+            },
+            {
+                "line_number": 4,
+                "location": "cellar"
+            },
+            {
+                "line_number": 5,
+                "location": "cellar"
+            },
+            {
+                "line_number": 6,
+                "location": "cellar"
+            }
+        ],
+        "available_location": [
+            "cellar"
+        ],
+        "narrative_location_vec": [
+            "cellar",
+            "cellar",
+            "cellar",
+            "cellar",
+            "cellar",
+            "cellar",
+            "cellar"
+        ]
+    },
+    {
+        "id": "4227823864",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "office"
+            },
+            {
+                "line_number": 1,
+                "location": "office"
+            },
+            {
+                "line_number": 2,
+                "location": "office"
+            },
+            {
+                "line_number": 3,
+                "location": "office"
+            },
+            {
+                "line_number": 4,
+                "location": "office"
+            },
+            {
+                "line_number": 5,
+                "location": "office"
+            }
+        ],
+        "available_location": [
+            "office"
+        ],
+        "narrative_location_vec": [
+            "office",
+            "office",
+            "office",
+            "office",
+            "office",
+            "office"
+        ]
+    },
+    {
+        "id": "3778897985",
+        "prompt": "<Events>\n1: Mila entered front_yard\n2: Mason entered living_room\n3: Mason likes underpants\n4: Mia entered front_yard, hates suit\n5: Asparagus moved from pantry to drawer\n6: Mila moved from front_yard to living_room\n\n<Available Rooms>\n- living room\n- front yard\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: front_yard",
+            "2: living_room",
+            "3: none",
+            "4: front_yard",
+            "5: none",
+            "6: living_room"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "front yard"
+            },
+            {
+                "line_number": "2",
+                "location": "living room"
+            },
+            {
+                "line_number": "3",
+                "location": "living room"
+            },
+            {
+                "line_number": "4",
+                "location": "front yard"
+            },
+            {
+                "line_number": "5",
+                "location": "front yard"
+            },
+            {
+                "line_number": "6",
+                "location": "living room"
+            }
+        ],
+        "available_location": [
+            "living room",
+            "front yard"
+        ],
+        "narrative_location_vec": [
+            "front yard",
+            "living room",
+            "living room",
+            "front yard",
+            "front yard",
+            "living room"
+        ]
+    },
+    {
+        "id": "1563419209",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "garden"
+            },
+            {
+                "line_number": 1,
+                "location": "garden"
+            },
+            {
+                "line_number": 2,
+                "location": "garden"
+            },
+            {
+                "line_number": 3,
+                "location": "garden"
+            },
+            {
+                "line_number": 4,
+                "location": "garden"
+            },
+            {
+                "line_number": 5,
+                "location": "garden"
+            }
+        ],
+        "available_location": [
+            "garden"
+        ],
+        "narrative_location_vec": [
+            "garden",
+            "garden",
+            "garden",
+            "garden",
+            "garden",
+            "garden"
+        ]
+    },
+    {
+        "id": "6721039254",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "front yard"
+            },
+            {
+                "line_number": 1,
+                "location": "front yard"
+            },
+            {
+                "line_number": 2,
+                "location": "front yard"
+            },
+            {
+                "line_number": 3,
+                "location": "front yard"
+            },
+            {
+                "line_number": 4,
+                "location": "front yard"
+            },
+            {
+                "line_number": 5,
+                "location": "front yard"
+            },
+            {
+                "line_number": 6,
+                "location": "front yard"
+            },
+            {
+                "line_number": 7,
+                "location": "front yard"
+            },
+            {
+                "line_number": 8,
+                "location": "front yard"
+            },
+            {
+                "line_number": 9,
+                "location": "front yard"
+            },
+            {
+                "line_number": 10,
+                "location": "front yard"
+            }
+        ],
+        "available_location": [
+            "front yard"
+        ],
+        "narrative_location_vec": [
+            "front yard",
+            "front yard",
+            "front yard",
+            "front yard",
+            "front yard",
+            "front yard",
+            "front yard",
+            "front yard",
+            "front yard",
+            "front yard",
+            "front yard"
+        ]
+    },
+    {
+        "id": "3624498768",
+        "prompt": "<Events>\n1: William dislikes cucumber\n2: Avery enters den\n3: William enters den\n4: James enters pantry\n5: Eggplant is in treasure_chest\n6: Treasure_chest is in den\n7: James exits pantry\n8: Avery exits den\n9: William moves eggplant to bottle\n10: Bottle is in den\n11: Avery re-enters den\n\n<Available Rooms>\n- den\n- pantry\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: none",
+            "2: den",
+            "3: den",
+            "4: pantry",
+            "5: none",
+            "6: den",
+            "7: none",
+            "8: none",
+            "9: den",
+            "10: den",
+            "11: den"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "den"
+            },
+            {
+                "line_number": "2",
+                "location": "den"
+            },
+            {
+                "line_number": "3",
+                "location": "den"
+            },
+            {
+                "line_number": "4",
+                "location": "pantry"
+            },
+            {
+                "line_number": "5",
+                "location": "pantry"
+            },
+            {
+                "line_number": "6",
+                "location": "den"
+            },
+            {
+                "line_number": "7",
+                "location": "den"
+            },
+            {
+                "line_number": "8",
+                "location": "den"
+            },
+            {
+                "line_number": "9",
+                "location": "den"
+            },
+            {
+                "line_number": "10",
+                "location": "den"
+            },
+            {
+                "line_number": "11",
+                "location": "den"
+            }
+        ],
+        "available_location": [
+            "den",
+            "pantry"
+        ],
+        "narrative_location_vec": [
+            "den",
+            "den",
+            "den",
+            "pantry",
+            "pantry",
+            "den",
+            "den",
+            "den",
+            "den",
+            "den",
+            "den"
+        ]
+    },
+    {
+        "id": "9473439525",
+        "prompt": "<Events>\n1: Hannah entered the living_room\n2: Ella entered the living_room\n3: Pear is in the drawer\n4: Hannah exited the living_room\n5: Ella moved pear to bottle\n6: Ella exited the living_room\n7: Hannah entered the sunroom\n\n<Available Rooms>\n- living room\n- sunroom\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: living room",
+            "2: living room",
+            "3: living room",
+            "4: none",
+            "5: living room",
+            "6: none",
+            "7: sunroom"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "living room"
+            },
+            {
+                "line_number": "2",
+                "location": "living room"
+            },
+            {
+                "line_number": "3",
+                "location": "living room"
+            },
+            {
+                "line_number": "4",
+                "location": "living room"
+            },
+            {
+                "line_number": "5",
+                "location": "living room"
+            },
+            {
+                "line_number": "6",
+                "location": "living room"
+            },
+            {
+                "line_number": "7",
+                "location": "sunroom"
+            }
+        ],
+        "available_location": [
+            "living room",
+            "sunroom"
+        ],
+        "narrative_location_vec": [
+            "living room",
+            "living room",
+            "living room",
+            "living room",
+            "living room",
+            "living room",
+            "sunroom"
+        ]
+    },
+    {
+        "id": "9966948523",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "cellar"
+            },
+            {
+                "line_number": 1,
+                "location": "cellar"
+            },
+            {
+                "line_number": 2,
+                "location": "cellar"
+            },
+            {
+                "line_number": 3,
+                "location": "cellar"
+            },
+            {
+                "line_number": 4,
+                "location": "cellar"
+            },
+            {
+                "line_number": 5,
+                "location": "cellar"
+            }
+        ],
+        "available_location": [
+            "cellar"
+        ],
+        "narrative_location_vec": [
+            "cellar",
+            "cellar",
+            "cellar",
+            "cellar",
+            "cellar",
+            "cellar"
+        ]
+    },
+    {
+        "id": "1553588583",
+        "prompt": "<Events>\n1: Aria entered the lounge\n2: Jacob entered the lounge\n3: Hannah entered then exited the hall\n4: Jeans moved from crate to container\n5: Crate and container are in the lounge\n6: Jacob exited the lounge\n\n<Available Rooms>\n- hall\n- lounge\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: lounge",
+            "2: lounge",
+            "3: hall",
+            "4: none",
+            "5: lounge",
+            "6: none"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "lounge"
+            },
+            {
+                "line_number": "2",
+                "location": "lounge"
+            },
+            {
+                "line_number": "3",
+                "location": "hall"
+            },
+            {
+                "line_number": "4",
+                "location": "hall"
+            },
+            {
+                "line_number": "5",
+                "location": "lounge"
+            },
+            {
+                "line_number": "6",
+                "location": "lounge"
+            }
+        ],
+        "available_location": [
+            "hall",
+            "lounge"
+        ],
+        "narrative_location_vec": [
+            "lounge",
+            "lounge",
+            "hall",
+            "hall",
+            "lounge",
+            "lounge"
+        ]
+    },
+    {
+        "id": "8544545846",
+        "prompt": "<Events>\n1: Jayden entered the garden\n2: Alexander entered the garden\n3: Pear is located in the bathtub\n4: Bathtub is in the garden\n5: Jayden moved pear from bathtub to bucket\n6: Jayden exited the garden\n7: Jayden hates the socks\n\n<Available Rooms>\n- staircase\n- garden\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: garden",
+            "2: garden",
+            "3: garden",
+            "4: garden",
+            "5: garden",
+            "6: none",
+            "7: none"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "garden"
+            },
+            {
+                "line_number": "2",
+                "location": "garden"
+            },
+            {
+                "line_number": "3",
+                "location": "garden"
+            },
+            {
+                "line_number": "4",
+                "location": "garden"
+            },
+            {
+                "line_number": "5",
+                "location": "garden"
+            },
+            {
+                "line_number": "6",
+                "location": "garden"
+            },
+            {
+                "line_number": "7",
+                "location": "garden"
+            }
+        ],
+        "available_location": [
+            "staircase",
+            "garden"
+        ],
+        "narrative_location_vec": [
+            "garden",
+            "garden",
+            "garden",
+            "garden",
+            "garden",
+            "garden",
+            "garden"
+        ]
+    },
+    {
+        "id": "8755475049",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "hall"
+            },
+            {
+                "line_number": 1,
+                "location": "hall"
+            },
+            {
+                "line_number": 2,
+                "location": "hall"
+            },
+            {
+                "line_number": 3,
+                "location": "hall"
+            },
+            {
+                "line_number": 4,
+                "location": "hall"
+            },
+            {
+                "line_number": 5,
+                "location": "hall"
+            },
+            {
+                "line_number": 6,
+                "location": "hall"
+            },
+            {
+                "line_number": 7,
+                "location": "hall"
+            }
+        ],
+        "available_location": [
+            "hall"
+        ],
+        "narrative_location_vec": [
+            "hall",
+            "hall",
+            "hall",
+            "hall",
+            "hall",
+            "hall",
+            "hall",
+            "hall"
+        ]
+    },
+    {
+        "id": "1233606694",
+        "prompt": "<Events>\n1: Evelyn entered the study\n2: Hannah likes the pants\n3: Elizabeth and Hannah entered the kitchen\n4: Elizabeth hates the slacks\n5: The undershirt is in the suitcase, which is in the kitchen\n6: Hannah exited the kitchen\n7: Elizabeth moved the undershirt from the suitcase to the bottle\n8: The bottle is in the kitchen\n\n<Available Rooms>\n- study\n- kitchen\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: study",
+            "2: none",
+            "3: kitchen",
+            "4: none",
+            "5: kitchen",
+            "6: none",
+            "7: kitchen",
+            "8: kitchen"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "study"
+            },
+            {
+                "line_number": "2",
+                "location": "study"
+            },
+            {
+                "line_number": "3",
+                "location": "kitchen"
+            },
+            {
+                "line_number": "4",
+                "location": "kitchen"
+            },
+            {
+                "line_number": "5",
+                "location": "kitchen"
+            },
+            {
+                "line_number": "6",
+                "location": "kitchen"
+            },
+            {
+                "line_number": "7",
+                "location": "kitchen"
+            },
+            {
+                "line_number": "8",
+                "location": "kitchen"
+            }
+        ],
+        "available_location": [
+            "study",
+            "kitchen"
+        ],
+        "narrative_location_vec": [
+            "study",
+            "study",
+            "kitchen",
+            "kitchen",
+            "kitchen",
+            "kitchen",
+            "kitchen",
+            "kitchen"
+        ]
+    },
+    {
+        "id": "6169967508",
+        "prompt": "<Events>\n1: Jackson dislikes the coat\n2: Mason entered then exited the porch\n3: Aria entered the pantry\n4: Jackson entered the pantry\n5: The plum moved from envelope to bottle in pantry\n6: Aria exited the pantry\n\n<Available Rooms>\n- porch\n- pantry\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: none",
+            "2: porch",
+            "3: pantry",
+            "4: pantry",
+            "5: pantry",
+            "6: none"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "porch"
+            },
+            {
+                "line_number": "2",
+                "location": "porch"
+            },
+            {
+                "line_number": "3",
+                "location": "pantry"
+            },
+            {
+                "line_number": "4",
+                "location": "pantry"
+            },
+            {
+                "line_number": "5",
+                "location": "pantry"
+            },
+            {
+                "line_number": "6",
+                "location": "pantry"
+            }
+        ],
+        "available_location": [
+            "porch",
+            "pantry"
+        ],
+        "narrative_location_vec": [
+            "porch",
+            "porch",
+            "pantry",
+            "pantry",
+            "pantry",
+            "pantry"
+        ]
+    },
+    {
+        "id": "9200759854",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "tv room"
+            },
+            {
+                "line_number": 1,
+                "location": "tv room"
+            },
+            {
+                "line_number": 2,
+                "location": "tv room"
+            },
+            {
+                "line_number": 3,
+                "location": "tv room"
+            },
+            {
+                "line_number": 4,
+                "location": "tv room"
+            },
+            {
+                "line_number": 5,
+                "location": "tv room"
+            },
+            {
+                "line_number": 6,
+                "location": "tv room"
+            },
+            {
+                "line_number": 7,
+                "location": "tv room"
+            }
+        ],
+        "available_location": [
+            "tv room"
+        ],
+        "narrative_location_vec": [
+            "tv room",
+            "tv room",
+            "tv room",
+            "tv room",
+            "tv room",
+            "tv room",
+            "tv room",
+            "tv room"
+        ]
+    },
+    {
+        "id": "8199407012",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "cellar"
+            },
+            {
+                "line_number": 1,
+                "location": "cellar"
+            },
+            {
+                "line_number": 2,
+                "location": "cellar"
+            },
+            {
+                "line_number": 3,
+                "location": "cellar"
+            },
+            {
+                "line_number": 4,
+                "location": "cellar"
+            },
+            {
+                "line_number": 5,
+                "location": "cellar"
+            },
+            {
+                "line_number": 6,
+                "location": "cellar"
+            },
+            {
+                "line_number": 7,
+                "location": "cellar"
+            },
+            {
+                "line_number": 8,
+                "location": "cellar"
+            },
+            {
+                "line_number": 9,
+                "location": "cellar"
+            }
+        ],
+        "available_location": [
+            "cellar"
+        ],
+        "narrative_location_vec": [
+            "cellar",
+            "cellar",
+            "cellar",
+            "cellar",
+            "cellar",
+            "cellar",
+            "cellar",
+            "cellar",
+            "cellar",
+            "cellar"
+        ]
+    },
+    {
+        "id": "3233263335",
+        "prompt": "<Events>\n1: Alexander entered then exited the bathroom\n2: Noah entered the bathroom\n3: Grapefruit is in the box in the bathroom\n4: Noah moved grapefruit from box to basket\n5: Basket is in the bathroom\n6: Noah exited the bathroom\n7: Alexander entered the basement\n8: Alexander hates the socks\n\n<Available Rooms>\n- basement\n- bathroom\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: bathroom",
+            "2: bathroom",
+            "3: bathroom",
+            "4: bathroom",
+            "5: bathroom",
+            "6: none",
+            "7: basement",
+            "8: basement"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "bathroom"
+            },
+            {
+                "line_number": "2",
+                "location": "bathroom"
+            },
+            {
+                "line_number": "3",
+                "location": "bathroom"
+            },
+            {
+                "line_number": "4",
+                "location": "bathroom"
+            },
+            {
+                "line_number": "5",
+                "location": "bathroom"
+            },
+            {
+                "line_number": "6",
+                "location": "bathroom"
+            },
+            {
+                "line_number": "7",
+                "location": "basement"
+            },
+            {
+                "line_number": "8",
+                "location": "basement"
+            }
+        ],
+        "available_location": [
+            "basement",
+            "bathroom"
+        ],
+        "narrative_location_vec": [
+            "bathroom",
+            "bathroom",
+            "bathroom",
+            "bathroom",
+            "bathroom",
+            "bathroom",
+            "basement",
+            "basement"
+        ]
+    },
+    {
+        "id": "8708839376",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "playroom"
+            },
+            {
+                "line_number": 1,
+                "location": "playroom"
+            },
+            {
+                "line_number": 2,
+                "location": "playroom"
+            },
+            {
+                "line_number": 3,
+                "location": "playroom"
+            },
+            {
+                "line_number": 4,
+                "location": "playroom"
+            },
+            {
+                "line_number": 5,
+                "location": "playroom"
+            },
+            {
+                "line_number": 6,
+                "location": "playroom"
+            }
+        ],
+        "available_location": [
+            "playroom"
+        ],
+        "narrative_location_vec": [
+            "playroom",
+            "playroom",
+            "playroom",
+            "playroom",
+            "playroom",
+            "playroom",
+            "playroom"
+        ]
+    },
+    {
+        "id": "5378533106",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "lounge"
+            },
+            {
+                "line_number": 1,
+                "location": "lounge"
+            },
+            {
+                "line_number": 2,
+                "location": "lounge"
+            },
+            {
+                "line_number": 3,
+                "location": "lounge"
+            },
+            {
+                "line_number": 4,
+                "location": "lounge"
+            },
+            {
+                "line_number": 5,
+                "location": "lounge"
+            },
+            {
+                "line_number": 6,
+                "location": "lounge"
+            },
+            {
+                "line_number": 7,
+                "location": "lounge"
+            }
+        ],
+        "available_location": [
+            "lounge"
+        ],
+        "narrative_location_vec": [
+            "lounge",
+            "lounge",
+            "lounge",
+            "lounge",
+            "lounge",
+            "lounge",
+            "lounge",
+            "lounge"
+        ]
+    },
+    {
+        "id": "8788126549",
+        "prompt": "<Events>\n1: Avery is in the crawlspace\n2: Ella enters the crawlspace\n3: Trousers is in the bottle in the crawlspace\n4: Avery moves trousers from bottle to drawer in crawlspace\n5: Oliver dislikes the raincoat\n6: Ella exits crawlspace and enters dining_room\n7: Avery exits crawlspace\n\n<Available Rooms>\n- dining room\n- crawlspace\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: crawlspace",
+            "2: crawlspace",
+            "3: crawlspace",
+            "4: crawlspace",
+            "5: none",
+            "6: dining room",
+            "7: none"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "crawlspace"
+            },
+            {
+                "line_number": "2",
+                "location": "crawlspace"
+            },
+            {
+                "line_number": "3",
+                "location": "crawlspace"
+            },
+            {
+                "line_number": "4",
+                "location": "crawlspace"
+            },
+            {
+                "line_number": "5",
+                "location": "crawlspace"
+            },
+            {
+                "line_number": "6",
+                "location": "dining room"
+            },
+            {
+                "line_number": "7",
+                "location": "dining room"
+            }
+        ],
+        "available_location": [
+            "dining room",
+            "crawlspace"
+        ],
+        "narrative_location_vec": [
+            "crawlspace",
+            "crawlspace",
+            "crawlspace",
+            "crawlspace",
+            "crawlspace",
+            "dining room",
+            "dining room"
+        ]
+    },
+    {
+        "id": "4616547106",
+        "prompt": "<Events>\n1: Carter entered the laundry\n2: Oliver entered the workshop\n3: Carter hates the sweet_potato\n4: Liam entered the workshop\n5: The radish is in the box\n6: Oliver moved the radish to the basket\n7: Carter exited the laundry\n8: Liam exited the workshop\n\n<Available Rooms>\n- laundry\n- workshop\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: laundry",
+            "2: workshop",
+            "3: none",
+            "4: workshop",
+            "5: none",
+            "6: workshop",
+            "7: none",
+            "8: none"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "laundry"
+            },
+            {
+                "line_number": "2",
+                "location": "workshop"
+            },
+            {
+                "line_number": "3",
+                "location": "workshop"
+            },
+            {
+                "line_number": "4",
+                "location": "workshop"
+            },
+            {
+                "line_number": "5",
+                "location": "workshop"
+            },
+            {
+                "line_number": "6",
+                "location": "workshop"
+            },
+            {
+                "line_number": "7",
+                "location": "workshop"
+            },
+            {
+                "line_number": "8",
+                "location": "workshop"
+            }
+        ],
+        "available_location": [
+            "laundry",
+            "workshop"
+        ],
+        "narrative_location_vec": [
+            "laundry",
+            "workshop",
+            "workshop",
+            "workshop",
+            "workshop",
+            "workshop",
+            "workshop",
+            "workshop"
+        ]
+    },
+    {
+        "id": "1740875921",
+        "prompt": "<Events>\n1: Liam entered the kitchen\n2: Owen entered then exited the office\n3: Emily likes the sweater\n4: Liam loves the orange\n5: The boots moved from bottle to bucket\n6: Emily moved the boots and exited the kitchen\n7: Liam re-entered the kitchen\n\n<Available Rooms>\n- office\n- kitchen\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: kitchen",
+            "2: office",
+            "3: none",
+            "4: none",
+            "5: none",
+            "6: kitchen",
+            "7: kitchen"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "kitchen"
+            },
+            {
+                "line_number": "2",
+                "location": "office"
+            },
+            {
+                "line_number": "3",
+                "location": "office"
+            },
+            {
+                "line_number": "4",
+                "location": "office"
+            },
+            {
+                "line_number": "5",
+                "location": "office"
+            },
+            {
+                "line_number": "6",
+                "location": "kitchen"
+            },
+            {
+                "line_number": "7",
+                "location": "kitchen"
+            }
+        ],
+        "available_location": [
+            "office",
+            "kitchen"
+        ],
+        "narrative_location_vec": [
+            "kitchen",
+            "office",
+            "office",
+            "office",
+            "office",
+            "kitchen",
+            "kitchen"
+        ]
+    },
+    {
+        "id": "4049440914",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "laundry"
+            },
+            {
+                "line_number": 1,
+                "location": "laundry"
+            },
+            {
+                "line_number": 2,
+                "location": "laundry"
+            },
+            {
+                "line_number": 3,
+                "location": "laundry"
+            },
+            {
+                "line_number": 4,
+                "location": "laundry"
+            },
+            {
+                "line_number": 5,
+                "location": "laundry"
+            },
+            {
+                "line_number": 6,
+                "location": "laundry"
+            },
+            {
+                "line_number": 7,
+                "location": "laundry"
+            },
+            {
+                "line_number": 8,
+                "location": "laundry"
+            }
+        ],
+        "available_location": [
+            "laundry"
+        ],
+        "narrative_location_vec": [
+            "laundry",
+            "laundry",
+            "laundry",
+            "laundry",
+            "laundry",
+            "laundry",
+            "laundry",
+            "laundry",
+            "laundry"
+        ]
+    },
+    {
+        "id": "8296181360",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "dining room"
+            },
+            {
+                "line_number": 1,
+                "location": "dining room"
+            },
+            {
+                "line_number": 2,
+                "location": "dining room"
+            },
+            {
+                "line_number": 3,
+                "location": "dining room"
+            },
+            {
+                "line_number": 4,
+                "location": "dining room"
+            },
+            {
+                "line_number": 5,
+                "location": "dining room"
+            },
+            {
+                "line_number": 6,
+                "location": "dining room"
+            },
+            {
+                "line_number": 7,
+                "location": "dining room"
+            }
+        ],
+        "available_location": [
+            "dining room"
+        ],
+        "narrative_location_vec": [
+            "dining room",
+            "dining room",
+            "dining room",
+            "dining room",
+            "dining room",
+            "dining room",
+            "dining room",
+            "dining room"
+        ]
+    },
+    {
+        "id": "7405847605",
+        "prompt": "<Events>\n1: Ella entered and later exited the front_yard\n2: Hunter entered the pantry and later exited\n3: Olivia entered the pantry, moved the sweatshirt to the box, and exited\n4: The sweatshirt was initially in the container and then moved to the box\n5: The container and later the box were in the pantry\n6: Hunter entered the front_yard after Ella's exit\n\n<Available Rooms>\n- front yard\n- pantry\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: front yard",
+            "2: pantry",
+            "3: pantry",
+            "4: none",
+            "5: none",
+            "6: front yard"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "front yard"
+            },
+            {
+                "line_number": "2",
+                "location": "pantry"
+            },
+            {
+                "line_number": "3",
+                "location": "pantry"
+            },
+            {
+                "line_number": "4",
+                "location": "pantry"
+            },
+            {
+                "line_number": "5",
+                "location": "pantry"
+            },
+            {
+                "line_number": "6",
+                "location": "front yard"
+            }
+        ],
+        "available_location": [
+            "front yard",
+            "pantry"
+        ],
+        "narrative_location_vec": [
+            "front yard",
+            "pantry",
+            "pantry",
+            "pantry",
+            "pantry",
+            "front yard"
+        ]
+    },
+    {
+        "id": "3760489546",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "front yard"
+            },
+            {
+                "line_number": 1,
+                "location": "front yard"
+            },
+            {
+                "line_number": 2,
+                "location": "front yard"
+            },
+            {
+                "line_number": 3,
+                "location": "front yard"
+            },
+            {
+                "line_number": 4,
+                "location": "front yard"
+            },
+            {
+                "line_number": 5,
+                "location": "front yard"
+            },
+            {
+                "line_number": 6,
+                "location": "front yard"
+            }
+        ],
+        "available_location": [
+            "front yard"
+        ],
+        "narrative_location_vec": [
+            "front yard",
+            "front yard",
+            "front yard",
+            "front yard",
+            "front yard",
+            "front yard",
+            "front yard"
+        ]
+    },
+    {
+        "id": "5506755253",
+        "prompt": "<Events>\n1: Lucas entered the laundry\n2: Nathan entered the laundry\n3: Aria entered then exited the basement\n4: Grapefruit is in the treasure_chest\n5: Treasure_chest is in the laundry\n6: Nathan exited the laundry\n7: Lucas moved grapefruit to the bathtub\n8: Aria likes the lemon\n\n<Available Rooms>\n- laundry\n- basement\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: laundry",
+            "2: laundry",
+            "3: basement",
+            "4: none",
+            "5: laundry",
+            "6: none",
+            "7: laundry",
+            "8: none"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "laundry"
+            },
+            {
+                "line_number": "2",
+                "location": "laundry"
+            },
+            {
+                "line_number": "3",
+                "location": "basement"
+            },
+            {
+                "line_number": "4",
+                "location": "basement"
+            },
+            {
+                "line_number": "5",
+                "location": "laundry"
+            },
+            {
+                "line_number": "6",
+                "location": "laundry"
+            },
+            {
+                "line_number": "7",
+                "location": "laundry"
+            },
+            {
+                "line_number": "8",
+                "location": "laundry"
+            }
+        ],
+        "available_location": [
+            "laundry",
+            "basement"
+        ],
+        "narrative_location_vec": [
+            "laundry",
+            "laundry",
+            "basement",
+            "basement",
+            "laundry",
+            "laundry",
+            "laundry",
+            "laundry"
+        ]
+    },
+    {
+        "id": "2074815419",
+        "prompt": "<Events>\n1: Aiden loves the stockings\n2: Emma entered the den\n3: Aiden entered the den\n4: The melon is in the bucket\n5: Emma moved the melon to the crate\n6: Aiden exited the den\n7: Emma exited the den\n8: Benjamin entered the den\n9: Aiden entered the dining_room\n\n<Available Rooms>\n- dining room\n- den\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: none",
+            "2: den",
+            "3: den",
+            "4: den",
+            "5: den",
+            "6: none",
+            "7: none",
+            "8: den",
+            "9: dining room"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "den"
+            },
+            {
+                "line_number": "2",
+                "location": "den"
+            },
+            {
+                "line_number": "3",
+                "location": "den"
+            },
+            {
+                "line_number": "4",
+                "location": "den"
+            },
+            {
+                "line_number": "5",
+                "location": "den"
+            },
+            {
+                "line_number": "6",
+                "location": "den"
+            },
+            {
+                "line_number": "7",
+                "location": "den"
+            },
+            {
+                "line_number": "8",
+                "location": "den"
+            },
+            {
+                "line_number": "9",
+                "location": "dining room"
+            }
+        ],
+        "available_location": [
+            "dining room",
+            "den"
+        ],
+        "narrative_location_vec": [
+            "den",
+            "den",
+            "den",
+            "den",
+            "den",
+            "den",
+            "den",
+            "den",
+            "dining room"
+        ]
+    },
+    {
+        "id": "8052735066",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "den"
+            },
+            {
+                "line_number": 1,
+                "location": "den"
+            },
+            {
+                "line_number": 2,
+                "location": "den"
+            },
+            {
+                "line_number": 3,
+                "location": "den"
+            },
+            {
+                "line_number": 4,
+                "location": "den"
+            },
+            {
+                "line_number": 5,
+                "location": "den"
+            },
+            {
+                "line_number": 6,
+                "location": "den"
+            },
+            {
+                "line_number": 7,
+                "location": "den"
+            },
+            {
+                "line_number": 8,
+                "location": "den"
+            }
+        ],
+        "available_location": [
+            "den"
+        ],
+        "narrative_location_vec": [
+            "den",
+            "den",
+            "den",
+            "den",
+            "den",
+            "den",
+            "den",
+            "den",
+            "den"
+        ]
+    },
+    {
+        "id": "7408136729",
+        "prompt": "<Events>\n1: Jacob entered the porch\n2: Mila entered the porch\n3: Celery is in the basket\n4: Basket is in the porch\n5: Mila exited the porch\n6: Abigail entered the bedroom\n7: Jacob moved celery to the crate\n8: Crate is in the porch\n\n<Available Rooms>\n- bedroom\n- porch\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: porch",
+            "2: porch",
+            "3: porch",
+            "4: porch",
+            "5: none",
+            "6: bedroom",
+            "7: porch",
+            "8: porch"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "porch"
+            },
+            {
+                "line_number": "2",
+                "location": "porch"
+            },
+            {
+                "line_number": "3",
+                "location": "porch"
+            },
+            {
+                "line_number": "4",
+                "location": "porch"
+            },
+            {
+                "line_number": "5",
+                "location": "porch"
+            },
+            {
+                "line_number": "6",
+                "location": "bedroom"
+            },
+            {
+                "line_number": "7",
+                "location": "porch"
+            },
+            {
+                "line_number": "8",
+                "location": "porch"
+            }
+        ],
+        "available_location": [
+            "bedroom",
+            "porch"
+        ],
+        "narrative_location_vec": [
+            "porch",
+            "porch",
+            "porch",
+            "porch",
+            "porch",
+            "bedroom",
+            "porch",
+            "porch"
+        ]
+    },
+    {
+        "id": "6209573020",
+        "prompt": "<Events>\n1: Aiden entered the playroom\n2: Mia entered the playroom\n3: Spinach is in the basket\n4: Aiden moved spinach to the bottle\n5: Mia exited the playroom\n6: Mia entered the cellar\n7: Amelia entered the cellar\n8: Amelia hates the pants\n\n<Available Rooms>\n- playroom\n- cellar\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: playroom",
+            "2: playroom",
+            "3: playroom",
+            "4: playroom",
+            "5: none",
+            "6: cellar",
+            "7: cellar",
+            "8: cellar"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "playroom"
+            },
+            {
+                "line_number": "2",
+                "location": "playroom"
+            },
+            {
+                "line_number": "3",
+                "location": "playroom"
+            },
+            {
+                "line_number": "4",
+                "location": "playroom"
+            },
+            {
+                "line_number": "5",
+                "location": "playroom"
+            },
+            {
+                "line_number": "6",
+                "location": "cellar"
+            },
+            {
+                "line_number": "7",
+                "location": "cellar"
+            },
+            {
+                "line_number": "8",
+                "location": "cellar"
+            }
+        ],
+        "available_location": [
+            "playroom",
+            "cellar"
+        ],
+        "narrative_location_vec": [
+            "playroom",
+            "playroom",
+            "playroom",
+            "playroom",
+            "playroom",
+            "cellar",
+            "cellar",
+            "cellar"
+        ]
+    },
+    {
+        "id": "9668429774",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "lounge"
+            },
+            {
+                "line_number": 1,
+                "location": "lounge"
+            },
+            {
+                "line_number": 2,
+                "location": "lounge"
+            },
+            {
+                "line_number": 3,
+                "location": "lounge"
+            },
+            {
+                "line_number": 4,
+                "location": "lounge"
+            },
+            {
+                "line_number": 5,
+                "location": "lounge"
+            },
+            {
+                "line_number": 6,
+                "location": "lounge"
+            },
+            {
+                "line_number": 7,
+                "location": "lounge"
+            },
+            {
+                "line_number": 8,
+                "location": "lounge"
+            },
+            {
+                "line_number": 9,
+                "location": "lounge"
+            }
+        ],
+        "available_location": [
+            "lounge"
+        ],
+        "narrative_location_vec": [
+            "lounge",
+            "lounge",
+            "lounge",
+            "lounge",
+            "lounge",
+            "lounge",
+            "lounge",
+            "lounge",
+            "lounge",
+            "lounge"
+        ]
+    },
+    {
+        "id": "4035556436",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "hall"
+            },
+            {
+                "line_number": 1,
+                "location": "hall"
+            },
+            {
+                "line_number": 2,
+                "location": "hall"
+            },
+            {
+                "line_number": 3,
+                "location": "hall"
+            },
+            {
+                "line_number": 4,
+                "location": "hall"
+            },
+            {
+                "line_number": 5,
+                "location": "hall"
+            },
+            {
+                "line_number": 6,
+                "location": "hall"
+            },
+            {
+                "line_number": 7,
+                "location": "hall"
+            },
+            {
+                "line_number": 8,
+                "location": "hall"
+            },
+            {
+                "line_number": 9,
+                "location": "hall"
+            }
+        ],
+        "available_location": [
+            "hall"
+        ],
+        "narrative_location_vec": [
+            "hall",
+            "hall",
+            "hall",
+            "hall",
+            "hall",
+            "hall",
+            "hall",
+            "hall",
+            "hall",
+            "hall"
+        ]
+    },
+    {
+        "id": "6263525375",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "attic"
+            },
+            {
+                "line_number": 1,
+                "location": "attic"
+            },
+            {
+                "line_number": 2,
+                "location": "attic"
+            },
+            {
+                "line_number": 3,
+                "location": "attic"
+            },
+            {
+                "line_number": 4,
+                "location": "attic"
+            },
+            {
+                "line_number": 5,
+                "location": "attic"
+            },
+            {
+                "line_number": 6,
+                "location": "attic"
+            }
+        ],
+        "available_location": [
+            "attic"
+        ],
+        "narrative_location_vec": [
+            "attic",
+            "attic",
+            "attic",
+            "attic",
+            "attic",
+            "attic",
+            "attic"
+        ]
+    },
+    {
+        "id": "1261811334",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "staircase"
+            },
+            {
+                "line_number": 1,
+                "location": "staircase"
+            },
+            {
+                "line_number": 2,
+                "location": "staircase"
+            },
+            {
+                "line_number": 3,
+                "location": "staircase"
+            },
+            {
+                "line_number": 4,
+                "location": "staircase"
+            },
+            {
+                "line_number": 5,
+                "location": "staircase"
+            },
+            {
+                "line_number": 6,
+                "location": "staircase"
+            }
+        ],
+        "available_location": [
+            "staircase"
+        ],
+        "narrative_location_vec": [
+            "staircase",
+            "staircase",
+            "staircase",
+            "staircase",
+            "staircase",
+            "staircase",
+            "staircase"
+        ]
+    },
+    {
+        "id": "8294470549",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "office"
+            },
+            {
+                "line_number": 1,
+                "location": "office"
+            },
+            {
+                "line_number": 2,
+                "location": "office"
+            },
+            {
+                "line_number": 3,
+                "location": "office"
+            },
+            {
+                "line_number": 4,
+                "location": "office"
+            },
+            {
+                "line_number": 5,
+                "location": "office"
+            },
+            {
+                "line_number": 6,
+                "location": "office"
+            }
+        ],
+        "available_location": [
+            "office"
+        ],
+        "narrative_location_vec": [
+            "office",
+            "office",
+            "office",
+            "office",
+            "office",
+            "office",
+            "office"
+        ]
+    },
+    {
+        "id": "2198238422",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "bathroom"
+            },
+            {
+                "line_number": 1,
+                "location": "bathroom"
+            },
+            {
+                "line_number": 2,
+                "location": "bathroom"
+            },
+            {
+                "line_number": 3,
+                "location": "bathroom"
+            },
+            {
+                "line_number": 4,
+                "location": "bathroom"
+            },
+            {
+                "line_number": 5,
+                "location": "bathroom"
+            },
+            {
+                "line_number": 6,
+                "location": "bathroom"
+            }
+        ],
+        "available_location": [
+            "bathroom"
+        ],
+        "narrative_location_vec": [
+            "bathroom",
+            "bathroom",
+            "bathroom",
+            "bathroom",
+            "bathroom",
+            "bathroom",
+            "bathroom"
+        ]
+    },
+    {
+        "id": "2579847079",
+        "prompt": "<Events>\n1: William dislikes the jeans\n2: Chloe enters laundry\n3: Alexander enters hall\n4: William enters laundry\n5: T-shirt is inside suitcase\n6: Suitcase located in laundry\n7: Alexander leaves hall\n8: Chloe moves t-shirt from suitcase to bottle\n9: Bottle is in laundry\n10: Alexander dislikes the pants\n11: William leaves laundry\n\n<Available Rooms>\n- hall\n- laundry\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: none",
+            "2: laundry",
+            "3: hall",
+            "4: laundry",
+            "5: none",
+            "6: laundry",
+            "7: none",
+            "8: laundry",
+            "9: laundry",
+            "10: none",
+            "11: none"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "laundry"
+            },
+            {
+                "line_number": "2",
+                "location": "laundry"
+            },
+            {
+                "line_number": "3",
+                "location": "hall"
+            },
+            {
+                "line_number": "4",
+                "location": "laundry"
+            },
+            {
+                "line_number": "5",
+                "location": "laundry"
+            },
+            {
+                "line_number": "6",
+                "location": "laundry"
+            },
+            {
+                "line_number": "7",
+                "location": "laundry"
+            },
+            {
+                "line_number": "8",
+                "location": "laundry"
+            },
+            {
+                "line_number": "9",
+                "location": "laundry"
+            },
+            {
+                "line_number": "10",
+                "location": "laundry"
+            },
+            {
+                "line_number": "11",
+                "location": "laundry"
+            }
+        ],
+        "available_location": [
+            "hall",
+            "laundry"
+        ],
+        "narrative_location_vec": [
+            "laundry",
+            "laundry",
+            "hall",
+            "laundry",
+            "laundry",
+            "laundry",
+            "laundry",
+            "laundry",
+            "laundry",
+            "laundry",
+            "laundry"
+        ]
+    },
+    {
+        "id": "8895393073",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "staircase"
+            },
+            {
+                "line_number": 1,
+                "location": "staircase"
+            },
+            {
+                "line_number": 2,
+                "location": "staircase"
+            },
+            {
+                "line_number": 3,
+                "location": "staircase"
+            },
+            {
+                "line_number": 4,
+                "location": "staircase"
+            },
+            {
+                "line_number": 5,
+                "location": "staircase"
+            },
+            {
+                "line_number": 6,
+                "location": "staircase"
+            },
+            {
+                "line_number": 7,
+                "location": "staircase"
+            }
+        ],
+        "available_location": [
+            "staircase"
+        ],
+        "narrative_location_vec": [
+            "staircase",
+            "staircase",
+            "staircase",
+            "staircase",
+            "staircase",
+            "staircase",
+            "staircase",
+            "staircase"
+        ]
+    },
+    {
+        "id": "6554639661",
+        "prompt": "<Events>\n1: Emily entered the porch\n2: Avery entered the porch\n3: Pumpkin is in the treasure_chest\n4: Treasure_chest is in the porch\n5: Avery moved pumpkin to the pantry\n6: Emily exited the porch\n7: Emily entered the back_yard\n\n<Available Rooms>\n- porch\n- pantry\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: porch",
+            "2: porch",
+            "3: porch",
+            "4: porch",
+            "5: pantry",
+            "6: none",
+            "7: none"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "porch"
+            },
+            {
+                "line_number": "2",
+                "location": "porch"
+            },
+            {
+                "line_number": "3",
+                "location": "porch"
+            },
+            {
+                "line_number": "4",
+                "location": "porch"
+            },
+            {
+                "line_number": "5",
+                "location": "pantry"
+            },
+            {
+                "line_number": "6",
+                "location": "pantry"
+            },
+            {
+                "line_number": "7",
+                "location": "pantry"
+            }
+        ],
+        "available_location": [
+            "porch",
+            "pantry"
+        ],
+        "narrative_location_vec": [
+            "porch",
+            "porch",
+            "porch",
+            "porch",
+            "pantry",
+            "pantry",
+            "pantry"
+        ]
+    },
+    {
+        "id": "9296864854",
+        "prompt": "<Events>\n1: Lily entered the back_yard\n2: Emily entered the back_yard\n3: Noah loves the stockings\n4: The apple is in the suitcase\n5: The suitcase is in the back_yard\n6: Emily exited the back_yard\n7: Lily moved the apple to the bucket\n8: Lily exited the back_yard\n9: Emily entered the pantry\n\n<Available Rooms>\n- back yard\n- pantry\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: back yard",
+            "2: back yard",
+            "3: none",
+            "4: none",
+            "5: back yard",
+            "6: none",
+            "7: back yard",
+            "8: none",
+            "9: pantry"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "back yard"
+            },
+            {
+                "line_number": "2",
+                "location": "back yard"
+            },
+            {
+                "line_number": "3",
+                "location": "back yard"
+            },
+            {
+                "line_number": "4",
+                "location": "back yard"
+            },
+            {
+                "line_number": "5",
+                "location": "back yard"
+            },
+            {
+                "line_number": "6",
+                "location": "back yard"
+            },
+            {
+                "line_number": "7",
+                "location": "back yard"
+            },
+            {
+                "line_number": "8",
+                "location": "back yard"
+            },
+            {
+                "line_number": "9",
+                "location": "pantry"
+            }
+        ],
+        "available_location": [
+            "back yard",
+            "pantry"
+        ],
+        "narrative_location_vec": [
+            "back yard",
+            "back yard",
+            "back yard",
+            "back yard",
+            "back yard",
+            "back yard",
+            "back yard",
+            "back yard",
+            "pantry"
+        ]
+    },
+    {
+        "id": "2033407612",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "master bedroom"
+            },
+            {
+                "line_number": 1,
+                "location": "master bedroom"
+            },
+            {
+                "line_number": 2,
+                "location": "master bedroom"
+            },
+            {
+                "line_number": 3,
+                "location": "master bedroom"
+            },
+            {
+                "line_number": 4,
+                "location": "master bedroom"
+            },
+            {
+                "line_number": 5,
+                "location": "master bedroom"
+            }
+        ],
+        "available_location": [
+            "master bedroom"
+        ],
+        "narrative_location_vec": [
+            "master bedroom",
+            "master bedroom",
+            "master bedroom",
+            "master bedroom",
+            "master bedroom",
+            "master bedroom"
+        ]
+    },
+    {
+        "id": "4467704936",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "porch"
+            },
+            {
+                "line_number": 1,
+                "location": "porch"
+            },
+            {
+                "line_number": 2,
+                "location": "porch"
+            },
+            {
+                "line_number": 3,
+                "location": "porch"
+            },
+            {
+                "line_number": 4,
+                "location": "porch"
+            },
+            {
+                "line_number": 5,
+                "location": "porch"
+            }
+        ],
+        "available_location": [
+            "porch"
+        ],
+        "narrative_location_vec": [
+            "porch",
+            "porch",
+            "porch",
+            "porch",
+            "porch",
+            "porch"
+        ]
+    },
+    {
+        "id": "6658536343",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "attic"
+            },
+            {
+                "line_number": 1,
+                "location": "attic"
+            },
+            {
+                "line_number": 2,
+                "location": "attic"
+            },
+            {
+                "line_number": 3,
+                "location": "attic"
+            },
+            {
+                "line_number": 4,
+                "location": "attic"
+            },
+            {
+                "line_number": 5,
+                "location": "attic"
+            },
+            {
+                "line_number": 6,
+                "location": "attic"
+            }
+        ],
+        "available_location": [
+            "attic"
+        ],
+        "narrative_location_vec": [
+            "attic",
+            "attic",
+            "attic",
+            "attic",
+            "attic",
+            "attic",
+            "attic"
+        ]
+    },
+    {
+        "id": "9072057588",
+        "prompt": "<Events>\n1: Owen entered the kitchen\n2: Avery entered the kitchen\n3: Skirt is in the pantry\n4: Avery moved the skirt to the cupboard\n5: Owen exited the kitchen\n6: Aria hates the pumpkin\n\n<Available Rooms>\n- hallway\n- kitchen\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: kitchen",
+            "2: kitchen",
+            "3: kitchen",
+            "4: kitchen",
+            "5: none",
+            "6: none"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "kitchen"
+            },
+            {
+                "line_number": "2",
+                "location": "kitchen"
+            },
+            {
+                "line_number": "3",
+                "location": "kitchen"
+            },
+            {
+                "line_number": "4",
+                "location": "kitchen"
+            },
+            {
+                "line_number": "5",
+                "location": "kitchen"
+            },
+            {
+                "line_number": "6",
+                "location": "kitchen"
+            }
+        ],
+        "available_location": [
+            "hallway",
+            "kitchen"
+        ],
+        "narrative_location_vec": [
+            "kitchen",
+            "kitchen",
+            "kitchen",
+            "kitchen",
+            "kitchen",
+            "kitchen"
+        ]
+    },
+    {
+        "id": "3278720137",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "living room"
+            },
+            {
+                "line_number": 1,
+                "location": "living room"
+            },
+            {
+                "line_number": 2,
+                "location": "living room"
+            },
+            {
+                "line_number": 3,
+                "location": "living room"
+            },
+            {
+                "line_number": 4,
+                "location": "living room"
+            },
+            {
+                "line_number": 5,
+                "location": "living room"
+            }
+        ],
+        "available_location": [
+            "living room"
+        ],
+        "narrative_location_vec": [
+            "living room",
+            "living room",
+            "living room",
+            "living room",
+            "living room",
+            "living room"
+        ]
+    },
+    {
+        "id": "8634684207",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "attic"
+            },
+            {
+                "line_number": 1,
+                "location": "attic"
+            },
+            {
+                "line_number": 2,
+                "location": "attic"
+            },
+            {
+                "line_number": 3,
+                "location": "attic"
+            },
+            {
+                "line_number": 4,
+                "location": "attic"
+            },
+            {
+                "line_number": 5,
+                "location": "attic"
+            },
+            {
+                "line_number": 6,
+                "location": "attic"
+            }
+        ],
+        "available_location": [
+            "attic"
+        ],
+        "narrative_location_vec": [
+            "attic",
+            "attic",
+            "attic",
+            "attic",
+            "attic",
+            "attic",
+            "attic"
+        ]
+    },
+    {
+        "id": "9009295359",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "living room"
+            },
+            {
+                "line_number": 1,
+                "location": "living room"
+            },
+            {
+                "line_number": 2,
+                "location": "living room"
+            },
+            {
+                "line_number": 3,
+                "location": "living room"
+            },
+            {
+                "line_number": 4,
+                "location": "living room"
+            },
+            {
+                "line_number": 5,
+                "location": "living room"
+            },
+            {
+                "line_number": 6,
+                "location": "living room"
+            }
+        ],
+        "available_location": [
+            "living room"
+        ],
+        "narrative_location_vec": [
+            "living room",
+            "living room",
+            "living room",
+            "living room",
+            "living room",
+            "living room",
+            "living room"
+        ]
+    },
+    {
+        "id": "1829197145",
+        "prompt": "<Events>\n1: Aiden entered the hallway\n2: Olivia entered the hallway\n3: Underclothes is in the container\n4: Container is in the hallway\n5: Olivia moved underclothes to the pantry\n6: Olivia likes the pear\n7: Aiden exited the hallway\n8: Olivia exited the hallway\n9: Aiden entered the staircase\n\n<Available Rooms>\n- staircase\n- hallway\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: hallway",
+            "2: hallway",
+            "3: hallway",
+            "4: hallway",
+            "5: hallway",
+            "6: none",
+            "7: none",
+            "8: none",
+            "9: staircase"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "hallway"
+            },
+            {
+                "line_number": "2",
+                "location": "hallway"
+            },
+            {
+                "line_number": "3",
+                "location": "hallway"
+            },
+            {
+                "line_number": "4",
+                "location": "hallway"
+            },
+            {
+                "line_number": "5",
+                "location": "hallway"
+            },
+            {
+                "line_number": "6",
+                "location": "hallway"
+            },
+            {
+                "line_number": "7",
+                "location": "hallway"
+            },
+            {
+                "line_number": "8",
+                "location": "hallway"
+            },
+            {
+                "line_number": "9",
+                "location": "staircase"
+            }
+        ],
+        "available_location": [
+            "staircase",
+            "hallway"
+        ],
+        "narrative_location_vec": [
+            "hallway",
+            "hallway",
+            "hallway",
+            "hallway",
+            "hallway",
+            "hallway",
+            "hallway",
+            "hallway",
+            "staircase"
+        ]
+    },
+    {
+        "id": "5915844424",
+        "prompt": "<Events>\n1: Hunter entered and later re-entered the crawlspace.\n2: Logan entered and exited the closet.\n3: Emma entered the crawlspace.\n4: The boots were initially in the treasure_chest, then moved to the bottle.\n5: The treasure_chest and then the bottle are in the crawlspace.\n6: Emma moved the boots from the treasure_chest to the bottle.\n\n<Available Rooms>\n- crawlspace\n- closet\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: crawlspace",
+            "2: closet",
+            "3: crawlspace",
+            "4: none",
+            "5: crawlspace",
+            "6: crawlspace"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "crawlspace"
+            },
+            {
+                "line_number": "2",
+                "location": "closet"
+            },
+            {
+                "line_number": "3",
+                "location": "crawlspace"
+            },
+            {
+                "line_number": "4",
+                "location": "crawlspace"
+            },
+            {
+                "line_number": "5",
+                "location": "crawlspace"
+            },
+            {
+                "line_number": "6",
+                "location": "crawlspace"
+            }
+        ],
+        "available_location": [
+            "crawlspace",
+            "closet"
+        ],
+        "narrative_location_vec": [
+            "crawlspace",
+            "closet",
+            "crawlspace",
+            "crawlspace",
+            "crawlspace",
+            "crawlspace"
+        ]
+    },
+    {
+        "id": "3817025967",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "study"
+            },
+            {
+                "line_number": 1,
+                "location": "study"
+            },
+            {
+                "line_number": 2,
+                "location": "study"
+            },
+            {
+                "line_number": 3,
+                "location": "study"
+            },
+            {
+                "line_number": 4,
+                "location": "study"
+            },
+            {
+                "line_number": 5,
+                "location": "study"
+            },
+            {
+                "line_number": 6,
+                "location": "study"
+            },
+            {
+                "line_number": 7,
+                "location": "study"
+            },
+            {
+                "line_number": 8,
+                "location": "study"
+            }
+        ],
+        "available_location": [
+            "study"
+        ],
+        "narrative_location_vec": [
+            "study",
+            "study",
+            "study",
+            "study",
+            "study",
+            "study",
+            "study",
+            "study",
+            "study"
+        ]
+    },
+    {
+        "id": "5245686369",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "dining room"
+            },
+            {
+                "line_number": 1,
+                "location": "dining room"
+            },
+            {
+                "line_number": 2,
+                "location": "dining room"
+            },
+            {
+                "line_number": 3,
+                "location": "dining room"
+            },
+            {
+                "line_number": 4,
+                "location": "dining room"
+            },
+            {
+                "line_number": 5,
+                "location": "dining room"
+            },
+            {
+                "line_number": 6,
+                "location": "dining room"
+            },
+            {
+                "line_number": 7,
+                "location": "dining room"
+            }
+        ],
+        "available_location": [
+            "dining room"
+        ],
+        "narrative_location_vec": [
+            "dining room",
+            "dining room",
+            "dining room",
+            "dining room",
+            "dining room",
+            "dining room",
+            "dining room",
+            "dining room"
+        ]
+    },
+    {
+        "id": "1741965807",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "pantry"
+            },
+            {
+                "line_number": 1,
+                "location": "pantry"
+            },
+            {
+                "line_number": 2,
+                "location": "pantry"
+            },
+            {
+                "line_number": 3,
+                "location": "pantry"
+            },
+            {
+                "line_number": 4,
+                "location": "pantry"
+            },
+            {
+                "line_number": 5,
+                "location": "pantry"
+            },
+            {
+                "line_number": 6,
+                "location": "pantry"
+            },
+            {
+                "line_number": 7,
+                "location": "pantry"
+            }
+        ],
+        "available_location": [
+            "pantry"
+        ],
+        "narrative_location_vec": [
+            "pantry",
+            "pantry",
+            "pantry",
+            "pantry",
+            "pantry",
+            "pantry",
+            "pantry",
+            "pantry"
+        ]
+    },
+    {
+        "id": "4402986716",
+        "prompt": "<Events>\n1: Nathan entered the patio\n2: Aiden entered the patio\n3: Turnip is in the crate\n4: Crate is in the patio\n5: Hunter entered the patio\n6: Nathan moved from patio to garage\n7: Hunter exited the patio\n8: Aiden moved turnip to container\n9: Container is in the patio\n\n<Available Rooms>\n- garage\n- patio\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: patio",
+            "2: patio",
+            "3: patio",
+            "4: patio",
+            "5: patio",
+            "6: garage",
+            "7: none",
+            "8: patio",
+            "9: patio"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "patio"
+            },
+            {
+                "line_number": "2",
+                "location": "patio"
+            },
+            {
+                "line_number": "3",
+                "location": "patio"
+            },
+            {
+                "line_number": "4",
+                "location": "patio"
+            },
+            {
+                "line_number": "5",
+                "location": "patio"
+            },
+            {
+                "line_number": "6",
+                "location": "garage"
+            },
+            {
+                "line_number": "7",
+                "location": "garage"
+            },
+            {
+                "line_number": "8",
+                "location": "patio"
+            },
+            {
+                "line_number": "9",
+                "location": "patio"
+            }
+        ],
+        "available_location": [
+            "garage",
+            "patio"
+        ],
+        "narrative_location_vec": [
+            "patio",
+            "patio",
+            "patio",
+            "patio",
+            "patio",
+            "garage",
+            "garage",
+            "patio",
+            "patio"
+        ]
+    },
+    {
+        "id": "4399673233",
+        "prompt": "<Events>\n1: Evelyn entered the hall\n2: Alexander entered the patio\n3: Underclothes is in the box in the patio\n4: Chloe left the patio\n5: Alexander moved underclothes from box in patio to pantry\n6: Pantry is located in the patio\n\n<Available Rooms>\n- hall\n- patio\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: hall",
+            "2: patio",
+            "3: patio",
+            "4: none",
+            "5: patio",
+            "6: patio"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "hall"
+            },
+            {
+                "line_number": "2",
+                "location": "patio"
+            },
+            {
+                "line_number": "3",
+                "location": "patio"
+            },
+            {
+                "line_number": "4",
+                "location": "patio"
+            },
+            {
+                "line_number": "5",
+                "location": "patio"
+            },
+            {
+                "line_number": "6",
+                "location": "patio"
+            }
+        ],
+        "available_location": [
+            "hall",
+            "patio"
+        ],
+        "narrative_location_vec": [
+            "hall",
+            "patio",
+            "patio",
+            "patio",
+            "patio",
+            "patio"
+        ]
+    },
+    {
+        "id": "4463588565",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "porch"
+            },
+            {
+                "line_number": 1,
+                "location": "porch"
+            },
+            {
+                "line_number": 2,
+                "location": "porch"
+            },
+            {
+                "line_number": 3,
+                "location": "porch"
+            },
+            {
+                "line_number": 4,
+                "location": "porch"
+            },
+            {
+                "line_number": 5,
+                "location": "porch"
+            },
+            {
+                "line_number": 6,
+                "location": "porch"
+            },
+            {
+                "line_number": 7,
+                "location": "porch"
+            },
+            {
+                "line_number": 8,
+                "location": "porch"
+            }
+        ],
+        "available_location": [
+            "porch"
+        ],
+        "narrative_location_vec": [
+            "porch",
+            "porch",
+            "porch",
+            "porch",
+            "porch",
+            "porch",
+            "porch",
+            "porch",
+            "porch"
+        ]
+    },
+    {
+        "id": "1401610876",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "bathroom"
+            },
+            {
+                "line_number": 1,
+                "location": "bathroom"
+            },
+            {
+                "line_number": 2,
+                "location": "bathroom"
+            },
+            {
+                "line_number": 3,
+                "location": "bathroom"
+            },
+            {
+                "line_number": 4,
+                "location": "bathroom"
+            },
+            {
+                "line_number": 5,
+                "location": "bathroom"
+            },
+            {
+                "line_number": 6,
+                "location": "bathroom"
+            },
+            {
+                "line_number": 7,
+                "location": "bathroom"
+            }
+        ],
+        "available_location": [
+            "bathroom"
+        ],
+        "narrative_location_vec": [
+            "bathroom",
+            "bathroom",
+            "bathroom",
+            "bathroom",
+            "bathroom",
+            "bathroom",
+            "bathroom",
+            "bathroom"
+        ]
+    },
+    {
+        "id": "3667971517",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "staircase"
+            },
+            {
+                "line_number": 1,
+                "location": "staircase"
+            },
+            {
+                "line_number": 2,
+                "location": "staircase"
+            },
+            {
+                "line_number": 3,
+                "location": "staircase"
+            },
+            {
+                "line_number": 4,
+                "location": "staircase"
+            },
+            {
+                "line_number": 5,
+                "location": "staircase"
+            },
+            {
+                "line_number": 6,
+                "location": "staircase"
+            },
+            {
+                "line_number": 7,
+                "location": "staircase"
+            },
+            {
+                "line_number": 8,
+                "location": "staircase"
+            }
+        ],
+        "available_location": [
+            "staircase"
+        ],
+        "narrative_location_vec": [
+            "staircase",
+            "staircase",
+            "staircase",
+            "staircase",
+            "staircase",
+            "staircase",
+            "staircase",
+            "staircase",
+            "staircase"
+        ]
+    },
+    {
+        "id": "2075957797",
+        "prompt": "<Events>\n1: Avery entered the cellar\n2: William entered the cellar\n3: Jack hates the skirt\n4: The pineapple is in the bathtub\n5: The bathtub is in the cellar\n6: William moved the pineapple to the basket\n7: The basket is in the cellar\n\n<Available Rooms>\n- garage\n- cellar\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: cellar",
+            "2: cellar",
+            "3: none",
+            "4: cellar",
+            "5: cellar",
+            "6: cellar",
+            "7: cellar"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "cellar"
+            },
+            {
+                "line_number": "2",
+                "location": "cellar"
+            },
+            {
+                "line_number": "3",
+                "location": "cellar"
+            },
+            {
+                "line_number": "4",
+                "location": "cellar"
+            },
+            {
+                "line_number": "5",
+                "location": "cellar"
+            },
+            {
+                "line_number": "6",
+                "location": "cellar"
+            },
+            {
+                "line_number": "7",
+                "location": "cellar"
+            }
+        ],
+        "available_location": [
+            "garage",
+            "cellar"
+        ],
+        "narrative_location_vec": [
+            "cellar",
+            "cellar",
+            "cellar",
+            "cellar",
+            "cellar",
+            "cellar",
+            "cellar"
+        ]
+    },
+    {
+        "id": "9592683426",
+        "prompt": "<Events>\n1: Mason entered the den\n2: Jacob entered the den\n3: Undershirt is in the suitcase\n4: Suitcase is in the den\n5: Jacob exited the den\n6: Jackson entered the pantry\n7: Mason moved undershirt to the box\n8: Box is in the den\n9: Jackson exited the pantry\n10: Jacob re-entered the den\n\n<Available Rooms>\n- den\n- pantry\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: den",
+            "2: den",
+            "3: den",
+            "4: den",
+            "5: none",
+            "6: pantry",
+            "7: den",
+            "8: den",
+            "9: none",
+            "10: den"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "den"
+            },
+            {
+                "line_number": "2",
+                "location": "den"
+            },
+            {
+                "line_number": "3",
+                "location": "den"
+            },
+            {
+                "line_number": "4",
+                "location": "den"
+            },
+            {
+                "line_number": "5",
+                "location": "den"
+            },
+            {
+                "line_number": "6",
+                "location": "pantry"
+            },
+            {
+                "line_number": "7",
+                "location": "den"
+            },
+            {
+                "line_number": "8",
+                "location": "den"
+            },
+            {
+                "line_number": "9",
+                "location": "den"
+            },
+            {
+                "line_number": "10",
+                "location": "den"
+            }
+        ],
+        "available_location": [
+            "den",
+            "pantry"
+        ],
+        "narrative_location_vec": [
+            "den",
+            "den",
+            "den",
+            "den",
+            "den",
+            "pantry",
+            "den",
+            "den",
+            "den",
+            "den"
+        ]
+    },
+    {
+        "id": "3689466708",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "dining room"
+            },
+            {
+                "line_number": 1,
+                "location": "dining room"
+            },
+            {
+                "line_number": 2,
+                "location": "dining room"
+            },
+            {
+                "line_number": 3,
+                "location": "dining room"
+            },
+            {
+                "line_number": 4,
+                "location": "dining room"
+            },
+            {
+                "line_number": 5,
+                "location": "dining room"
+            },
+            {
+                "line_number": 6,
+                "location": "dining room"
+            },
+            {
+                "line_number": 7,
+                "location": "dining room"
+            }
+        ],
+        "available_location": [
+            "dining room"
+        ],
+        "narrative_location_vec": [
+            "dining room",
+            "dining room",
+            "dining room",
+            "dining room",
+            "dining room",
+            "dining room",
+            "dining room",
+            "dining room"
+        ]
+    },
+    {
+        "id": "5830038465",
+        "prompt": "<Events>\n1: Carter entered the garden\n2: Ava entered the garden\n3: Amelia entered the back_yard\n4: Sweatshirt is in the treasure_chest\n5: Treasure_chest is in the garden\n6: Ava moved sweatshirt to the basket\n7: Basket is in the garden\n8: Carter exited the garden\n9: Amelia hates the peas\n10: Ava exited the garden\n11: Carter re-entered the garden\n12: Carter dislikes the turnip\n\n<Available Rooms>\n- garden\n- back yard\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: garden",
+            "2: garden",
+            "3: back yard",
+            "4: garden",
+            "5: garden",
+            "6: garden",
+            "7: garden",
+            "8: none",
+            "9: back yard",
+            "10: none",
+            "11: garden",
+            "12: garden"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "garden"
+            },
+            {
+                "line_number": "2",
+                "location": "garden"
+            },
+            {
+                "line_number": "3",
+                "location": "back yard"
+            },
+            {
+                "line_number": "4",
+                "location": "garden"
+            },
+            {
+                "line_number": "5",
+                "location": "garden"
+            },
+            {
+                "line_number": "6",
+                "location": "garden"
+            },
+            {
+                "line_number": "7",
+                "location": "garden"
+            },
+            {
+                "line_number": "8",
+                "location": "garden"
+            },
+            {
+                "line_number": "9",
+                "location": "back yard"
+            },
+            {
+                "line_number": "10",
+                "location": "back yard"
+            },
+            {
+                "line_number": "11",
+                "location": "garden"
+            },
+            {
+                "line_number": "12",
+                "location": "garden"
+            }
+        ],
+        "available_location": [
+            "garden",
+            "back yard"
+        ],
+        "narrative_location_vec": [
+            "garden",
+            "garden",
+            "back yard",
+            "garden",
+            "garden",
+            "garden",
+            "garden",
+            "garden",
+            "back yard",
+            "back yard",
+            "garden",
+            "garden"
+        ]
+    },
+    {
+        "id": "1764700229",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "hallway"
+            },
+            {
+                "line_number": 1,
+                "location": "hallway"
+            },
+            {
+                "line_number": 2,
+                "location": "hallway"
+            },
+            {
+                "line_number": 3,
+                "location": "hallway"
+            },
+            {
+                "line_number": 4,
+                "location": "hallway"
+            },
+            {
+                "line_number": 5,
+                "location": "hallway"
+            },
+            {
+                "line_number": 6,
+                "location": "hallway"
+            },
+            {
+                "line_number": 7,
+                "location": "hallway"
+            },
+            {
+                "line_number": 8,
+                "location": "hallway"
+            },
+            {
+                "line_number": 9,
+                "location": "hallway"
+            },
+            {
+                "line_number": 10,
+                "location": "hallway"
+            }
+        ],
+        "available_location": [
+            "hallway"
+        ],
+        "narrative_location_vec": [
+            "hallway",
+            "hallway",
+            "hallway",
+            "hallway",
+            "hallway",
+            "hallway",
+            "hallway",
+            "hallway",
+            "hallway",
+            "hallway",
+            "hallway"
+        ]
+    },
+    {
+        "id": "8550585853",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "garage"
+            },
+            {
+                "line_number": 1,
+                "location": "garage"
+            },
+            {
+                "line_number": 2,
+                "location": "garage"
+            },
+            {
+                "line_number": 3,
+                "location": "garage"
+            },
+            {
+                "line_number": 4,
+                "location": "garage"
+            },
+            {
+                "line_number": 5,
+                "location": "garage"
+            },
+            {
+                "line_number": 6,
+                "location": "garage"
+            },
+            {
+                "line_number": 7,
+                "location": "garage"
+            },
+            {
+                "line_number": 8,
+                "location": "garage"
+            }
+        ],
+        "available_location": [
+            "garage"
+        ],
+        "narrative_location_vec": [
+            "garage",
+            "garage",
+            "garage",
+            "garage",
+            "garage",
+            "garage",
+            "garage",
+            "garage",
+            "garage"
+        ]
+    },
+    {
+        "id": "3266440908",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "bathroom"
+            },
+            {
+                "line_number": 1,
+                "location": "bathroom"
+            },
+            {
+                "line_number": 2,
+                "location": "bathroom"
+            },
+            {
+                "line_number": 3,
+                "location": "bathroom"
+            },
+            {
+                "line_number": 4,
+                "location": "bathroom"
+            },
+            {
+                "line_number": 5,
+                "location": "bathroom"
+            },
+            {
+                "line_number": 6,
+                "location": "bathroom"
+            },
+            {
+                "line_number": 7,
+                "location": "bathroom"
+            }
+        ],
+        "available_location": [
+            "bathroom"
+        ],
+        "narrative_location_vec": [
+            "bathroom",
+            "bathroom",
+            "bathroom",
+            "bathroom",
+            "bathroom",
+            "bathroom",
+            "bathroom",
+            "bathroom"
+        ]
+    },
+    {
+        "id": "3680613967",
+        "prompt": "<Events>\n1: Mason loves the gloves\n2: Isla entered the garden\n3: Mason entered the garden\n4: Strawberry is in the bathtub\n5: Bathtub is in the garden\n6: Mason moved strawberry to bucket\n7: Bucket is in the garden\n8: Isla exited the garden\n9: Mason exited the garden\n10: Isla entered the living_room\n\n<Available Rooms>\n- living room\n- garden\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: none",
+            "2: garden",
+            "3: garden",
+            "4: none",
+            "5: garden",
+            "6: garden",
+            "7: garden",
+            "8: none",
+            "9: none",
+            "10: living room"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "garden"
+            },
+            {
+                "line_number": "2",
+                "location": "garden"
+            },
+            {
+                "line_number": "3",
+                "location": "garden"
+            },
+            {
+                "line_number": "4",
+                "location": "garden"
+            },
+            {
+                "line_number": "5",
+                "location": "garden"
+            },
+            {
+                "line_number": "6",
+                "location": "garden"
+            },
+            {
+                "line_number": "7",
+                "location": "garden"
+            },
+            {
+                "line_number": "8",
+                "location": "garden"
+            },
+            {
+                "line_number": "9",
+                "location": "garden"
+            },
+            {
+                "line_number": "10",
+                "location": "living room"
+            }
+        ],
+        "available_location": [
+            "living room",
+            "garden"
+        ],
+        "narrative_location_vec": [
+            "garden",
+            "garden",
+            "garden",
+            "garden",
+            "garden",
+            "garden",
+            "garden",
+            "garden",
+            "garden",
+            "living room"
+        ]
+    },
+    {
+        "id": "5872119079",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "office"
+            },
+            {
+                "line_number": 1,
+                "location": "office"
+            },
+            {
+                "line_number": 2,
+                "location": "office"
+            },
+            {
+                "line_number": 3,
+                "location": "office"
+            },
+            {
+                "line_number": 4,
+                "location": "office"
+            },
+            {
+                "line_number": 5,
+                "location": "office"
+            }
+        ],
+        "available_location": [
+            "office"
+        ],
+        "narrative_location_vec": [
+            "office",
+            "office",
+            "office",
+            "office",
+            "office",
+            "office"
+        ]
+    },
+    {
+        "id": "4129625242",
+        "prompt": "<Events>\n1: Evelyn entered the den\n2: Isabella entered the den\n3: Plum is in suitcase\n4: Suitcase is in den\n5: Evelyn moved plum to bucket\n6: Bucket is in den\n7: Isabella exited den\n8: Aiden entered the den\n9: Evelyn exited the den\n10: Isabella entered master_bedroom\n\n<Available Rooms>\n- master bedroom\n- den\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: den",
+            "2: den",
+            "3: den",
+            "4: den",
+            "5: den",
+            "6: den",
+            "7: none",
+            "8: den",
+            "9: none",
+            "10: master_bedroom"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "den"
+            },
+            {
+                "line_number": "2",
+                "location": "den"
+            },
+            {
+                "line_number": "3",
+                "location": "den"
+            },
+            {
+                "line_number": "4",
+                "location": "den"
+            },
+            {
+                "line_number": "5",
+                "location": "den"
+            },
+            {
+                "line_number": "6",
+                "location": "den"
+            },
+            {
+                "line_number": "7",
+                "location": "den"
+            },
+            {
+                "line_number": "8",
+                "location": "den"
+            },
+            {
+                "line_number": "9",
+                "location": "den"
+            },
+            {
+                "line_number": "10",
+                "location": "master bedroom"
+            }
+        ],
+        "available_location": [
+            "master bedroom",
+            "den"
+        ],
+        "narrative_location_vec": [
+            "den",
+            "den",
+            "den",
+            "den",
+            "den",
+            "den",
+            "den",
+            "den",
+            "den",
+            "master bedroom"
+        ]
+    },
+    {
+        "id": "5885093653",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "laundry"
+            },
+            {
+                "line_number": 1,
+                "location": "laundry"
+            },
+            {
+                "line_number": 2,
+                "location": "laundry"
+            },
+            {
+                "line_number": 3,
+                "location": "laundry"
+            },
+            {
+                "line_number": 4,
+                "location": "laundry"
+            },
+            {
+                "line_number": 5,
+                "location": "laundry"
+            }
+        ],
+        "available_location": [
+            "laundry"
+        ],
+        "narrative_location_vec": [
+            "laundry",
+            "laundry",
+            "laundry",
+            "laundry",
+            "laundry",
+            "laundry"
+        ]
+    },
+    {
+        "id": "4397557580",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "hallway"
+            },
+            {
+                "line_number": 1,
+                "location": "hallway"
+            },
+            {
+                "line_number": 2,
+                "location": "hallway"
+            },
+            {
+                "line_number": 3,
+                "location": "hallway"
+            },
+            {
+                "line_number": 4,
+                "location": "hallway"
+            },
+            {
+                "line_number": 5,
+                "location": "hallway"
+            },
+            {
+                "line_number": 6,
+                "location": "hallway"
+            },
+            {
+                "line_number": 7,
+                "location": "hallway"
+            }
+        ],
+        "available_location": [
+            "hallway"
+        ],
+        "narrative_location_vec": [
+            "hallway",
+            "hallway",
+            "hallway",
+            "hallway",
+            "hallway",
+            "hallway",
+            "hallway",
+            "hallway"
+        ]
+    },
+    {
+        "id": "5128366654",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "office"
+            },
+            {
+                "line_number": 1,
+                "location": "office"
+            },
+            {
+                "line_number": 2,
+                "location": "office"
+            },
+            {
+                "line_number": 3,
+                "location": "office"
+            },
+            {
+                "line_number": 4,
+                "location": "office"
+            },
+            {
+                "line_number": 5,
+                "location": "office"
+            }
+        ],
+        "available_location": [
+            "office"
+        ],
+        "narrative_location_vec": [
+            "office",
+            "office",
+            "office",
+            "office",
+            "office",
+            "office"
+        ]
+    },
+    {
+        "id": "5890692034",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "hall"
+            },
+            {
+                "line_number": 1,
+                "location": "hall"
+            },
+            {
+                "line_number": 2,
+                "location": "hall"
+            },
+            {
+                "line_number": 3,
+                "location": "hall"
+            },
+            {
+                "line_number": 4,
+                "location": "hall"
+            },
+            {
+                "line_number": 5,
+                "location": "hall"
+            },
+            {
+                "line_number": 6,
+                "location": "hall"
+            },
+            {
+                "line_number": 7,
+                "location": "hall"
+            },
+            {
+                "line_number": 8,
+                "location": "hall"
+            },
+            {
+                "line_number": 9,
+                "location": "hall"
+            }
+        ],
+        "available_location": [
+            "hall"
+        ],
+        "narrative_location_vec": [
+            "hall",
+            "hall",
+            "hall",
+            "hall",
+            "hall",
+            "hall",
+            "hall",
+            "hall",
+            "hall",
+            "hall"
+        ]
+    },
+    {
+        "id": "2631692305",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "crawlspace"
+            },
+            {
+                "line_number": 1,
+                "location": "crawlspace"
+            },
+            {
+                "line_number": 2,
+                "location": "crawlspace"
+            },
+            {
+                "line_number": 3,
+                "location": "crawlspace"
+            },
+            {
+                "line_number": 4,
+                "location": "crawlspace"
+            },
+            {
+                "line_number": 5,
+                "location": "crawlspace"
+            },
+            {
+                "line_number": 6,
+                "location": "crawlspace"
+            },
+            {
+                "line_number": 7,
+                "location": "crawlspace"
+            }
+        ],
+        "available_location": [
+            "crawlspace"
+        ],
+        "narrative_location_vec": [
+            "crawlspace",
+            "crawlspace",
+            "crawlspace",
+            "crawlspace",
+            "crawlspace",
+            "crawlspace",
+            "crawlspace",
+            "crawlspace"
+        ]
+    },
+    {
+        "id": "7227572964",
+        "prompt": "<Events>\n1: Aiden entered the lounge\n2: Jacob entered the lounge\n3: Undershirt is in the cupboard\n4: Jacob left the lounge\n5: Aiden moved undershirt to the box\n6: Jackson entered then exited the sunroom\n7: Aiden left the lounge\n8: Jacob entered the sunroom\n\n<Available Rooms>\n- lounge\n- sunroom\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: lounge",
+            "2: lounge",
+            "3: none",
+            "4: none",
+            "5: none",
+            "6: sunroom",
+            "7: none",
+            "8: sunroom"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "lounge"
+            },
+            {
+                "line_number": "2",
+                "location": "lounge"
+            },
+            {
+                "line_number": "3",
+                "location": "lounge"
+            },
+            {
+                "line_number": "4",
+                "location": "lounge"
+            },
+            {
+                "line_number": "5",
+                "location": "lounge"
+            },
+            {
+                "line_number": "6",
+                "location": "sunroom"
+            },
+            {
+                "line_number": "7",
+                "location": "sunroom"
+            },
+            {
+                "line_number": "8",
+                "location": "sunroom"
+            }
+        ],
+        "available_location": [
+            "lounge",
+            "sunroom"
+        ],
+        "narrative_location_vec": [
+            "lounge",
+            "lounge",
+            "lounge",
+            "lounge",
+            "lounge",
+            "sunroom",
+            "sunroom",
+            "sunroom"
+        ]
+    },
+    {
+        "id": "4363914671",
+        "prompt": "<Events>\n1: Oliver entered the cellar\n2: Jack entered the cellar\n3: Pajamas are in the basket in the cellar\n4: Oliver exited the cellar\n5: Oliver entered the basement\n6: Jack moved pajamas to the pantry in the cellar\n\n<Available Rooms>\n- cellar\n- basement\n- pantry\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: cellar",
+            "2: cellar",
+            "3: cellar",
+            "4: none",
+            "5: basement",
+            "6: cellar"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "cellar"
+            },
+            {
+                "line_number": "2",
+                "location": "cellar"
+            },
+            {
+                "line_number": "3",
+                "location": "cellar"
+            },
+            {
+                "line_number": "4",
+                "location": "cellar"
+            },
+            {
+                "line_number": "5",
+                "location": "basement"
+            },
+            {
+                "line_number": "6",
+                "location": "cellar"
+            }
+        ],
+        "available_location": [
+            "cellar",
+            "basement",
+            "pantry"
+        ],
+        "narrative_location_vec": [
+            "cellar",
+            "cellar",
+            "cellar",
+            "cellar",
+            "basement",
+            "cellar"
+        ]
+    },
+    {
+        "id": "4599178318",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "laundry"
+            },
+            {
+                "line_number": 1,
+                "location": "laundry"
+            },
+            {
+                "line_number": 2,
+                "location": "laundry"
+            },
+            {
+                "line_number": 3,
+                "location": "laundry"
+            },
+            {
+                "line_number": 4,
+                "location": "laundry"
+            },
+            {
+                "line_number": 5,
+                "location": "laundry"
+            },
+            {
+                "line_number": 6,
+                "location": "laundry"
+            },
+            {
+                "line_number": 7,
+                "location": "laundry"
+            },
+            {
+                "line_number": 8,
+                "location": "laundry"
+            },
+            {
+                "line_number": 9,
+                "location": "laundry"
+            },
+            {
+                "line_number": 10,
+                "location": "laundry"
+            }
+        ],
+        "available_location": [
+            "laundry"
+        ],
+        "narrative_location_vec": [
+            "laundry",
+            "laundry",
+            "laundry",
+            "laundry",
+            "laundry",
+            "laundry",
+            "laundry",
+            "laundry",
+            "laundry",
+            "laundry",
+            "laundry"
+        ]
+    },
+    {
+        "id": "2952379981",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "living room"
+            },
+            {
+                "line_number": 1,
+                "location": "living room"
+            },
+            {
+                "line_number": 2,
+                "location": "living room"
+            },
+            {
+                "line_number": 3,
+                "location": "living room"
+            },
+            {
+                "line_number": 4,
+                "location": "living room"
+            },
+            {
+                "line_number": 5,
+                "location": "living room"
+            }
+        ],
+        "available_location": [
+            "living room"
+        ],
+        "narrative_location_vec": [
+            "living room",
+            "living room",
+            "living room",
+            "living room",
+            "living room",
+            "living room"
+        ]
+    },
+    {
+        "id": "1893241532",
+        "prompt": "<Events>\n1: Logan entered the patio\n2: Elizabeth entered the patio\n3: Carter entered the playroom\n4: green_pepper is in the suitcase\n5: suitcase is in the patio\n6: Elizabeth moved green_pepper to the basket\n7: basket is in the patio\n8: Logan exited the patio\n9: Elizabeth exited the patio\n10: Logan re-entered the patio\n\n<Available Rooms>\n- playroom\n- patio\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: patio",
+            "2: patio",
+            "3: playroom",
+            "4: none",
+            "5: patio",
+            "6: patio",
+            "7: patio",
+            "8: none",
+            "9: none",
+            "10: patio"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "patio"
+            },
+            {
+                "line_number": "2",
+                "location": "patio"
+            },
+            {
+                "line_number": "3",
+                "location": "playroom"
+            },
+            {
+                "line_number": "4",
+                "location": "playroom"
+            },
+            {
+                "line_number": "5",
+                "location": "patio"
+            },
+            {
+                "line_number": "6",
+                "location": "patio"
+            },
+            {
+                "line_number": "7",
+                "location": "patio"
+            },
+            {
+                "line_number": "8",
+                "location": "patio"
+            },
+            {
+                "line_number": "9",
+                "location": "patio"
+            },
+            {
+                "line_number": "10",
+                "location": "patio"
+            }
+        ],
+        "available_location": [
+            "playroom",
+            "patio"
+        ],
+        "narrative_location_vec": [
+            "patio",
+            "patio",
+            "playroom",
+            "playroom",
+            "patio",
+            "patio",
+            "patio",
+            "patio",
+            "patio",
+            "patio"
+        ]
+    }
+]

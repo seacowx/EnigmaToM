@@ -1,0 +1,11 @@
+max_length: 2048
+max_new_tokens: 512
+min_new_tokens: 1
+# Use greedy sampling for reproducible result
+do_sample: True
+# top_k: 5
+# Setting temperature to 0 for reproducible result
+temperature: 0.7
+no_repeat_ngram_size: 3
+# Best value for repetition_penalty under greedy sampling is 1.2 according to the original paper 
+repetition_penalty: 1.2

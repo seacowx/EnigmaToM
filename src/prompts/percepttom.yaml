@@ -1,0 +1,25 @@
+get_perception: |-
+  Story: {{narrative}}
+
+  Create a JSON array consisting of JSON objects. Each object should contain a sentence from the story and the perceivers of the scene described in that sentence. Assume that characters in the story can perceive every scene occurring in their location but not scenes occurring elsewhere. Also, include the actant of any action as a perceiver of that action. Provide only a JSON array in the following format. Do not include any explanation.
+  [{"Noah exited the living room.": ["Noah", "Emma"]},]
+
+fantom_get_perception: |-
+  {{narrative}}
+
+  Create a JSON array consisting of JSON objects. Each object should contain a sentence from the story and the perceivers of the scene described in that sentence. Assume that characters in the story can perceive every scene occurring in their location but not scenes occurring elsewhere. Also, include the actant of any action as a perceiver of that action. Provide only a JSON array in the following format. Do not include any explanation.
+  [{"Noah: Hi, Emma.": ["Noah", "Emma"]},]
+
+qa: |-
+  Here are the past scenes in sequence that {{character}} knows about.
+
+  {{perception narrative}}
+
+  Question: {{question}}
+
+fantom_qa: |-
+  Here are the past utterances in sequence that {{character}} is aware of.
+
+  {{perception narrative}}
+
+  QUestion: {{question}}

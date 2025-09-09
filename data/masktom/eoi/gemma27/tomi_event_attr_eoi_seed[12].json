@@ -1,0 +1,979 @@
+[
+    {
+        "id": "5277587161",
+        "questions": "\"Where does Emily think that Abigail searches for the t-shirt?\"",
+        "prompt": "<Events>\n1: Benjamin, Abigail, and Emily entered the crawlspace.\n2: The t-shirt is in the cupboard, which is in the crawlspace.\n3: Abigail exited the crawlspace.\n4: Emily moved the t-shirt to the basket in the crawlspace.\n5: Benjamin hates the coat.\n6: Emily exited the crawlspace.\n7: Abigail entered the crawlspace.\n\n<Questions>\n\"Where does Emily think that Abigail searches for the t-shirt?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about Emily's belief regarding Abigail's search for the t-shirt.  We need to know where the t-shirt is located and who Emily thinks is looking for it.\n\n<entities>\n- location of t-shirt\n- person searching for t-shirt \n</entities> \n\n",
+        "response": [
+            "location of tshirt",
+            "person searching for tshirt"
+        ]
+    },
+    {
+        "id": "9430904908",
+        "questions": "\"Where will Amelia look for the underclothes?\"\n\"Where will Jackson look for the underclothes?\"",
+        "prompt": "<Events>\n1: Amelia entered the lounge.\n2: Logan entered the cellar and exited.\n3: Jackson entered the lounge.\n4: The underclothes was in the bathtub in the lounge.\n5: Jackson moved the underclothes to the cupboard in the lounge.\n6: Amelia exited the lounge.\n\n<Questions>\n\"Where will Amelia look for the underclothes?\"\n\"Where will Jackson look for the underclothes?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The questions ask about the location of the underclothes from the perspective of Amelia and Jackson.  We need to know where the underclothes are and where each person might look for them.\n\n<entities>\n- location of underclothes\n- location Amelia will look\n- location Jackson will look \n</entities> \n\n",
+        "response": [
+            "location amelia will look",
+            "location of underclothes",
+            "location jackson will look"
+        ]
+    },
+    {
+        "id": "4315856127",
+        "questions": "\"Where was the tomato at the beginning?\"",
+        "prompt": "<Events>\n1: Noah entered the pantry.\n2: Aria entered the pantry.\n3: The tomato is in the basket in the pantry.\n4: Noah exited the pantry.\n5: Aria moved the tomato to the suitcase in the pantry.\n6: Aria exited the pantry.\n7: Jayden entered the pantry.\n8: Noah entered the pantry.\n\n<Questions>\n\"Where was the tomato at the beginning?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about the initial location of the tomato.  The events describe the movement of the tomato within the pantry.\n\n<entities>\n- location of tomato \n</entities> \n\n",
+        "response": [
+            "location of tomato"
+        ]
+    },
+    {
+        "id": "6170968559",
+        "questions": "\"Where does Aria think that Mia searches for the potato?\"",
+        "prompt": "<Events>\n1: Mia entered the workshop.\n2: Aria entered the workshop.\n3: The potato is in the basket in the workshop.\n4: Mia loves the raincoat.\n5: Mia exited the workshop.\n6: Aria moved the potato to the bathtub in the workshop.\n7: Aria exited the workshop.\n8: Mia loves the tie.\n9: Mia entered the laundry.\n\n<Questions>\n\"Where does Aria think that Mia searches for the potato?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Aria sees Mia enter and exit the workshop, and knows the potato was moved to the bathtub.  Therefore, Aria likely thinks Mia will look for the potato in the bathtub.\n\n<entities>\n- location of potato \n</entities> \n\n",
+        "response": [
+            "location of potato"
+        ]
+    },
+    {
+        "id": "4071816864",
+        "questions": "\"Where will Amelia look for the pants?\"",
+        "prompt": "<Events>\n1: Amelia entered the crawlspace.\n2: Noah and Avery entered the crawlspace.\n3: The pants are in the bottle, which is in the crawlspace.\n4: Amelia moved the pants to the envelope in the crawlspace.\n5: Noah exited the crawlspace.\n6: Avery exited the crawlspace and dislikes the potato.\n7: Amelia exited the crawlspace.\n8: Avery entered the crawlspace.\n\n<Questions>\n\"Where will Amelia look for the pants?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Amelia is looking for pants. The events tell us that the pants were in a bottle in the crawlspace and then moved to an envelope in the crawlspace. \n\n<entities>\n- location of pants\n- container of pants \n</entities> \n\n",
+        "response": [
+            "container of pants",
+            "location of pants"
+        ]
+    },
+    {
+        "id": "6002208376",
+        "questions": "\"Where will Owen look for the banana?\"",
+        "prompt": "<Events>\n1: Noah entered the cellar.\n2: Owen entered the hallway.\n3: Noah exited the cellar.\n4: Lily entered the hallway.\n5: The banana is in the cupboard, which is in the hallway.\n6: Lily moved the banana to the treasure chest in the hallway.\n7: Lily exited the hallway.\n8: Owen entered the cellar.\n\n<Questions>\n\"Where will Owen look for the banana?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Owen will likely look for the banana in the cellar because he entered the cellar after Lily moved the banana there.\n\n<entities>\n- location of banana\n- location of Owen \n</entities> \n\n",
+        "response": [
+            "location of banana",
+            "location of owen"
+        ]
+    },
+    {
+        "id": "7418929068",
+        "questions": "\"Where does Logan think that Aria searches for the jacket?\"",
+        "prompt": "<Events>\n1: Logan entered the staircase.\n2: Emma entered the office.\n3: Emma hates the slacks.\n4: Aria is in the staircase.\n5: The jacket is in the suitcase.\n6: The suitcase is in the staircase.\n7: Logan dislikes the onion.\n8: Aria moved the jacket to the bottle.\n9: The bottle is in the staircase.\n10: Logan exited the staircase.\n\n<Questions>\n\"Where does Logan think that Aria searches for the jacket?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Logan is exiting the staircase and the question asks where he *thinks* Aria is searching for the jacket. This implies we need to know where the jacket is located.\n\n<entities>\n- location of jacket\n- location of Aria \n</entities> \n\n",
+        "response": [
+            "location of aria",
+            "location of jacket"
+        ]
+    },
+    {
+        "id": "7241280525",
+        "questions": "\"Where does Ella think that Emma searches for the tie?\"\n\"Where does Emma think that Ella searches for the tie?\"",
+        "prompt": "<Events>\n1: Ella entered the hall.\n2: Aria entered the attic.\n3: Emma entered the hall.\n4: The tie is in the crate in the hall.\n5: Ella moved the tie to the bathtub in the hall.\n6: Aria hates the dress.\n7: Aria exited the attic.\n8: Emma exited the hall.\n\n<Questions>\n\"Where does Ella think that Emma searches for the tie?\"\n\"Where does Emma think that Ella searches for the tie?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The questions are about where Ella and Emma think the other is looking for the tie.  The answers depend on the locations mentioned in the events.\n\n<entities>\n- location of tie: hall, bathtub\n- location of Ella: hall\n- location of Emma: hall \n</entities> \n\n",
+        "response": [
+            "location of tie: hall, bathtub",
+            "location of ella: hall",
+            "location of emma: hall"
+        ]
+    },
+    {
+        "id": "4449009765",
+        "questions": "\"Where will Emma look for the beans?\"",
+        "prompt": "<Events>\n1: Sophia dislikes the sweet_potato.\n2: Emma entered the front_yard.\n3: Nathan entered the front_yard.\n4: The beans are in the crate in the front_yard.\n5: Nathan hates the shirt.\n6: Emma exited the front_yard.\n7: Nathan moved the beans from the crate to the cupboard in the front_yard.\n\n<Questions>\n\"Where will Emma look for the beans?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Emma exited the front yard, and the beans are in the front yard. Therefore, Emma will not look for the beans in the front yard.\n\n<entities>\n- location of beans\n</entities> \n\n",
+        "response": [
+            "location of beans"
+        ]
+    },
+    {
+        "id": "1665911028",
+        "questions": "\"Where was the cherry at the beginning?\"",
+        "prompt": "<Events>\n1: Owen entered the lounge.\n2: Lily entered the lounge.\n3: The cherry is in the bathtub in the lounge.\n4: Owen moved the cherry from the bathtub to the envelope.\n5: The envelope is in the lounge.\n6: Lily exited the lounge. \n7: Owen is aware of Lily.\n\n<Questions>\n\"Where was the cherry at the beginning?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about the initial location of the cherry.  The events describe the cherry moving from the bathtub to an envelope.\n\n<entities>\n- location of cherry \n</entities> \n\n",
+        "response": [
+            "location of cherry"
+        ]
+    },
+    {
+        "id": "7627034496",
+        "questions": "\"Where was the carrot at the beginning?\"",
+        "prompt": "<Events>\n1: Avery entered the den.\n2: Jacob entered the den.\n3: The carrot is in the cupboard, which is in the den.\n4: Jacob moved the carrot to the treasure chest in the den.\n5: Avery dislikes the underclothes.\n6: Avery exited the den.\n\n<Questions>\n\"Where was the carrot at the beginning?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about the initial location of the carrot.  The events tell us the carrot starts in the cupboard, which is located in the den.\n\n<entities>\n- location of carrot\n- location of cupboard \n</entities> \n\n",
+        "response": [
+            "location of cupboard",
+            "location of carrot"
+        ]
+    },
+    {
+        "id": "4391668758",
+        "questions": "\"Where was the turnip at the beginning?\"\n\"Where will Isabella look for the turnip?\"",
+        "prompt": "<Events>\n1: Isabella likes beans.\n2: Hunter enters the cellar.\n3: Mason enters the cellar.\n4: Hunter leaves the cellar.\n5: Isabella enters the cellar.\n6: The turnip is in the crate in the cellar.\n7: Isabella leaves the cellar.\n8: Mason moves the turnip from the crate to the bottle in the cellar.\n\n<Questions>\n\"Where was the turnip at the beginning?\"\n\"Where will Isabella look for the turnip?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The questions ask about the location of the turnip, both initially and where Isabella might look for it.  The events tell us the turnip is in a crate in the cellar, and Isabella goes to the cellar.\n\n<entities>\n- location of turnip\n- location of crate\n</entities> \n\n",
+        "response": [
+            "location of turnip",
+            "location of crate"
+        ]
+    },
+    {
+        "id": "4227823864",
+        "questions": "\"Where will Jackson look for the onion?\"",
+        "prompt": "<Events>\n1: Mason entered the office.\n2: Jackson entered the office.\n3: Mason exited the office.\n4: Mason dislikes the apple.\n5: Jacob entered the office.\n6: The onion is in the container, which is in the office.\n7: Jackson exited the office.\n8: Jacob moved the onion from the container to the bottle, which is in the office.\n\n<Questions>\n\"Where will Jackson look for the onion?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Jackson was in the office and the onion was moved to a bottle while he was there. Therefore, he will likely look for the onion in the bottle.\n\n<entities>\n- location of onion\n- type of container \n</entities> \n\n",
+        "response": [
+            "type of container",
+            "location of onion"
+        ]
+    },
+    {
+        "id": "9263132341",
+        "questions": "\"Where will Ava look for the onion?\"",
+        "prompt": "<Events>\n1: Hunter likes jeans.\n2: Hunter enters the dining room.\n3: Ava enters the dining room.\n4: Emma likes broccoli.\n5: Emma enters the dining room.\n6: The onion is in the box in the dining room.\n7: Ava moves the onion from the box to the bathtub in the dining room.\n8: Emma exits the dining room.\n\n<Questions>\n\"Where will Ava look for the onion?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Ava moved the onion to the bathtub in the dining room. The question asks where Ava will look for the onion. Therefore, we need to know the location of the onion.\n\n<entities>\n- location of onion \n</entities> \n\n",
+        "response": [
+            "location of onion"
+        ]
+    },
+    {
+        "id": "2045243519",
+        "questions": "\"Where does Aiden think that Chloe searches for the sweet_potato?\"\n\"Where does Chloe think that Aiden searches for the sweet_potato?\"",
+        "prompt": "<Events>\n1: Aiden entered the porch.\n2: Chloe entered the porch.\n3: Isabella entered the closet.\n4: The sweet_potato is in the treasure_chest, which is in the porch.\n5: Aiden exited the porch.\n6: Aiden entered the porch.\n7: Chloe moved the sweet_potato from the treasure_chest to the bucket. \n8: The bucket is in the porch.\n\n<Questions>\n\"Where does Aiden think that Chloe searches for the sweet_potato?\"\n\"Where does Chloe think that Aiden searches for the sweet_potato?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The questions ask about where Aiden and Chloe *think* the other is searching for the sweet potato. This means we need to focus on locations and the connection between the characters and those locations.\n\n<entities>\n- location of sweet_potato\n- location of Aiden\n- location of Chloe \n</entities> \n\n",
+        "response": [
+            "location of aiden",
+            "location of sweet potato",
+            "location of chloe"
+        ]
+    },
+    {
+        "id": "2782515718",
+        "questions": "\"Where does Avery think that Olivia searches for the broccoli?\"",
+        "prompt": "<Events>\n1: Olivia entered the bedroom.\n2: Avery entered the bedroom and loves the pants.\n3: The broccoli is in the container in the bedroom.\n4: Olivia exited the bedroom.\n5: Avery moved the broccoli from the container to the crate in the bedroom.\n6: Jayden entered the bedroom.\n7: Avery exited the bedroom.\n8: Olivia entered the bedroom.\n\n<Questions>\n\"Where does Avery think that Olivia searches for the broccoli?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Avery sees Olivia enter and exit the bedroom and knows broccoli is in the bedroom.  Avery moves the broccoli from a container to a crate. The question asks where Avery thinks Olivia will look for the broccoli. This implies we need to know where Olivia might look for the broccoli.\n\n<entities>\n- location of broccoli \n- type of container\n- type of crate\n</entities> \n\n",
+        "response": [
+            "location of broccoli",
+            "type of container",
+            "type of crate"
+        ]
+    },
+    {
+        "id": "3478657222",
+        "questions": "\"Where will Jayden look for the carrot?\"",
+        "prompt": "<Events>\n1: Jayden entered the laundry.\n2: Avery entered the laundry.\n3: The carrot is in the cupboard in the laundry.\n4: Avery hates the skirt.\n5: Jayden exited the laundry.\n6: Avery hates the tie.\n7: Avery moved the carrot to the bathtub in the laundry.\n8: Ava entered the laundry.\n\n<Questions>\n\"Where will Jayden look for the carrot?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Jayden will likely look for the carrot in the laundry room since that's where he was last and the carrot was mentioned to be in the laundry.\n\n<entities>\n- location of carrot\n</entities> \n\n",
+        "response": [
+            "location of carrot"
+        ]
+    },
+    {
+        "id": "8635355033",
+        "questions": "\"Where does Charlotte think that Lucas searches for the pineapple?\"",
+        "prompt": "<Events>\n1: Charlotte entered the living room.\n2: Lucas entered the living room.\n3: The pineapple is in the drawer in the living room.\n4: Charlotte moved the pineapple to the envelope in the living room.\n5: Evelyn entered the living room.\n6: Lucas exited the living room.\n\n<Questions>\n\"Where does Charlotte think that Lucas searches for the pineapple?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about Charlotte's belief regarding Lucas's search for the pineapple.  To answer this, we need to know where the pineapple is located and who moved it there.\n\n<entities>\n- location of pineapple\n- person who moved pineapple \n</entities> \n\n",
+        "response": [
+            "location of pineapple",
+            "person who moved pineapple"
+        ]
+    },
+    {
+        "id": "8266684629",
+        "questions": "\"Where does Evelyn think that Aria searches for the suit?\"",
+        "prompt": "<Events>\n1: Evelyn entered the kitchen.\n2: Aria is in the kitchen.\n3: The suit is in the pantry.\n4: Aria dislikes the green pepper.\n5: Oliver entered the kitchen.\n6: Evelyn moved the suit to the box.\n7: Aria exited the kitchen.\n\n<Questions>\n\"Where does Evelyn think that Aria searches for the suit?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about Evelyn's belief regarding Aria's search for the suit.  We need to know where the suit is located and who might be looking for it.\n\n<entities>\n- location of suit\n- person looking for suit \n</entities> \n\n",
+        "response": [
+            "person looking for suit",
+            "location of suit"
+        ]
+    },
+    {
+        "id": "5778526978",
+        "questions": "\"Where will William look for the persimmon?\"",
+        "prompt": "<Events>\n1: William entered the pantry.\n2: Hannah entered the pantry.\n3: The persimmon is in the drawer in the pantry.\n4: William moved the persimmon to the crate in the pantry.\n5: Hannah exited the pantry.\n6: Emma dislikes the pineapple.\n7: William exited the pantry.\n8: William loves the hat.\n9: Hannah entered the dining_room.\n\n<Questions>\n\"Where will William look for the persimmon?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "William moved the persimmon to the crate in the pantry, so to find it, he will look in the crate.\n\n<entities>\n- location of persimmon\n- type of container \n</entities> \n\n",
+        "response": [
+            "type of container",
+            "location of persimmon"
+        ]
+    },
+    {
+        "id": "2469377887",
+        "questions": "\"Where will Ethan look for the sweater?\"",
+        "prompt": "<Events>\n1: Mason loves cucumber and eggplant.\n2: Mason entered the cellar.\n3: James and Ethan entered the cellar.\n4: The sweater is in the cupboard, which is in the cellar.\n5: James exited the cellar.\n6: Mason exited the cellar.\n7: James entered the cellar.\n8: Ethan moved the sweater from the cupboard to the suitcase.\n9: The suitcase is in the cellar.\n\n<Questions>\n\"Where will Ethan look for the sweater?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Ethan needs to find the sweater. We know he moved it from the cupboard to the suitcase.  Therefore, we need to know the location of the suitcase to answer the question.\n\n<entities>\n- location of suitcase \n</entities> \n\n",
+        "response": [
+            "location of suitcase"
+        ]
+    },
+    {
+        "id": "4521365468",
+        "questions": "\"Where does Liam think that Noah searches for the socks?\"",
+        "prompt": "<Events>\n1: Noah entered the playroom.\n2: Ella entered the bedroom.\n3: Liam entered the playroom.\n4: The socks are in the suitcase in the playroom.\n5: Liam exited the playroom.\n6: Noah moved the socks to the container in the playroom.\n7: Noah exited the playroom.\n8: Liam entered the bedroom.\n\n<Questions>\n\"Where does Liam think that Noah searches for the socks?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Liam is trying to figure out where Noah looked for the socks.  We need to know where the socks were and where Noah was looking.\n\n<entities>\n- location of socks\n- location of Noah \n</entities> \n\n",
+        "response": [
+            "location of noah",
+            "location of socks"
+        ]
+    },
+    {
+        "id": "2543219726",
+        "questions": "\"Where is the apple really?\"",
+        "prompt": "<Events>\n1: Benjamin entered the front yard.\n2: Elizabeth entered the front yard.\n3: The apple is in the basket in the front yard.\n4: Benjamin moved the apple to the bucket in the front yard.\n5: Elizabeth exited the front yard.\n6: Benjamin exited the front yard.\n7: Elizabeth entered the TV room.\n8: Benjamin loves the jeans.\n\n<Questions>\n\"Where is the apple really?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about the location of the apple. The events describe the apple being moved from a basket to a bucket in the front yard. \n\n<entities>\n- location of apple\n</entities> \n\n",
+        "response": [
+            "location of apple"
+        ]
+    },
+    {
+        "id": "3037657820",
+        "questions": "\"Where does Amelia think that Chloe searches for the belt?\"",
+        "prompt": "<Events>\n1: Jacob entered the den.\n2: Chloe entered the den.\n3: Amelia entered the den.\n4: The belt is in the bathtub in the den.\n5: Chloe dislikes the dress.\n6: Amelia moved the belt to the pantry in the den.\n7: Chloe exited the den.\n\n<Questions>\n\"Where does Amelia think that Chloe searches for the belt?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about Amelia's belief regarding Chloe's search for the belt.  We need to know where the belt is located and who moved it there.\n\n<entities>\n- location of belt\n- entity who moved the belt \n</entities> \n\n",
+        "response": [
+            "entity who moved the belt",
+            "location of belt"
+        ]
+    },
+    {
+        "id": "2199052223",
+        "questions": "\"Where will Benjamin look for the trousers?\"",
+        "prompt": "<Events>\n1: Owen entered the garage.\n2: Benjamin entered the garage.\n3: The trousers are in the box in the garage.\n4: Benjamin exited the garage.\n5: Owen moved the trousers from the box to the envelope in the garage.\n6: Noah entered the bedroom.\n\n<Questions>\n\"Where will Benjamin look for the trousers?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Benjamin exited the garage before the trousers were moved to the envelope. Therefore, he will likely look for them in the location they were originally mentioned to be.\n\n<entities>\n- location of trousers\n</entities> \n\n",
+        "response": [
+            "location of trousers"
+        ]
+    },
+    {
+        "id": "9720101625",
+        "questions": "\"Where will Nathan look for the potato?\"",
+        "prompt": "<Events>\n1: Nathan entered the basement.\n2: Liam entered the basement.\n3: Jackson dislikes watermelon.\n4: The potato is in the bottle, which is in the basement.\n5: Liam moved the potato to the crate in the basement.\n6: Nathan exited the basement.\n\n<Questions>\n\"Where will Nathan look for the potato?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Nathan will look for the potato in the last place he knew it to be.  Since he left the basement, he would look for the potato in the basement.\n\n<entities>\n- location of potato\n- location of basement \n</entities>\n",
+        "response": [
+            "location of basement",
+            "location of potato"
+        ]
+    },
+    {
+        "id": "7180383852",
+        "questions": "\"Where does Jack think that Lucas searches for the peach?\"\n\"Where does Lucas think that Jack searches for the peach?\"",
+        "prompt": "<Events>\n1: Aiden entered the workshop.\n2: Jack and Lucas entered the workshop.\n3: Aiden exited the workshop.\n4: The peach is in the treasure chest which is in the workshop.\n5: Jack moved the peach from the treasure chest to the suitcase.\n6: Jack exited the workshop.\n7: Lucas entered the workshop.\n8: Aiden likes the peas.\n\n<Questions>\n\"Where does Jack think that Lucas searches for the peach?\"\n\"Where does Lucas think that Jack searches for the peach?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The questions ask about where Jack and Lucas *think* the other is searching for the peach. This means we need to consider the locations mentioned in relation to the peach.\n\n<entities>\n- location of peach\n- location of suitcase\n- location of treasure chest\n</entities> \n\n",
+        "response": [
+            "location of suitcase",
+            "location of peach",
+            "location of treasure chest"
+        ]
+    },
+    {
+        "id": "2611262699",
+        "questions": "\"Where is the jeans really?\"",
+        "prompt": "<Events>\n1: Charlotte entered the master_bedroom.\n2: Benjamin loves beans.\n3: Benjamin entered the master_bedroom.\n4: Oliver entered the master_bedroom.\n5: The jeans are in the cupboard, which is in the master_bedroom.\n6: Benjamin exited the master_bedroom.\n7: Oliver exited the master_bedroom.\n8: Charlotte moved the jeans to the treasure_chest in the master_bedroom.\n\n<Questions>\n\"Where is the jeans really?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about the location of the jeans. The events describe the movement of the jeans within the master bedroom.\n\n<entities>\n- location of jeans\n</entities> \n\n",
+        "response": [
+            "location of jeans"
+        ]
+    },
+    {
+        "id": "3362458471",
+        "questions": "\"Where is the jacket really?\"",
+        "prompt": "<Events>\n1: Noah entered the dining_room.\n2: Logan and Mila entered the dining_room.\n3: The jacket is in the bathtub in the dining_room.\n4: Mila exited the dining_room.\n5: Mila entered the dining_room.\n6: Logan moved the jacket from the bathtub to the basket in the dining_room.\n\n<Questions>\n\"Where is the jacket really?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about the final location of the jacket. The events describe the jacket's movement within the dining room.\n\n<entities>\n- location of jacket\n</entities> \n\n",
+        "response": [
+            "location of jacket"
+        ]
+    },
+    {
+        "id": "2677081680",
+        "questions": "\"Where is the skirt really?\"",
+        "prompt": "<Events>\n1: Aria entered the kitchen.\n2: Nathan entered the kitchen.\n3: The skirt is in the container in the kitchen.\n4: Isla entered the kitchen.\n5: Aria moved the skirt to the bathtub in the kitchen.\n6: Nathan exited the kitchen.\n7: Aria dislikes the watermelon.\n\n<Questions>\n\"Where is the skirt really?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about the location of the skirt. The events describe the skirt being moved from a container to a bathtub, both located in the kitchen. \n\n<entities>\n- location of skirt\n- location of container\n- location of bathtub \n</entities> \n\n",
+        "response": [
+            "location of bathtub",
+            "location of container",
+            "location of skirt"
+        ]
+    },
+    {
+        "id": "9200759854",
+        "questions": "\"Where is the radish really?\"",
+        "prompt": "<Events>\n1: Elizabeth entered the TV_room.\n2: James entered the TV_room.\n3: The radish is in the cupboard, which is in the TV_room.\n4: James moved the radish from the cupboard to the suitcase.\n5: Elizabeth exited the TV_room.\n6: James exited the TV_room.\n7: Elizabeth entered the TV_room.\n\n<Questions>\n\"Where is the radish really?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about the final location of the radish. The events describe the radish being moved from the cupboard to the suitcase. \n\n<entities>\n- location of radish\n</entities> \n\n",
+        "response": [
+            "location of radish"
+        ]
+    },
+    {
+        "id": "3425259730",
+        "questions": "\"Where does Isabella think that Jacob searches for the undershirt?\"",
+        "prompt": "<Events>\n1: Isabella entered the master bedroom.\n2: Jacob entered the master bedroom.\n3: The undershirt is in the cupboard in the master bedroom.\n4: Isabella moved the undershirt from the cupboard to the pantry.\n5: Isabella dislikes the pants.\n6: Jacob exited the master bedroom. \n7: Noah dislikes the banana.\n\n<Questions>\n\"Where does Isabella think that Jacob searches for the undershirt?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Isabella moved the undershirt from the cupboard in the master bedroom to the pantry. The question asks where Isabella *thinks* Jacob will look for the undershirt. This implies we need to know where Jacob would logically look for the undershirt based on the information given.\n\n<entities>\n- location of undershirt \n- location of cupboard\n</entities> \n\n",
+        "response": [
+            "location of cupboard",
+            "location of undershirt"
+        ]
+    },
+    {
+        "id": "9303941565",
+        "questions": "\"Where will Isabella look for the persimmon?\"",
+        "prompt": "<Events>\n1: Isabella entered the sunroom.\n2: Nathan entered the sunroom.\n3: Mia entered the kitchen.\n4: The persimmon is in the treasure_chest in the sunroom.\n5: Isabella exited the sunroom.\n6: Nathan moved the persimmon from the treasure_chest to the envelope in the sunroom.\n7: Isabella entered the kitchen.\n8: Isabella hates the carrot.\n\n<Questions>\n\"Where will Isabella look for the persimmon?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Isabella will look for the persimmon in the last place she knew it was.  Since she left the sunroom before Nathan moved the persimmon, she will look in the treasure chest.\n\n<entities>\n- location of persimmon\n- contents of treasure_chest \n</entities>\n",
+        "response": [
+            "location of persimmon",
+            "contents of treasure chest"
+        ]
+    },
+    {
+        "id": "1407913293",
+        "questions": "\"Where will Amelia look for the sweater?\"",
+        "prompt": "<Events>\n1: Amelia entered the bedroom.\n2: Logan entered the bedroom.\n3: The sweater is in the box in the bedroom.\n4: Logan exited the bedroom.\n5: Amelia moved the sweater to the drawer in the bedroom.\n6: Logan entered the bedroom.\n\n<Questions>\n\"Where will Amelia look for the sweater?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Amelia moved the sweater to the drawer in the bedroom after Logan left. The question asks where Amelia will look for the sweater. This implies we need to know the location of the sweater.\n\n<entities>\n- location of sweater \n</entities> \n\n",
+        "response": [
+            "location of sweater"
+        ]
+    },
+    {
+        "id": "7235924450",
+        "questions": "\"Where will Jackson look for the socks?\"",
+        "prompt": "<Events>\n1: Nathan dislikes the belt.\n2: Nathan enters the back_yard.\n3: Jackson enters the back_yard.\n4: The socks are in the bucket in the back_yard.\n5: Jackson exits the back_yard.\n6: Nathan moves the socks to the suitcase in the back_yard.\n7: Hannah enters and exits the closet.\n8: Jackson enters the closet. \n9: Nathan exits the back_yard.\n\n<Questions>\n\"Where will Jackson look for the socks?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Jackson will likely look for the socks in the last known location they were mentioned. \n\n<entities>\n- location of socks\n</entities> \n\n",
+        "response": [
+            "location of socks"
+        ]
+    },
+    {
+        "id": "2875885157",
+        "questions": "\"Where will Mia look for the carrot?\"",
+        "prompt": "<Events>\n1: Ethan entered the bathroom.\n2: Mia entered the bathroom.\n3: The carrot is in the treasure chest which is in the bathroom.\n4: Mia exited the bathroom.\n5: Ethan moved the carrot to the drawer which is in the bathroom.\n6: Mia entered the basement.\n7: Isla likes the melon.\n\n<Questions>\n\"Where will Mia look for the carrot?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Mia will likely look for the carrot in the last place she knew it to be.  \n\n<entities>\n- location of carrot\n- location of treasure chest \n- location of drawer\n</entities> \n\n",
+        "response": [
+            "location of drawer",
+            "location of carrot",
+            "location of treasure chest"
+        ]
+    },
+    {
+        "id": "5363941041",
+        "questions": "\"Where does Emily think that Hunter searches for the jacket?\"",
+        "prompt": "<Events>\n1: Sophia entered the playroom.\n2: Hunter entered the playroom.\n3: Emily entered the playroom.\n4: The jacket is in the bucket in the playroom.\n5: Emily moved the jacket to the container in the playroom.\n6: Hunter exited the playroom.\n7: Emily exited the playroom.\n8: Hunter dislikes grapes.\n9: Hunter entered the hallway.\n\n<Questions>\n\"Where does Emily think that Hunter searches for the jacket?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about Emily's belief regarding Hunter's search for the jacket.  We need to know where the jacket is located and who moved it there.\n\n<entities>\n- location of jacket\n- entity who moved the jacket \n</entities> \n\n",
+        "response": [
+            "entity who moved the jacket",
+            "location of jacket"
+        ]
+    },
+    {
+        "id": "1623908477",
+        "questions": "\"Where does Benjamin think that Lucas searches for the onion?\"",
+        "prompt": "<Events>\n1: Benjamin entered the porch.\n2: Lucas loves the suit.\n3: Avery entered and exited the porch.\n4: Lucas entered the porch.\n5: The onion is in the box, which is in the porch.\n6: Avery dislikes the shoes.\n7: Benjamin exited the porch.\n8: Lucas moved the onion to the container in the porch.\n9: Lucas exited the porch.\n10: Benjamin entered the playroom.\n\n<Questions>\n\"Where does Benjamin think that Lucas searches for the onion?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about Benjamin's belief regarding Lucas's search for the onion.  To answer this, we need to know where the onion is located and who might be looking for it.\n\n<entities>\n- location of onion\n- person searching for onion \n</entities> \n\n",
+        "response": [
+            "person searching for onion",
+            "location of onion"
+        ]
+    },
+    {
+        "id": "7838883207",
+        "questions": "\"Where does Sophia think that Abigail searches for the peas?\"",
+        "prompt": "<Events>\n1: Abigail is in the garage.\n2: Sophia entered the garage.\n3: The peas are in the crate in the garage.\n4: Sophia moved the peas to the cupboard in the garage.\n5: Abigail exited the garage.\n6: Sophia is in the garage.\n\n<Questions>\n\"Where does Sophia think that Abigail searches for the peas?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Sophia is in the garage and knows that Abigail was also in the garage. Sophia moved the peas to the cupboard. The question asks where Sophia thinks Abigail would look for the peas.  \n\n<entities>\n- location of peas\n- location of cupboard\n</entities> \n\n",
+        "response": [
+            "location of peas",
+            "location of cupboard"
+        ]
+    },
+    {
+        "id": "7619624666",
+        "questions": "\"Where is the shirt really?\"",
+        "prompt": "<Events>\n1: Logan entered the kitchen.\n2: Aria entered the kitchen.\n3: The shirt is in the treasure chest which is in the kitchen.\n4: Logan exited the kitchen.\n5: Aria moved the shirt from the treasure chest to the drawer.\n6: Aria exited the kitchen.\n7: Emily entered the kitchen.\n8: Logan entered the kitchen.\n\n<Questions>\n\"Where is the shirt really?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about the final location of the shirt. The events describe the shirt being moved from the treasure chest to the drawer. \n\nTherefore, we need to know about the shirt's location and the locations of the treasure chest and the drawer.\n\n<entities>\n- location of shirt\n- location of treasure chest\n- location of drawer \n</entities> \n\n",
+        "response": [
+            "location of shirt",
+            "location of drawer",
+            "location of treasure chest"
+        ]
+    },
+    {
+        "id": "8725207549",
+        "questions": "\"Where will Hannah look for the corn?\"",
+        "prompt": "<Events>\n1: Hannah entered the hall.\n2: Amelia entered the hall.\n3: The corn is in the drawer in the hall.\n4: Amelia hates the grapes and stockings.\n5: Hannah exited the hall.\n6: Amelia moved the corn to the bathtub in the hall.\n7: Hannah entered the hall.\n8: Charlotte entered the hall.\n\n<Questions>\n\"Where will Hannah look for the corn?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Hannah will likely look for the corn in the last known location. The events tell us that Amelia moved the corn to the bathtub in the hall.\n\n<entities>\n- location of corn\n</entities> \n\n",
+        "response": [
+            "location of corn"
+        ]
+    },
+    {
+        "id": "3431523037",
+        "questions": "\"Where was the underpants at the beginning?\"",
+        "prompt": "<Events>\n1: Jack entered the living room.\n2: Amelia and Elizabeth entered the living room.\n3: The suitcase containing the underpants is in the living room.\n4: Jack loves the slacks.\n5: Amelia exited the living room.\n6: Jack exited the living room.\n7: Elizabeth moved the underpants from the suitcase to the drawer. \n8: The drawer is in the living room.\n\n<Questions>\n\"Where was the underpants at the beginning?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about the initial location of the underpants.  We need to find where the underpants were at the beginning, before any actions were taken.\n\n<entities>\n- location of underpants \n- contents of suitcase\n</entities> \n\n",
+        "response": [
+            "location of underpants",
+            "contents of suitcase"
+        ]
+    },
+    {
+        "id": "2741751992",
+        "questions": "\"Where does Abigail think that Evelyn searches for the skirt?\"",
+        "prompt": "<Events>\n1: Abigail entered the workshop.\n2: Hunter entered the workshop.\n3: Evelyn entered the workshop.\n4: The skirt is in the cupboard and the cupboard is in the workshop.\n5: Hunter exited the workshop.\n6: Evelyn exited the workshop.\n7: Abigail moved the skirt to the container in the workshop.\n8: Evelyn entered the workshop.\n\n<Questions>\n\"Where does Abigail think that Evelyn searches for the skirt?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Abigail moved the skirt to a container in the workshop after Evelyn left. The question asks where Abigail *thinks* Evelyn will look for the skirt. This implies we need to know where the skirt was originally located.\n\n<entities>\n- location of skirt\n- type of container \n</entities> \n\n",
+        "response": [
+            "type of container",
+            "location of skirt"
+        ]
+    },
+    {
+        "id": "1130205883",
+        "questions": "\"Where will Emily look for the cabbage?\"",
+        "prompt": "<Events>\n1: Emily entered the master_bedroom.\n2: Aiden entered the master_bedroom.\n3: The cabbage is in the drawer in the master_bedroom.\n4: Emily exited the master_bedroom.\n5: Aiden moved the cabbage to the bathtub in the master_bedroom.\n6: Lucas entered the master_bedroom.\n7: Emily entered the master_bedroom.\n8: Lucas likes the asparagus.\n\n<Questions>\n\"Where will Emily look for the cabbage?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Emily will likely look for the cabbage in the last known location. The events tell us Aiden moved the cabbage to the bathtub.\n\n<entities>\n- location of cabbage\n</entities> \n\n",
+        "response": [
+            "location of cabbage"
+        ]
+    },
+    {
+        "id": "1992740991",
+        "questions": "\"Where was the undershirt at the beginning?\"",
+        "prompt": "<Events>\n1: Carter entered the cellar.\n2: Jackson entered the cellar.\n3: Olivia entered the patio.\n4: The undershirt is in the box in the cellar.\n5: Carter exited the cellar.\n6: Carter entered the patio.\n7: Jackson likes the sweater.\n8: Jackson moved the undershirt to the basket in the cellar.\n9: Olivia exited the patio.\n\n<Questions>\n\"Where was the undershirt at the beginning?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about the initial location of the undershirt.  The events describe the movement of the undershirt, so we need to know its starting point.\n\n<entities>\n- location of undershirt \n</entities> \n\n",
+        "response": [
+            "location of undershirt"
+        ]
+    },
+    {
+        "id": "6654106785",
+        "questions": "\"Where does Jack think that Mila searches for the beans?\"",
+        "prompt": "<Events>\n1: Mila entered the pantry.\n2: Jack entered the pantry.\n3: The beans are in the basket in the pantry.\n4: Jack exited the pantry.\n5: Mila moved the beans to the bathtub in the pantry.\n6: Mila exited the pantry.\n7: Jack entered the master_bedroom.\n\n<Questions>\n\"Where does Jack think that Mila searches for the beans?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Jack sees Mila enter and exit the pantry and knows the beans are in there. He likely assumes Mila is looking for the beans in the pantry.\n\n<entities>\n- location of beans\n</entities> \n\n",
+        "response": [
+            "location of beans"
+        ]
+    },
+    {
+        "id": "5400033703",
+        "questions": "\"Where does Aiden think that Owen searches for the sweatshirt?\"",
+        "prompt": "<Events>\n1: Aiden entered the patio.\n2: Emma dislikes the t-shirt.\n3: Owen entered the patio.\n4: The sweatshirt is in the bottle, which is in the patio.\n5: Owen moved the sweatshirt to the bathtub in the patio.\n6: Emma loves the grapes.\n7: Aiden exited the patio.\n8: Owen exited the patio.\n9: Aiden entered the patio.\n\n<Questions>\n\"Where does Aiden think that Owen searches for the sweatshirt?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Aiden is trying to figure out where Owen is looking for the sweatshirt. We know Owen moved the sweatshirt to the bathtub in the patio.\n\n<entities>\n- location of sweatshirt\n- location of bathtub \n</entities> \n\n",
+        "response": [
+            "location of bathtub",
+            "location of sweatshirt"
+        ]
+    },
+    {
+        "id": "2118954401",
+        "questions": "\"Where does Ethan think that Nathan searches for the grapes?\"",
+        "prompt": "<Events>\n1: Ethan entered the bathroom.\n2: Nathan entered the bathroom.\n3: The grapes are in the drawer in the bathroom.\n4: Elizabeth entered the back_yard.\n5: Ethan moved the grapes to the cupboard in the bathroom.\n6: Elizabeth exited the back_yard.\n7: Nathan exited the bathroom.\n\n<Questions>\n\"Where does Ethan think that Nathan searches for the grapes?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Ethan moved the grapes to the cupboard in the bathroom after Nathan entered the bathroom. The question asks where Ethan *thinks* Nathan will look for the grapes. This implies we need to know where the grapes were originally located.\n\n<entities>\n- location of grapes \n- location of cupboard\n</entities> \n\n",
+        "response": [
+            "location of grapes",
+            "location of cupboard"
+        ]
+    },
+    {
+        "id": "8682036663",
+        "questions": "\"Where will Owen look for the underpants?\"",
+        "prompt": "<Events>\n1: Logan entered the crawlspace.\n2: Owen entered the study.\n3: Alexander entered the study.\n4: Logan loves lettuce.\n5: The underpants are in the crate in the study.\n6: Owen exited the study and entered the crawlspace.\n7: Alexander moved the underpants from the crate to the envelope in the study.\n\n<Questions>\n\"Where will Owen look for the underpants?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Owen is looking for the underpants. We know that the underpants were moved to an envelope in the study. Therefore, Owen will likely look in the study.\n\n<entities>\n- location of underpants\n- location of envelope \n</entities> \n\n",
+        "response": [
+            "location of underpants",
+            "location of envelope"
+        ]
+    },
+    {
+        "id": "3823941964",
+        "questions": "\"Where was the cherry at the beginning?\"\n\"Where is the cherry really?\"",
+        "prompt": "<Events>\n1: Logan dislikes the peach.\n2: Lily entered the porch.\n3: Alexander entered the porch.\n4: The cherry is in the bathtub, which is in the porch.\n5: Lily exited the porch.\n6: Lily entered the porch.\n7: Alexander dislikes the beans.\n8: Alexander moved the cherry from the bathtub to the cupboard.\n9: The cupboard is in the porch.\n\n<Questions>\n\"Where was the cherry at the beginning?\"\n\"Where is the cherry really?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The questions ask about the location of the cherry at the beginning and its current location.  The events describe the cherry's movement from the bathtub to the cupboard, both of which are located on the porch.\n\n<entities>\n- location of cherry\n- initial location of cherry\n- location of bathtub\n- location of cupboard \n</entities> \n\n",
+        "response": [
+            "location of bathtub",
+            "location of cupboard",
+            "initial location of cherry",
+            "location of cherry"
+        ]
+    },
+    {
+        "id": "8349960712",
+        "questions": "\"Where is the spinach really?\"",
+        "prompt": "<Events>\n1: Emily entered the bedroom.\n2: Avery entered the bedroom.\n3: Avery loves the green pepper.\n4: The spinach is in the pantry.\n5: Avery exited the bedroom.\n6: Avery entered the garden.\n7: Emily moved the spinach to the bottle.\n8: Isla entered the garden.\n\n<Questions>\n\"Where is the spinach really?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about the location of the spinach. The events describe the spinach being in the pantry and then moved to a bottle by Emily. \n\n<entities>\n- location of spinach\n- container of spinach \n</entities> \n\n",
+        "response": [
+            "location of spinach",
+            "container of spinach"
+        ]
+    },
+    {
+        "id": "8895393073",
+        "questions": "\"Where does Hannah think that Owen searches for the lettuce?\"",
+        "prompt": "<Events>\n1: Isla entered the crawlspace.\n2: Hannah and Owen entered the staircase.\n3: Hannah loves the boots.\n4: The lettuce is in the basket, which is in the staircase.\n5: Owen exited the staircase and entered the crawlspace.\n6: Hannah moved the lettuce from the basket to the container in the staircase.\n\n<Questions>\n\"Where does Hannah think that Owen searches for the lettuce?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Hannah is looking for the lettuce and knows Owen is also looking for it. The question asks where Hannah *thinks* Owen is looking, implying she doesn't know for sure.  We need to know where the lettuce is located to determine where Hannah thinks Owen would look.\n\n<entities>\n- location of lettuce \n</entities> \n\n",
+        "response": [
+            "location of lettuce"
+        ]
+    },
+    {
+        "id": "4419824554",
+        "questions": "\"Where will Elizabeth look for the grapefruit?\"\n\"Where does Elizabeth think that Noah searches for the grapefruit?\"",
+        "prompt": "<Events>\n1: Noah entered the hall.\n2: Elizabeth entered the hall.\n3: The grapefruit is in the treasure chest which is in the hall.\n4: James entered the basement.\n5: Elizabeth moved the grapefruit to the bathtub in the hall.\n6: Noah hates the pajamas.\n7: Noah exited the hall.\n8: James exited the basement.\n9: Elizabeth loves the socks.\n10: Elizabeth exited the hall.\n11: Noah entered the basement.\n\n<Questions>\n\"Where will Elizabeth look for the grapefruit?\"\n\"Where does Elizabeth think that Noah searches for the grapefruit?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The questions focus on Elizabeth's actions and beliefs regarding the grapefruit's location.  We need to know where the grapefruit is and where Elizabeth thinks Noah might look for it.\n\n<entities>\n- location of grapefruit\n- location Noah searches \n</entities> \n\n",
+        "response": [
+            "location of grapefruit",
+            "location noah searches"
+        ]
+    },
+    {
+        "id": "4796675756",
+        "questions": "\"Where does Jayden think that Jackson searches for the cherry?\"",
+        "prompt": "<Events>\n1: Jackson entered the back_yard.\n2: Jayden entered the back_yard.\n3: The cherry is in the container and the container is in the back_yard.\n4: Jackson exited the back_yard.\n5: Jayden moved the cherry to the bucket in the back_yard.\n6: Jayden exited the back_yard.\n7: Liam entered the front_yard.\n8: Jackson entered the front_yard.\n\n<Questions>\n\"Where does Jayden think that Jackson searches for the cherry?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Jayden moved the cherry to the bucket in the backyard, so he knows Jackson won't find it in its original location.  The question asks about Jayden's belief about Jackson's search location.\n\n<entities>\n- location of cherry\n- location of bucket \n</entities> \n\n",
+        "response": [
+            "location of bucket",
+            "location of cherry"
+        ]
+    },
+    {
+        "id": "7935227246",
+        "questions": "\"Where does Aria think that Ava searches for the raincoat?\"\n\"Where does Ava think that Aria searches for the raincoat?\"",
+        "prompt": "<Events>\n1: Ava entered the hallway.\n2: Aria entered the hallway.\n3: The raincoat is in the container, which is in the hallway.\n4: Aria moved the raincoat to the treasure chest in the hallway.\n5: Ava exited the hallway.\n6: Aria exited the hallway.\n7: Ava entered the hallway.\n\n<Questions>\n\"Where does Aria think that Ava searches for the raincoat?\"\n\"Where does Ava think that Aria searches for the raincoat?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The questions ask about the *beliefs* of Ava and Aria regarding where the other person is searching for the raincoat.  The events describe the movements of Ava and Aria and the raincoat's location. To answer the questions, we need to know:\n\n* **Where the raincoat is located:** This is crucial because it's the object both Ava and Aria are likely searching for.\n* **Where Ava and Aria are:** Their locations might give clues about their search strategies.\n\n<entities>\n- location of raincoat\n- location of Ava\n- location of Aria \n</entities> \n\n",
+        "response": [
+            "location of ava",
+            "location of raincoat",
+            "location of aria"
+        ]
+    },
+    {
+        "id": "4824744765",
+        "questions": "\"Where does Logan think that Owen searches for the grapes?\"",
+        "prompt": "<Events>\n1: Logan entered the crawlspace.\n2: Owen entered the crawlspace.\n3: The grapes are in the bathtub in the crawlspace.\n4: Owen moved the grapes to a container in the crawlspace.\n5: Jackson entered the attic.\n6: Logan exited the crawlspace and entered the attic. \n7: Owen exited the crawlspace.\n\n<Questions>\n\"Where does Logan think that Owen searches for the grapes?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about Logan's belief regarding Owen's grape search location.  We need to know where the grapes are located to understand Logan's perspective.\n\n<entities>\n- location of grapes \n</entities> \n\n",
+        "response": [
+            "location of grapes"
+        ]
+    },
+    {
+        "id": "2019549108",
+        "questions": "\"Where does Evelyn think that Jackson searches for the undershirt?\"",
+        "prompt": "<Events>\n1: Jackson entered the closet.\n2: Owen likes the dress.\n3: Evelyn is in the closet.\n4: The undershirt is in the treasure_chest.\n5: Evelyn moved the undershirt to the pantry.\n6: Jackson exited the closet.\n7: Owen entered the closet.\n8: Owen exited the closet.\n9: Jackson entered the hall.\n\n<Questions>\n\"Where does Evelyn think that Jackson searches for the undershirt?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about Evelyn's belief regarding Jackson's search for the undershirt.  We need to know where the undershirt is located and who moved it there.\n\n<entities>\n- location of undershirt\n- who moved the undershirt \n</entities> \n\n",
+        "response": [
+            "who moved the undershirt",
+            "location of undershirt"
+        ]
+    },
+    {
+        "id": "4705780642",
+        "questions": "\"Where does Jacob think that Aiden searches for the persimmon?\"",
+        "prompt": "<Events>\n1: Aiden entered the cellar.\n2: Jacob entered the cellar.\n3: The persimmon is in the treasure chest which is in the cellar.\n4: Aiden exited the cellar.\n5: Jacob dislikes the sweatshirt.\n6: Jacob moved the persimmon to the bathtub which is in the cellar.\n7: Ella loves the underclothes.\n8: Ella entered the closet.\n\n<Questions>\n\"Where does Jacob think that Aiden searches for the persimmon?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about Jacob's belief regarding Aiden's search for the persimmon.  To answer this, we need to know where the persimmon is located and who Jacob thinks Aiden is looking for it.\n\n<entities>\n- location of persimmon\n- thoughts of Jacob \n</entities> \n\n",
+        "response": [
+            "thoughts of jacob",
+            "location of persimmon"
+        ]
+    },
+    {
+        "id": "8883925682",
+        "questions": "\"Where will Lucas look for the cabbage?\"",
+        "prompt": "<Events>\n1: Lily entered the TV_room.\n2: Lucas entered the TV_room.\n3: The cabbage is in the box in the TV_room.\n4: Lily exited the TV_room.\n5: Lily entered the TV_room.\n6: Lucas likes the hat.\n7: Lucas moved the cabbage to the basket in the TV_room.\n\n<Questions>\n\"Where will Lucas look for the cabbage?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Lucas moved the cabbage to the basket in the TV room, so he will look for it there.\n\n<entities>\n- location of cabbage\n- type of container (basket)\n</entities> \n\n",
+        "response": [
+            "location of cabbage",
+            "type of container"
+        ]
+    },
+    {
+        "id": "4467704936",
+        "questions": "\"Where was the cherry at the beginning?\"",
+        "prompt": "<Events>\n1: Logan entered the porch.\n2: Liam entered the porch.\n3: The cherry is in the cupboard, which is in the porch.\n4: Liam exited the porch.\n5: Logan moved the cherry to the treasure_chest in the porch.\n6: Logan likes the green_pepper.\n\n<Questions>\n\"Where was the cherry at the beginning?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about the initial location of the cherry. The events describe the cherry's movement and location relative to the porch and a cupboard.\n\n<entities>\n- location of cherry\n- location of cupboard \n</entities> \n\n",
+        "response": [
+            "location of cupboard",
+            "location of cherry"
+        ]
+    },
+    {
+        "id": "4930978463",
+        "questions": "\"Where will Sophia look for the tomato?\"",
+        "prompt": "<Events>\n1: Sophia entered the TV_room.\n2: Lucas entered the TV_room.\n3: The tomato is in the cupboard in the TV_room.\n4: Lucas moved the tomato from the cupboard to the box in the TV_room.\n5: Lucas likes the cabbage.\n6: Sophia exited the TV_room.\n7: Lucas is in the TV_room.\n\n<Questions>\n\"Where will Sophia look for the tomato?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Sophia will likely look for the tomato in the TV room since that's where it was last mentioned.  \n\n<entities>\n- location of tomato\n- location of Sophia \n</entities> \n\n",
+        "response": [
+            "location of tomato",
+            "location of sophia"
+        ]
+    },
+    {
+        "id": "4351486022",
+        "questions": "\"Where will Isabella look for the grapefruit?\"",
+        "prompt": "<Events>\n1: Ella entered the workshop.\n2: Ella likes asparagus.\n3: Isabella entered the workshop.\n4: Isabella dislikes pineapple.\n5: The grapefruit is in the drawer, which is in the workshop.\n6: Isabella exited the workshop.\n7: Ella moved the grapefruit to the bathtub, which is in the workshop.\n8: Aria entered the workshop.\n\n<Questions>\n\"Where will Isabella look for the grapefruit?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Isabella exited the workshop before the grapefruit was moved to the bathtub. Therefore, she will look for it in the location it was last known to be.\n\n<entities>\n- location of grapefruit\n</entities> \n\n",
+        "response": [
+            "location of grapefruit"
+        ]
+    },
+    {
+        "id": "8995250238",
+        "questions": "\"Where will Benjamin look for the dress?\"",
+        "prompt": "<Events>\n1: Liam entered the garage.\n2: Benjamin entered the living room.\n3: Ava entered the living room.\n4: The dress is in the bottle in the living room.\n5: Liam dislikes the cabbage.\n6: Ava moved the dress from the bottle to the basket in the living room. \n7: Benjamin exited and re-entered the living room.\n\n<Questions>\n\"Where will Benjamin look for the dress?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Benjamin will likely look for the dress in the living room since that's where it was last mentioned.\n\n<entities>\n- location of dress\n</entities> \n\n",
+        "response": [
+            "location of dress"
+        ]
+    },
+    {
+        "id": "4948838384",
+        "questions": "\"Where does Logan think that Chloe searches for the green_pepper?\"",
+        "prompt": "<Events>\n1: Chloe entered the garage.\n2: Logan entered the garage.\n3: The green pepper is in the bucket in the garage.\n4: Chloe exited the garage.\n5: Logan moved the green pepper to the pantry.\n6: The pantry is in the garage.\n\n<Questions>\n\"Where does Logan think that Chloe searches for the green_pepper?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Logan sees Chloe enter and exit the garage, and knows the green pepper is moved to the pantry.  He likely assumes Chloe would look for the pepper in the last place she saw it.\n\n<entities>\n- location of green_pepper\n- location of garage\n</entities> \n\n",
+        "response": [
+            "location of green pepper",
+            "location of garage"
+        ]
+    },
+    {
+        "id": "3681560748",
+        "questions": "\"Where will Aiden look for the t-shirt?\"",
+        "prompt": "<Events>\n1: Owen entered the kitchen.\n2: Noah and Aiden entered the kitchen.\n3: Noah dislikes lettuce.\n4: Owen exited the kitchen.\n5: The t-shirt is in the crate in the kitchen.\n6: Noah moved the t-shirt from the crate to the basket in the kitchen. \n7: Aiden exited the kitchen.\n\n<Questions>\n\"Where will Aiden look for the t-shirt?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Aiden will likely look for the t-shirt in the last known location. Since Noah moved the t-shirt from the crate to the basket, Aiden will probably look in the basket.\n\n<entities>\n- location of t-shirt\n</entities> \n\n",
+        "response": [
+            "location of tshirt"
+        ]
+    },
+    {
+        "id": "3817025967",
+        "questions": "\"Where does James think that Owen searches for the scarf?\"\n\"Where will Owen look for the scarf?\"\n\"Where will James look for the scarf?\"",
+        "prompt": "<Events>\n1: Owen entered the study.\n2: James entered the study.\n3: Noah hates the cap.\n4: The scarf is in the container and the container is in the study.\n5: James moved the scarf from the container to the envelope in the study.\n6: Owen exited the study and entered the back_yard.\n\n<Questions>\n\"Where does James think that Owen searches for the scarf?\"\n\"Where will Owen look for the scarf?\"\n\"Where will James look for the scarf?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The questions revolve around the location of the scarf and where different characters might look for it.  We need to know where the scarf is currently located and who might be looking for it.\n\n<entities>\n- location of scarf\n- placement of scarf \n</entities> \n\n",
+        "response": [
+            "placement of scarf",
+            "location of scarf"
+        ]
+    },
+    {
+        "id": "1181692746",
+        "questions": "\"Where will Mia look for the carrot?\"",
+        "prompt": "<Events>\n1: Lily likes pajamas.\n2: Logan enters the sunroom.\n3: Mia enters the sunroom.\n4: Lily enters the sunroom.\n5: The carrot is in the treasure chest, which is in the sunroom.\n6: Mia exits the sunroom.\n7: Lily exits the sunroom.\n8: Mia dislikes the orange.\n9: Logan moves the carrot to the container in the sunroom.\n\n<Questions>\n\"Where will Mia look for the carrot?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Mia will likely look for the carrot in the last known location it was mentioned. \n\n<entities>\n- location of carrot\n</entities> \n\n",
+        "response": [
+            "location of carrot"
+        ]
+    },
+    {
+        "id": "1350114683",
+        "questions": "\"Where was the beans at the beginning?\"\n\"Where is the beans really?\"",
+        "prompt": "<Events>\n1: Oliver entered the office.\n2: Olivia entered the office.\n3: The beans are in the pantry, which is in the office.\n4: Oliver exited the office.\n5: Olivia moved the beans to the drawer, which is in the office.\n6: Olivia exited the office.\n7: Oliver entered the office.\n\n<Questions>\n\"Where was the beans at the beginning?\"\n\"Where is the beans really?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The questions ask about the location of the beans at the beginning and the end of the described events.  \n\n<entities>\n- location of beans\n- initial location of beans\n</entities> \n\n",
+        "response": [
+            "location of beans",
+            "initial location of beans"
+        ]
+    },
+    {
+        "id": "5114708546",
+        "questions": "\"Where will Noah look for the lettuce?\"",
+        "prompt": "<Events>\n1: Ava entered the study.\n2: Noah entered the study.\n3: Ava loves the persimmon and lettuce.\n4: Oliver entered the study.\n5: The lettuce is in the bathtub in the study.\n6: Noah exited the study.\n7: Oliver moved the lettuce to the bottle in the study.\n\n<Questions>\n\"Where will Noah look for the lettuce?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Noah exited the study before the lettuce was moved. Therefore, to answer the question, we need to know where the lettuce was when Noah was in the study.\n\n<entities>\n- location of lettuce \n</entities> \n\n",
+        "response": [
+            "location of lettuce"
+        ]
+    },
+    {
+        "id": "5050115253",
+        "questions": "\"Where was the pumpkin at the beginning?\"",
+        "prompt": "<Events>\n1: Hunter entered the dining room.\n2: Liam entered the dining room.\n3: The pumpkin is in the crate in the dining room.\n4: Hunter moved the pumpkin from the crate to the basket in the dining room.\n5: Oliver likes the peas.\n6: Oliver entered the basement.\n7: Liam exited the dining room.\n\n<Questions>\n\"Where was the pumpkin at the beginning?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about the initial location of the pumpkin.  The events tell us the pumpkin was moved from a crate to a basket in the dining room.\n\n<entities>\n- location of pumpkin\n- type of container (crate)\n</entities> \n\n",
+        "response": [
+            "type of container",
+            "location of pumpkin"
+        ]
+    },
+    {
+        "id": "2075957797",
+        "questions": "\"Where does William think that Avery searches for the pineapple?\"",
+        "prompt": "<Events>\n1: Avery entered the cellar.\n2: William entered the cellar.\n3: Jack dislikes the skirt.\n4: The pineapple is located in the bathtub.\n5: Jack went to the garage.\n6: Avery left the cellar.\n7: William transferred the pineapple to the basket.\n\n<Questions>\n\"Where does William think that Avery searches for the pineapple?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "William is likely trying to figure out where Avery is looking for the pineapple. Since the pineapple was in the bathtub and William moved it to the basket, he might think Avery is looking in those locations.\n\n<entities>\n- location of pineapple\n- location of basket \n</entities> \n\n",
+        "response": [
+            "location of pineapple",
+            "location of basket"
+        ]
+    },
+    {
+        "id": "3689466708",
+        "questions": "\"Where will Isabella look for the underclothes?\"",
+        "prompt": "<Events>\n1: Isabella entered the dining_room.\n2: Jackson and Carter entered the dining_room.\n3: The underclothes is in the bottle in the dining_room.\n4: Isabella exited the dining_room.\n5: Jackson moved the underclothes to the drawer in the dining_room.\n6: Isabella entered the garden.\n\n<Questions>\n\"Where will Isabella look for the underclothes?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Isabella is looking for the underclothes. The events tell us that the underclothes were moved to a drawer in the dining room. \n\n<entities>\n- location of underclothes\n- placement of underclothes \n</entities> \n\n",
+        "response": [
+            "location of underclothes",
+            "placement of underclothes"
+        ]
+    },
+    {
+        "id": "4718362714",
+        "questions": "\"Where does Carter think that Hunter searches for the slippers?\"",
+        "prompt": "<Events>\n1: Carter entered the patio.\n2: Jackson entered the cellar.\n3: Jackson loves the underpants.\n4: Hunter is in the patio.\n5: Jackson exited the cellar.\n6: The slippers is in the pantry.\n7: The pantry is in the patio.\n8: Hunter moved the slippers to the treasure_chest.\n9: The treasure_chest is in the patio.\n10: Carter exited the patio.\n\n<Questions>\n\"Where does Carter think that Hunter searches for the slippers?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Carter sees Hunter in the patio and knows the slippers are in the pantry, which is also in the patio.  Therefore, Carter likely thinks Hunter is searching for the slippers in the patio.\n\n<entities>\n- location of Hunter\n- location of slippers\n- location of pantry \n</entities> \n\n",
+        "response": [
+            "location of slippers",
+            "location of pantry",
+            "location of hunter"
+        ]
+    },
+    {
+        "id": "6671339999",
+        "questions": "\"Where will Aiden look for the belt?\"",
+        "prompt": "<Events>\n1: Mason loves the persimmon.\n2: Mason entered the office.\n3: Aiden is in the office.\n4: The belt is in the drawer.\n5: Aiden exited the office.\n6: Mason moved the belt to the cupboard. \n7: Liam dislikes the underclothes.\n8: Aiden entered the den.\n\n<Questions>\n\"Where will Aiden look for the belt?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Aiden is looking for the belt. We know Mason moved the belt to the cupboard. Therefore, Aiden will likely look in the cupboard.\n\n<entities>\n- location of belt: cupboard \n</entities> \n\n",
+        "response": [
+            "location of belt: cupboard"
+        ]
+    },
+    {
+        "id": "4556694306",
+        "questions": "\"Where will William look for the suit?\"",
+        "prompt": "<Events>\n1: Isla entered the den.\n2: William entered the hallway.\n3: Isla likes the sweet potato.\n4: Hunter entered the hallway.\n5: The suit is in the crate.\n6: William moved the suit to the container.\n7: Hunter exited the hallway.\n\n<Questions>\n\"Where will William look for the suit?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "William is looking for the suit. We know the suit was in a crate and William moved it to a container.\n\n<entities>\n- location of suit\n- type of suit container \n</entities> \n\n",
+        "response": [
+            "type of suit container",
+            "location of suit"
+        ]
+    },
+    {
+        "id": "6175680690",
+        "questions": "\"Where does Isla think that Mia searches for the coat?\"",
+        "prompt": "<Events>\n1: Mia entered the front yard.\n2: Isla entered the front yard.\n3: The coat is in the bucket in the front yard.\n4: Isabella entered the lounge.\n5: Mia exited the front yard.\n6: Isla moved the coat from the bucket to the box in the front yard.\n7: Isla exited the front yard.\n8: Mia entered the front yard.\n9: Mia hates the underclothes.\n\n<Questions>\n\"Where does Isla think that Mia searches for the coat?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Isla sees Mia enter and exit the front yard and then move the coat from the bucket to the box.  Therefore, Isla likely thinks Mia is searching for the coat in the front yard.\n\n<entities>\n- location of coat\n</entities> \n\n",
+        "response": [
+            "location of coat"
+        ]
+    },
+    {
+        "id": "7094292960",
+        "questions": "\"Where will Nathan look for the broccoli?\"",
+        "prompt": "<Events>\n1: William likes the scarf.\n2: Jacob entered the TV_room.\n3: Nathan entered the TV_room.\n4: William entered the TV_room.\n5: Nathan loves the tie.\n6: The broccoli is in the bottle in the TV_room.\n7: William moved the broccoli from the bottle to the envelope in the TV_room. \n8: Jacob exited the kitchen.\n9: Nathan exited the TV_room.\n\n<Questions>\n\"Where will Nathan look for the broccoli?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Nathan will likely look for the broccoli in the TV room since it was last seen there.\n\n<entities>\n- location of broccoli\n- location of TV_room \n</entities> \n\n",
+        "response": [
+            "location of broccoli",
+            "location of tv room"
+        ]
+    },
+    {
+        "id": "8227714451",
+        "questions": "\"Where does Alexander think that Jacob searches for the turnip?\"",
+        "prompt": "<Events>\n1: Alexander entered the den.\n2: Jackson entered and exited the front_yard.\n3: Jacob entered the den.\n4: The turnip was in the treasure_chest in the den.\n5: Alexander exited the den.\n6: Jacob moved the turnip from the treasure_chest to the bathtub in the den.\n\n<Questions>\n\"Where does Alexander think that Jacob searches for the turnip?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about Alexander's belief regarding Jacob's search for the turnip.  To answer this, we need to know where the turnip is located and who might know about its location.\n\n<entities>\n- location of turnip\n- knowledge of turnip location (Alexander)\n</entities> \n\n",
+        "response": [
+            "location of turnip",
+            "knowledge of turnip location"
+        ]
+    },
+    {
+        "id": "2319693739",
+        "questions": "\"Where is the undershirt really?\"",
+        "prompt": "<Events>\n1: Benjamin entered the master_bedroom.\n2: Mia and Ava entered the lounge.\n3: The undershirt is in the drawer in the lounge.\n4: Benjamin exited the master_bedroom.\n5: Mia dislikes the onion and moved the undershirt to the box in the lounge.\n6: Ava exited and re-entered the lounge. \n7: Mia exited the lounge.\n\n<Questions>\n\"Where is the undershirt really?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about the location of the undershirt. The events describe the movement of the undershirt between the drawer and a box, both located in the lounge. \n\n<entities>\n- location of undershirt\n- location of drawer\n- location of box\n</entities> \n\n",
+        "response": [
+            "location of box",
+            "location of undershirt",
+            "location of drawer"
+        ]
+    },
+    {
+        "id": "2034612309",
+        "questions": "\"Where was the radish at the beginning?\"",
+        "prompt": "<Events>\n1: Mason entered the pantry.\n2: Chloe entered and exited the pantry.\n3: Sophia entered and exited the pantry.\n4: The radish was in the drawer in the pantry.\n5: Sophia entered the pantry.\n6: Mason moved the radish to the bathtub in the pantry.\n\n<Questions>\n\"Where was the radish at the beginning?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about the initial location of the radish. The events describe the radish's movement and the people interacting with it.\n\n<entities>\n- location of radish \n</entities> \n\n",
+        "response": [
+            "location of radish"
+        ]
+    },
+    {
+        "id": "4484884270",
+        "questions": "\"Where does Abigail think that Benjamin searches for the pumpkin?\"",
+        "prompt": "<Events>\n1: Benjamin entered the sunroom.\n2: Isla entered the staircase.\n3: Abigail is in the sunroom.\n4: The pumpkin is in the container in the sunroom.\n5: Abigail moved the pumpkin to the bathtub in the sunroom.\n6: Isla exited the staircase.\n7: Benjamin exited the sunroom.\n8: Abigail exited the sunroom.\n9: Benjamin entered the sunroom.\n\n<Questions>\n\"Where does Abigail think that Benjamin searches for the pumpkin?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about Abigail's belief regarding Benjamin's search for the pumpkin.  We need to know where the pumpkin is located and who moved it there.\n\n<entities>\n- location of pumpkin\n- person who moved pumpkin \n</entities> \n\n",
+        "response": [
+            "location of pumpkin",
+            "person who moved pumpkin"
+        ]
+    },
+    {
+        "id": "1502537059",
+        "questions": "\"Where was the shirt at the beginning?\"",
+        "prompt": "<Events>\n1: Isla entered the kitchen.\n2: Evelyn entered the kitchen.\n3: The shirt is in the basket in the kitchen.\n4: Isla hates the lemon.\n5: Evelyn exited the kitchen.\n6: Isla moved the shirt to the bottle in the kitchen.\n7: Isla exited the kitchen.\n8: Isla loves the undershirt.\n9: Evelyn entered the lounge.\n\n<Questions>\n\"Where was the shirt at the beginning?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about the initial location of the shirt. The events describe the shirt's movement and location within the kitchen.\n\n<entities>\n- location of shirt\n</entities> \n\n",
+        "response": [
+            "location of shirt"
+        ]
+    },
+    {
+        "id": "7358619384",
+        "questions": "\"Where was the peas at the beginning?\"",
+        "prompt": "<Events>\n1: Jacob entered the dining_room.\n2: Evelyn entered the dining_room.\n3: The peas are in the box in the dining_room.\n4: Mia entered and exited the dining_room.\n5: Evelyn moved the peas to the envelope in the dining_room.\n6: Jacob exited the dining_room and entered the study.\n\n<Questions>\n\"Where was the peas at the beginning?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about the initial location of the peas. The events describe the movement of the peas from a box to an envelope within the dining room. \n\nTherefore, we need to know about the peas and their location.\n\n<entities>\n- location of peas \n</entities> \n\n",
+        "response": [
+            "location of peas"
+        ]
+    },
+    {
+        "id": "9212741863",
+        "questions": "\"Where will Aria look for the grapefruit?\"",
+        "prompt": "<Events>\n1: Alexander entered the study.\n2: Aria entered the study.\n3: The grapefruit is in the drawer in the study.\n4: Aria exited the study.\n5: Alexander moved the grapefruit to the box in the study. \n6: Alexander is aware of Aria.\n\n<Questions>\n\"Where will Aria look for the grapefruit?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Aria will likely look for the grapefruit in the location it was last known to be. Since Alexander moved the grapefruit, Aria wouldn't know about the change in location.\n\n<entities>\n- location of grapefruit \n- previous location of grapefruit\n</entities> \n\n",
+        "response": [
+            "previous location of grapefruit",
+            "location of grapefruit"
+        ]
+    },
+    {
+        "id": "6734627451",
+        "questions": "\"Where does Ella think that Hunter searches for the onion?\"",
+        "prompt": "<Events>\n1: Ella entered the office.\n2: Hunter is in the office.\n3: The onion is in the treasure_chest, which is in the office.\n4: Ella exited the office.\n5: Sophia entered the office.\n6: Hunter moved the onion from the treasure_chest to the basket.\n7: Hunter exited the office.\n8: Sophia loves the onion.\n9: Ella entered the garden.\n10: Hunter dislikes the underpants.\n\n<Questions>\n\"Where does Ella think that Hunter searches for the onion?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about Ella's belief regarding Hunter's onion search location.  We need to know where the onion is and who Ella thinks Hunter is looking for it.\n\n<entities>\n- location of onion\n-  belief of Ella\n</entities> \n\n",
+        "response": [
+            "location of onion",
+            "belief of ella"
+        ]
+    },
+    {
+        "id": "5890692034",
+        "questions": "\"Where will Elizabeth look for the sweet_potato?\"",
+        "prompt": "<Events>\n1: Isabella entered the hall.\n2: Elizabeth entered the hall and dislikes the corn.\n3: Jacob entered the hall.\n4: Jacob exited the hall.\n5: Elizabeth exited the hall.\n6: Isabella moved the sweet_potato from the drawer to the treasure_chest.\n\n<Questions>\n\"Where will Elizabeth look for the sweet_potato?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Elizabeth dislikes the corn and exits the hall. This implies she is unlikely to look for the sweet potato in the hall. The question asks about the location of the sweet potato. We know Isabella moved it from the drawer to the treasure chest.\n\n<entities>\n- location of sweet_potato\n- location of drawer\n- location of treasure_chest \n</entities> \n\n",
+        "response": [
+            "location of sweet potato",
+            "location of treasure chest",
+            "location of drawer"
+        ]
+    },
+    {
+        "id": "7227572964",
+        "questions": "\"Where does Aiden think that Jacob searches for the undershirt?\"",
+        "prompt": "<Events>\n1: Aiden entered the lounge.\n2: Jacob entered the lounge.\n3: The undershirt is in the cupboard in the lounge.\n4: Jacob exited the lounge.\n5: Jackson entered the sunroom.\n6: Aiden moved the undershirt to the box in the lounge.\n7: Jackson exited the sunroom.\n8: Aiden exited the lounge.\n9: Jacob entered the sunroom.\n\n<Questions>\n\"Where does Aiden think that Jacob searches for the undershirt?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Aiden moved the undershirt to a box in the lounge after Jacob left. The question asks where Aiden *thinks* Jacob will look for the undershirt. This implies we need to know where Jacob was last seen and where the undershirt was before Aiden moved it.\n\n<entities>\n- location of Jacob\n- location of undershirt \n</entities> \n\n",
+        "response": [
+            "location of jacob",
+            "location of undershirt"
+        ]
+    },
+    {
+        "id": "4557696704",
+        "questions": "\"Where will Ella look for the peach?\"",
+        "prompt": "<Events>\n1: Ella entered the laundry.\n2: Oliver entered the laundry.\n3: The peach is in the suitcase in the laundry.\n4: Ella exited the laundry.\n5: Oliver moved the peach from the suitcase to the basket in the laundry.\n6: Emma hates the trousers.\n\n<Questions>\n\"Where will Ella look for the peach?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Ella left the laundry before Oliver moved the peach. Therefore, Ella will look for the peach in the location it was when she was last in the laundry.\n\n<entities>\n- location of peach\n- contents of suitcase \n</entities> \n\n",
+        "response": [
+            "contents of suitcase",
+            "location of peach"
+        ]
+    },
+    {
+        "id": "4363914671",
+        "questions": "\"Where does Oliver think that Jack searches for the pajamas?\"",
+        "prompt": "<Events>\n1: Oliver entered the cellar.\n2: Jack entered the cellar.\n3: The pajamas are in the basket in the cellar.\n4: Oliver exited the cellar.\n5: Oliver entered the basement.\n6: Jack moved the pajamas from the basket in the cellar to the pantry in the cellar. \n7:  \n8:\n\n<Questions>\n\"Where does Oliver think that Jack searches for the pajamas?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Here's the breakdown:\n\nThe question asks about Oliver's belief regarding Jack's search for pajamas.  We need to focus on where the pajamas are located and Oliver's knowledge about that location.\n\n<entities>\n- location of pajamas\n- Oliver's knowledge of the location of pajamas \n</entities> \n\n",
+        "response": [
+            "oliver's knowledge of the location of pajamas",
+            "location of pajamas"
+        ]
+    },
+    {
+        "id": "4599178318",
+        "questions": "\"Where does Ethan think that Emily searches for the beans?\"",
+        "prompt": "<Events>\n1: Noah hates the stockings.\n2: Noah entered the garage.\n3: Ethan entered the laundry.\n4: Emily entered the laundry.\n5: The beans are in the crate in the laundry.\n6: Ethan exited the laundry.\n7: Noah hates the tomato.\n8: Ethan entered the garage.\n9: Emily moved the beans from the crate to the bucket in the laundry.\n\n<Questions>\n\"Where does Ethan think that Emily searches for the beans?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Ethan is trying to figure out where Emily is looking for the beans. We know the beans are in the laundry.\n\n<entities>\n- location of beans\n</entities> \n\n",
+        "response": [
+            "location of beans"
+        ]
+    },
+    {
+        "id": "2952379981",
+        "questions": "\"Where was the slacks at the beginning?\"",
+        "prompt": "<Events>\n1: Mia dislikes the t-shirt.\n2: Mia entered the back_yard.\n3: Nathan entered the back_yard.\n4: The slacks is in the treasure_chest in the back_yard.\n5: Nathan moved the slacks from the treasure_chest to the suitcase in the back_yard.\n6: Jack likes the strawberry.\n7: Jack entered the living_room.\n8: Mia entered the living_room.\n\n<Questions>\n\"Where was the slacks at the beginning?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about the initial location of the slacks.  \n\n<entities>\n- location of slacks \n</entities>\n",
+        "response": [
+            "location of slacks"
+        ]
+    },
+    {
+        "id": "5954711512",
+        "questions": "\"Where was the pear at the beginning?\"",
+        "prompt": "<Events>\n1: Ella entered the patio.\n2: Hunter entered the patio.\n3: The pear is in the bottle, which is in the patio.\n4: Ella exited the patio.\n5: Hunter moved the pear from the bottle to the envelope.\n6: The envelope is in the patio.\n7: Isabella entered the patio.\n\n<Questions>\n\"Where was the pear at the beginning?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about the initial location of the pear. The events describe the pear's movement from a bottle to an envelope, both located in the patio. \n\nTherefore, we need to know:\n\n<entities>\n- location of pear\n- location of bottle \n</entities> \n\n",
+        "response": [
+            "location of pear",
+            "location of bottle"
+        ]
+    },
+    {
+        "id": "7277806815",
+        "questions": "\"Where does Hannah think that Aria searches for the cap?\"",
+        "prompt": "<Events>\n1: Hannah entered the basement.\n2: Aria entered the basement.\n3: The cap is in the container in the basement.\n4: Aria exited the basement.\n5: Hannah moved the cap to the suitcase in the basement.\n6: Hannah dislikes the plum.\n\n<Questions>\n\"Where does Hannah think that Aria searches for the cap?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about Hannah's belief regarding Aria's search for the cap.  We need to know where the cap is located to understand Hannah's perspective.\n\n<entities>\n- location of cap\n- container \n</entities> \n\n",
+        "response": [
+            "location of cap",
+            "container"
+        ]
+    },
+    {
+        "id": "8787283719",
+        "questions": "\"Where will Charlotte look for the melon?\"",
+        "prompt": "<Events>\n1: Chloe entered the sunroom.\n2: Charlotte entered the sunroom.\n3: The melon is in the bottle and the bottle is in the sunroom.\n4: Charlotte exited the sunroom.\n5: Chloe moved the melon to the bathtub.\n6: Chloe exited the sunroom.\n7: Mia entered and exited the closet.\n8: Charlotte entered the closet.\n\n<Questions>\n\"Where will Charlotte look for the melon?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Charlotte will likely look for the melon in the last place she saw it. Since Chloe moved the melon from the sunroom to the bathtub, Charlotte will probably look in the bathtub.\n\n<entities>\n- location of melon \n</entities> \n\n",
+        "response": [
+            "location of melon"
+        ]
+    },
+    {
+        "id": "9826285220",
+        "questions": "\"Where will Sophia look for the banana?\"",
+        "prompt": "<Events>\n1: Alexander entered the laundry.\n2: Sophia entered the laundry.\n3: The banana is in the cupboard in the laundry.\n4: Sophia moved the banana from the cupboard to the drawer in the laundry.\n5: Alexander exited the laundry.\n6: Sophia is in the laundry.\n\n<Questions>\n\"Where will Sophia look for the banana?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Sophia is looking for the banana and we know she moved it from the cupboard to the drawer. \n\n<entities>\n- location of banana \n</entities> \n\n",
+        "response": [
+            "location of banana"
+        ]
+    },
+    {
+        "id": "5497080360",
+        "questions": "\"Where will Aiden look for the sweatshirt?\"",
+        "prompt": "<Events>\n1: Hannah entered the workshop.\n2: Aiden entered the workshop.\n3: Hannah dislikes the cabbage.\n4: The sweatshirt is in the bottle and the bottle is in the workshop.\n5: Hannah moved the sweatshirt to the drawer.\n6: Aiden exited the workshop and entered the hall. \n7: Hannah exited the workshop. \n8: Hannah loves the undershirt. \n9: Sophia entered the workshop.\n\n<Questions>\n\"Where will Aiden look for the sweatshirt?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Aiden exited the workshop, so he won't find the sweatshirt there. We need to know where the sweatshirt is located.\n\n<entities>\n- location of sweatshirt \n</entities> \n\n",
+        "response": [
+            "location of sweatshirt"
+        ]
+    },
+    {
+        "id": "7892556890",
+        "questions": "\"Where is the boots really?\"",
+        "prompt": "<Events>\n1: Carter entered the closet.\n2: Mason entered the closet.\n3: The boots are in the basket in the closet.\n4: Evelyn likes the boots.\n5: Evelyn entered and exited the closet.\n6: Carter exited the closet.\n7: Mason moved the boots to the container in the closet.\n\n<Questions>\n\"Where is the boots really?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about the final location of the boots. The events describe the boots being moved from a basket to a container within the closet. \n\n<entities>\n- location of boots\n- type of container \n</entities> \n\n",
+        "response": [
+            "type of container",
+            "location of boots"
+        ]
+    },
+    {
+        "id": "3542549503",
+        "questions": "\"Where is the shoes really?\"",
+        "prompt": "<Events>\n1: Liam entered the garage.\n2: Hunter entered the garage.\n3: The shoes are in the pantry which is in the garage.\n4: Hunter exited the garage.\n5: Liam likes the shoes.\n6: Liam moved the shoes to the box in the garage.\n7: Liam exited the garage.\n8: Hunter entered the TV_room.\n\n<Questions>\n\"Where is the shoes really?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "The question asks about the location of the shoes. The events tell us that the shoes were initially in the pantry, then moved to a box in the garage. \n\n<entities>\n- location of shoes\n- placement of shoes \n</entities> \n\n",
+        "response": [
+            "location of shoes",
+            "placement of shoes"
+        ]
+    },
+    {
+        "id": "7786998048",
+        "questions": "\"Where will Noah look for the slacks?\"",
+        "prompt": "<Events>\n1: Amelia entered the kitchen.\n2: Noah entered the kitchen.\n3: The slacks is in the envelope in the kitchen.\n4: Noah moved the slacks to the treasure_chest in the kitchen.\n5: Amelia exited the kitchen.\n6: Noah exited the kitchen.\n7: Amelia entered the kitchen.\n8: Amelia likes the carrot.\n\n<Questions>\n\"Where will Noah look for the slacks?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Noah moved the slacks to the treasure_chest in the kitchen. The question asks where Noah will look for the slacks. Therefore, we need to know the location of the slacks.\n\n<entities>\n- location of slacks \n</entities> \n\n",
+        "response": [
+            "location of slacks"
+        ]
+    },
+    {
+        "id": "9910705780",
+        "questions": "\"Where will Aiden look for the broccoli?\"",
+        "prompt": "<Events>\n1: Emma entered the kitchen.\n2: Aiden entered the kitchen.\n3: The broccoli is in the bottle in the kitchen.\n4: Emma moved the broccoli from the bottle to the crate.\n5: Aiden exited the kitchen.\n6: The crate is in the kitchen.\n\n<Questions>\n\"Where will Aiden look for the broccoli?\"\n\nBased on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the \"location of tie\", \"placement of tie\", and \"color of crate\" are important for answering the questions, the response should be formatted as follows:\n\n<entities>\n- location of tie \n- placement of tie \n- color of crate\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:\n\n<entities>\n- attribute of entity \n- attribute of entity \n...\n</entities>",
+        "original_generation": "Aiden will likely look for the broccoli in the last known location. Since Emma moved the broccoli from the bottle to the crate, Aiden will probably look in the crate.\n\n<entities>\n- location of broccoli \n</entities> \n\n",
+        "response": [
+            "location of broccoli"
+        ]
+    }
+]

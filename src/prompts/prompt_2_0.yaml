@@ -1,0 +1,117 @@
+universal:
+    system_prompt: "The following is a conversation determining a character's perception of the world based on a piece of narrative. The assistant is an expert in narrative understanding and is exceedingly good at judging whether the event is observed by the character or not."
+
+    character_mask_prompt_joint: "Given the following narrative and list of characters, track the location of each character throughout the story. The output should be in the format of [Character Name]: [Location List], where the length of the location list matches the number of events in the narrative. In case where there are private conversation of information known only to specific characters in that location, put \"[Location Name]-private\". Please make sure that the granularity of the locations are the same. Do not add any explanation or note.\n\nComplete Narrative:{{indexed narrative}}\n\nCharacters:{{bullet point characters}}."
+
+bigtom:
+    bigtom_example:
+        1: "Percival is a software developer working on an important project for his company. He wants to create a user-friendly app that will be popular among users. Percival examines the app's interface, which appears to be intuitive and easy to navigate. Percival believes that the app's interface is intuitive and user-friendly. A coworker brings in a box of donuts for the office to share. Percival proceeds to finalize the app and prepare it for launch."
+
+        2: "Nadia is a professional gardener, working on a landscape design for a client's backyard. She wants to plant a beautiful rose garden as the centerpiece of the design. Nadia observes that the soil in the backyard appears to be rich and fertile. Nadia believes the soil is rich and fertile. A family of rabbits appears in the backyard. Nadia proceeds with planting the rose garden in the existing soil."
+
+        3: "Priya is a professional baker in a small town in India. She wants to impress her customers with a delicious chocolate cake for a special event. Priya observes that the cake she has baked looks perfectly moist and fluffy. Priya believes that she has baked a moist and fluffy chocolate cake. A street vendor outside the bakery starts selling freshly roasted peanuts. Priya decorates the cake for the event."
+
+    bigtom_response_characters:
+        1: "[\"Percival\", \"coworker\"]"
+
+        2: "[\"Nadia\", \"client\"]"
+
+        3: "[\"Priya\", \"customers\"]"
+
+    bigtom_response_grouped:
+        1: |-
+            The narrative contains 6 sentences. Therefore, the generated location list for each character contains 6 locations.
+
+            Percival: [office, office-private, office, office-private, office, office]
+            coworker: [none, none, none, none, office, office]
+
+        2: |-
+            The narrative contains 6 sentences. Therefore, the generated location list for each character contains 6 locations.
+
+            Nadia: [backyard, backyard-private, backyard, backyard-private, backyard, backyard]
+            client: [none, none, none, none, none, none]
+        
+        3: |-
+            The narrative contains 6 sentences. Therefore, the generated location list for each character contains 6 locations.
+
+            Priya: [bakery, bakery-private, bakery, bakery-private, bakery, bakery]
+            customers: [none, none, none, none, none, none]
+
+tomi:
+    tomi_example: 
+        1: "Amelia entered the kitchen. Noah entered the kitchen. The slacks is in the envelope. The envelope is in the kitchen. Noah moved the slacks to the treasure_chest. The treasure_chest is in the kitchen. Amelia exited the kitchen. Noah exited the kitchen. Amelia entered the kitchen. Amelia likes the carrot."
+
+        2: "Emma entered the kitchen. Aiden entered the kitchen. The broccoli is in the bottle. The bottle is in the kitchen. Emma moved the broccoli to the crate. The crate is in the kitchen. Aiden exited the kitchen." 
+
+        3: "Sophia entered the attic. Mia entered the crawlspace. Ava entered the attic. The banana is in the crate. The crate is in the attic. Mia exited the crawlspace. Sophia exited the attic. Ava moved the banana to the cupboard. The cupboard is in the attic." 
+
+    tomi_response_characters:
+        1: "[\"Amelia\", \"Noah\"]"
+
+        2: "[\"Emma\", \"Aiden\"]"
+
+        3: "[\"Sophia\", \"Mia\", \"Ava\"]"
+
+    tomi_response_grouped: 
+        1: |-
+            The narrative contains 10 sentences. Therefore, the generated location list for each character contains 6 locations.
+
+            Amelia: [kitchen, kitchen, kitchen, kitchen, kitchen, kitchen, none, none, kitchen, kitchen-private]
+            Noah: [none, kitchen, kitchen, kitchen, kitchen, kitchen, kitchen, none, none, none]
+
+        2: |-
+            The narrative contains 7 sentences. Therefore, the generated location list for each character contains 6 locations.
+
+            Emma: [kitchen, kitchen, kitchen, kitchen, kitchen, kitchen, kitchen]
+            Aiden: [none, kitchen, kitchen, kitchen, kitchen, kitchen, none]
+
+        3: |-
+            The narrative contains 9 sentences. Therefore, the generated location list for each character contains 6 locations.
+
+            Sophia: [attic, attic, attic, attic, attic, attic, none, none, none]
+            Mia: [none, crawlspace, crawlspace, crawlspace, crawlspace, none, none, none, none]
+            Ava: [none, none, attic, attic, attic, attic, attic, attic, attic]
+
+hitom:
+    hitom_example:
+        1: "Emily dislikes the plum. Nathan, Evelyn, William, Emily and Jacob entered the pantry. The plum is in the red pantry. Nathan made no movements and stayed in the pantry for 1 minute. Evelyn saw a monkey. Nathan exited the pantry. Evelyn moved the plum to the green bucket. Evelyn exited the pantry. William made no movements and stayed in the pantry for 1 minute. William exited the pantry. Emily made no movements and stayed in the pantry for 1 minute. Nathan saw a mouse. Emily exited the pantry. Jacob moved the plum to the red pantry. Jacob exited the pantry. Nathan, Evelyn, William, Emily and Jacob entered the waiting room."
+
+        2: "Evelyn, Isabella, Nathan, Ava and Lily entered the hallway. The melon is in the blue container. Evelyn moved the melon to the green treasure chest. Evelyn exited the hallway. Lily dislikes the cucumber. Isabella made no movements and stayed in the hallway for 1 minute. Isabella exited the hallway. Nathan moved the melon to the blue treasure chest. Nathan exited the hallway. Ava made no movements and stayed in the hallway for 1 minute. Ava exited the hallway. Lily made no movements and stayed in the hallway for 1 minute. Ava dislikes the spinach. Lily exited the hallway. Evelyn, Isabella, Nathan, Ava and Lily entered the waiting room. Nathan, Isabella and Evelyn entered the cellar. The spinach is in the red crate. Nathan moved the spinach to the blue bottle. Nathan exited the cellar. Isabella moved the spinach to the red bottle. Isabella exited the cellar. Nathan lost his phone. Evelyn made no movements and stayed in the cellar for 1 minute. Evelyn exited the cellar. Nathan, Isabella and Evelyn entered the waiting room. Isabella privately told Nathan that the spinach is in the blue bottle."
+
+        3: "William, Jack, Charlotte, Noah and Hannah entered the hall. Noah saw a monkey. The carrot is in the red basket. William made no movements and stayed in the hall for 1 minute. William exited the hall. Hannah saw a mouse. Jack made no movements and stayed in the hall for 1 minute. Jack exited the hall. Charlotte made no movements and stayed in the hall for 1 minute. Charlotte exited the hall. Charlotte dislikes the tomato. Noah moved the carrot to the green envelope. Noah exited the hall. Hannah moved the carrot to the red basket. Hannah exited the hall. William, Jack, Charlotte, Noah and Hannah entered the waiting room. Charlotte publicly claimed that carrot is in the green envelope. Hannah privately told Charlotte that the carrot is in the blue container."
+
+    hitom_response_characters:
+        1: "[\"Emily\", \"Nathan\", \"Evelyn\", \"William\", \"Jacob\"]"
+
+        2: "[\"Evelyn\", \"Isabella\", \"Nathan\", \"Ava\", \"Lily\"]"
+
+        3: "[\"William\", \"Jack\", \"Charlotte\", \"Noah\", \"Hannah\"]"
+
+
+    hitom_response_grouped:
+        1: |-
+            The narrative contains 16 sentences. Therefore, the generated location list for each character contains 16 locations.
+
+            Emily: [none-private, pantry, pantry, pantry, pantry, pantry, pantry, pantry, pantry, pantry, pantry, pantry, none, none, none, waiting room]
+            Nathan: [none, pantry, pantry, pantry, pantry, none, none, none, none, none, none, none, none-private, none, none, waiting room]
+            Evelyn: [none, pantry, pantry, pantry, pantry-private, pantry, pantry, none, none, none, none, none, none, none, none, waiting room]
+            William: [none, pantry, pantry, pantry, pantry, pantry, pantry, pantry, pantry, none, none, none, none, none, none, waiting room]
+            Jacob: [none, pantry, pantry, pantry, pantry, pantry, pantry, pantry, pantry, pantry, pantry, pantry, pantry, pantry, none, waiting room]
+
+        2: |-
+            The narrative contains 26 sentences. Therefore, the generated location list for each character contains 26 locations.
+
+            Evelyn: [hallway, hallway, hallway, hallway, hallway, hallway, hallway, hallway, hallway, hallway, hallway, hallway, hallway, hallway, waiting room, cellar, cellar, cellar, cellar, cellar, cellar, cellar, cellar, none, waiting room, waiting room]
+            Isabella: [hallway, hallway, hallway, hallway, hallway, hallway, none, none, none, none, none, none, none, none, waiting room, cellar, cellar, cellar, cellar, cellar, none, none, none, none, waiting room, waiting room-private]
+            Nathan: [hallway, hallway, hallway, hallway, hallway, hallway, hallway, hallway, none, none, none, none, none, none, waiting room, cellar, cellar, cellar, none, none, none, none, none, none, waiting room, waiting room-private]
+            Ava: [hallway, hallway, hallway, hallway, hallway, hallway, hallway, hallway, hallway, hallway, none, none, none-private, none, waiting room, waiting room, waiting room, waiting room, waiting room, waiting room, waiting room, waiting room, waiting room, waiting room, waiting room, waiting room]
+            Lily: [hallway, hallway, hallway, hallway, hallway-private, hallway, hallway, hallway, hallway, hallway, hallway, hallway, hallway, none, waiting room, waiting room, waiting room, waiting room, waiting room, waiting room, waiting room, waiting room, waiting room, waiting room, waiting room, waiting room]
+
+        3: |-
+            The narrative contains 18 sentences. Therefore, the generated location list for each character contains 18 locations.
+
+            William: [hall, hall, hall, hall, none, none, none, none, none, none, none, none, none, none, none, waiting room, waiting room, waiting room]
+            Jack: [hall, hall, hall, hall, hall, hall, hall, none, none, none, none, none, none, none, none, waiting room, waiting room, waiting room]
+            Charlotte: [hall, hall, hall, hall, hall, hall, hall, hall, hall, none, none-private, none, none, none, none, waiting room, waiting room, waiting room-private]
+            Noah: [hall, hall, hall, hall, hall, hall, hall, hall, hall, hall, hall, hall, none, none, none, waiting room, waiting room, waiting room]
+            Hannah: [hall, hall, hall, hall, hall, hall-private, hall, hall, hall, hall, hall, hall, hall, hall, none, waiting room, waiting room, waiting room-private]

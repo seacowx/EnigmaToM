@@ -1,0 +1,135 @@
+free-form:
+
+  original:
+
+    vanilla-text: 
+      "Events:\n{{narrative}}\n\nBased on the narrative, answer the question without any explanation. You must choose one of the provided options. Provide your answer in between <answer> and </answer> with the following format: <answer>Your answer</answer>.\n\nQuestion:\n{{question}}"
+
+    toml: 
+      "Events:\n{{narrative}}\n\nBased on the TOML narrative, answer the question without any explanation. You must choose one of the provided options. Provide your answer in between <answer> and </answer> with the following format: <answer>Your answer</answer>.\n\nQuestion:\n{{question}}"
+
+    markdown: 
+      "Events:\n{{narrative}}\n\nBased on the markdown narrative, answer the question without any explanation. You must choose one of the provided options. Provide your answer in between <answer> and </answer> with the following format: <answer>Your answer</answer>.\n\nQuestion:\n{{question}}"
+
+    cot-text: 
+      "Events:\n{{narrative}}\n\nBased on the narrative, answer the question. Explicitly list out the reasoning steps before giving the correct answer. You must choose one of the provided options. Write the correct answer in the end with the following format:\nTherefore, the correct answer is <answer>Your answer</answer>.\n\nQuestion:\n{{question}}"
+
+    simtom-text: 
+      [
+        "The following is a sequence of events:\n\n{{narrative}}\n\nWhich events does {{character}} know about?",
+        "{{character narrative}}\n\nAnswer the following question without any explanation. You must choose one of the provided options. Provide your answer in between <answer> and </answer> with the following format: <answer>Your answer</answer>.\n\nQuestion:\n{{question}}"
+      ]
+
+  masktom:
+
+    vanilla-text: 
+      "Events:\n{{narrative}}\n\nThe narrative provided above depicts {{character perspective}}. Based on the given narrative, answer the following question without any explanation. Provide your answer in between <answer> and </answer> with the following format: <answer>Your answer</answer>.\n\nQuestion:\n{{question}}"
+
+    toml: 
+      "Events:\n{{narrative}}\n\nThe narrative provided above depicts {{character perspective}}. Based on the given narrative, answer the following question without any explanation. Provide your answer in between <answer> and </answer> with the following format: <answer>Your answer</answer>.\n\nQuestion:\n{{question}}"
+
+    markdown: 
+      "Events:\n{{narrative}}\n\nThe narrative provided above depicts {{character perspective}}. Based on the given narrative, answer the following question without any explanation. Provide your answer in between <answer> and </answer> with the following format: <answer>Your answer</answer>.\nYou must answer with one of the provided options.\nQuestion:\n{{question}}"
+
+    cot-text: 
+      "Events:\n{{narrative}}\n\nThe narrative provided above depicts {{character perspective}}. Based on the given narrative, answer the following question. Explicitly list out the reasoning steps before giving the correct answer. Write the correct answer in the end with the following format:\nTherefore, the correct answer is <answer>Your answer</answer>.\n\nQuestion:\n{{question}}"
+
+multiple-choice:
+
+  original:
+
+    vanilla-text: 
+      "Events:\n{{narrative}}\n\nQuestion:\n{{question}}\nChoices:\n{{multiple choice}}\n\nBased on the events, select the correct answer from the provided choices without providing any explanation. Provide your answer in between <answer> and </answer> with the following format: <answer>Your answer</answer>."
+
+    toml: 
+      "Events:\n{{narrative}}\n\nQuestion:\n{{question}}\nChoices:\n{{multiple choice}}\n\nBased on the TOML narrative, select the most suitable choice without any explanation. Provide your answer in between <answer> and </answer> with the following format: <answer>Your answer</answer>."
+
+    markdown: 
+      "Events:\n{{narrative}}\n\nQuestion:\n{{question}}\nChoices:\n{{multiple choice}}\n\nBased on the events, select the correct answer from the provided choices without providing any explanation. Write the correct answer strictly in the following format:\nCorrect Choice: [Your answer]"
+
+    cot-text: 
+      "Events:\n{{narrative}}\n\nQuestion:\n{{question}}\nChoices:\n{{multiple choice}}\n\nBased on the narrative, select the most suitable choice without any explanation. Provide your answer in between <answer> and </answer> with the following format: <answer>Your answer</answer>."
+
+    simtom-text: 
+      [
+        "The following is a sequence of events:\n\n{{narrative}}\n\nWhich events does {{character}} know about?",
+        "{{character narrative}}\n\nQuestion:\n{{question}}\nChoices:\n{{multiple choice}}\n\nBased on the narrative, select the most suitable choice without any explanation. Provide your answer in between <answer> and </answer> with the following format: <answer>Your answer</answer>."
+      ]
+
+    python:
+      "```python\n{{narrative}}\n\n\nquestion = \"{{question}}\"\nchoices = {{{multiple choice}}}\ncorrect_answer =\n``` \n\nPlease help me to complete the line ```correct_answer =``` without giving any explanation. Write the correct answer in code block as follows:\n```python\ncorrect_answer = [Your answer]\n```"
+      # "```python\n{{narrative}}\n\n\nquestion = \"{{question}}\"```\n\nBased on the provided code, write code that retries information useful for answering the question. Relevant information includes the content and item information of the time stamps. Store all the relevant information in a new variable called `retrieved_info`."
+
+  masktom:
+
+    vanilla-text: 
+      "Events:\n{{narrative}}\n\nThe narrative provided above depicts {{character perspective}}. Based on the given narrative, answer the following question by selecting the most suitable choice without any explanation. Provide your answer in between <answer> and </answer> with the following format: <answer>Your answer</answer>.\n\nQuestion:\n{{question}}\nChoices:\n{{multiple choice}}"
+
+    toml: 
+      "Events:\n{{narrative}}\n\nThe narrative provided above depicts {{character perspective}}. Based on the given narrative, answer the following question by selecting the most suitable choice without any explanation. Provide your answer in between <answer> and </answer> with the following format: <answer>Your answer</answer>.\n\nQuestion:\n{{question}}\nChoices:\n{{multiple choice}}"
+
+    markdown: 
+      "Events:\n{{narrative}}\n\nThe narrative provided above depicts {{character perspective}}. Based on the given narrative, answer the following question by selecting the most suitable choice without any explanation. Provide your answer in between <answer> and </answer> with the following format: <answer>Your answer</answer>.\n\nQuestion:\n{{question}}\nChoices:\n{{multiple choice}}"
+
+    cot-text: 
+      "Events:\n{{narrative}}\n\nThe narrative provided above depicts {{character perspective}}. Based on the given narrative, answer the following question by selecting the most suitable choice without any explanation. Provide your answer in between <answer> and </answer> with the following format: <answer>Your answer</answer>.\n\nQuestion:\n{{question}}\nChoices:\n{{multiple choice}}"
+
+    python:
+      "```python\n# {{character perspective}}\n{{narrative}}\n\n# define the perspective that the given narrative is depicting\nperspective = \"{{character perspective}}\"\n\nquestion = \"{{question}}\"\nchoices = {{{multiple choice}}}\ncorrect_answer =\n``` \n\nPlease help me to complete the line ```correct_answer =``` without giving any explanation. Write the correct answer in code block as follows:\n```python\ncorrect_answer = [Your answer]\n```"
+      # "```python\n# {{character perspective}}\n{{narrative}}\n\n# define the perspective that the given narrative is depicting\nperspective = \"{{character perspective}}\"\n\nquestion = \"{{question}}\"```\n\nBased on the provided code, write code that retries information useful for answering the question. Relevant information includes the content and item information of the time stamps. Store all the relevant information in a new variable called `retrieved_info`."
+
+opentom:
+
+  original: 
+
+    vanilla-text: 
+      "Events:\n{{narrative}}\n\nQuestion:\n{{question}}\n\nBased on the narrative, answer the question without any explanation. {{answer options}}Provide your answer in between <answer> and </answer> with the following format: <answer>Your answer</answer>."
+
+    toml: 
+      "Events:\n{{narrative}}\n\nQuestion:\n{{question}}\n\nBased on the TOML narrative, answer the question without any explanation. {{answer options}}Provide your answer in between <answer> and </answer> with the following format: <answer>Your answer</answer>."
+
+    markdown: 
+      "Events:\n{{narrative}}\n\nQuestion:\n{{question}}\n\nBased on the markdown narrative, answer the question without any explanation. {{answer options}}Provide your answer in between <answer> and </answer> with the following format: <answer>Your answer</answer>."
+
+    cot-text: 
+      "Events:\n{{narrative}}\n\nQuestion:\n{{question}}\n\nBased on the narrative, answer the question. {{answer options}}Explicitly list out the reasoning steps before giving the correct answer. Write the correct answer in the end with the following format:\nTherefore, the correct answer is <answer>Your answer</answer>."
+
+    simtom-text: 
+      [
+        "The following is a sequence of events:\n\n{{narrative}}\n\nWhich events does {{character}} know about?",
+        "{{character narrative}}\n\nAnswer the following question without any explanation:\n{{question}}\n{{answer options}}Provide your answer in between <answer> and </answer> with the following format: <answer>Your answer</answer>."
+      ]
+
+    python:
+      "```python\n{{narrative}}\n\n\nquestion = \"{{question}}\"\n{{answer options}}correct_answer =\n``` \n\nPlease help me to complete the line ```correct_answer =``` without giving any explanation. Write the correct answer in code block as follows:\n```python\ncorrect_answer = [YOUR ANSWER]\n```"
+
+  masktom:
+
+    vanilla-text: 
+      "Events:\n{{narrative}}\n\nThe narrative provided above depicts {{character perspective}}. Based on the given narrative, answer the following question without any explanation. {{answer options}}Provide your answer in between <answer> and </answer> with the following format: <answer>Your answer</answer>.\n\nQuestion:\n{{question}}"
+
+    toml: 
+      "Events:\n{{narrative}}\n\nThe narrative provided above depicts {{character perspective}}. Based on the given narrative, answer the following question without any explanation. {{answer options}}Provide your answer in between <answer> and </answer> with the following format: <answer>Your answer</answer>.\n\nQuestion:\n{{question}}"
+
+    markdown: 
+      "Events:\n{{narrative}}\n\nThe narrative provided above depicts {{character perspective}}. Based on the given narrative, answer the following question without any explanation. {{answer options}}Provide your answer in between <answer> and </answer> with the following format: <answer>Your answer</answer>.\nYou must answer with one of the provided options.\nQuestion:\n{{question}}"
+
+    cot-text: 
+      "Events:\n{{narrative}}\n\nThe narrative provided above depicts {{character perspective}}. Based on the given narrative, answer the following question. {{answer options}}Explicitly list out the reasoning steps before giving the correct answer. Write the correct answer in the end with the following format:\nTherefore, the correct answer is <answer>Your answer</answer>.\n\nQuestion:\n{{question}}"
+
+    python:
+      "```python\n# {{character perspective}}\n{{narrative}}\n\n# define the perspective that the given narrative is depicting\nperspective = \"{{character perspective}}\"\n\nquestion = \"{{question}}\"\n{{answer options}}correct_answer =\n``` \n\nPlease help me to complete the line ```correct_answer =``` without giving any explanation. Write the correct answer in code block as follows:\n```python\ncorrect_answer = [YOUR ANSWER]\n```"
+      # "```python\n# {{character perspective}}\n{{narrative}}\n\n# define the perspective that the given narrative is depicting\nperspective = \"{{character perspective}}\"\n\nquestion = \"{{question}}\"\n```\n\n Based on the provided code, help me to identify the time stamps of which the content and entity state information are needed for answering the question. First, provide a list of integers where each integer corresponds to the index of the time stamps. Name the new list of integers as `retrieved_time_stemps`. Then retrieve the `content` and `entity_state_dict` from the time stamps by indexing on the corresponding time stamps (0th index for content and 1st index for entity states). Store them in `retrieved_content` and `retrieved_entity_states` correspondingly. Only generate python codes in markdown format. Do not provide any explanation or output of the code."
+
+  answer_options:
+    "Answer with one of the following options: {{answer options}}"
+
+  python_answer_options:
+    "candidate_answers = [{{answer options}}]"
+
+  candidate_answers: 
+    attitude: [negative, positive, neutral]
+    location_coarse: ["yes", "no"]
+    location_fine: []
+    fullness: [less full, more full, equally full]
+    accessibility: [less accessible, more accessible, equally accessible]

@@ -1,0 +1,1904 @@
+universal:
+    json_format: "Correct the format of the following JSON string:\n{{json_string}}"
+
+    system_prompt: "The following is a conversation determining a character's perception of the world based on a piece of narrative. The assistant is an expert in narrative understanding and is exceedingly good at judging whether the event is observed by the character or not."
+
+    user_prompt_individual: "{{narrative}}\n\nRead the above narrative and list all the characters appeared in the narrative. For each character, determine whether each sentence is observed by the character or not. If the character is aware of the event, then return \"true\"; otherwise, return \"false\". Generate the result in JSON format, where the key is the character and the values are list of dictionaries containing (1) the original sentence and (2) the boolean value indicating the character's awareness of the events in the sentences."
+
+    character_list_prompt: "{{narrative}}\n\nRead the above narrative and list all the characters appeared in the narrative."
+
+    character_mask_prompt_seperate: "Complete Narrative:\n{{indexed narrative}}\n\nCurrent Sentence:\n{{indexed sentence}}\n\nCharacters:\n{{character list}}\n\nFor each character in the character list, determine whether the character is aware of the content of the \"Current Sentence\" or not. If the character is aware of the content, then return \"true\"; otherwise, return \"false\". Generate the result in JSON format where the keys correspond to the characters and the values correspond to whether the character is aware of the event."
+
+    character_mask_prompt_joint: "Complete Narrative:\n{{indexed narrative}}\n\nCharacters:\n{{character list}}\n\nFor each character in the character list, determine whether the character is aware of the content of the each sentence in the \"Complete Narrative\" or not. If the character is aware of the content, then return \"true\"; otherwise, return \"false\". Generate the result in JSONL format where the keys correspond to the sentences and the values correspond to whether the character is aware of the event. Make sure that every sentence in the \"Complete Narrative\" is covered. Generate the JSONL in markdown. Start your generation with \"```json\" and end it with \"```\"."
+
+bigtom:
+    bigtom_example:
+        1: "Percival is a software developer working on an important project for his company. He wants to create a user-friendly app that will be popular among users. Percival examines the app's interface, which appears to be intuitive and easy to navigate. Percival believes that the app's interface is intuitive and user-friendly. A coworker brings in a box of donuts for the office to share. Percival proceeds to finalize the app and prepare it for launch."
+
+        2: "Nadia is a professional gardener, working on a landscape design for a client's backyard. She wants to plant a beautiful rose garden as the centerpiece of the design. Nadia observes that the soil in the backyard appears to be rich and fertile. Nadia believes the soil is rich and fertile. A family of rabbits appears in the backyard. Nadia proceeds with planting the rose garden in the existing soil."
+
+        3: "Priya is a professional baker in a small town in India. She wants to impress her customers with a delicious chocolate cake for a special event. Priya observes that the cake she has baked looks perfectly moist and fluffy. Priya believes that she has baked a moist and fluffy chocolate cake. A street vendor outside the bakery starts selling freshly roasted peanuts. Priya decorates the cake for the event."
+
+    bigtom_response_characters:
+        1: "[\"Percival\", \"coworker\"]"
+
+        2: "[\"Nadia\", \"client\"]"
+
+        3: "[\"Priya\", \"customers\"]"
+
+    bigtom_response_individual:
+        1: |-
+            {
+                "Percival":[
+                    {
+                        "sentence": "Percival is a software developer working on an important project for his company.",
+                        "observed": "true"
+                    }, 
+                    {
+                        "sentence": "He wants to create a user-friendly app that will be popular among users.",
+                        "observed": "true"
+                    }, 
+                    {
+                        "sentence": "Percival examines the app's interface, which appears to be intuitive and easy to navigate.",
+                        "observed": "true"
+                    }, 
+                    {
+                        "sentence": "Percival believes that the app's interface is intuitive and user-friendly.",
+                        "observed": "true"
+                    }, 
+                    {
+                        "sentence": "A coworker brings in a box of donuts for the office to share.",
+                        "observed": "true"
+                    }, 
+                    {
+                        "sentence": "Percival proceeds to finalize the app and prepare it for launch.",
+                        "observed": "true"
+                    } 
+                ],
+                "coworker":[
+                    {
+                        "sentence": "Percival is a software developer working on an important project for his company.",
+                        "observed": "true"
+                    }, 
+                    {
+                        "sentence": "He wants to create a user-friendly app that will be popular among users.",
+                        "observed": "false"
+                    }, 
+                    {
+                        "sentence": "Percival examines the app's interface, which appears to be intuitive and easy to navigate.",
+                        "observed": "false"
+                    }, 
+                    {
+                        "sentence": "Percival believes that the app's interface is intuitive and user-friendly.",
+                        "observed": "false"
+                    }, 
+                    {
+                        "sentence": "A coworker brings in a box of donuts for the office to share.",
+                        "observed": "true"
+                    }, 
+                    {
+                        "sentence": "Percival proceeds to finalize the app and prepare it for launch.",
+                        "observed": "true"
+                    }
+                ]
+            }
+
+        2: |-
+            {
+                "Nadia": [
+                    {
+                        "sentence": "Nadia is a professional gardener, working on a landscape design for a client's backyard.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "She wants to plant a beautiful rose garden as the centerpiece of the design.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nadia observes that the soil in the backyard appears to be rich and fertile.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nadia believes the soil is rich and fertile.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "A family of rabbits appears in the backyard.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nadia proceeds with planting the rose garden in the existing soil.",
+                        "observed": "true"
+                    }
+                ],
+                "client": [
+                    {
+                        "sentence": "Nadia is a professional gardener, working on a landscape design for a client's backyard.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "She wants to plant a beautiful rose garden as the centerpiece of the design.",
+                        "observed": "maybe"
+                    },
+                    {
+                        "sentence": "Nadia observes that the soil in the backyard appears to be rich and fertile.",
+                        "observed": "maybe"
+                    },
+                    {
+                        "sentence": "Nadia believes the soil is rich and fertile.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "A family of rabbits appears in the backyard.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Nadia proceeds with planting the rose garden in the existing soil.",
+                        "observed": "maybe"
+                    }
+                ]
+            }
+
+        3: |-
+            {
+                "Priya": [
+                    {
+                        "sentence": "Priya is a professional baker in a small town in India.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "She wants to impress her customers with a delicious chocolate cake for a special event.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Priya observes that the cake she has baked looks perfectly moist and fluffy.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Priya believes that she has baked a moist and fluffy chocolate cake.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "A street vendor outside the bakery starts selling freshly roasted peanuts.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Priya decorates the cake for the event.",
+                        "observed": "true"
+                    }
+                ],
+                "customers": [
+                    {
+                        "sentence": "Priya is a professional baker in a small town in India.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "She wants to impress her customers with a delicious chocolate cake for a special event.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Priya observes that the cake she has baked looks perfectly moist and fluffy.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Priya believes that she has baked a moist and fluffy chocolate cake.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "A street vendor outside the bakery starts selling freshly roasted peanuts.",
+                        "observed": "maybe"
+                    },
+                    {
+                        "sentence": "Priya decorates the cake for the event.",
+                        "observed": "false"
+                    }
+                ]
+            }
+
+    bigtom_response_grouped:
+        1: |-
+            ```json
+            [
+                {"Percival is a software developer working on an important project for his company.": {"Percival": "true", "coworker": "true"}},
+                {"He wants to create a user-friendly app that will be popular among users.": {"Percival": "true", "coworker": "false"}},
+                {"Percival examines the app's interface, which appears to be intuitive and easy to navigate.": {"Percival": "true", "coworker": "false"}},
+                {"Percival believes that the app's interface is intuitive and user-friendly.": {"Percival": "true", "coworker": "false"}},
+                {"A coworker brings in a box of donuts for the office to share.": {"Percival": "true", "coworker": "true"}},
+                {"Percival proceeds to finalize the app and prepare it for launch.": {"Percival": "true", "coworker": "maybe"}}
+            ]
+            ```
+
+        2: |-
+            ```json
+            [
+                {"Nadia is a professional gardener, working on a landscape design for a client's backyard.": {"Nadia": "true", "client": "true"}},
+                {"She wants to plant a beautiful rose garden as the centerpiece of the design.": {"Nadia": "true", "client": "true"}},
+                {"Nadia observes that the soil in the backyard appears to be rich and fertile.": {"Nadia": "true", "client": "maybe"}},
+                {"Nadia believes the soil is rich and fertile.": {"Nadia": "true", "client": "false"}},
+                {"A family of rabbits appears in the backyard.": {"Nadia": "true", "client": "false"}},
+                {"Nadia proceeds with planting the rose garden in the existing soil.": {"Nadia": "true", "client": "maybe"}}
+            ]
+            ```
+
+        3: |-
+            ```json
+            [
+                {"Priya is a professional baker in a small town in India.": {"Priya": "true", "customers": "true"}},
+                {"She wants to impress her customers with a delicious chocolate cake for a special event.": {"Priya": "true", "customers": "false"}},
+                {"Priya observes that the cake she has baked looks perfectly moist and fluffy.": {"Priya": "true", "customers": "maybe"}},
+                {"Priya believes that she has baked a moist and fluffy chocolate cake.": {"Priya": "true", "customers": "false"}},
+                {"A street vendor outside the bakery starts selling freshly roasted peanuts.": {"Priya": "maybe", "customers": "maybe"}},
+                {"Priya decorates the cake for the event.": {"Priya": "true", "customers": "maybe"}}
+            ]
+            ```
+
+
+tomi:
+    tomi_example: 
+        1: "Amelia entered the kitchen. Noah entered the kitchen. The slacks is in the envelope. The envelope is in the kitchen. Noah moved the slacks to the treasure_chest. The treasure_chest is in the kitchen. Amelia exited the kitchen. Noah exited the kitchen. Amelia entered the kitchen. Amelia likes the carrot."
+
+        2: "Emma entered the kitchen. Aiden entered the kitchen. The broccoli is in the bottle. The bottle is in the kitchen. Emma moved the broccoli to the crate. The crate is in the kitchen. Aiden exited the kitchen." 
+
+        3: "Sophia entered the attic. Mia entered the crawlspace. Ava entered the attic. The banana is in the crate. The crate is in the attic. Mia exited the crawlspace. Sophia exited the attic. Ava moved the banana to the cupboard. The cupboard is in the attic." 
+
+    tomi_response_characters:
+        1: "[\"Amelia\", \"Noah\"]"
+
+        2: "[\"Emma\", \"Aiden\"]"
+
+        3: "[\"Sophia\", \"Mia\", \"Ava\"]"
+
+    tomi_response_individual:
+        1: |-
+            {
+                "Amelia":[
+                    {
+                        "sentence": "Amelia entered the kitchen.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Noah entered the kitchen.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "The slacks is in the envelope.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "The envelope is in the kitchen.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Noah moved the slacks to the treasure_chest.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "The treasure_chest is in the kitchen.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Amelia exited the kitchen.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Noah exited the kitchen.",
+                        "observed": "maybe"
+                    },
+                    {
+                        "sentence": "Amelia entered the kitchen.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Amelia likes the carrot.",
+                        "observed": "true"
+                    }
+                ],
+                "Noah": [
+                    {
+                        "sentence": "Amelia entered the kitchen.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Noah entered the kitchen.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "The slacks is in the envelope.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "The envelope is in the kitchen.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Noah moved the slacks to the treasure_chest.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "The treasure_chest is in the kitchen.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Amelia exited the kitchen.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Noah exited the kitchen.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Amelia entered the kitchen.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Amelia likes the carrot.",
+                        "observed": "false"
+                    }
+                ]
+            }
+
+        2: |-
+            {
+                "Emma": [
+                    {
+                        "sentence": "Emma entered the kitchen.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Aiden entered the kitchen.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "The broccoli is in the bottle.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "The bottle is in the kitchen.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Emma moved the broccoli to the crate.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "The crate is in the kitchen.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Aiden exited the kitchen.",
+                        "observed": "true"
+                    }
+                ],
+                "Aiden": [
+                    {
+                        "sentence": "Emma entered the kitchen.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Aiden entered the kitchen.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "The broccoli is in the bottle.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "The bottle is in the kitchen.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Emma moved the broccoli to the crate.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "The crate is in the kitchen.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Aiden exited the kitchen.",
+                        "observed": "true"
+                    }
+                ]
+            }
+
+        3: |-
+            {
+                "Sophia": [
+                    {
+                        "sentence": "Sophia entered the attic.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Mia entered the crawlspace.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Ava entered the attic.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "The banana is in the crate.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "The crate is in the attic.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Mia exited the crawlspace.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Sophia exited the attic.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Ava moved the banana to the cupboard.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "The cupboard is in the attic.",
+                        "observed": "false"
+                    }
+                ],
+                "Mia": [
+                    {
+                        "sentence": "Sophia entered the attic.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Mia entered the crawlspace.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Ava entered the attic.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "The banana is in the crate.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "The crate is in the attic.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Mia exited the crawlspace.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Sophia exited the attic.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Ava moved the banana to the cupboard.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "The cupboard is in the attic.",
+                        "observed": "false"
+                    }
+                ],
+                "Ava": [
+                    {
+                        "sentence": "Sophia entered the attic.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Mia entered the crawlspace.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Ava entered the attic.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "The banana is in the crate.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "The crate is in the attic.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Mia exited the crawlspace.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Sophia exited the attic.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Ava moved the banana to the cupboard.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "The cupboard is in the attic.",
+                        "observed": "true"
+                    }
+                ]
+            }
+
+    tomi_response_grouped: 
+        1: |-
+            ```json
+            [
+                {"Amelia entered the kitchen.": {"Amelia": "true", "Noah": "false"}},
+                {"Noah entered the kitchen.": {"Amelia": "true", "Noah": "true"}},
+                {"The slacks is in the envelope.": {"Amelia": "true", "Noah": "true"}},
+                {"The envelope is in the kitchen.": {"Amelia": "true", "Noah": "true"}},
+                {"Noah moved the slacks to the treasure_chest.": {"Amelia": "true", "Noah": "true"}},
+                {"The treasure_chest is in the kitchen.": {"Amelia": "true", "Noah": "true"}},
+                {"Amelia exited the kitchen.": {"Amelia": "true", "Noah": "true"}},
+                {"Noah exited the kitchen.": {"Amelia": "maybe", "Noah": "true"}},
+                {"Amelia entered the kitchen.": {"Amelia": "true", "Noah": "false"}},
+                {"Amelia likes the carrot.": {"Amelia": "true", "Noah": "false"}}
+            ]
+            ```
+
+        2: |-
+            ```json
+            [
+                {"Emma entered the kitchen.": {"Emma": "true", "Aiden": "false"}},
+                {"Aiden entered the kitchen.": {"Emma": "true", "Aiden": "true"}},
+                {"The broccoli is in the bottle.": {"Emma": "true", "Aiden": "true"}},
+                {"The bottle is in the kitchen.": {"Emma": "true", "Aiden": "true"}},
+                {"Emma moved the broccoli to the crate.": {"Emma": "true", "Aiden": "true"}},
+                {"The crate is in the kitchen.": {"Emma": "true", "Aiden": "true"}},
+                {"Aiden exited the kitchen.": {"Emma": "true", "Aiden": "true"}}
+            ]
+            ```
+
+        3: |-
+            ```json
+            [
+                {"Sophia entered the attic.": {"Sophia": "true", "Mia": "false", "Ava": "false"}},
+                {"Mia entered the crawlspace.": {"Sophia": "false", "Mia": "true", "Ava": "false"}},
+                {"Ava entered the attic.": {"Sophia": "true", "Mia": "false", "Ava": "true"}},
+                {"The banana is in the crate.": {"Sophia": "true", "Mia": "false", "Ava": "true"}},
+                {"The crate is in the attic.": {"Sophia": "true", "Mia": "false", "Ava": "true"}},
+                {"Mia exited the crawlspace.": {"Sophia": "false", "Mia": "true", "Ava": "false"}},
+                {"Sophia exited the attic.": {"Sophia": "true", "Mia": "false", "Ava": "true"}},
+                {"Ava moved the banana to the cupboard.": {"Sophia": "false", "Mia": "false", "Ava": "true"}},
+                {"The cupboard is in the attic.": {"Sophia": "false", "Mia": "false", "Ava": "true"}}
+            ]
+            ```
+
+hitom:
+    hitom_example:
+        1: "Emily dislikes the plum. Nathan, Evelyn, William, Emily and Jacob entered the pantry. The plum is in the red pantry. Nathan made no movements and stayed in the pantry for 1 minute. Evelyn saw a monkey. Nathan exited the pantry. Evelyn moved the plum to the green bucket. Evelyn exited the pantry. William made no movements and stayed in the pantry for 1 minute. William exited the pantry. Emily made no movements and stayed in the pantry for 1 minute. Nathan saw a mouse. Emily exited the pantry. Jacob moved the plum to the red pantry. Jacob exited the pantry. Nathan, Evelyn, William, Emily and Jacob entered the waiting room."
+
+        2: "Evelyn, Isabella, Nathan, Ava and Lily entered the hallway. The melon is in the blue container. Evelyn moved the melon to the green treasure chest. Evelyn exited the hallway. Lily dislikes the cucumber. Isabella made no movements and stayed in the hallway for 1 minute. Isabella exited the hallway. Nathan moved the melon to the blue treasure chest. Nathan exited the hallway. Ava made no movements and stayed in the hallway for 1 minute. Ava exited the hallway. Lily made no movements and stayed in the hallway for 1 minute. Ava dislikes the spinach. Lily exited the hallway. Evelyn, Isabella, Nathan, Ava and Lily entered the waiting room. Nathan, Isabella and Evelyn entered the cellar. The spinach is in the red crate. Nathan moved the spinach to the blue bottle. Nathan exited the cellar. Isabella moved the spinach to the red bottle. Isabella exited the cellar. Nathan lost his phone. Evelyn made no movements and stayed in the cellar for 1 minute. Evelyn exited the cellar. Nathan, Isabella and Evelyn entered the waiting room. Isabella privately told Nathan that the spinach is in the blue bottle."
+
+        3: "William, Jack, Charlotte, Noah and Hannah entered the hall. Noah saw a monkey. The carrot is in the red basket. William made no movements and stayed in the hall for 1 minute. William exited the hall. Hannah saw a mouse. Jack made no movements and stayed in the hall for 1 minute. Jack exited the hall. Charlotte made no movements and stayed in the hall for 1 minute. Charlotte exited the hall. Charlotte dislikes the tomato. Noah moved the carrot to the green envelope. Noah exited the hall. Hannah moved the carrot to the red basket. Hannah exited the hall. William, Jack, Charlotte, Noah and Hannah entered the waiting room. Charlotte publicly claimed that carrot is in the green envelope. Hannah privately told Charlotte that the carrot is in the blue container."
+
+    hitom_response_characters:
+        1: "[\"Emily\", \"Nathan\", \"Evelyn\", \"William\", \"Jacob\"]"
+
+        2: "[\"Evelyn\", \"Isabella\", \"Nathan\", \"Ava\", \"Lily\"]"
+
+        3: "[\"William\", \"Jack\", \"Charlotte\", \"Noah\", \"Hannah\"]"
+
+    hitom_response_individual:
+        1: |-
+            {
+                "Emily": [
+                    {
+                        "sentence": "Emily dislikes the plum.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nathan, Evelyn, William, Emily and Jacob entered the pantry.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "The plum is in the red pantry.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nathan made no movements and stayed in the pantry for 1 minute.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Evelyn saw a monkey.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Nathan exited the pantry.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Evelyn moved the plum to the green bucket.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Evelyn exited the pantry.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "William made no movements and stayed in the pantry for 1 minute.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "William exited the pantry.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Emily made no movements and stayed in the pantry for 1 minute.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nathan saw a mouse.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Emily exited the pantry.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Jacob moved the plum to the red pantry.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Jacob exited the pantry.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Nathan, Evelyn, William, Emily and Jacob entered the waiting room.",
+                        "observed": "true"
+                    }
+                ],
+                "Nathan": [
+                    {
+                        "sentence": "Emily dislikes the plum.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Nathan, Evelyn, William, Emily and Jacob entered the pantry.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "The plum is in the red pantry.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nathan made no movements and stayed in the pantry for 1 minute.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Evelyn saw a monkey.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Nathan exited the pantry.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Evelyn moved the plum to the green bucket.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Evelyn exited the pantry.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "William made no movements and stayed in the pantry for 1 minute.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "William exited the pantry.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Emily made no movements and stayed in the pantry for 1 minute.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Nathan saw a mouse.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Emily exited the pantry.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Jacob moved the plum to the red pantry.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Jacob exited the pantry.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Nathan, Evelyn, William, Emily and Jacob entered the waiting room.",
+                        "observed": "true"
+                    }
+                ],
+                "Evelyn": [
+                    {
+                        "sentence": "Emily dislikes the plum.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Nathan, Evelyn, William, Emily and Jacob entered the pantry.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "The plum is in the red pantry.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nathan made no movements and stayed in the pantry for 1 minute.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Evelyn saw a monkey.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nathan exited the pantry.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Evelyn moved the plum to the green bucket.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Evelyn exited the pantry.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "William made no movements and stayed in the pantry for 1 minute.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "William exited the pantry.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Emily made no movements and stayed in the pantry for 1 minute.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Nathan saw a mouse.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Emily exited the pantry.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Jacob moved the plum to the red pantry.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Jacob exited the pantry.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Nathan, Evelyn, William, Emily and Jacob entered the waiting room.",
+                        "observed": "true"
+                    }
+                ],
+                "William": [
+                    {
+                        "sentence": "Emily dislikes the plum.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Nathan, Evelyn, William, Emily and Jacob entered the pantry.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "The plum is in the red pantry.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nathan made no movements and stayed in the pantry for 1 minute.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Evelyn saw a monkey.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Nathan exited the pantry.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Evelyn moved the plum to the green bucket.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Evelyn exited the pantry.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "William made no movements and stayed in the pantry for 1 minute.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "William exited the pantry.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Emily made no movements and stayed in the pantry for 1 minute.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Nathan saw a mouse.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Emily exited the pantry.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Jacob moved the plum to the red pantry.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Jacob exited the pantry.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Nathan, Evelyn, William, Emily and Jacob entered the waiting room.",
+                        "observed": "true"
+                    }
+                ],
+                "Jacob": [
+                    {
+                        "sentence": "Emily dislikes the plum.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Nathan, Evelyn, William, Emily and Jacob entered the pantry.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "The plum is in the red pantry.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nathan made no movements and stayed in the pantry for 1 minute.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Evelyn saw a monkey.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Nathan exited the pantry.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Evelyn moved the plum to the green bucket.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Evelyn exited the pantry.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "William made no movements and stayed in the pantry for 1 minute.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "William exited the pantry.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Emily made no movements and stayed in the pantry for 1 minute.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nathan saw a mouse.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Emily exited the pantry.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Jacob moved the plum to the red pantry.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Jacob exited the pantry.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nathan, Evelyn, William, Emily and Jacob entered the waiting room.",
+                        "observed": "true"
+                    }
+                ]
+            }
+
+        2: |-
+            {
+                "Evelyn": [
+                    {
+                        "sentence": "Evelyn, Isabella, Nathan, Ava and Lily entered the hallway.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "The melon is in the blue container.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Evelyn moved the melon to the green treasure chest.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Evelyn exited the hallway.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Lily dislikes the cucumber.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Isabella made no movements and stayed in the hallway for 1 minute.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Isabella exited the hallway.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nathan moved the melon to the blue treasure chest.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nathan exited the hallway.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Ava made no movements and stayed in the hallway for 1 minute.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Ava exited the hallway.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Lily made no movements and stayed in the hallway for 1 minute.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Ava dislikes the spinach.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Lily exited the hallway.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Evelyn, Isabella, Nathan, Ava and Lily entered the waiting room.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nathan, Isabella and Evelyn entered the cellar.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "The spinach is in the red crate.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nathan moved the spinach to the blue bottle.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nathan exited the cellar.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Isabella moved the spinach to the red bottle.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Isabella exited the cellar.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nathan lost his phone.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Evelyn made no movements and stayed in the cellar for 1 minute.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Evelyn exited the cellar.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nathan, Isabella and Evelyn entered the waiting room.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Isabella privately told Nathan that the spinach is in the blue bottle.",
+                        "observed": "false"
+                    }
+                ],
+                "Isabella": [
+                    {
+                        "sentence": "Evelyn, Isabella, Nathan, Ava and Lily entered the hallway.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "The melon is in the blue container.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Evelyn moved the melon to the green treasure chest.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Evelyn exited the hallway.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Lily dislikes the cucumber.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Isabella made no movements and stayed in the hallway for 1 minute.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Isabella exited the hallway.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nathan moved the melon to the blue treasure chest.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Nathan exited the hallway.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Ava made no movements and stayed in the hallway for 1 minute.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Ava exited the hallway.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Lily made no movements and stayed in the hallway for 1 minute.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Ava dislikes the spinach.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Lily exited the hallway.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Evelyn, Isabella, Nathan, Ava and Lily entered the waiting room.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nathan, Isabella and Evelyn entered the cellar.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "The spinach is in the red crate.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nathan moved the spinach to the blue bottle.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nathan exited the cellar.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Isabella moved the spinach to the red bottle.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Isabella exited the cellar.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nathan lost his phone.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Evelyn made no movements and stayed in the cellar for 1 minute.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Evelyn exited the cellar.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Nathan, Isabella and Evelyn entered the waiting room.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Isabella privately told Nathan that the spinach is in the blue bottle.",
+                        "observed": "true"
+                    }
+                ],
+                "Nathan": [
+                    {
+                        "sentence": "Evelyn, Isabella, Nathan, Ava and Lily entered the hallway.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "The melon is in the blue container.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Evelyn moved the melon to the green treasure chest.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Evelyn exited the hallway.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Lily dislikes the cucumber.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Isabella made no movements and stayed in the hallway for 1 minute.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Isabella exited the hallway.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nathan moved the melon to the blue treasure chest.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nathan exited the hallway.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Ava made no movements and stayed in the hallway for 1 minute.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Ava exited the hallway.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Lily made no movements and stayed in the hallway for 1 minute.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Ava dislikes the spinach.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Lily exited the hallway.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Evelyn, Isabella, Nathan, Ava and Lily entered the waiting room.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nathan, Isabella and Evelyn entered the cellar.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "The spinach is in the red crate.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nathan moved the spinach to the blue bottle.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nathan exited the cellar.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Isabella moved the spinach to the red bottle.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Isabella exited the cellar.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Nathan lost his phone.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Evelyn made no movements and stayed in the cellar for 1 minute.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Evelyn exited the cellar.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Nathan, Isabella and Evelyn entered the waiting room.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Isabella privately told Nathan that the spinach is in the blue bottle.",
+                        "observed": "true"
+                    }
+                ],
+                "Ava": [
+                    {
+                        "sentence": "Evelyn, Isabella, Nathan, Ava and Lily entered the hallway.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "The melon is in the blue container.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Evelyn moved the melon to the green treasure chest.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Evelyn exited the hallway.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Lily dislikes the cucumber.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Isabella made no movements and stayed in the hallway for 1 minute.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Isabella exited the hallway.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nathan moved the melon to the blue treasure chest.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nathan exited the hallway.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Ava made no movements and stayed in the hallway for 1 minute.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Ava exited the hallway.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Lily made no movements and stayed in the hallway for 1 minute.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Ava dislikes the spinach.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Lily exited the hallway.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Evelyn, Isabella, Nathan, Ava and Lily entered the waiting room.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nathan, Isabella and Evelyn entered the cellar.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "The spinach is in the red crate.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Nathan moved the spinach to the blue bottle.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Nathan exited the cellar.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Isabella moved the spinach to the red bottle.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Isabella exited the cellar.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Nathan lost his phone.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Evelyn made no movements and stayed in the cellar for 1 minute.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Evelyn exited the cellar.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Nathan, Isabella and Evelyn entered the waiting room.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Isabella privately told Nathan that the spinach is in the blue bottle.",
+                        "observed": "false"
+                    }
+                ],
+                "Lily": [
+                    {
+                        "sentence": "Evelyn, Isabella, Nathan, Ava and Lily entered the hallway.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "The melon is in the blue container.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Evelyn moved the melon to the green treasure chest.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Evelyn exited the hallway.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Lily dislikes the cucumber.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Isabella made no movements and stayed in the hallway for 1 minute.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Isabella exited the hallway.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nathan moved the melon to the blue treasure chest.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nathan exited the hallway.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Ava made no movements and stayed in the hallway for 1 minute.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Ava exited the hallway.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Lily made no movements and stayed in the hallway for 1 minute.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Ava dislikes the spinach.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Lily exited the hallway.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Evelyn, Isabella, Nathan, Ava and Lily entered the waiting room.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Nathan, Isabella and Evelyn entered the cellar.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "The spinach is in the red crate.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Nathan moved the spinach to the blue bottle.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Nathan exited the cellar.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Isabella moved the spinach to the red bottle.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Isabella exited the cellar.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Nathan lost his phone.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Evelyn made no movements and stayed in the cellar for 1 minute.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Evelyn exited the cellar.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Nathan, Isabella and Evelyn entered the waiting room.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Isabella privately told Nathan that the spinach is in the blue bottle.",
+                        "observed": "false"
+                    }
+                ]
+            }
+
+        3: |-
+            {
+                "William": [
+                    {
+                        "sentence": "William, Jack, Charlotte, Noah and Hannah entered the hall.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Noah saw a monkey.",
+                        "observed": "false"
+                    }
+                    {
+                        "sentence": "The carrot is in the red basket.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "William made no movements and stayed in the hall for 1 minute.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "William exited the hall.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Hannah saw a mouse.",
+                        "observed": "false" 
+                    },
+                    {
+                        "sentence": "Jack made no movements and stayed in the hall for 1 minute.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Jack exited the hall.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Charlotte made no movements and stayed in the hall for 1 minute.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Charlotte exited the hall.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Charlotte dislikes the tomato.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Noah moved the carrot to the green envelope.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Noah exited the hall.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Hannah moved the carrot to the red basket.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Hannah exited the hall.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "William, Jack, Charlotte, Noah and Hannah entered the waiting room.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Charlotte publicly claimed that carrot is in the green envelope.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Hannah privately told Charlotte that the carrot is in the blue container.",
+                        "observed": "false"    
+                    }
+                ],
+                "Jack": [
+                    {
+                        "sentence": "William, Jack, Charlotte, Noah and Hannah entered the hall.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Noah saw a monkey.",
+                        "observed": "false"
+                    }
+                    {
+                        "sentence": "The carrot is in the red basket.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "William made no movements and stayed in the hall for 1 minute.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "William exited the hall.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Hannah saw a mouse.",
+                        "observed": "false" 
+                    },
+                    {
+                        "sentence": "Jack made no movements and stayed in the hall for 1 minute.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Jack exited the hall.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Charlotte made no movements and stayed in the hall for 1 minute.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Charlotte exited the hall.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Charlotte dislikes the tomato.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Noah moved the carrot to the green envelope.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Noah exited the hall.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Hannah moved the carrot to the red basket.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Hannah exited the hall.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "William, Jack, Charlotte, Noah and Hannah entered the waiting room.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Charlotte publicly claimed that carrot is in the green envelope.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Hannah privately told Charlotte that the carrot is in the blue container.",
+                        "observed": "false"    
+                    }
+                ],
+                "Charlotte": [
+                    {
+                        "sentence": "William, Jack, Charlotte, Noah and Hannah entered the hall.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Noah saw a monkey.",
+                        "observed": "false"
+                    }
+                    {
+                        "sentence": "The carrot is in the red basket.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "William made no movements and stayed in the hall for 1 minute.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "William exited the hall.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Hannah saw a mouse.",
+                        "observed": "false" 
+                    },
+                    {
+                        "sentence": "Jack made no movements and stayed in the hall for 1 minute.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Jack exited the hall.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Charlotte made no movements and stayed in the hall for 1 minute.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Charlotte exited the hall.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Charlotte dislikes the tomato.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Noah moved the carrot to the green envelope.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Noah exited the hall.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Hannah moved the carrot to the red basket.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Hannah exited the hall.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "William, Jack, Charlotte, Noah and Hannah entered the waiting room.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Charlotte publicly claimed that carrot is in the green envelope.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Hannah privately told Charlotte that the carrot is in the blue container.",
+                        "observed": "true"    
+                    }                
+                ],
+                "Noah": [
+                    {
+                        "sentence": "William, Jack, Charlotte, Noah and Hannah entered the hall.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Noah saw a monkey.",
+                        "observed": "true"
+                    }
+                    {
+                        "sentence": "The carrot is in the red basket.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "William made no movements and stayed in the hall for 1 minute.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "William exited the hall.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Hannah saw a mouse.",
+                        "observed": "false" 
+                    },
+                    {
+                        "sentence": "Jack made no movements and stayed in the hall for 1 minute.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Jack exited the hall.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Charlotte made no movements and stayed in the hall for 1 minute.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Charlotte exited the hall.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Charlotte dislikes the tomato.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Noah moved the carrot to the green envelope.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Noah exited the hall.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Hannah moved the carrot to the red basket.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Hannah exited the hall.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "William, Jack, Charlotte, Noah and Hannah entered the waiting room.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Charlotte publicly claimed that carrot is in the green envelope.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Hannah privately told Charlotte that the carrot is in the blue container.",
+                        "observed": "false"    
+                    }
+                ],
+                "Hannah": [
+                    {
+                        "sentence": "William, Jack, Charlotte, Noah and Hannah entered the hall.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Noah saw a monkey.",
+                        "observed": "false"
+                    }
+                    {
+                        "sentence": "The carrot is in the red basket.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "William made no movements and stayed in the hall for 1 minute.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "William exited the hall.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Hannah saw a mouse.",
+                        "observed": "true" 
+                    },
+                    {
+                        "sentence": "Jack made no movements and stayed in the hall for 1 minute.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Jack exited the hall.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Charlotte made no movements and stayed in the hall for 1 minute.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Charlotte exited the hall.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Charlotte dislikes the tomato.",
+                        "observed": "false"
+                    },
+                    {
+                        "sentence": "Noah moved the carrot to the green envelope.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Noah exited the hall.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Hannah moved the carrot to the red basket.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Hannah exited the hall.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "William, Jack, Charlotte, Noah and Hannah entered the waiting room.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Charlotte publicly claimed that carrot is in the green envelope.",
+                        "observed": "true"
+                    },
+                    {
+                        "sentence": "Hannah privately told Charlotte that the carrot is in the blue container.",
+                        "observed": "true"    
+                    }
+                ]
+            }
+
+
+    hitom_response_grouped:
+        1: |-
+            ```json
+            [
+                {"Emily dislikes the plum.": {"Emily": "true", "Nathan": "false", "Evelyn": "false", "William": "false", "Jacob": "false"}},
+                {"Nathan, Evelyn, William, Emily and Jacob entered the pantry.": {"Emily": "true", "Nathan": "true", "Evelyn": "true", "William": "true", "Jacob": "true"}},
+                {"The plum is in the red pantry.": {"Emily": "true", "Nathan": "true", "Evelyn": "true", "William": "true", "Jacob": "true"}},
+                {"Nathan made no movements and stayed in the pantry for 1 minute.": {"Emily": "true", "Nathan": "true", "Evelyn": "true", "William": "true", "Jacob": "true"}},
+                {"Evelyn saw a monkey.": {"Emily": "false", "Nathan": "false", "Evelyn": "true", "William": "false", "Jacob": "false"}},
+                {"Nathan exited the pantry.": {"Emily": "true", "Nathan": "true", "Evelyn": "true", "William": "true", "Jacob": "true"}},
+                {"Evelyn moved the plum to the green bucket.": {"Emily": "true", "Nathan": "false", "Evelyn": "true", "William": "true", "Jacob": "true"}},
+                {"Evelyn exited the pantry.": {"Emily": "true", "Nathan": "false", "Evelyn": "true", "William": "true", "Jacob": "true"}},
+                {"William made no movements and stayed in the pantry for 1 minute.": {"Emily": "true", "Nathan": "false", "Evelyn": "false", "William": "true", "Jacob": "true"}},
+                {"William exited the pantry.": {"Emily": "true", "Nathan": "false", "Evelyn": "false", "William": "true", "Jacob": "true"}},
+                {"Emily made no movements and stayed in the pantry for 1 minute.": {"Emily": "true", "Nathan": "false", "Evelyn": "false", "William": "false", "Jacob": "true"}},
+                {"Nathan saw a mouse.": {"Emily": "false", "Nathan": "true", "Evelyn": "false", "William": "false", "Jacob": "false"}},
+                {"Emily exited the pantry.": {"Emily": "true", "Nathan": "false", "Evelyn": "false", "William": "false", "Jacob": "true"}},
+                {"Jacob moved the plum to the red pantry.": {"Emily": "false", "Nathan": "false", "Evelyn": "false", "William": "false", "Jacob": "true"}},
+                {"Jacob exited the pantry.": {"Emily": "false", "Nathan": "false", "Evelyn": "false", "William": "false", "Jacob": "true"}},
+                {"Nathan, Evelyn, William, Emily and Jacob entered the waiting room.": {"Emily": "true", "Nathan": "true", "Evelyn": "true", "William": "true", "Jacob": "true"}}
+            ]
+            ```
+
+        2: |-
+            ```json
+            [
+                {"Evelyn, Isabella, Nathan, Ava and Lily entered the hallway.": {"Evelyn": "true", "Isabella": "true", "Nathan": "true", "Ava": "true", "Lily": "true"}},
+                {"The melon is in the blue container.": {"Evelyn": "true", "Isabella": "true", "Nathan": "true", "Ava": "true", "Lily": "true"}},
+                {"Evelyn moved the melon to the green treasure chest.": {"Evelyn": "true", "Isabella": "true", "Nathan": "true", "Ava": "true", "Lily": "true"}},
+                {"Evelyn exited the hallway.": {"Evelyn": "true", "Isabella": "true", "Nathan": "true", "Ava": "true", "Lily": "true"}},
+                {"Lily dislikes the cucumber.": {"Evelyn": "false", "Isabella": "false", "Nathan": "false", "Ava": "false", "Lily": "true"}},
+                {"Isabella made no movements and stayed in the hallway for 1 minute.": {"Evelyn": "false", "Isabella": "true", "Nathan": "true", "Ava": "true", "Lily": "true"}},
+                {"Isabella exited the hallway.": {"Evelyn": "false", "Isabella": "true", "Nathan": "true", "Ava": "true", "Lily": "true"}},
+                {"Nathan moved the melon to the blue treasure chest.": {"Evelyn": "false", "Isabella": "false", "Nathan": "true", "Ava": "true", "Lily": "true"}},
+                {"Nathan exited the hallway.": {"Evelyn": "false", "Isabella": "false", "Nathan": "true", "Ava": "true", "Lily": "true"}},
+                {"Ava made no movements and stayed in the hallway for 1 minute.": {"Evelyn": "false", "Isabella": "false", "Nathan": "false", "Ava": "true", "Lily": "true"}},
+                {"Ava exited the hallway.": {"Evelyn": "false", "Isabella": "false", "Nathan": "false", "Ava": "true", "Lily": "true"}},
+                {"Lily made no movements and stayed in the hallway for 1 minute.": {"Evelyn": "false", "Isabella": "false", "Nathan": "false", "Ava": "false", "Lily": "true"}},
+                {"Ava dislikes the spinach.": {"Evelyn": "false", "Isabella": "false", "Nathan": "false", "Ava": "true", "Lily": "false"}},
+                {"Lily exited the hallway.": {"Evelyn": "false", "Isabella": "false", "Nathan": "false", "Ava": "false", "Lily": "true"}},
+                {"Evelyn, Isabella, Nathan, Ava and Lily entered the waiting room.": {"Evelyn": "true", "Isabella": "true", "Nathan": "true", "Ava": "true", "Lily": "true"}},
+                {"Nathan, Isabella and Evelyn entered the cellar.": {"Evelyn": "true", "Isabella": "true", "Nathan": "true", "Ava": "false", "Lily": "false"}},
+                {"The spinach is in the red crate.": {"Evelyn": "true", "Isabella": "true", "Nathan": "true", "Ava": "false", "Lily": "false"}},
+                {"Nathan moved the spinach to the blue bottle.": {"Evelyn": "true", "Isabella": "true", "Nathan": "true", "Ava": "false", "Lily": "false"}},
+                {"Nathan exited the cellar.": {"Evelyn": "true", "Isabella": "true", "Nathan": "true", "Ava": "false", "Lily": "false"}},
+                {"Isabella moved the spinach to the red bottle.": {"Evelyn": "true", "Isabella": "true", "Nathan": "false", "Ava": "false", "Lily": "false"}},
+                {"Isabella exited the cellar.": {"Evelyn": "true", "Isabella": "true", "Nathan": "false", "Ava": "false", "Lily": "false"}},
+                {"Nathan lost his phone.": {"Evelyn": "false", "Isabella": "false", "Nathan": "true", "Ava": "false", "Lily": "false"}},
+                {"Evelyn made no movements and stayed in the cellar for 1 minute.": {"Evelyn": "true", "Isabella": "false", "Nathan": "false", "Ava": "false", "Lily": "false"}},
+                {"Evelyn exited the cellar.": {"Evelyn": "true", "Isabella": "false", "Nathan": "false", "Ava": "false", "Lily": "false"}},
+                {"Nathan, Isabella and Evelyn entered the waiting room.": {"Evelyn": "true", "Isabella": "true", "Nathan": "true", "Ava": "true", "Lily": "true"}},
+                {"Isabella privately told Nathan that the spinach is in the blue bottle.": {"Evelyn": "false", "Isabella": "true", "Nathan": "true", "Ava": "false", "Lily": "false"}}
+            ]
+            ```
+
+        3: |-
+            ```json
+            [
+                {"William, Jack, Charlotte, Noah and Hannah entered the hall.": {"Jack": "true", "Charlotte": "true", "Noah": "true", "Hannah": "true", "William": "true"}},
+                {"Noah saw a monkey.": {"Jack": "false", "Charlotte": "false", "Noah": "true", "Hannah": "false", "William": "false"}},
+                {"The carrot is in the red basket.": {"Jack": "true", "Charlotte": "true", "Noah": "true", "Hannah": "true", "William": "true"}},
+                {"William made no movements and stayed in the hall for 1 minute.": {"Jack": "true", "Charlotte": "true", "Noah": "true", "Hannah": "true", "William": "true"}},
+                {"William exited the hall.": {"Jack": "true", "Charlotte": "true", "Noah": "true", "Hannah": "true", "William": "true"}},
+                {"Hannah saw a mouse.": {"Jack": "false", "Charlotte": "false", "Noah": "false", "Hannah": "true", "William": "false"}},
+                {"Jack made no movements and stayed in the hall for 1 minute.": {"Jack": "true", "Charlotte": "true", "Noah": "true", "Hannah": "true", "William": "false"}},
+                {"Jack exited the hall.": {"Jack": "true", "Charlotte": "true", "Noah": "true", "Hannah": "true", "William": "false"}},
+                {"Charlotte made no movements and stayed in the hall for 1 minute.": {"Jack": "false", "Charlotte": "true", "Noah": "true", "Hannah": "true", "William": "false"}},
+                {"Charlotte exited the hall.": {"Jack": "false", "Charlotte": "true", "Noah": "true", "Hannah": "true", "William": "false"}},
+                {"Charlotte dislikes the tomato.": {"Jack": "false", "Charlotte": "true", "Noah": "false", "Hannah": "false", "William": "false"}},
+                {"Noah moved the carrot to the green envelope.": {"Jack": "false", "Charlotte": "false", "Noah": "true", "Hannah": "true", "William": "false"}},
+                {"Noah moved the carrot to the green envelope.": {"Jack": "false", "Charlotte": "false", "Noah": "true", "Hannah": "true", "William": "false"}},
+                {"Noah exited the hall.": {"Jack": "false", "Charlotte": "false", "Noah": "true", "Hannah": "true", "William": "false"}},
+                {"Hannah moved the carrot to the red basket.": {"Jack": "false", "Charlotte": "false", "Noah": "false", "Hannah": "true", "William": "false"}},
+                {"Hannah exited the hall.": {"Jack": "false", "Charlotte": "false", "Noah": "false", "Hannah": "true", "William": "false"}},
+                {"William, Jack, Charlotte, Noah and Hannah entered the waiting room.": {"Jack": "true", "Charlotte": "true", "Noah": "true", "Hannah": "true", "William": "true"}},
+                {"Charlotte publicly claimed that carrot is in the green envelope.": {"Jack": "true", "Charlotte": "true", "Noah": "true", "Hannah": "true", "William": "true"}},
+                {"Hannah privately told Charlotte that the carrot is in the blue container.": {"Jack": "false", "Charlotte": "true", "Noah": "false", "Hannah": "true", "William": "false"}}
+            ]
+            ```

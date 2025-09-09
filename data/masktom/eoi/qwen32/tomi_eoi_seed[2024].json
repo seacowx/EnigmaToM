@@ -1,0 +1,1147 @@
+[
+    {
+        "id": "1193172911",
+        "questions": "\"Where will Abigail look for the beans?\"",
+        "prompt": "<Events>\n1: Owen entered the back_yard.\n2: Mason entered the garden.\n3: Abigail entered the back_yard.\n4: Mason exited the garden.\n5: The beans is in the envelope.\n6: The envelope is in the back_yard.\n7: Abigail exited the back_yard.\n8: Owen moved the beans to the suitcase.\n9: The suitcase is in the back_yard.\n10: Owen exited the back_yard.\n11: Abigail entered the garden.\n\n<Questions>\n\"Where will Abigail look for the beans?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "Based on the question \"Where will Abigail look for the beans?\", the entities directly mentioned are:\n\n<entities>\n- Abigail\n- beans\n- back_yard\n- garden\n- suitcase\n</entities>",
+        "response": [
+            "beans",
+            "back yard",
+            "suitcase",
+            "garden",
+            "abigail"
+        ]
+    },
+    {
+        "id": "8218008344",
+        "questions": "\"Where is the shoes really?\"",
+        "prompt": "<Events>\n1: Jacob entered the bedroom.\n2: Hannah entered the bedroom.\n3: Lily entered the bedroom.\n4: The shoes is in the crate.\n5: The crate is in the bedroom.\n6: Lily exited the bedroom.\n7: Hannah exited the bedroom.\n8: Jacob moved the shoes to the bathtub.\n9: The bathtub is in the bedroom.\n\n<Questions>\n\"Where is the shoes really?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where is the shoes really?\" directly mentions the entity \"shoes\". Based on the context provided in the events, the location of the shoes is the key information needed to answer the question. The bathtub is mentioned as the location to which the shoes were moved. Therefore, the entities directly involved in the question are:\n\n<entities>\n- shoes\n- bathtub\n</entities>",
+        "response": [
+            "bathtub",
+            "shoes"
+        ]
+    },
+    {
+        "id": "3027018206",
+        "questions": "\"Where is the t-shirt really?\"",
+        "prompt": "<Events>\n1: Logan hates the undershirt.\n2: Jacob entered the master_bedroom.\n3: Logan entered the master_bedroom.\n4: The t-shirt is in the pantry.\n5: The pantry is in the master_bedroom.\n6: Logan exited the master_bedroom.\n7: Jacob moved the t-shirt to the container.\n8: The container is in the master_bedroom.\n9: Jacob exited the master_bedroom.\n10: Logan entered the patio.\n\n<Questions>\n\"Where is the t-shirt really?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where is the t-shirt really?\" directly involves the following entities:\n\n<entities>\n- t-shirt\n- container\n- master_bedroom\n- Jacob\n- Logan\n</entities>",
+        "response": [
+            "container",
+            "master bedroom",
+            "tshirt"
+        ]
+    },
+    {
+        "id": "9929804771",
+        "questions": "\"Where will Aiden look for the underclothes?\"\n\"Where does Jayden think that Aiden searches for the underclothes?\"",
+        "prompt": "<Events>\n1: Aiden entered the den.\n2: Jayden entered the den.\n3: The underclothes is in the treasure_chest.\n4: The treasure_chest is in the den.\n5: Aiden loves the watermelon.\n6: Jayden moved the underclothes to the drawer.\n7: The drawer is in the den.\n8: Aiden exited the den.\n9: Jayden exited the den.\n10: Aiden entered the cellar.\n\n<Questions>\n\"Where will Aiden look for the underclothes?\"\n\"Where does Jayden think that Aiden searches for the underclothes?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The questions ask about the locations where Aiden and Jayden think the underclothes are. Based on the questions, the entities involved are:\n\n<entities>\n- Aiden\n- Jayden\n- underclothes\n- drawer\n- treasure_chest\n</entities>",
+        "response": [
+            "underclothes",
+            "treasure chest",
+            "drawer"
+        ]
+    },
+    {
+        "id": "7670352764",
+        "questions": "\"Where will Evelyn look for the belt?\"\n\"Where does Evelyn think that Owen searches for the belt?\"",
+        "prompt": "<Events>\n1: Evelyn entered the cellar.\n2: Owen entered the cellar.\n3: The belt is in the bathtub.\n4: The bathtub is in the cellar.\n5: Elizabeth loves the apple.\n6: Evelyn exited the cellar.\n7: Owen moved the belt to the envelope.\n8: The envelope is in the cellar.\n\n<Questions>\n\"Where will Evelyn look for the belt?\"\n\"Where does Evelyn think that Owen searches for the belt?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The questions ask about where Evelyn will look for the belt and where she thinks Owen will search for it. Based on the questions, the entities directly mentioned are:\n\n<entities>\n- Evelyn\n- Owen\n- belt\n- cellar\n- envelope\n</entities>",
+        "response": [
+            "cellar",
+            "envelope",
+            "belt"
+        ]
+    },
+    {
+        "id": "4315856127",
+        "questions": "\"Where was the tomato at the beginning?\"",
+        "prompt": "<Events>\n1: Noah entered the pantry.\n2: Aria entered the pantry.\n3: The tomato is in the basket.\n4: The basket is in the pantry.\n5: Noah exited the pantry.\n6: Aria moved the tomato to the suitcase.\n7: The suitcase is in the pantry.\n8: Aria exited the pantry.\n9: Jayden entered the pantry.\n10: Noah entered the pantry.\n\n<Questions>\n\"Where was the tomato at the beginning?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question asks about the location of the tomato at the beginning. From the events provided, the tomato is first mentioned in event 3, where it is stated to be in the basket. The basket is then mentioned in event 4 to be in the pantry. Therefore, the tomato was in the basket, which was in the pantry, at the beginning.\n\nBased on the question, the entities involved are:\n<entities>\n- Tomato\n- Basket\n- Pantry\n- Noah\n- Aria\n</entities>",
+        "response": [
+            "tomato",
+            "pantry",
+            "basket"
+        ]
+    },
+    {
+        "id": "5231804414",
+        "questions": "\"Where will Lily look for the slacks?\"",
+        "prompt": "<Events>\n1: Charlotte entered the patio.\n2: Lily entered the patio.\n3: The slacks is in the bucket.\n4: The bucket is in the patio.\n5: Lily moved the slacks to the treasure_chest.\n6: The treasure_chest is in the patio.\n7: Charlotte exited the patio.\n\n<Questions>\n\"Where will Lily look for the slacks?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Lily look for the slacks?\" involves the following entities:\n\n<entities>\n- Lily\n- slacks\n- treasure_chest\n- patio\n- bucket\n</entities>",
+        "response": [
+            "bucket",
+            "slacks",
+            "patio",
+            "treasure chest"
+        ]
+    },
+    {
+        "id": "6158207165",
+        "questions": "\"Where will Jackson look for the lettuce?\"",
+        "prompt": "<Events>\n1: Chloe entered the study.\n2: Jackson entered the study.\n3: Mia loves the sweatshirt.\n4: The lettuce is in the container.\n5: The container is in the study.\n6: Jackson exited the study.\n7: Chloe moved the lettuce to the crate.\n8: The crate is in the study.\n9: Chloe exited the study.\n10: Jackson entered the pantry.\n\n<Questions>\n\"Where will Jackson look for the lettuce?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Jackson look for the lettuce?\" involves the following entities:\n\n<entities>\n- Jackson\n- Lettuce\n- Study\n- Crate\n- Container\n</entities>",
+        "response": [
+            "lettuce",
+            "crate",
+            "container",
+            "study"
+        ]
+    },
+    {
+        "id": "3690616576",
+        "questions": "\"Where does Logan think that Ava searches for the tie?\"\n\"Where does Ava think that Logan searches for the tie?\"",
+        "prompt": "<Events>\n1: Ava entered the crawlspace.\n2: Logan entered the crawlspace.\n3: The tie is in the suitcase.\n4: The suitcase is in the crawlspace.\n5: Ava moved the tie to the cupboard.\n6: The cupboard is in the crawlspace.\n7: Logan exited the crawlspace.\n8: Ava likes the celery.\n9: Logan entered the crawlspace.\n\n<Questions>\n\"Where does Logan think that Ava searches for the tie?\"\n\"Where does Ava think that Logan searches for the tie?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The questions ask about the locations where Logan and Ava think the other person is searching for the tie. The entities directly mentioned in the questions are:\n\n<entities>\n- Ava\n- Logan\n- tie\n- crawlspace\n- cupboard\n</entities>",
+        "response": [
+            "cupboard",
+            "tie",
+            "crawlspace"
+        ]
+    },
+    {
+        "id": "4328850339",
+        "questions": "\"Where is the pajamas really?\"\n\"Where was the pajamas at the beginning?\"",
+        "prompt": "<Events>\n1: Mila entered the study.\n2: Sophia entered the study.\n3: The pajamas is in the container.\n4: The container is in the study.\n5: Alexander loves the shoes.\n6: Mila moved the pajamas to the cupboard.\n7: The cupboard is in the study.\n8: Sophia exited the study.\n\n<Questions>\n\"Where is the pajamas really?\"\n\"Where was the pajamas at the beginning?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The questions ask about the location of the pajamas, both at the beginning and at the end. The entities directly mentioned in the questions related to these locations are:\n\n<entities>\n- pajamas\n- container\n- cupboard\n- study\n- Sophia\n</entities> \n\nNote that \"Sophia\" is included as she is one of the entities mentioned in the events leading up to the questions, but the questions themselves do not directly ask about her. However, since the task allows for up to five entities and specifies to include at least one non-person entity, \"Sophia\" is included to meet the criteria of listing up to five entities.",
+        "response": [
+            "pajamas",
+            "container",
+            "cupboard",
+            "study"
+        ]
+    },
+    {
+        "id": "3467147345",
+        "questions": "\"Where will Owen look for the peach?\"",
+        "prompt": "<Events>\n1: Noah entered the staircase.\n2: Owen entered the staircase.\n3: The peach is in the box.\n4: The box is in the staircase.\n5: Noah dislikes the shirt.\n6: Noah loves the turnip.\n7: Owen exited the staircase.\n8: Noah moved the peach to the drawer.\n9: The drawer is in the staircase.\n10: Owen entered the office.\n\n<Questions>\n\"Where will Owen look for the peach?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Owen look for the peach?\" involves the following entities:\n\n<entities>\n- Owen\n- Peach\n- Staircase\n- Drawer\n- Office\n</entities>",
+        "response": [
+            "staircase",
+            "peach",
+            "office",
+            "drawer"
+        ]
+    },
+    {
+        "id": "9254857330",
+        "questions": "\"Where will Oliver look for the persimmon?\"",
+        "prompt": "<Events>\n1: Oliver entered the playroom.\n2: Mila entered the playroom.\n3: Evelyn entered the bathroom.\n4: Evelyn exited the bathroom.\n5: The persimmon is in the bucket.\n6: The bucket is in the playroom.\n7: Mila moved the persimmon to the crate.\n8: The crate is in the playroom.\n9: Evelyn dislikes the lime.\n10: Oliver exited the playroom.\n\n<Questions>\n\"Where will Oliver look for the persimmon?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Oliver look for the persimmon?\" involves the following entities:\n\n<entities>\n- Oliver\n- Persimmon\n- Bucket\n- Crate\n- Playroom\n</entities>",
+        "response": [
+            "bucket",
+            "crate",
+            "playroom",
+            "persimmon"
+        ]
+    },
+    {
+        "id": "2081892857",
+        "questions": "\"Where does Alexander think that Ethan searches for the watermelon?\"\n\"Where does Ethan think that Alexander searches for the watermelon?\"",
+        "prompt": "<Events>\n1: Alexander entered the lounge.\n2: Ethan is in the lounge.\n3: The watermelon is in the treasure_chest.\n4: The treasure_chest is in the lounge.\n5: Alexander exited the lounge.\n6: Ethan moved the watermelon to the container.\n7: The container is in the lounge.\n8: Ethan exited the lounge.\n9: Alexander entered the lounge.\n\n<Questions>\n\"Where does Alexander think that Ethan searches for the watermelon?\"\n\"Where does Ethan think that Alexander searches for the watermelon?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The questions are asking about the thoughts of Alexander and Ethan regarding the location of the watermelon. The entities directly mentioned in the questions are:\n\n<entities>\n- Alexander\n- Ethan\n- watermelon\n- lounge\n- treasure_chest\n</entities>\n\nNote that \"container\" is not included as it is not directly mentioned in the questions, even though it is part of the events.",
+        "response": [
+            "lounge",
+            "watermelon",
+            "treasure chest"
+        ]
+    },
+    {
+        "id": "4449009765",
+        "questions": "\"Where will Emma look for the beans?\"",
+        "prompt": "<Events>\n1: Sophia dislikes the sweet_potato.\n2: Emma entered the front_yard.\n3: Nathan entered the front_yard.\n4: The beans is in the crate.\n5: The crate is in the front_yard.\n6: Nathan hates the shirt.\n7: Emma exited the front_yard.\n8: Nathan moved the beans to the cupboard.\n9: The cupboard is in the front_yard.\n\n<Questions>\n\"Where will Emma look for the beans?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Emma look for the beans?\" involves the following entities:\n\n<entities>\n- Emma\n- beans\n- cupboard\n- front_yard\n- crate\n</entities>",
+        "response": [
+            "crate",
+            "beans",
+            "cupboard",
+            "front yard"
+        ]
+    },
+    {
+        "id": "2133333448",
+        "questions": "\"Where will Olivia look for the shoes?\"",
+        "prompt": "<Events>\n1: Olivia entered the lounge.\n2: Abigail likes the potato.\n3: Abigail entered the lounge.\n4: Avery entered the lounge.\n5: The shoes is in the bucket.\n6: The bucket is in the lounge.\n7: Olivia hates the socks.\n8: Olivia moved the shoes to the envelope.\n9: The envelope is in the lounge.\n10: Abigail exited the lounge.\n\n<Questions>\n\"Where will Olivia look for the shoes?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Olivia look for the shoes?\" involves the following entities:\n\n<entities>\n- Olivia\n- Shoes\n- Envelope\n- Lounge\n</entities>",
+        "response": [
+            "envelope",
+            "lounge",
+            "shoes"
+        ]
+    },
+    {
+        "id": "3839044982",
+        "questions": "\"Where will Aria look for the shoes?\"",
+        "prompt": "<Events>\n1: Jackson entered the crawlspace.\n2: Lucas entered the TV_room.\n3: Aria entered the crawlspace.\n4: Aria likes the lime.\n5: Lucas exited the TV_room.\n6: The shoes is in the box.\n7: The box is in the crawlspace.\n8: Aria exited the crawlspace.\n9: Jackson moved the shoes to the bucket.\n10: The bucket is in the crawlspace.\n11: Jackson exited the crawlspace.\n12: Aria entered the TV_room.\n\n<Questions>\n\"Where will Aria look for the shoes?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "Based on the question \"Where will Aria look for the shoes?\", the entities directly involved are:\n\n<entities>\n- Aria\n- shoes\n- crawlspace\n- TV_room\n- bucket\n</entities>",
+        "response": [
+            "bucket",
+            "shoes",
+            "tv room",
+            "crawlspace"
+        ]
+    },
+    {
+        "id": "9024154253",
+        "questions": "\"Where is the grapes really?\"",
+        "prompt": "<Events>\n1: Ava entered the office.\n2: Isla entered the office.\n3: The grapes is in the envelope.\n4: The envelope is in the office.\n5: Isla moved the grapes to the pantry.\n6: The pantry is in the office.\n7: Ava exited the office.\n8: Isla exited the office.\n9: Carter entered the office.\n10: Carter exited the office.\n11: Ava entered the sunroom.\n\n<Questions>\n\"Where is the grapes really?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where is the grapes really?\" directly mentions the entity \"grapes\". Based on the context provided in the events, the entities that are directly related to the question and are not persons are:\n\n<entities>\n- grapes\n- envelope\n- office\n- pantry\n- sunroom\n</entities> \n\nNote that while \"sunroom\" is mentioned in the events, it is not directly related to the question about the location of the grapes. However, since the task is to list at most five entities and \"sunroom\" is a location mentioned in the events, it is included to meet the requirement of listing up to five entities.",
+        "response": [
+            "sunroom",
+            "grapes",
+            "envelope",
+            "office",
+            "pantry"
+        ]
+    },
+    {
+        "id": "5012697490",
+        "questions": "\"Where will Ethan look for the tomato?\"",
+        "prompt": "<Events>\n1: Ethan entered the crawlspace.\n2: Mia entered the crawlspace.\n3: The tomato is in the bottle.\n4: The bottle is in the crawlspace.\n5: Ethan moved the tomato to the envelope.\n6: The envelope is in the crawlspace.\n7: Ethan likes the undershirt.\n8: Mia exited the crawlspace.\n9: Ethan exited the crawlspace.\n10: Ethan loves the tangerine.\n11: Mia entered the hallway.\n12: Evelyn entered the crawlspace.\n\n<Questions>\n\"Where will Ethan look for the tomato?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Ethan look for the tomato?\" involves the following entities:\n\n<entities>\n- Ethan\n- Tomato\n- Crawlspac\n- Envelope\n- Bottle\n</entities> \n\nThese entities are directly related to the question and are mentioned in the events provided.",
+        "response": [
+            "envelope",
+            "crawlspac",
+            "tomato",
+            "bottle"
+        ]
+    },
+    {
+        "id": "4227823864",
+        "questions": "\"Where will Jackson look for the onion?\"",
+        "prompt": "<Events>\n1: Mason entered the office.\n2: Jackson entered the office.\n3: Mason exited the office.\n4: Mason dislikes the apple.\n5: Jacob entered the office.\n6: The onion is in the container.\n7: The container is in the office.\n8: Jackson exited the office.\n9: Jacob moved the onion to the bottle.\n10: The bottle is in the office.\n\n<Questions>\n\"Where will Jackson look for the onion?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Jackson look for the onion?\" involves the following entities:\n\n<entities>\n- Jackson\n- Onion\n- Office\n- Container\n- Bottle\n</entities>",
+        "response": [
+            "onion",
+            "container",
+            "office",
+            "bottle"
+        ]
+    },
+    {
+        "id": "3464526433",
+        "questions": "\"Where does Jayden think that William searches for the carrot?\"",
+        "prompt": "<Events>\n1: William loves the carrot.\n2: Ethan loves the stockings.\n3: Ethan entered the study.\n4: Jayden entered the study.\n5: William entered the study.\n6: The carrot is in the bottle.\n7: The bottle is in the study.\n8: William exited the study.\n9: Ethan exited the study.\n10: Jayden moved the carrot to the crate.\n11: The crate is in the study.\n12: Jayden exited the study.\n13: William entered the dining_room.\n\n<Questions>\n\"Where does Jayden think that William searches for the carrot?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question asks about Jayden's perception of where William searches for the carrot. Based on the information provided in the question, the entities directly mentioned are:\n\n<entities>\n- Jayden\n- William\n- Carrot\n- Study\n- Crate\n</entities>",
+        "response": [
+            "crate",
+            "carrot",
+            "study"
+        ]
+    },
+    {
+        "id": "9298209482",
+        "questions": "\"Where does Alexander think that Mason searches for the onion?\"",
+        "prompt": "<Events>\n1: Alexander hates the raincoat.\n2: Alexander entered the laundry.\n3: Mason entered the laundry.\n4: The onion is in the box.\n5: The box is in the laundry.\n6: Mason moved the onion to the basket.\n7: The basket is in the laundry.\n8: Alexander exited the laundry.\n9: Mason exited the laundry.\n10: Alexander entered the TV_room.\n\n<Questions>\n\"Where does Alexander think that Mason searches for the onion?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question asks about where Alexander thinks Mason searches for the onion. Based on the information provided in the question, the entities involved are:\n\n<entities>\n- Alexander\n- Mason\n- Onion\n- Laundry\n- Basket\n</entities>",
+        "response": [
+            "onion",
+            "laundry",
+            "basket"
+        ]
+    },
+    {
+        "id": "6506062361",
+        "questions": "\"Where does Hunter think that Emma searches for the grapefruit?\"\n\"Where does Emma think that Hunter searches for the grapefruit?\"\n\"Where will Emma look for the grapefruit?\"",
+        "prompt": "<Events>\n1: Emma entered the den.\n2: Hunter entered the den.\n3: The grapefruit is in the container.\n4: The container is in the den.\n5: Emma moved the grapefruit to the treasure_chest.\n6: The treasure_chest is in the den.\n7: Hunter exited the den.\n8: Emma exited the den.\n9: Hunter entered the den.\n\n<Questions>\n\"Where does Hunter think that Emma searches for the grapefruit?\"\n\"Where does Emma think that Hunter searches for the grapefruit?\"\n\"Where will Emma look for the grapefruit?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The questions are asking about the locations and actions of Emma and Hunter, as well as the grapefruit. The entities directly mentioned in the questions are:\n\n<entities>\n- Emma\n- Hunter\n- grapefruit\n- treasure_chest\n- den\n</entities>",
+        "response": [
+            "grapefruit",
+            "treasure chest",
+            "den"
+        ]
+    },
+    {
+        "id": "6180366182",
+        "questions": "\"Where does Isabella think that Jack searches for the cucumber?\"",
+        "prompt": "<Events>\n1: Jack entered the attic.\n2: Isabella entered the attic.\n3: The cucumber is in the drawer.\n4: The drawer is in the attic.\n5: Jack exited the attic.\n6: Jack entered the hallway.\n7: William loves the belt.\n8: Isabella moved the cucumber to the crate.\n9: The crate is in the attic.\n\n<Questions>\n\"Where does Isabella think that Jack searches for the cucumber?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question asks about Isabella's thoughts on where Jack might search for the cucumber. Based on the provided events, the entities directly mentioned in the context of the question are:\n\n<entities>\n- Jack\n- Isabella\n- Cucumber\n- Attic\n- Crate\n</entities>",
+        "response": [
+            "crate",
+            "cucumber",
+            "attic"
+        ]
+    },
+    {
+        "id": "5565722216",
+        "questions": "\"Where does Alexander think that Ethan searches for the sweatshirt?\"",
+        "prompt": "<Events>\n1: Alexander entered the kitchen.\n2: Ethan entered the kitchen.\n3: The sweatshirt is in the cupboard.\n4: The cupboard is in the kitchen.\n5: Ethan exited the kitchen.\n6: Ethan entered the crawlspace.\n7: Alexander moved the sweatshirt to the bottle.\n8: The bottle is in the kitchen.\n9: Chloe entered the crawlspace.\n\n<Questions>\n\"Where does Alexander think that Ethan searches for the sweatshirt?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question asks about where Alexander thinks Ethan would search for the sweatshirt. The entities directly mentioned in the question are:\n\n- Alexander\n- Ethan\n- Sweatshirt\n- Kitchen\n- Cupboard\n\nThese entities are directly related to the question and do not include any entities that indicate a time or point in time.\n\n<entities>\n- Alexander\n- Ethan\n- Sweatshirt\n- Kitchen\n- Cupboard\n</entities>",
+        "response": [
+            "kitchen",
+            "cupboard",
+            "sweatshirt"
+        ]
+    },
+    {
+        "id": "2469377887",
+        "questions": "\"Where will Ethan look for the sweater?\"",
+        "prompt": "<Events>\n1: Mason loves the cucumber.\n2: Mason entered the cellar.\n3: James entered the cellar.\n4: Ethan entered the cellar.\n5: The sweater is in the cupboard.\n6: The cupboard is in the cellar.\n7: Mason loves the eggplant.\n8: James exited the cellar.\n9: Mason exited the cellar.\n10: James entered the cellar.\n11: Ethan moved the sweater to the suitcase.\n12: The suitcase is in the cellar.\n\n<Questions>\n\"Where will Ethan look for the sweater?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Ethan look for the sweater?\" involves the following entities:\n\n<entities>\n- Ethan\n- Sweater\n- Cellar\n- Suitcase\n- Cupboard\n</entities>",
+        "response": [
+            "cellar",
+            "cupboard",
+            "sweater",
+            "suitcase"
+        ]
+    },
+    {
+        "id": "5997729252",
+        "questions": "\"Where is the stockings really?\"",
+        "prompt": "<Events>\n1: Chloe entered the office.\n2: Liam entered the office.\n3: The stockings is in the bottle.\n4: The bottle is in the office.\n5: Elizabeth entered the basement.\n6: Elizabeth exited the basement.\n7: Liam moved the stockings to the cupboard.\n8: The cupboard is in the office.\n9: Chloe exited the office.\n10: Liam exited the office.\n11: Chloe entered the office.\n\n<Questions>\n\"Where is the stockings really?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where is the stockings really?\" directly involves the following entities:\n\n<entities>\n- stockings\n- office\n- cupboard\n- Chloe\n- Liam\n</entities>",
+        "response": [
+            "stockings",
+            "office",
+            "cupboard"
+        ]
+    },
+    {
+        "id": "5810532000",
+        "questions": "\"Where will Jack look for the orange?\"",
+        "prompt": "<Events>\n1: Jack entered the dining_room.\n2: Owen is in the dining_room.\n3: Aria entered the closet.\n4: Aria loves the t-shirt.\n5: The orange is in the treasure_chest.\n6: The treasure_chest is in the dining_room.\n7: Jack moved the orange to the pantry.\n8: The pantry is in the dining_room.\n9: Owen exited the dining_room.\n10: Owen likes the boots.\n11: Jack exited the dining_room.\n12: Owen entered the dining_room.\n\n<Questions>\n\"Where will Jack look for the orange?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Jack look for the orange?\" involves the following entities:\n\n<entities>\n- Jack\n- Orange\n- Pantry\n- Dining_room\n- Treasure_chest\n</entities>",
+        "response": [
+            "treasure chest",
+            "dining room",
+            "pantry",
+            "orange"
+        ]
+    },
+    {
+        "id": "6278346310",
+        "questions": "\"Where does Oliver think that Jackson searches for the persimmon?\"",
+        "prompt": "<Events>\n1: Benjamin loves the carrot.\n2: Jackson entered the attic.\n3: Oliver entered the attic.\n4: The persimmon is in the drawer.\n5: The drawer is in the attic.\n6: Jackson exited the attic.\n7: Jackson loves the raincoat.\n8: Oliver moved the persimmon to the bathtub.\n9: The bathtub is in the attic.\n\n<Questions>\n\"Where does Oliver think that Jackson searches for the persimmon?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question asks about where Oliver thinks Jackson searches for the persimmon. Based on the information provided, the entities directly mentioned in the question are:\n\n<entities>\n- Oliver\n- Jackson\n- Persimmon\n- Attic\n- Bathtub\n</entities>",
+        "response": [
+            "persimmon",
+            "attic",
+            "bathtub"
+        ]
+    },
+    {
+        "id": "9720101625",
+        "questions": "\"Where will Nathan look for the potato?\"",
+        "prompt": "<Events>\n1: Nathan entered the basement.\n2: Liam entered the basement.\n3: Jackson dislikes the watermelon.\n4: The potato is in the bottle.\n5: The bottle is in the basement.\n6: Jackson hates the beans.\n7: Liam moved the potato to the crate.\n8: The crate is in the basement.\n9: Nathan exited the basement.\n\n<Questions>\n\"Where will Nathan look for the potato?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Nathan look for the potato?\" involves the following entities:\n\n<entities>\n- Nathan\n- Potato\n- Basement\n- Crate\n- Liam\n</entities>\n\nReasoning:\n- Nathan is the person who will be looking for the potato.\n- Potato is the object being sought.\n- Basement is the location where the events initially take place.\n- Crate is the location to which the potato was moved.\n- Liam is included because he moved the potato to the crate, which is relevant to the potato's location.",
+        "response": [
+            "crate",
+            "potato",
+            "crate is the location to which the potato was moved.",
+            "basement",
+            "basement is the location where the events initially take place.",
+            "nathan is the person who will be looking for the potato.",
+            "liam is included because he moved the potato to the crate, which is relevant to the potato's location.",
+            "potato is the object being sought."
+        ]
+    },
+    {
+        "id": "8601076926",
+        "questions": "\"Where does Jack think that William searches for the pear?\"\n\"Where will Jack look for the pear?\"",
+        "prompt": "<Events>\n1: William is in the kitchen.\n2: Elizabeth entered the kitchen.\n3: Jack entered the kitchen.\n4: The pear is in the bathtub.\n5: The bathtub is in the kitchen.\n6: William moved the pear to the container.\n7: The container is in the kitchen.\n8: Jack exited the kitchen.\n9: Elizabeth exited the kitchen.\n10: Jack entered the garage.\n\n<Questions>\n\"Where does Jack think that William searches for the pear?\"\n\"Where will Jack look for the pear?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The questions ask about the locations and actions related to the pear, William, and Jack. Based on the questions provided, the entities directly mentioned are:\n\n<entities>\n- Jack\n- William\n- pear\n- kitchen\n- container\n</entities>",
+        "response": [
+            "pear",
+            "kitchen",
+            "container"
+        ]
+    },
+    {
+        "id": "9139555140",
+        "questions": "\"Where is the celery really?\"",
+        "prompt": "<Events>\n1: Hunter likes the suit.\n2: Isla entered the cellar.\n3: Ethan entered the cellar.\n4: The celery is in the crate.\n5: The crate is in the cellar.\n6: Ethan moved the celery to the suitcase.\n7: The suitcase is in the cellar.\n8: Isla likes the pear.\n9: Isla exited the cellar.\n10: Hunter entered the study.\n11: Isla entered the study.\n\n<Questions>\n\"Where is the celery really?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where is the celery really?\" directly involves the entity \"celery\". From the provided events, we can trace the movement of the celery, which leads us to the entities \"crate\", \"cellar\", and \"suitcase\". The question does not directly mention any persons, so we do not include any person as an entity in our list.\n\n<entities>\n- celery\n- crate\n- cellar\n- suitcase\n</entities>",
+        "response": [
+            "suitcase",
+            "crate",
+            "cellar",
+            "celery"
+        ]
+    },
+    {
+        "id": "5847812491",
+        "questions": "\"Where will Amelia look for the watermelon?\"",
+        "prompt": "<Events>\n1: Amelia entered the garden.\n2: Isabella likes the tie.\n3: Jackson entered the garden.\n4: The watermelon is in the crate.\n5: The crate is in the garden.\n6: Jackson moved the watermelon to the container.\n7: The container is in the garden.\n8: Amelia exited the garden.\n9: Jackson exited the garden.\n10: Amelia entered the garden.\n\n<Questions>\n\"Where will Amelia look for the watermelon?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Amelia look for the watermelon?\" involves the following entities:\n\n<entities>\n- Amelia\n- Watermelon\n- Container\n- Garden\n- Jackson\n</entities>\n\nThese entities are directly mentioned or closely related to the question. Amelia is the person looking for the watermelon, the watermelon is the object being sought, the container is where the watermelon was moved to, the garden is the location where the events take place, and Jackson is involved as he moved the watermelon.",
+        "response": [
+            "watermelon",
+            "container",
+            "garden"
+        ]
+    },
+    {
+        "id": "2893651035",
+        "questions": "\"Where does Emma think that Jacob searches for the onion?\"\n\"Where will Emma look for the onion?\"",
+        "prompt": "<Events>\n1: Emma entered the kitchen.\n2: Owen entered the kitchen.\n3: Jacob entered the kitchen.\n4: The onion is in the suitcase.\n5: The suitcase is in the kitchen.\n6: Jacob moved the onion to the treasure_chest.\n7: The treasure_chest is in the kitchen.\n8: Jacob dislikes the plum.\n9: Emma exited the kitchen.\n10: Jacob exited the kitchen.\n11: Emma entered the study.\n12: Emma hates the gloves.\n\n<Questions>\n\"Where does Emma think that Jacob searches for the onion?\"\n\"Where will Emma look for the onion?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The questions ask about Emma's thoughts on where Jacob might search for the onion and where Emma will look for the onion. The entities directly mentioned in the questions are:\n\n<entities>\n- Emma\n- Jacob\n- onion\n- kitchen\n- treasure_chest\n</entities>",
+        "response": [
+            "onion",
+            "kitchen",
+            "treasure chest"
+        ]
+    },
+    {
+        "id": "2960740867",
+        "questions": "\"Where will Aria look for the pumpkin?\"",
+        "prompt": "<Events>\n1: Lily entered the workshop.\n2: Aria likes the beans.\n3: Aria entered the workshop.\n4: The pumpkin is in the treasure_chest.\n5: The treasure_chest is in the workshop.\n6: Aria exited the workshop.\n7: Aria entered the workshop.\n8: Mia entered the workshop.\n9: Lily moved the pumpkin to the bucket.\n10: The bucket is in the workshop.\n\n<Questions>\n\"Where will Aria look for the pumpkin?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Aria look for the pumpkin?\" involves the following entities:\n\n<entities>\n- Aria\n- Pumpkin\n- Workshop\n- Treasure_chest\n- Bucket\n</entities>",
+        "response": [
+            "bucket",
+            "pumpkin",
+            "treasure chest",
+            "workshop"
+        ]
+    },
+    {
+        "id": "4474281799",
+        "questions": "\"Where was the persimmon at the beginning?\"",
+        "prompt": "<Events>\n1: Jackson entered the patio.\n2: Charlotte entered the back_yard.\n3: Charlotte exited the back_yard.\n4: Aria entered the patio.\n5: The persimmon is in the suitcase.\n6: The suitcase is in the patio.\n7: Jackson exited the patio.\n8: Aria moved the persimmon to the bottle.\n9: The bottle is in the patio.\n10: Aria exited the patio.\n11: Jackson entered the back_yard.\n\n<Questions>\n\"Where was the persimmon at the beginning?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question asks about the location of the persimmon at the beginning. From the events provided, the persimmon is first mentioned in event 5, where it is stated to be in the suitcase. The suitcase is then mentioned to be in the patio in event 6. No other entities are directly mentioned in the question itself, but the persimmon, suitcase, and patio are relevant to answering the question.\n\n<entities>\n- persimmon\n- suitcase\n- patio\n</entities>",
+        "response": [
+            "suitcase",
+            "patio",
+            "persimmon"
+        ]
+    },
+    {
+        "id": "6021656515",
+        "questions": "\"Where does Carter think that Oliver searches for the slippers?\"\n\"Where does Oliver think that Carter searches for the slippers?\"",
+        "prompt": "<Events>\n1: Oliver entered the kitchen.\n2: Carter entered the kitchen.\n3: The slippers is in the envelope.\n4: The envelope is in the kitchen.\n5: Oliver likes the pineapple.\n6: Carter exited the kitchen.\n7: Carter entered the office.\n8: Oliver moved the slippers to the container.\n9: The container is in the kitchen.\n\n<Questions>\n\"Where does Carter think that Oliver searches for the slippers?\"\n\"Where does Oliver think that Carter searches for the slippers?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The questions are asking about the perceptions of Carter and Oliver regarding where the other might search for the slippers. The entities directly mentioned in the questions are:\n\n<entities>\n- Carter\n- Oliver\n- Slippers\n- Kitchen\n- Container\n</entities> \n\nNote that \"Kitchen\" and \"Container\" are included as they are locations or objects directly related to the slippers' possible locations according to the questions.",
+        "response": [
+            "kitchen",
+            "container",
+            "slippers"
+        ]
+    },
+    {
+        "id": "9200759854",
+        "questions": "\"Where is the radish really?\"",
+        "prompt": "<Events>\n1: Elizabeth entered the TV_room.\n2: James entered the TV_room.\n3: The radish is in the cupboard.\n4: The cupboard is in the TV_room.\n5: James moved the radish to the suitcase.\n6: The suitcase is in the TV_room.\n7: Elizabeth exited the TV_room.\n8: James exited the TV_room.\n9: Elizabeth entered the TV_room.\n\n<Questions>\n\"Where is the radish really?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where is the radish really?\" directly involves the following entities:\n\n<entities>\n- radish\n- cupboard\n- suitcase\n- TV_room\n- Elizabeth\n</entities>",
+        "response": [
+            "radish",
+            "cupboard",
+            "tv room",
+            "suitcase"
+        ]
+    },
+    {
+        "id": "1597163118",
+        "questions": "\"Where will Abigail look for the dress?\"",
+        "prompt": "<Events>\n1: Alexander is in the patio.\n2: Abigail entered the patio.\n3: Mila entered the bathroom.\n4: The dress is in the bottle.\n5: The bottle is in the patio.\n6: Abigail moved the dress to the cupboard.\n7: The cupboard is in the patio.\n8: Alexander exited the patio.\n\n<Questions>\n\"Where will Abigail look for the dress?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Abigail look for the dress?\" involves the following entities:\n\n<entities>\n- Abigail\n- Dress\n- Cupboard\n- Patio\n- Bottle\n</entities>",
+        "response": [
+            "dress",
+            "patio",
+            "cupboard",
+            "abigail",
+            "bottle"
+        ]
+    },
+    {
+        "id": "9017988851",
+        "questions": "\"Where does Amelia think that Carter searches for the raincoat?\"",
+        "prompt": "<Events>\n1: Carter entered the master_bedroom.\n2: Amelia entered the master_bedroom.\n3: The raincoat is in the box.\n4: The box is in the master_bedroom.\n5: Amelia exited the master_bedroom.\n6: Carter moved the raincoat to the envelope.\n7: The envelope is in the master_bedroom.\n8: Liam entered the TV_room.\n\n<Questions>\n\"Where does Amelia think that Carter searches for the raincoat?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question asks about Amelia's thoughts on where Carter would search for the raincoat. Based on the events provided, the raincoat was moved to the envelope, which is in the master_bedroom. However, the question is focused on Amelia's perspective, not the actual location of the raincoat.\n\n<entities>\n- Amelia\n- Carter\n- raincoat\n- envelope\n- master_bedroom\n</entities>",
+        "response": [
+            "raincoat",
+            "envelope",
+            "master bedroom"
+        ]
+    },
+    {
+        "id": "8056403056",
+        "questions": "\"Where does Aiden think that Oliver searches for the orange?\"",
+        "prompt": "<Events>\n1: Aiden entered the dining_room.\n2: Oliver entered the dining_room.\n3: The orange is in the treasure_chest.\n4: The treasure_chest is in the dining_room.\n5: Oliver moved the orange to the suitcase.\n6: The suitcase is in the dining_room.\n7: Aiden exited the dining_room.\n8: Jayden entered the back_yard.\n9: Oliver exited the dining_room.\n10: Aiden entered the dining_room.\n\n<Questions>\n\"Where does Aiden think that Oliver searches for the orange?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question asks about Aiden's perception of where Oliver would search for the orange. Based on the events provided, the orange was last seen being moved to the suitcase by Oliver. Therefore, the entities involved in the question are related to the people (Aiden and Oliver) and the objects (orange and suitcase) mentioned.\n\n<entities>\n- Aiden\n- Oliver\n- orange\n- suitcase\n</entities>",
+        "response": [
+            "suitcase",
+            "orange"
+        ]
+    },
+    {
+        "id": "4446178359",
+        "questions": "\"Where will Emma look for the cucumber?\"\n\"Where does Emma think that Mia searches for the cucumber?\"",
+        "prompt": "<Events>\n1: William dislikes the trousers.\n2: Emma entered the patio.\n3: Mia entered the patio.\n4: The cucumber is in the container.\n5: The container is in the patio.\n6: William entered the basement.\n7: Emma moved the cucumber to the drawer.\n8: The drawer is in the patio.\n9: Mia exited the patio.\n10: Mia entered the patio.\n11: Emma hates the skirt.\n\n<Questions>\n\"Where will Emma look for the cucumber?\"\n\"Where does Emma think that Mia searches for the cucumber?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The questions ask about the locations and actions related to the cucumber and the people involved in moving or searching for it. The entities directly mentioned in the questions are:\n\n<entities>\n- Emma\n- Mia\n- Cucumber\n- Drawer\n- Patio\n</entities>",
+        "response": [
+            "patio",
+            "cucumber",
+            "drawer"
+        ]
+    },
+    {
+        "id": "5161573237",
+        "questions": "\"Where is the coat really?\"",
+        "prompt": "<Events>\n1: William entered the workshop.\n2: Carter entered the workshop.\n3: The coat is in the box.\n4: The box is in the workshop.\n5: Carter exited the workshop.\n6: William moved the coat to the envelope.\n7: The envelope is in the workshop.\n8: William exited the workshop.\n9: Carter entered the workshop.\n10: Carter loves the orange.\n\n<Questions>\n\"Where is the coat really?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where is the coat really?\" directly mentions the following entities:\n\n<entities>\n- coat\n- workshop\n- envelope\n</entities>\n\nThese are the entities directly involved in the question. The persons mentioned (William and Carter) are not included as the instruction specifies to include at least one entity that is not a person and to limit the list to at most five entities. The \"orange\" is not included as it is not relevant to the question about the coat's location.",
+        "response": [
+            "workshop",
+            "envelope",
+            "coat"
+        ]
+    },
+    {
+        "id": "1398930817",
+        "questions": "\"Where was the peach at the beginning?\"",
+        "prompt": "<Events>\n1: William entered the back_yard.\n2: Ella entered the back_yard.\n3: The peach is in the bucket.\n4: The bucket is in the back_yard.\n5: Ella exited the back_yard.\n6: William moved the peach to the container.\n7: The container is in the back_yard.\n8: William exited the back_yard.\n9: James entered the back_yard.\n10: Ella entered the back_yard.\n\n<Questions>\n\"Where was the peach at the beginning?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question asks about the location of the peach at the beginning. Based on the events provided, the peach was in the bucket at the beginning. The entities directly mentioned in the question and relevant to the answer are:\n\n<entities>\n- peach\n- bucket\n- William\n- Ella\n- back_yard\n</entities>",
+        "response": [
+            "bucket",
+            "back yard",
+            "peach"
+        ]
+    },
+    {
+        "id": "2875885157",
+        "questions": "\"Where will Mia look for the carrot?\"",
+        "prompt": "<Events>\n1: Ethan entered the bathroom.\n2: Mia entered the bathroom.\n3: The carrot is in the treasure_chest.\n4: The treasure_chest is in the bathroom.\n5: Mia exited the bathroom.\n6: Ethan moved the carrot to the drawer.\n7: The drawer is in the bathroom.\n8: Mia entered the basement.\n9: Isla likes the melon.\n\n<Questions>\n\"Where will Mia look for the carrot?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Mia look for the carrot?\" involves the following entities:\n\n<entities>\n- Mia\n- Carrot\n- Bathroom\n- Drawer\n- Treasure_chest\n</entities>",
+        "response": [
+            "bathroom",
+            "treasure chest",
+            "carrot",
+            "drawer"
+        ]
+    },
+    {
+        "id": "5363941041",
+        "questions": "\"Where does Emily think that Hunter searches for the jacket?\"",
+        "prompt": "<Events>\n1: Sophia entered the playroom.\n2: Hunter entered the playroom.\n3: Emily entered the playroom.\n4: The jacket is in the bucket.\n5: The bucket is in the playroom.\n6: Emily moved the jacket to the container.\n7: The container is in the playroom.\n8: Hunter exited the playroom.\n9: Emily exited the playroom.\n10: Hunter dislikes the grapes.\n11: Hunter entered the hallway.\n\n<Questions>\n\"Where does Emily think that Hunter searches for the jacket?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question asks about where Emily thinks Hunter would search for the jacket. Based on the information provided in the question, the entities involved are:\n\n<entities>\n- Emily\n- Hunter\n- jacket\n- container\n- playroom\n</entities>",
+        "response": [
+            "playroom",
+            "container",
+            "jacket"
+        ]
+    },
+    {
+        "id": "9494508445",
+        "questions": "\"Where does Carter think that Emma searches for the tangerine?\"",
+        "prompt": "<Events>\n1: Emma likes the cap.\n2: Carter entered the garden.\n3: Emma entered the garden.\n4: The tangerine is in the bucket.\n5: The bucket is in the garden.\n6: Emma exited the garden.\n7: Carter moved the tangerine to the box.\n8: The box is in the garden.\n9: Emma hates the strawberry.\n\n<Questions>\n\"Where does Carter think that Emma searches for the tangerine?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question asks about Carter's belief regarding where Emma searches for the tangerine. Based on the question, the entities directly mentioned are:\n\n<entities>\n- Carter\n- Emma\n- tangerine\n- garden\n- box\n</entities>",
+        "response": [
+            "garden",
+            "box",
+            "tangerine"
+        ]
+    },
+    {
+        "id": "5798818545",
+        "questions": "\"Where will Elizabeth look for the lemon?\"",
+        "prompt": "<Events>\n1: Elizabeth loves the apple.\n2: Mila entered the cellar.\n3: Elizabeth entered the cellar.\n4: The lemon is in the crate.\n5: The crate is in the cellar.\n6: Elizabeth exited the cellar.\n7: Mila dislikes the jeans.\n8: Mila moved the lemon to the basket.\n9: The basket is in the cellar.\n\n<Questions>\n\"Where will Elizabeth look for the lemon?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Elizabeth look for the lemon?\" involves the following entities:\n\n<entities>\n- Elizabeth\n- Lemon\n- Cellar\n- Basket\n- Crate\n</entities> \n\nThese entities are directly mentioned or implied in the context of the question. Note that \"Elizabeth\" and \"lemon\" are directly named, while \"cellar,\" \"basket,\" and \"crate\" are locations that could be relevant to the question of where the lemon might be found.",
+        "response": [
+            "crate",
+            "cellar",
+            "lemon",
+            "basket"
+        ]
+    },
+    {
+        "id": "2128705522",
+        "questions": "\"Where will Aiden look for the hat?\"",
+        "prompt": "<Events>\n1: Aiden entered the porch.\n2: Lucas loves the lemon.\n3: Evelyn entered the porch.\n4: The hat is in the envelope.\n5: The envelope is in the porch.\n6: Evelyn moved the hat to the cupboard.\n7: The cupboard is in the porch.\n8: Aiden exited the porch.\n9: Evelyn exited the porch.\n10: Aiden entered the porch.\n\n<Questions>\n\"Where will Aiden look for the hat?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Aiden look for the hat?\" involves the following entities:\n\n<entities>\n- Aiden\n- Hat\n- Porch\n- Cupboard\n- Envelope\n</entities>",
+        "response": [
+            "porch",
+            "envelope",
+            "hat",
+            "cupboard"
+        ]
+    },
+    {
+        "id": "8788126549",
+        "questions": "\"Where does Ella think that Avery searches for the trousers?\"",
+        "prompt": "<Events>\n1: Avery is in the crawlspace.\n2: Ella entered the crawlspace.\n3: The trousers is in the bottle.\n4: The bottle is in the crawlspace.\n5: Avery moved the trousers to the drawer.\n6: The drawer is in the crawlspace.\n7: Oliver dislikes the raincoat.\n8: Ella exited the crawlspace.\n9: Avery exited the crawlspace.\n10: Ella entered the dining_room.\n\n<Questions>\n\"Where does Ella think that Avery searches for the trousers?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where does Ella think that Avery searches for the trousers?\" involves the following entities:\n\n<entities>\n- Ella\n- Avery\n- trousers\n- crawlspace\n- drawer\n</entities>\n\nThese entities are directly mentioned or strongly implied by the question. The crawlspace and drawer are locations where the trousers could be searched for, based on the events provided.",
+        "response": [
+            "drawer",
+            "trousers",
+            "crawlspace"
+        ]
+    },
+    {
+        "id": "2970112802",
+        "questions": "\"Where will Elizabeth look for the eggplant?\"",
+        "prompt": "<Events>\n1: Elizabeth entered the bedroom.\n2: Owen entered the bedroom.\n3: The eggplant is in the suitcase.\n4: The suitcase is in the bedroom.\n5: Owen moved the eggplant to the container.\n6: The container is in the bedroom.\n7: Elizabeth exited the bedroom.\n8: Elizabeth likes the cabbage.\n\n<Questions>\n\"Where will Elizabeth look for the eggplant?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Elizabeth look for the eggplant?\" involves the following entities:\n\n<entities>\n- Elizabeth\n- eggplant\n- bedroom\n- container\n- suitcase\n</entities>",
+        "response": [
+            "eggplant",
+            "container",
+            "bedroom",
+            "suitcase"
+        ]
+    },
+    {
+        "id": "1622463361",
+        "questions": "\"Where will Jack look for the cap?\"",
+        "prompt": "<Events>\n1: Amelia entered the basement.\n2: Jack entered the basement.\n3: The cap is in the box.\n4: The box is in the basement.\n5: Jack moved the cap to the bottle.\n6: The bottle is in the basement.\n7: Amelia exited the basement.\n\n<Questions>\n\"Where will Jack look for the cap?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "Based on the question \"Where will Jack look for the cap?\", the entities directly mentioned are:\n\n<entities>\n- Jack\n- cap\n- bottle\n- basement\n</entities>",
+        "response": [
+            "cap",
+            "basement",
+            "bottle"
+        ]
+    },
+    {
+        "id": "3636587528",
+        "questions": "\"Where is the tangerine really?\"",
+        "prompt": "<Events>\n1: Carter entered the workshop.\n2: Mason entered the workshop.\n3: The tangerine is in the cupboard.\n4: The cupboard is in the workshop.\n5: Carter dislikes the raincoat.\n6: Mason exited the workshop.\n7: Mason entered the study.\n8: Carter moved the tangerine to the box.\n9: The box is in the workshop.\n\n<Questions>\n\"Where is the tangerine really?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where is the tangerine really?\" directly involves the following entities:\n\n<entities>\n- tangerine\n- box\n- workshop\n- Carter\n- Mason\n</entities>\n\nThese entities are directly mentioned or implied in the question and the context provided by the events. The tangerine is the main subject of the question, the box and workshop are locations mentioned in relation to the tangerine, and Carter and Mason are individuals involved in the events related to the tangerine's location.",
+        "response": [
+            "box",
+            "tangerine",
+            "workshop"
+        ]
+    },
+    {
+        "id": "4891433315",
+        "questions": "\"Where does Oliver think that Noah searches for the scarf?\"",
+        "prompt": "<Events>\n1: Sophia entered the attic.\n2: Noah entered the crawlspace.\n3: Oliver entered the crawlspace.\n4: The scarf is in the cupboard.\n5: The cupboard is in the crawlspace.\n6: Noah moved the scarf to the bottle.\n7: The bottle is in the crawlspace.\n8: Sophia exited the attic.\n9: Oliver exited the crawlspace.\n10: Noah loves the t-shirt.\n11: Noah exited the crawlspace.\n12: Oliver entered the crawlspace.\n\n<Questions>\n\"Where does Oliver think that Noah searches for the scarf?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question asks about Oliver's perception of where Noah searches for the scarf. The entities directly mentioned in the question are:\n\n<entities>\n- Oliver\n- Noah\n- Scarf\n- Crawlspace\n- Bottle\n</entities>",
+        "response": [
+            "scarf",
+            "crawlspace",
+            "bottle"
+        ]
+    },
+    {
+        "id": "7332107737",
+        "questions": "\"Where will Benjamin look for the slacks?\"",
+        "prompt": "<Events>\n1: Elizabeth entered the garden.\n2: Benjamin entered the garden.\n3: The slacks is in the box.\n4: The box is in the garden.\n5: Benjamin exited the garden.\n6: Benjamin entered the garden.\n7: Elizabeth moved the slacks to the suitcase.\n8: The suitcase is in the garden.\n\n<Questions>\n\"Where will Benjamin look for the slacks?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Benjamin look for the slacks?\" involves the following entities:\n\n<entities>\n- Benjamin\n- Elizabeth\n- The slacks\n- The box\n- The suitcase\n</entities>",
+        "response": [
+            "slacks",
+            "box",
+            "suitcase"
+        ]
+    },
+    {
+        "id": "6654106785",
+        "questions": "\"Where does Jack think that Mila searches for the beans?\"",
+        "prompt": "<Events>\n1: Mila entered the pantry.\n2: Jack entered the pantry.\n3: The beans is in the basket.\n4: The basket is in the pantry.\n5: Jack exited the pantry.\n6: Mila likes the trousers.\n7: Mila moved the beans to the bathtub.\n8: The bathtub is in the pantry.\n9: Mila exited the pantry.\n10: Mila likes the turnip.\n11: Jack entered the master_bedroom.\n\n<Questions>\n\"Where does Jack think that Mila searches for the beans?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question asks about Jack's perception of where Mila might search for the beans. Based on the information provided in the question, the entities directly mentioned are:\n\n<entities>\n- Jack\n- Mila\n- beans\n- pantry\n- bathtub\n</entities>",
+        "response": [
+            "beans",
+            "pantry",
+            "bathtub"
+        ]
+    },
+    {
+        "id": "9735096111",
+        "questions": "\"Where will Lily look for the skirt?\"",
+        "prompt": "<Events>\n1: Owen likes the grapes.\n2: Jayden entered the porch.\n3: Lily entered the porch.\n4: The skirt is in the bucket.\n5: The bucket is in the porch.\n6: Jayden dislikes the orange.\n7: Lily exited the porch.\n8: Jayden moved the skirt to the suitcase.\n9: The suitcase is in the porch.\n\n<Questions>\n\"Where will Lily look for the skirt?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Lily look for the skirt?\" involves the following entities:\n\n<entities>\n- Lily\n- Skirt\n- Porch\n- Bucket\n- Suitcase\n</entities>",
+        "response": [
+            "porch",
+            "bucket",
+            "skirt",
+            "suitcase"
+        ]
+    },
+    {
+        "id": "9657429323",
+        "questions": "\"Where does Lucas think that Jayden searches for the banana?\"",
+        "prompt": "<Events>\n1: Lucas entered the attic.\n2: Jayden entered the attic.\n3: Lucas loves the suit.\n4: The banana is in the container.\n5: The container is in the attic.\n6: Lily dislikes the radish.\n7: Jayden exited the attic.\n8: Lucas moved the banana to the bucket.\n9: The bucket is in the attic.\n10: Lucas exited the attic.\n11: Jayden entered the attic.\n\n<Questions>\n\"Where does Lucas think that Jayden searches for the banana?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question asks about Lucas's belief regarding where Jayden would search for the banana. Based on the information provided, the entities directly mentioned in the question are:\n\n<entities>\n- Lucas\n- Jayden\n- Banana\n- Attic\n- Bucket\n</entities>",
+        "response": [
+            "bucket",
+            "banana",
+            "attic"
+        ]
+    },
+    {
+        "id": "7649545894",
+        "questions": "\"Where does Carter think that Oliver searches for the spinach?\"\n\"Where does Oliver think that Carter searches for the spinach?\"",
+        "prompt": "<Events>\n1: Oliver entered the den.\n2: Carter entered the den.\n3: Carter hates the pear.\n4: The spinach is in the crate.\n5: The crate is in the den.\n6: Oliver exited the den.\n7: Jacob dislikes the pajamas.\n8: Carter moved the spinach to the treasure_chest.\n9: The treasure_chest is in the den.\n\n<Questions>\n\"Where does Carter think that Oliver searches for the spinach?\"\n\"Where does Oliver think that Carter searches for the spinach?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The questions are asking about the locations where Oliver and Carter think the other might search for the spinach. The entities directly mentioned in the questions are:\n\n- Oliver\n- Carter\n- Spinach\n- Treasure_chest\n- Den\n\nThese entities are directly involved in the questions and are relevant to the locations and items being discussed.\n\n<entities>\n- Oliver\n- Carter\n- Spinach\n- treasure_chest\n- den\n</entities>",
+        "response": [
+            "spinach",
+            "treasure chest",
+            "den"
+        ]
+    },
+    {
+        "id": "2044417510",
+        "questions": "\"Where will Alexander look for the pajamas?\"",
+        "prompt": "<Events>\n1: Evelyn loves the lemon.\n2: Alexander entered the back_yard.\n3: Evelyn entered the attic.\n4: Sophia is in the back_yard.\n5: The pajamas is in the crate.\n6: The crate is in the back_yard.\n7: Evelyn exited the attic.\n8: Sophia moved the pajamas to the bathtub.\n9: The bathtub is in the back_yard.\n10: Alexander exited the back_yard.\n11: Sophia exited the back_yard.\n12: Alexander entered the back_yard.\n\n<Questions>\n\"Where will Alexander look for the pajamas?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Alexander look for the pajamas?\" involves the following entities:\n\n<entities>\n- Alexander\n- Sophia\n- pajamas\n- bathtub\n- back_yard\n</entities>",
+        "response": [
+            "pajamas",
+            "back yard",
+            "bathtub"
+        ]
+    },
+    {
+        "id": "1473127568",
+        "questions": "\"Where does Jacob think that Abigail searches for the tangerine?\"",
+        "prompt": "<Events>\n1: Abigail entered the playroom.\n2: Jacob entered the playroom.\n3: Emma entered the bathroom.\n4: The tangerine is in the envelope.\n5: The envelope is in the playroom.\n6: Emma exited the bathroom.\n7: Jacob exited the playroom.\n8: Abigail moved the tangerine to the bucket.\n9: The bucket is in the playroom.\n\n<Questions>\n\"Where does Jacob think that Abigail searches for the tangerine?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question asks about Jacob's thoughts on where Abigail searches for the tangerine. Based on the information provided, the entities directly mentioned in the question are:\n\n<entities>\n- Jacob\n- Abigail\n- Tangerine\n- Playroom\n- Bucket\n</entities>",
+        "response": [
+            "bucket",
+            "playroom",
+            "tangerine",
+            "abigail"
+        ]
+    },
+    {
+        "id": "8349960712",
+        "questions": "\"Where is the spinach really?\"",
+        "prompt": "<Events>\n1: Emily entered the bedroom.\n2: Avery entered the bedroom.\n3: Avery loves the green_pepper.\n4: The spinach is in the pantry.\n5: The pantry is in the bedroom.\n6: Avery exited the bedroom.\n7: Avery entered the garden.\n8: Emily moved the spinach to the bottle.\n9: The bottle is in the bedroom.\n10: Isla entered the garden.\n\n<Questions>\n\"Where is the spinach really?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where is the spinach really?\" directly involves the following entities:\n\n<entities>\n- spinach\n- bedroom\n- pantry\n- bottle\n- garden\n</entities>\n\nThese entities are directly related to the location and the object (spinach) mentioned in the question.",
+        "response": [
+            "spinach",
+            "bedroom",
+            "pantry",
+            "garden",
+            "bottle"
+        ]
+    },
+    {
+        "id": "1450441185",
+        "questions": "\"Where will Aiden look for the asparagus?\"",
+        "prompt": "<Events>\n1: Carter entered the garage.\n2: Aiden entered the garage.\n3: Aiden hates the pumpkin.\n4: The asparagus is in the envelope.\n5: The envelope is in the garage.\n6: Aiden exited the garage.\n7: Carter moved the asparagus to the cupboard.\n8: The cupboard is in the garage.\n9: Aiden entered the back_yard.\n\n<Questions>\n\"Where will Aiden look for the asparagus?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Aiden look for the asparagus?\" involves the following entities:\n\n<entities>\n- Aiden\n- Asparagus\n- Garage\n- Cupboard\n- Back_yard\n</entities>",
+        "response": [
+            "back yard",
+            "garage",
+            "cupboard",
+            "asparagus"
+        ]
+    },
+    {
+        "id": "3024521435",
+        "questions": "\"Where does Owen think that Mia searches for the pumpkin?\"",
+        "prompt": "<Events>\n1: Mia entered the hallway.\n2: Owen entered the hallway.\n3: Chloe likes the plum.\n4: The pumpkin is in the treasure_chest.\n5: The treasure_chest is in the hallway.\n6: Owen loves the socks.\n7: Owen exited the hallway.\n8: Mia moved the pumpkin to the suitcase.\n9: The suitcase is in the hallway.\n\n<Questions>\n\"Where does Owen think that Mia searches for the pumpkin?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where does Owen think that Mia searches for the pumpkin?\" involves the following entities:\n\n<entities>\n- Owen\n- Mia\n- Pumpkin\n- Hallway\n- Suitcase\n</entities>\n\nThese entities are directly mentioned or implied in the question and are relevant to answering it. The hallway and suitcase are locations that are mentioned in the events and are relevant to the pumpkin's location.",
+        "response": [
+            "hallway",
+            "pumpkin",
+            "suitcase"
+        ]
+    },
+    {
+        "id": "6203635505",
+        "questions": "\"Where does Jackson think that Olivia searches for the beans?\"\n\"Where does Olivia think that Jackson searches for the beans?\"",
+        "prompt": "<Events>\n1: Aiden entered the master_bedroom.\n2: Jackson entered the master_bedroom.\n3: Olivia entered the master_bedroom.\n4: Olivia loves the suit.\n5: The beans is in the bucket.\n6: The bucket is in the master_bedroom.\n7: Aiden exited the master_bedroom.\n8: Jackson dislikes the scarf.\n9: Jackson moved the beans to the cupboard.\n10: The cupboard is in the master_bedroom.\n11: Olivia exited the master_bedroom.\n12: Olivia entered the hallway.\n\n<Questions>\n\"Where does Jackson think that Olivia searches for the beans?\"\n\"Where does Olivia think that Jackson searches for the beans?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The questions are asking about the locations where Jackson and Olivia think the other person searches for the beans. The entities directly mentioned in the questions are:\n\n<entities>\n- Jackson\n- Olivia\n- beans\n- cupboard\n- master_bedroom\n</entities>",
+        "response": [
+            "beans",
+            "master bedroom",
+            "cupboard"
+        ]
+    },
+    {
+        "id": "7816599323",
+        "questions": "\"Where will Mia look for the onion?\"\n\"Where does Mason think that Mia searches for the onion?\"",
+        "prompt": "<Events>\n1: Mason entered the basement.\n2: Mia entered the basement.\n3: The onion is in the container.\n4: The container is in the basement.\n5: Mia exited the basement.\n6: Mason moved the onion to the suitcase.\n7: The suitcase is in the basement.\n8: Mia entered the basement.\n\n<Questions>\n\"Where will Mia look for the onion?\"\n\"Where does Mason think that Mia searches for the onion?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The questions ask about the locations Mia might look for the onion and where Mason thinks Mia would search for the onion. The entities directly mentioned in the questions are Mia, Mason, and the onion. The locations involved are the container and the suitcase, as these are the places where the onion has been or could be located.\n\n<entities>\n- Mia\n- Mason\n- Onion\n- Container\n- Suitcase\n</entities>",
+        "response": [
+            "onion",
+            "container",
+            "suitcase"
+        ]
+    },
+    {
+        "id": "6658536343",
+        "questions": "\"Where will Isabella look for the corn?\"",
+        "prompt": "<Events>\n1: Isabella entered the attic.\n2: Alexander entered the attic.\n3: The corn is in the box.\n4: The box is in the attic.\n5: Isabella exited the attic.\n6: Alexander moved the corn to the envelope.\n7: The envelope is in the attic.\n8: Alexander exited the attic.\n9: Nathan hates the corn.\n10: Isabella entered the back_yard.\n\n<Questions>\n\"Where will Isabella look for the corn?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Isabella look for the corn?\" involves the following entities:\n\n<entities>\n- Isabella\n- Corn\n- Attic\n- Envelope\n- Back_yard\n</entities>",
+        "response": [
+            "envelope",
+            "back yard",
+            "attic",
+            "corn"
+        ]
+    },
+    {
+        "id": "9414148468",
+        "questions": "\"Where will Mason look for the melon?\"",
+        "prompt": "<Events>\n1: Aiden dislikes the asparagus.\n2: Mason entered the pantry.\n3: Mason dislikes the apple.\n4: Aiden entered the pantry.\n5: The melon is in the pantry.\n6: The pantry is in the pantry.\n7: Mason exited the pantry.\n8: Aiden moved the melon to the envelope.\n9: The envelope is in the pantry.\n\n<Questions>\n\"Where will Mason look for the melon?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Mason look for the melon?\" involves the following entities:\n\n<entities>\n- Mason\n- Melon\n- Pantry\n- Envelope\n- Aiden\n</entities>\n\nThese entities are directly mentioned or closely related to the question asked. Note that Aiden is included because his actions affect the location of the melon, which is relevant to the question.",
+        "response": [
+            "envelope",
+            "pantry",
+            "melon"
+        ]
+    },
+    {
+        "id": "3807363906",
+        "questions": "\"Where is the underclothes really?\"",
+        "prompt": "<Events>\n1: Charlotte entered the laundry.\n2: Elizabeth entered the laundry.\n3: The underclothes is in the drawer.\n4: The drawer is in the laundry.\n5: Elizabeth moved the underclothes to the bathtub.\n6: The bathtub is in the laundry.\n7: Charlotte exited the laundry.\n8: Elizabeth exited the laundry.\n9: Charlotte entered the pantry.\n\n<Questions>\n\"Where is the underclothes really?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where is the underclothes really?\" directly mentions the following entities:\n\n<entities>\n- underclothes\n- laundry\n- bathtub\n- Charlotte\n- Elizabeth\n</entities>",
+        "response": [
+            "underclothes",
+            "laundry",
+            "bathtub"
+        ]
+    },
+    {
+        "id": "7334915848",
+        "questions": "\"Where does Ava think that Alexander searches for the gloves?\"",
+        "prompt": "<Events>\n1: Sophia loves the cucumber.\n2: Alexander entered the study.\n3: Ava entered the study.\n4: Sophia entered the study.\n5: Sophia likes the sweater.\n6: The gloves is in the envelope.\n7: The envelope is in the study.\n8: Alexander moved the gloves to the crate.\n9: The crate is in the study.\n10: Ava exited the study.\n\n<Questions>\n\"Where does Ava think that Alexander searches for the gloves?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question asks about Ava's thoughts on where Alexander searches for the gloves. Based on the information provided in the question, the entities involved are:\n\n<entities>\n- Ava\n- Alexander\n- Gloves\n- Crate\n- Study\n</entities>",
+        "response": [
+            "crate",
+            "gloves",
+            "study"
+        ]
+    },
+    {
+        "id": "3149859086",
+        "questions": "\"Where does Evelyn think that Elizabeth searches for the cabbage?\"",
+        "prompt": "<Events>\n1: Evelyn entered the back_yard.\n2: Elizabeth entered the back_yard.\n3: The cabbage is in the container.\n4: The container is in the back_yard.\n5: Elizabeth exited the back_yard.\n6: Evelyn moved the cabbage to the bucket.\n7: The bucket is in the back_yard.\n\n<Questions>\n\"Where does Evelyn think that Elizabeth searches for the cabbage?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question asks about where Evelyn thinks Elizabeth would search for the cabbage. Based on the information provided in the question, the entities directly mentioned are:\n\n<entities>\n- Evelyn\n- Elizabeth\n- cabbage\n- container\n- bucket\n</entities>",
+        "response": [
+            "bucket",
+            "container",
+            "cabbage"
+        ]
+    },
+    {
+        "id": "2324137196",
+        "questions": "\"Where is the gloves really?\"",
+        "prompt": "<Events>\n1: Chloe entered the dining_room.\n2: Lily entered the dining_room.\n3: The gloves is in the bucket.\n4: The bucket is in the dining_room.\n5: Lily moved the gloves to the box.\n6: The box is in the dining_room.\n7: Aiden entered the hallway.\n8: Aiden likes the stockings.\n9: Chloe exited the dining_room.\n10: Aiden likes the pants.\n11: Chloe entered the hallway.\n\n<Questions>\n\"Where is the gloves really?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where is the gloves really?\" directly mentions the following entities:\n\n<entities>\n- gloves\n- box\n- dining_room\n- Chloe\n- Lily\n</entities>\n\nThese entities are directly involved in the question and the context provided by the events. The gloves are the main subject of the question, the box is where the gloves were moved, the dining_room is the location where the events involving the gloves took place, and Chloe and Lily are the individuals involved in the movement of the gloves.",
+        "response": [
+            "dining room",
+            "box",
+            "gloves"
+        ]
+    },
+    {
+        "id": "6610782254",
+        "questions": "\"Where does Charlotte think that Chloe searches for the carrot?\"",
+        "prompt": "<Events>\n1: Chloe entered the living_room.\n2: Charlotte entered the living_room.\n3: Chloe likes the grapefruit.\n4: The carrot is in the crate.\n5: The crate is in the living_room.\n6: Charlotte likes the pants.\n7: Charlotte moved the carrot to the treasure_chest.\n8: The treasure_chest is in the living_room.\n9: Ella entered the living_room.\n10: Chloe exited the living_room.\n11: Charlotte exited the living_room.\n12: Chloe entered the bathroom.\n\n<Questions>\n\"Where does Charlotte think that Chloe searches for the carrot?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question asks about Charlotte's perception of where Chloe would search for the carrot. Based on the information provided in the events and the question, the entities directly involved are:\n\n<entities>\n- Charlotte\n- Chloe\n- carrot\n- treasure_chest\n- living_room\n</entities>",
+        "response": [
+            "treasure chest",
+            "carrot",
+            "living room"
+        ]
+    },
+    {
+        "id": "2280885737",
+        "questions": "\"Where does Chloe think that Aiden searches for the melon?\"",
+        "prompt": "<Events>\n1: Abigail entered the porch.\n2: Aiden entered the bedroom.\n3: Chloe entered the bedroom.\n4: The melon is in the basket.\n5: The basket is in the bedroom.\n6: Chloe exited the bedroom.\n7: Abigail exited the porch.\n8: Aiden moved the melon to the treasure_chest.\n9: The treasure_chest is in the bedroom.\n\n<Questions>\n\"Where does Chloe think that Aiden searches for the melon?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question asks about where Chloe thinks Aiden searches for the melon. Based on the information provided, the entities directly mentioned in the question are:\n\n<entities>\n- Chloe\n- Aiden\n- melon\n- bedroom\n- treasure_chest\n</entities>",
+        "response": [
+            "treasure chest",
+            "bedroom",
+            "melon"
+        ]
+    },
+    {
+        "id": "3431329907",
+        "questions": "\"Where does Logan think that Olivia searches for the jacket?\"",
+        "prompt": "<Events>\n1: Logan entered the staircase.\n2: Olivia entered the staircase.\n3: The jacket is in the container.\n4: The container is in the staircase.\n5: Olivia exited the staircase.\n6: Logan moved the jacket to the envelope.\n7: The envelope is in the staircase.\n8: Logan exited the staircase.\n9: Olivia entered the staircase.\n10: Logan dislikes the scarf.\n\n<Questions>\n\"Where does Logan think that Olivia searches for the jacket?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question asks about Logan's belief regarding where Olivia searches for the jacket. Based on the information provided in the question, the entities directly mentioned are:\n\n<entities>\n- Logan\n- Olivia\n- Jacket\n- Staircase\n- Envelope\n</entities>",
+        "response": [
+            "staircase",
+            "envelope",
+            "jacket"
+        ]
+    },
+    {
+        "id": "5063648146",
+        "questions": "\"Where will Logan look for the tie?\"",
+        "prompt": "<Events>\n1: Logan entered the office.\n2: Carter entered the office.\n3: Logan likes the watermelon.\n4: The tie is in the bucket.\n5: The bucket is in the office.\n6: Olivia entered the office.\n7: Logan moved the tie to the bathtub.\n8: The bathtub is in the office.\n9: Carter exited the office.\n10: Olivia exited the office.\n11: Logan exited the office.\n12: Carter entered the garage.\n\n<Questions>\n\"Where will Logan look for the tie?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Logan look for the tie?\" involves the following entities:\n\n<entities>\n- Logan\n- tie\n- bathtub\n- office\n- bucket\n</entities>",
+        "response": [
+            "bucket",
+            "office",
+            "tie",
+            "bathtub"
+        ]
+    },
+    {
+        "id": "1159960972",
+        "questions": "\"Where does Nathan think that Mason searches for the apple?\"",
+        "prompt": "<Events>\n1: Nathan entered the bedroom.\n2: Jackson entered the closet.\n3: Jackson exited the closet.\n4: Mason entered the bedroom.\n5: The apple is in the bucket.\n6: The bucket is in the bedroom.\n7: Mason moved the apple to the box.\n8: The box is in the bedroom.\n9: Nathan exited the bedroom.\n\n<Questions>\n\"Where does Nathan think that Mason searches for the apple?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question asks about Nathan's thoughts on where Mason searches for the apple. Based on the information provided in the events and the question, the entities directly mentioned are:\n\n<entities>\n- Nathan\n- Mason\n- Apple\n- Bedroom\n- Box\n</entities>",
+        "response": [
+            "apple",
+            "bedroom",
+            "box"
+        ]
+    },
+    {
+        "id": "5696637682",
+        "questions": "\"Where does James think that Ethan searches for the jeans?\"",
+        "prompt": "<Events>\n1: James entered the lounge.\n2: Ethan entered the lounge.\n3: Hannah entered the workshop.\n4: Ethan loves the strawberry.\n5: Hannah exited the workshop.\n6: Hannah loves the onion.\n7: The jeans is in the bathtub.\n8: The bathtub is in the lounge.\n9: James exited the lounge.\n10: Ethan moved the jeans to the suitcase.\n11: The suitcase is in the lounge.\n12: Ethan exited the lounge.\n13: James entered the workshop.\n\n<Questions>\n\"Where does James think that Ethan searches for the jeans?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where does James think that Ethan searches for the jeans?\" involves the following entities:\n\n<entities>\n- James\n- Ethan\n- jeans\n- suitcase\n- lounge\n</entities>",
+        "response": [
+            "lounge",
+            "jeans",
+            "suitcase"
+        ]
+    },
+    {
+        "id": "9156764952",
+        "questions": "\"Where is the green_pepper really?\"",
+        "prompt": "<Events>\n1: Emily entered the workshop.\n2: Isla entered the workshop.\n3: The green_pepper is in the box.\n4: The box is in the workshop.\n5: Isla exited the workshop.\n6: Emily moved the green_pepper to the basket.\n7: The basket is in the workshop.\n8: Emily exited the workshop.\n9: Isla dislikes the stockings.\n10: Isla entered the bathroom.\n\n<Questions>\n\"Where is the green_pepper really?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where is the green_pepper really?\" directly mentions the entity \"green_pepper\". Since the question is asking about the location of the \"green_pepper\", we can infer that the location entities involved are also relevant. From the events, we know that the \"green_pepper\" was moved to the \"basket\", and the \"basket\" is in the \"workshop\". Therefore, the entities \"basket\" and \"workshop\" are also directly involved in answering the question.\n\n<entities>\n- green_pepper\n- basket\n- workshop\n</entities>",
+        "response": [
+            "green pepper",
+            "workshop",
+            "basket"
+        ]
+    },
+    {
+        "id": "1364413677",
+        "questions": "\"Where will William look for the banana?\"",
+        "prompt": "<Events>\n1: William entered the attic.\n2: Mason entered the attic.\n3: The banana is in the pantry.\n4: The pantry is in the attic.\n5: William exited the attic.\n6: Mason moved the banana to the envelope.\n7: The envelope is in the attic.\n8: Aria entered the pantry.\n\n<Questions>\n\"Where will William look for the banana?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will William look for the banana?\" involves the following entities:\n\n<entities>\n- William\n- Banana\n- Attic\n- Pantry\n- Envelope\n</entities>",
+        "response": [
+            "banana",
+            "envelope",
+            "pantry",
+            "attic"
+        ]
+    },
+    {
+        "id": "4718362714",
+        "questions": "\"Where does Carter think that Hunter searches for the slippers?\"",
+        "prompt": "<Events>\n1: Carter entered the patio.\n2: Jackson entered the cellar.\n3: Jackson loves the underpants.\n4: Hunter is in the patio.\n5: Jackson exited the cellar.\n6: The slippers is in the pantry.\n7: The pantry is in the patio.\n8: Hunter moved the slippers to the treasure_chest.\n9: The treasure_chest is in the patio.\n10: Carter exited the patio.\n\n<Questions>\n\"Where does Carter think that Hunter searches for the slippers?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question asks about Carter's thoughts on where Hunter searches for the slippers. Based on the information provided in the question, the entities involved are:\n\n<entities>\n- Carter\n- Hunter\n- Slippers\n- Patio\n- Treasure_chest\n</entities>",
+        "response": [
+            "patio",
+            "treasure chest",
+            "slippers"
+        ]
+    },
+    {
+        "id": "6724086415",
+        "questions": "\"Where does Mia think that James searches for the banana?\"\n\"Where will Mia look for the banana?\"",
+        "prompt": "<Events>\n1: Mia entered the workshop.\n2: James loves the skirt.\n3: James entered the workshop.\n4: The banana is in the container.\n5: The container is in the workshop.\n6: Mia moved the banana to the pantry.\n7: The pantry is in the workshop.\n8: Lucas entered the workshop.\n9: Lucas exited the workshop.\n10: James exited the workshop.\n11: Lucas dislikes the lettuce.\n\n<Questions>\n\"Where does Mia think that James searches for the banana?\"\n\"Where will Mia look for the banana?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The questions ask about the locations and individuals involved in the banana's whereabouts. The entities directly mentioned in the questions are Mia, James, and the banana. The questions imply a search for the banana, but the specific locations mentioned in the questions are not explicitly stated. Therefore, based on the direct mentions in the questions, the entities are:\n\n<entities>\n- Mia\n- James\n- Banana\n- Workshop\n- Pantry\n</entities>\n\nNote that \"Workshop\" and \"Pantry\" are included as they are locations where the banana could be, based on the context provided in the events, even though they are not directly mentioned in the questions. However, since the task allows for up to five entities and these locations are relevant to the questions, they are included.",
+        "response": [
+            "banana",
+            "pantry",
+            "workshop"
+        ]
+    },
+    {
+        "id": "8255434300",
+        "questions": "\"Where will Charlotte look for the suit?\"",
+        "prompt": "<Events>\n1: Isla entered the pantry.\n2: Charlotte entered the pantry.\n3: The suit is in the cupboard.\n4: The cupboard is in the pantry.\n5: Isla dislikes the grapefruit.\n6: Charlotte moved the suit to the drawer.\n7: The drawer is in the pantry.\n8: Isla exited the pantry.\n9: Jackson entered the bathroom.\n10: Charlotte exited the pantry.\n11: Isla entered the bathroom.\n\n<Questions>\n\"Where will Charlotte look for the suit?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Charlotte look for the suit?\" involves the following entities:\n\n<entities>\n- Charlotte\n- Suit\n- Drawer\n- Pantry\n- Cupboard\n</entities>",
+        "response": [
+            "suit",
+            "cupboard",
+            "pantry",
+            "drawer"
+        ]
+    },
+    {
+        "id": "7588973256",
+        "questions": "\"Where does Hunter think that Owen searches for the peas?\"",
+        "prompt": "<Events>\n1: Owen entered the office.\n2: Hunter entered the office.\n3: The peas is in the crate.\n4: The crate is in the office.\n5: Logan entered the closet.\n6: Hunter exited the office.\n7: Owen moved the peas to the pantry.\n8: The pantry is in the office.\n\n<Questions>\n\"Where does Hunter think that Owen searches for the peas?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question asks about Hunter's perception of where Owen might search for the peas. Based on the events and the question, the entities directly involved are:\n\n<entities>\n- Hunter\n- Owen\n- peas\n- pantry\n- office\n</entities>",
+        "response": [
+            "office",
+            "pantry",
+            "peas"
+        ]
+    },
+    {
+        "id": "1280279211",
+        "questions": "\"Where does Ava think that Ella searches for the broccoli?\"",
+        "prompt": "<Events>\n1: Oliver hates the shoes.\n2: Ella entered the hall.\n3: Ava entered the hall.\n4: The broccoli is in the crate.\n5: The crate is in the hall.\n6: Ella exited the hall.\n7: Ava dislikes the trousers.\n8: Ava moved the broccoli to the drawer.\n9: The drawer is in the hall.\n\n<Questions>\n\"Where does Ava think that Ella searches for the broccoli?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question asks about where Ava thinks Ella searches for the broccoli. Based on the information provided, the entities directly mentioned in the question are:\n\n<entities>\n- Ava\n- Ella\n- Broccoli\n- Drawer\n- Hall\n</entities>",
+        "response": [
+            "hall",
+            "drawer",
+            "broccoli"
+        ]
+    },
+    {
+        "id": "7094292960",
+        "questions": "\"Where will Nathan look for the broccoli?\"",
+        "prompt": "<Events>\n1: William likes the scarf.\n2: Jacob entered the kitchen.\n3: Nathan entered the TV_room.\n4: William entered the TV_room.\n5: Nathan loves the tie.\n6: The broccoli is in the bottle.\n7: The bottle is in the TV_room.\n8: Jacob exited the kitchen.\n9: Nathan exited the TV_room.\n10: William moved the broccoli to the envelope.\n11: The envelope is in the TV_room.\n\n<Questions>\n\"Where will Nathan look for the broccoli?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Nathan look for the broccoli?\" involves the following entities:\n\n<entities>\n- Nathan\n- Broccoli\n- TV_room\n- Envelope\n- William\n</entities>",
+        "response": [
+            "envelope",
+            "tv room",
+            "broccoli"
+        ]
+    },
+    {
+        "id": "2929571388",
+        "questions": "\"Where will Ava look for the strawberry?\"",
+        "prompt": "<Events>\n1: Ava entered the TV_room.\n2: Hannah entered the living_room.\n3: Ella entered the TV_room.\n4: The strawberry is in the basket.\n5: The basket is in the TV_room.\n6: Ava exited the TV_room.\n7: Ella moved the strawberry to the cupboard.\n8: The cupboard is in the TV_room.\n\n<Questions>\n\"Where will Ava look for the strawberry?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Ava look for the strawberry?\" involves the following entities:\n\n<entities>\n- Ava\n- strawberry\n- TV_room\n- cupboard\n- basket\n</entities>",
+        "response": [
+            "cupboard",
+            "tv room",
+            "basket",
+            "strawberry"
+        ]
+    },
+    {
+        "id": "6716557012",
+        "questions": "\"Where will Emily look for the peach?\"",
+        "prompt": "<Events>\n1: William entered the lounge.\n2: Emma entered the lounge.\n3: Emily entered the lounge.\n4: The peach is in the bucket.\n5: The bucket is in the lounge.\n6: William moved the peach to the treasure_chest.\n7: The treasure_chest is in the lounge.\n8: Emily exited the lounge.\n9: William exited the lounge.\n10: Emily entered the playroom.\n\n<Questions>\n\"Where will Emily look for the peach?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Emily look for the peach?\" involves the following entities:\n\n<entities>\n- Emily\n- peach\n- treasure_chest\n- lounge\n- playroom\n</entities>",
+        "response": [
+            "lounge",
+            "playroom",
+            "treasure chest",
+            "peach"
+        ]
+    },
+    {
+        "id": "8371287796",
+        "questions": "\"Where was the underclothes at the beginning?\"",
+        "prompt": "<Events>\n1: Owen entered the basement.\n2: Alexander entered the porch.\n3: Avery entered the basement.\n4: The underclothes is in the pantry.\n5: The pantry is in the basement.\n6: Alexander exited the porch.\n7: Avery exited the basement.\n8: Owen moved the underclothes to the basket.\n9: The basket is in the basement.\n\n<Questions>\n\"Where was the underclothes at the beginning?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question asks about the location of the underclothes at the beginning. Based on the provided events, the underclothes is mentioned to be in the pantry initially, and the pantry is located in the basement. The entities directly involved in the question are:\n\n<entities>\n- underclothes\n- pantry\n- basement\n</entities>\n\nThese are the entities that are directly mentioned or implied in the question about the location of the underclothes at the beginning.",
+        "response": [
+            "underclothes",
+            "pantry",
+            "basement"
+        ]
+    },
+    {
+        "id": "4715112663",
+        "questions": "\"Where will Elizabeth look for the lemon?\"",
+        "prompt": "<Events>\n1: Elizabeth entered the sunroom.\n2: Ethan hates the corn.\n3: Ethan likes the sweater.\n4: Ethan entered the sunroom.\n5: Logan entered the sunroom.\n6: Logan exited the sunroom.\n7: The lemon is in the bottle.\n8: The bottle is in the sunroom.\n9: Ethan exited the sunroom.\n10: Ethan entered the sunroom.\n11: Elizabeth moved the lemon to the treasure_chest.\n12: The treasure_chest is in the sunroom.\n\n<Questions>\n\"Where will Elizabeth look for the lemon?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Elizabeth look for the lemon?\" involves the following entities:\n\n<entities>\n- Elizabeth\n- Lemon\n- Treasure_chest\n- Sunroom\n- Ethan\n</entities>\n\nNote that \"Ethan\" is included as an entity because he is involved in the events that take place in the sunroom, which is the location where the lemon was moved to the treasure_chest. However, the question does not directly involve Ethan, but he is one of the entities mentioned in the context of the events.",
+        "response": [
+            "sunroom",
+            "treasure chest",
+            "lemon"
+        ]
+    },
+    {
+        "id": "4773685872",
+        "questions": "\"Where does Carter think that Mila searches for the radish?\"",
+        "prompt": "<Events>\n1: Carter entered the TV_room.\n2: Mila entered the TV_room.\n3: The radish is in the bucket.\n4: The bucket is in the TV_room.\n5: Isla entered the kitchen.\n6: Mila exited the TV_room.\n7: Mila loves the strawberry.\n8: Isla exited the kitchen.\n9: Carter moved the radish to the box.\n10: The box is in the TV_room.\n11: Mila dislikes the cabbage.\n\n<Questions>\n\"Where does Carter think that Mila searches for the radish?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question asks about where Carter thinks Mila would search for the radish. The entities directly mentioned in the question are:\n\n- Carter\n- Mila\n- Radish\n- TV_room (since the radish was moved to the box, and the box is in the TV_room, this location is relevant to the question)\n\nBased on the format requested:\n\n<entities>\n- Carter\n- Mila\n- Radish\n- TV_room\n</entities>",
+        "response": [
+            "radish",
+            "tv room"
+        ]
+    },
+    {
+        "id": "2124971562",
+        "questions": "\"Where does Hunter think that Ava searches for the celery?\"",
+        "prompt": "<Events>\n1: Hunter entered the porch.\n2: Ava entered the porch.\n3: The celery is in the cupboard.\n4: The cupboard is in the porch.\n5: Ava exited the porch.\n6: Hunter moved the celery to the drawer.\n7: The drawer is in the porch.\n8: Ava entered the porch.\n9: Sophia hates the orange.\n\n<Questions>\n\"Where does Hunter think that Ava searches for the celery?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question asks about where Hunter thinks Ava would search for the celery. Based on the information provided, the entities directly mentioned in the question are:\n\n<entities>\n- Hunter\n- Ava\n- Celery\n- Porch\n- Drawer\n</entities>",
+        "response": [
+            "porch",
+            "celery",
+            "drawer"
+        ]
+    },
+    {
+        "id": "4076462329",
+        "questions": "\"Where will William look for the sweatshirt?\"",
+        "prompt": "<Events>\n1: Owen entered the workshop.\n2: William entered the workshop.\n3: The sweatshirt is in the treasure_chest.\n4: The treasure_chest is in the workshop.\n5: William exited the workshop.\n6: Owen moved the sweatshirt to the basket.\n7: The basket is in the workshop.\n8: Owen exited the workshop.\n9: Logan entered the workshop.\n10: William entered the pantry.\n\n<Questions>\n\"Where will William look for the sweatshirt?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will William look for the sweatshirt?\" involves the following entities:\n\n<entities>\n- William\n- sweatshirt\n- workshop\n- treasure_chest\n- basket\n</entities>",
+        "response": [
+            "treasure chest",
+            "basket",
+            "sweatshirt",
+            "workshop"
+        ]
+    },
+    {
+        "id": "8307805521",
+        "questions": "\"Where will Aiden look for the coat?\"",
+        "prompt": "<Events>\n1: Hannah entered the kitchen.\n2: Aiden entered the kitchen.\n3: Aiden dislikes the corn.\n4: The coat is in the bucket.\n5: The bucket is in the kitchen.\n6: Aiden exited the kitchen.\n7: William hates the carrot.\n8: Hannah moved the coat to the pantry.\n9: The pantry is in the kitchen.\n\n<Questions>\n\"Where will Aiden look for the coat?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Aiden look for the coat?\" involves the following entities:\n\n<entities>\n- Aiden\n- Coat\n- Kitchen\n- Pantry\n- Bucket\n</entities>",
+        "response": [
+            "bucket",
+            "kitchen",
+            "pantry",
+            "coat"
+        ]
+    },
+    {
+        "id": "5890692034",
+        "questions": "\"Where will Elizabeth look for the sweet_potato?\"",
+        "prompt": "<Events>\n1: Isabella entered the hall.\n2: Elizabeth entered the hall.\n3: Elizabeth dislikes the corn.\n4: Jacob entered the hall.\n5: The sweet_potato is in the drawer.\n6: The drawer is in the hall.\n7: Jacob exited the hall.\n8: Elizabeth exited the hall.\n9: Isabella moved the sweet_potato to the treasure_chest.\n10: The treasure_chest is in the hall.\n\n<Questions>\n\"Where will Elizabeth look for the sweet_potato?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Elizabeth look for the sweet_potato?\" involves the following entities:\n\n<entities>\n- Elizabeth\n- sweet_potato\n- drawer\n- treasure_chest\n- hall\n</entities>",
+        "response": [
+            "treasure chest",
+            "hall",
+            "drawer",
+            "sweet potato"
+        ]
+    },
+    {
+        "id": "4180677453",
+        "questions": "\"Where will Nathan look for the undershirt?\"",
+        "prompt": "<Events>\n1: Nathan entered the staircase.\n2: Chloe is in the staircase.\n3: Hannah entered the staircase.\n4: Hannah exited the staircase.\n5: The undershirt is in the treasure_chest.\n6: The treasure_chest is in the staircase.\n7: Chloe loves the cabbage.\n8: Nathan exited the staircase.\n9: Chloe moved the undershirt to the drawer.\n10: The drawer is in the staircase.\n\n<Questions>\n\"Where will Nathan look for the undershirt?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Nathan look for the undershirt?\" involves the following entities:\n\n<entities>\n- Nathan\n- undershirt\n- treasure_chest\n- staircase\n- drawer\n</entities>",
+        "response": [
+            "staircase",
+            "undershirt",
+            "treasure chest",
+            "drawer"
+        ]
+    },
+    {
+        "id": "8537514347",
+        "questions": "\"Where will Isabella look for the tie?\"",
+        "prompt": "<Events>\n1: Jayden entered the closet.\n2: Isabella entered the closet.\n3: The tie is in the bottle.\n4: The bottle is in the closet.\n5: Isabella exited the closet.\n6: Jayden moved the tie to the box.\n7: The box is in the closet.\n8: Lily entered the closet.\n9: Jayden exited the closet.\n10: Isabella entered the bedroom.\n\n<Questions>\n\"Where will Isabella look for the tie?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "Based on the question \"Where will Isabella look for the tie?\", the entities directly mentioned are:\n\n<entities>\n- Isabella\n- Tie\n- Closet\n- Box\n- Bottle\n</entities>",
+        "response": [
+            "closet",
+            "box",
+            "tie",
+            "bottle"
+        ]
+    },
+    {
+        "id": "8347716944",
+        "questions": "\"Where is the pineapple really?\"",
+        "prompt": "<Events>\n1: Alexander hates the lemon.\n2: Alexander entered the garden.\n3: Ava loves the turnip.\n4: Lily entered the garden.\n5: The pineapple is in the treasure_chest.\n6: The treasure_chest is in the garden.\n7: Alexander moved the pineapple to the bucket.\n8: The bucket is in the garden.\n9: Lily exited the garden.\n\n<Questions>\n\"Where is the pineapple really?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where is the pineapple really?\" directly involves the following entities:\n\n<entities>\n- pineapple\n- Alexander\n- garden\n- bucket\n- treasure_chest\n</entities>",
+        "response": [
+            "bucket",
+            "treasure chest",
+            "garden",
+            "pineapple"
+        ]
+    },
+    {
+        "id": "2461277653",
+        "questions": "\"Where does Mia think that Hannah searches for the celery?\"",
+        "prompt": "<Events>\n1: Mia entered the kitchen.\n2: Hannah entered the kitchen.\n3: The celery is in the bottle.\n4: The bottle is in the kitchen.\n5: Charlotte entered the patio.\n6: Mia exited the kitchen.\n7: Mia entered the patio.\n8: Charlotte exited the patio.\n9: Hannah moved the celery to the suitcase.\n10: The suitcase is in the kitchen.\n\n<Questions>\n\"Where does Mia think that Hannah searches for the celery?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question asks about Mia's perception of where Hannah would search for the celery. Based on the events provided, the entities directly involved in the question are:\n\n<entities>\n- Mia\n- Hannah\n- Celery\n- Kitchen\n- Suitcase\n</entities>",
+        "response": [
+            "celery",
+            "kitchen",
+            "suitcase"
+        ]
+    },
+    {
+        "id": "9826285220",
+        "questions": "\"Where will Sophia look for the banana?\"",
+        "prompt": "<Events>\n1: Alexander entered the laundry.\n2: Sophia entered the laundry.\n3: The banana is in the cupboard.\n4: The cupboard is in the laundry.\n5: Sophia moved the banana to the drawer.\n6: The drawer is in the laundry.\n7: Alexander exited the laundry.\n\n<Questions>\n\"Where will Sophia look for the banana?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Sophia look for the banana?\" involves the following entities:\n\n<entities>\n- Sophia\n- Banana\n- Drawer\n- Cupboard\n- Laundry\n</entities>",
+        "response": [
+            "banana",
+            "cupboard",
+            "laundry",
+            "drawer"
+        ]
+    },
+    {
+        "id": "5497080360",
+        "questions": "\"Where will Aiden look for the sweatshirt?\"",
+        "prompt": "<Events>\n1: Hannah entered the workshop.\n2: Aiden entered the workshop.\n3: Hannah dislikes the cabbage.\n4: The sweatshirt is in the bottle.\n5: The bottle is in the workshop.\n6: Sophia entered the workshop.\n7: Hannah moved the sweatshirt to the drawer.\n8: The drawer is in the workshop.\n9: Hannah loves the undershirt.\n10: Aiden exited the workshop.\n11: Hannah exited the workshop.\n12: Aiden entered the hall.\n\n<Questions>\n\"Where will Aiden look for the sweatshirt?\"\n\nBased on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>\n\nYou must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:\n\n<entities>\n- Entity1\n- Entity2\n...\n</entities>",
+        "original_generation": "The question \"Where will Aiden look for the sweatshirt?\" involves the following entities:\n\n<entities>\n- Aiden\n- Sweatshirt\n- Workshop\n- Drawer\n- Bottle\n</entities>",
+        "response": [
+            "drawer",
+            "sweatshirt",
+            "workshop",
+            "bottle"
+        ]
+    }
+]

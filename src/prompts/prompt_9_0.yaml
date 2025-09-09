@@ -1,0 +1,219 @@
+system_prompt: "The following is a conversation determining a character's perception of the world based on a piece of narrative. The assistant is an expert in narrative understanding and is exceedingly good at judging whether the event is observed by the character or not."
+
+eoi_system_prompt: "You are an expert in identifying key entities and objects from a given set of questions. Your responsibility is to extract all entities mentioned in the question and organize them as a bullet list."
+
+character_profile_extraction_system: "You are an expert in narrative understanding. You are particularly good at identifying the occupation, personality, and preference of a given character based on the narrative."
+
+location_to_room: "Locations: {{location list}}\n\nThe provided list of locations contain a mixture of rooms and containers. List all the locations that are rooms in the given list using the following format\n- Room1\n- Room2\n...\n\nDo not provide any explanation to your answer."
+
+character_profile_extraction: "Identify the occupation, personality, and preference of {{character}} based on the narrative. Write your answer in the following format:\n\n{\n\t\"name\": {{character}},\n\t\"occupation\": [Occupation],\n\t\"personality\": [Personality],\n\t\"preference\": [Preference]\n}\n\nFor any entry that is not mentioned in the narrative, simply put \"None\". Do not explain or elaborate your answer, only return the JSON object.\n\nNarrative:\n{{narrative}}"
+
+identify_locations: "Events:\n{{indexed narrative}}\n\nWhat are the rooms mentioned in these events? List all the rooms in the following format:\n- Room1\n- Room2\n...\n\nPlease exclude entities in which people cannot enter. Each narrative must contain at least one room and your answer must include at least one room. Provide your answer as bullet points without any explanation."
+
+extract_events_system: "You are an expert in narrative understanding. You are particularly good at summarizing a sentence into a single key event."
+
+extract_events: |-
+  Given an indexed narrative, extract the key events from the narrative. Please adhere to the following instructions:
+    - Note that a single sentence could contain multiple events, in which case you should summarize both events as one single event. 
+    - The event description must be as concise as possible, do not provide any additional information. 
+    - Ensure that key information is include
+    - There should be at least 6 events in one narrative.
+    - Make sure to include the following types of events:
+      - Character's actions and movements.
+      - Object's container and their locations.
+      - Change of object's container.
+      - Character's awareness of other characters.
+      - Character's belief and perception.
+
+  Present your response as an **indexed list**. Only provide indexes and the event descriptions, do not add any other element in the event list. Generate the indexed list of events (titled with a special token "<Key Events>") at the end of your response in the following format:
+
+  <Key Events>
+  1: [event description]
+  2: [event description]
+  3: [event description]
+
+  <Narrative>
+  {{narrative}}
+
+character_event_association_system: "You are an expert in narrative understanding. You are particularly good at identifying the events that are observable to a given character."
+
+character_event_association: "Given a narrative, a list of events, and a character, identify the events that {{character}} is aware of. Write your answer in the following format:\n\nEvents observed by {{character}}:\n1: [Event 1]\n2: [Event 2]\n...\n\nNarrative:\n{{narrative}}\n\nEvents:\n{{events}}\n\nCharacter: {{character}}"
+
+narrative_location: "<Events>\n{{indexed narrative}}\n\n<Available Rooms>\n{{location list}}\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note."
+
+character_location: "<Events>\n{{indexed narrative}}\n\n<Available Rooms>\n{{location list}}\n\nGiven the list of events and available rooms, track the movement of {{character}} throughout the events. Generate {{character}}'s movements as a list in the following format:\n- <Event Index>: {{character}} <movement> <room>\n- <Event Index>: {{character}} <movement> <room>\n......\n\nDetermine {{character}}'s movements according to the following instructions:\n- All of the location changes, if exist, are explicitly stated in the events.\n- If the event does not state that {{character}} left a room, assume that {{character}} remains in the previous room.\n- Use 'enter' to indicate that {{character}} enters a room and use 'exit' to indicate that {{character}} exits a room.\n\nGenerate the answers exactly as instructed without any explanation or note. Only generate the event indices where there is a location change, omit other events."
+
+character_private_info: "[Events]\n{{indexed narrative}}\n\n[Character]\n{{character}}\n\nGiven the indexed events and a character, identify the event indices to contents where the information is privately known to {{character}}. Answer with bullet points in the following format:\n- [Event Index]: [Content]\n...\n\nNotice that characters' actions and movements are always publicly known. Do not include {{character}}'s movements or actions as private information. Objects' locations are always publicly known.\n\nAll circumstances that involve private information are explicitly mentioned in the events. Do not make any additional assumptions. If {{character}} has no private information or if you feel unsure, answer with \"None\".Strictly follow the given template, do not add any explanation or note to your answer."
+
+entity_of_interest: |-
+  <Events>
+  {{indexed narrative}}
+
+  <Questions>
+  {{question list}}
+
+  Based on the list of <questions>, extract at most five entities involved in the list of questions. List the entities as bullet points in the following format:
+
+  <entities>
+  - Entity1
+  - Entity2
+  ...
+  </entities>
+
+  You must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First reason about the content of the questions and then provide a comprehensive list of at most five entities with the following format:
+
+  <entities>
+  - Entity1
+  - Entity2
+  ...
+  </entities>
+
+entity_of_interest_w_attribute: |-
+  <Events>
+  {{indexed narrative}}
+
+  <Questions>
+  {{question list}}
+
+  Based on the list of <questions>, extract at most five entities and their attributs that are needed for answering the questions. Note that one entity could corresponds to multiple attributes. List the entities and their attributes. For instance, if the "location of tie", "placement of tie", and "color of crate" are important for answering the questions, the response should be formatted as follows:
+
+  <entities>
+  - location of tie 
+  - placement of tie 
+  - color of crate
+  </entities>
+
+  You must include at least one entity that is not a person. Only extract entities directly mentioned in the questions, do not make any further inference. Do not include any entities that indicate a time or point in time. First briefly reason about the content of the events and the questions and then provide a comprehensive list of at most five entities and their attributes with the following format:
+
+  <entities>
+  - attribute of entity 
+  - attribute of entity 
+  ...
+  </entities>
+
+
+revise_eoi_attr: "Original expression: {{eoi result}}. Please revise the expression to make it in the form of \"[Attribute] of [Entity]\" (attribute connected with entity using the word \"of\"). If the original expression is already in the correct format, then simply provide the original expression. Write your answer strictly in the following format:\nFormatted expression: [YOUR ANSWER]"
+
+reduce_tom_question: "High-order Theory-of-Mind Question:\n{{tom question}}\n\nRewrite the Theory-of-Mind question to an ordinary factual question. Write your answer strictly in the following format:\nAnswer: [YOUR ANSWER]. Do not add any explanation or note. End your question with \"at the end of the story\""
+
+hitom:
+  tom_reduction_questions:
+    1: Where does Emily think Every thinks Nathan thinks the cabbage is?
+    2: Where does Aiden think Sohpia thinks Johnny thinks the peach is?
+    3: Where does Priya think the chocolate cake is?
+    4: Where does Joshua think Liam thinks Isla thinks Sophia thinks Marry thinks the carrot is?
+    5: Where is the peach really?
+
+  # tom_reduction_responses:
+  #   1: Where is the cabbage at the end of the story?
+  #   2: Where is the peach at the end of the story?
+  #   3: Where is the chocolate cake at the end of the story?
+  #   4: Where is the carrot at the end of the story?
+  #   5: Where is the peach at the end of the story?
+
+  tom_reduction_responses:
+    1: Where does Nathan think the cabbage is?
+    2: Where does Johnny think the peach is?
+    3: Where does Priya think the chocolate cake is?
+    4: Where does Marry think the carrot is?
+    5: Where is the peach really?
+
+tomi:
+  tom_reduction_questions:
+    1: Where will Amy look for the melon?
+    2: Where does John think that Noah searches for the pineapple?
+    3: Where is the hat really?
+    4: Where was the skirt at the beginning?
+    5: Where does Oliver think that Jacob searches for the beans?
+
+  tom_reduction_responses:
+    1: Where will Amy look for the melon?
+    2: Where will Noah search for the pineapple?
+    3: Where is the hat at the end of the story?
+    4: Where was the skirt at the beginning?
+    5: Where will Jacob search for the beans?
+
+bigtom:
+  tom_reduction_questions:
+      1: Does Emily blieve the soil is rich and fertile in the backyard?
+      2: Does Kofi belive his fishing net is in good condition or torn apart?
+      3: Does Priya believe the chocolate cake is moist and fluffy or dry and stale?
+      4: Does Nadia believe the central fountain is in pristine condition or in a state of disrepair?
+      5: Does Uma believe the ase has a smooth, even texutre or has become misshaptned and rough?
+
+  tom_reduction_responses:
+      1: The soil is rich and fertile in the backyard.
+      2: The fishing net is in good condition or torn apart.
+      3: The chocolate cake is moist and fluffy or dry and stale.
+      4: The central fountain is in pristine condition or in a state of disrepair.
+      5: The ase has a smooth, even texutre or has become misshaptned and rough.
+
+opentom:
+  tom_reduction_questions:
+    1: As Praxton, what is your attitude towards Hadley's action of moving hat from container to trash can?
+    2: From Hadley's perspective, is the hat in its initial location by the end of the story?
+    3: From Hadley's perspective, where precisely does Praxton think that the hat is located by the end of the story?
+    4: From Hadley's perspective, how does Praxton think container's fullness would change by the end of the story?
+    5: From Hadley's perspective, how would hat's accessibility change for Praxton by the end of the story?
+    6: From narrator's perspective, where is hat located by the end of the story?
+    7: From Hadley's perspective, where is the hat located precisely by the end of the story?
+    8: From Praxton's perspective, does Hadley think that the hat is in its initial location by the end of the story?
+
+  tom_reduction_responses:
+    1: As Praxton, what is your attitude towards Hadley's action of moving hat from container to trash can?
+    2: From Hadley's perspective, is the hat in its initial location by the end of the story?"
+    3: From Praxton's perspective, where is the hat located by the end of the story?
+    4: From Praxton's perspective, how does the container's fullness change by the end of the story?
+    5: How would hat's accessibility change for Praxton by the end of the story?
+    6: Where is hat located by the end of the story?
+    7: From Hadley's perspective, where is the hat located by the end of the story?
+    8: Does Hadley think that the hat is in its initial location by the end of the story?
+
+exploretom:
+  tom_reduction_questions:
+    1: What does Leslie think about Colton's belief on festival marketing strategies? (knows about it / does not know about it)
+    2: In which room does Dylan think that William will search for the leather satchel?
+    3: In which container does Dylan think that William will search for the pocket watch?
+    4: What does Ethan think about Cooper's belief on festival schedule? (knows about it / does not know about it)
+    5: Does Kaitlyn know about food safety protocols? Answer yes or no.
+
+  tom_reduction_responses:
+    1: What is Colton's belief on festival marketing strategies? (knows about it / does not know about it)
+    2: In which room will William search for the leather satchel?
+    3: In which container will William search for the pocket watch?
+    4: What is Cooper's belief on festival schedule? (knows about it / does not know about it)
+    5: Does Kaitlyn know about food safety protocols? Answer yes or no.
+
+fantom:
+  tom_reduction_questions:
+    1: What does Jaiden believe about Veronica's belief regarding how Fatima overcomes the challenge of dealing with different personalities at work?
+    2: What does Emanuel think Jerry believes about the Sunday tradition of Kali's family?
+    3: What does Elena believe that Richard thinks about the special challenge she faced in parenting?
+    4: What does Jaden believe about who Joaquin thinks predominantly raised Alayna after her parents separated?
+    5: What does Mia believe about Dominick's understanding of the importance of networking and in-person relationships in job hunting?
+  tom_reduction_responses:
+    1: What does Jaiden believe about Veronica's belief regarding how Fatima overcomes the challenge of dealing with different personalities at work?
+    2: What does Emanuel think Jerry believes about the Sunday tradition of Kali's family?
+    3: What does Elena believe that Richard thinks about the special challenge she faced in parenting?
+    4: What does Jaden believe about who Joaquin thinks predominantly raised Alayna after her parents separated?
+    5: What does Mia believe about Dominick's understanding of the importance of networking and in-person relationships in job hunting?
+
+fantom_long:
+  tom_reduction_questions:
+    1: What does Jaiden believe about Veronica's belief regarding how Fatima overcomes the challenge of dealing with different personalities at work?
+    2: What does Emanuel think Jerry believes about the Sunday tradition of Kali's family?
+    3: What does Elena believe that Richard thinks about the special challenge she faced in parenting?
+    4: What does Jaden believe about who Joaquin thinks predominantly raised Alayna after her parents separated?
+    5: What does Mia believe about Dominick's understanding of the importance of networking and in-person relationships in job hunting?
+  tom_reduction_responses:
+    1: What does Jaiden believe about Veronica's belief regarding how Fatima overcomes the challenge of dealing with different personalities at work?
+    2: What does Emanuel think Jerry believes about the Sunday tradition of Kali's family?
+    3: What does Elena believe that Richard thinks about the special challenge she faced in parenting?
+    4: What does Jaden believe about who Joaquin thinks predominantly raised Alayna after her parents separated?
+    5: What does Mia believe about Dominick's understanding of the importance of networking and in-person relationships in job hunting?
+
+backoff_profile:
+  Name: "{{character}}"
+  Occupation: "None"
+  Personality: "None"
+  Preference: "None"

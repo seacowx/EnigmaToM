@@ -1,0 +1,786 @@
+universal:
+    system_prompt: "The following is a conversation determining a character's perception of the world based on a piece of narrative. The assistant is an expert in narrative understanding and is exceedingly good at judging whether the event is observed by the character or not."
+
+    location_to_room: "Locations: {{location list}}\n\nThe provided list of locations contain a mixture of rooms and containers. List all the locations that are rooms in the given list using the following format\n- [Room 1]\n- [Room 2]\n...\n\nDo not provide any explanation to your answer."
+
+    identify_locations: "Events:\n{{indexed narrative}}\n\nWhat are the rooms mentioned in these events? List all the rooms in the following format:\n- Room1\n- Room2\n...\n\nPlease exclude entities such as a bottle or a treasure chest which people cannot enter.\n- The correct answer shall be generated as bullet points without any explanation.\n- If a room is mentioned multiple times, list it only once.\nEach narrative must contain at least one room and your answer must include at least one room."
+
+    character_location: "Events\n{{indexed narrative}}\n\nCharacter: {{character}}\n\nAvailable Rooms:\n{{location list}}\n\nGiven the list of events and available rooms, track the location of the {{character}} throughout the events. The result should be generated as a list in the following format:\n- [Event Index]: {{character}} is now at [Current Room]\n\nDetermine {{character}}'s location according to the following instructions:\n- If {{character}}'s location never change in the events, simply generate \"none\".\n- If {{character}} left a location without specifying the destination, assume {{character}} is at \"none\".\n- All of the location changes, if exist, are explicitly stated in the events.\n- If the event does not state that {{character}} left a room, assume that {{character}} remains in the previous room.\n- Generate the answers exactly as instructed without any explanation or note.\n-Only generate the event indices where there is a location change, omit other events."
+
+    narrative_location: "Events:\n{{indexed narrative}}\n\n[Available Rooms]:\n{{location list}}\n\nThe given events describe characters' activities in several rooms. Based on the events and a list of available rooms, list the indices of events and the room that they are describing. The output should be expressed as bullet points in the following format:\n- [Event Index]: [Room]\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- [Room] must be selected from the provided list of \"Available Rooms\". Do not provide any other locations.\n- If an event does not contain information regarding rooms, generate the same room as the event before it without making any note. Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note."
+
+    character_private_info: "[Events]\n{{indexed narrative}}\n\n[Character]\n{{character}}\n\n[Categories]:\n- Personal Desire\n- Personal Belief\n- Personal Preference\n- Personality Trait\n\nGiven the indexed events, a character, and categories of private information, identify the event indices and contents in which the information is privately known to {{character}}. Answer with bullet points in the following format:\n- [Event Index]: [Category] | [Content]\n...\n\nPrivate information must be determined according to the following criteria:\n- Personal preferences, beliefs, and personality traits are privately known to a character.\n- Characters' movements and actions are always publicly known.\n\nAll circumstances that involve private information are explicitly mentioned in the events. Do not make any additional assumptions. If {{character}} has no private information or if you feel unsure, answer with \"None\". If a sentence contain multiple categories, repeat the sentence indices for each category. Strictly follow the given template, do not add any explanation or note to your answer."
+
+    entity_of_interest: "Events:\n{{indexed narrative}}\n\nQuestions:\n{{question list}}\n\nGiven the events and corresponding questions, identify which entities' information are needed in order to correctly answer the questions. List the entities as bullet points in the following format:\n- Entity1\n- Entity2\n...\n\nPlease provide a comprehensive list of entities without any explanation."
+
+    entity_of_interest_w_attribute: "Events:\n{{indexed narrative}}\n\nQuestions:\n{{question list}}\n\nGiven the events and corresponding questions, identify which entities' information is needed in order to correctly answer the question. List the entities and their corresponding attribute as bullet points in the following format:\n- \"Attribute\" of \"Entity\"\n- \"Attribute\" of \"Entity\"\n...\n\nPlease provide a comprehensive list of entities with their attributes. Please follow the specified format strictly. Do not provide any explanation to you answer."
+
+    reduce_tom_question: "High-order Theory-of-Mind Question:\n{{tom question}}\n\nRewrite the high-order Theory-of-Mind question to a first-order Theory-of-Mind question. Write your answer strictly in the following format:\nAnswer: [YOUR ANSWER]. Do not add any explanation or note."
+
+    revise_eoi_attr: "Original expression: {{eoi result}}. Please revise the expression to make it in the form of \"[Attribute] of [Entity]\" (attribute connected with entity using the word \"of\"). If the original expression is already in the correct format, then simply provide the original expression. Write your answer strictly in the following format:\nFormatted expression: [YOUR ANSWER]"
+
+bigtom:
+    bigtom_example:
+        1: "1: Percival is a software developer working on an important project for his company.\n2: He wants to create a user-friendly app that will be popular among users.\n3: Percival examines the app's interface, which appears to be intuitive and easy to navigate.\n4: Percival believes that the app's interface is intuitive and user-friendly.\n5: A coworker brings in a box of donuts for the office to share.\n6: Percival proceeds to finalize the app and prepare it for launch."
+
+        2: "1: Nadia is a professional gardener, working on a landscape design for a client's backyard.\n2: She wants to plant a beautiful rose garden as the centerpiece of the design.\n3: Nadia observes that the soil in the backyard appears to be rich and fertile.\n4: Nadia believes the soil is rich and fertile.\n5:However, a heavy rainstorm occurs overnight, washing away many nutrients and leaving the soil less fertile.\n6: Nadia searches for compost and other nutrients before planting the rose garden."
+
+        3: "1: Priya is a professional baker in a small town in India.\n2: She wants to impress her customers with a delicious chocolate cake for a special event.\n3: Priya observes that the cake she has baked looks perfectly moist and fluffy.\n4: A street vendor outside the bakery starts selling freshly roasted peanuts.\n5: Priya decorates the cake for the event."
+
+    location_list:
+      1: [office, box]
+
+      2: [backyard, compost bin]
+
+      3: [bakery, street vendor]
+
+    room_list:
+      1: [office]
+
+      2: [backyard]
+
+      3: [bakery]
+
+    available_characters:
+      1: [Percival, coworker]
+
+      2: [Nadia, client]  
+
+      3: [Priya, customers]
+
+    available_locations:
+      1: |-
+        - office
+      
+      2: |-
+        - backyard
+
+      3: |-
+        - bakery
+
+    identify_locations:
+      1: |-
+        - office
+
+      2: |-
+        - backyard
+
+      3: |- 
+        - bakery
+
+    tom_reduction_questions:
+      1: Does Emily blieve the soil is rich and fertile in the backyard?
+      2: Does Kofi belive his fishing net is in good condition or torn apart?
+      3: Does Priya believe the chocolate cake is moist and fluffy or dry and stale?
+      4: Does Nadia believe the central fountain is in pristine condition or in a state of disrepair?
+      5: Does Uma believe the ase has a smooth, even texutre or has become misshaptned and rough?
+
+    tom_reduction_responses:
+      1: Does Emily blieve the soil is rich and fertile in the backyard?
+      2: Does Kofi belive his fishing net is in good condition or torn apart?
+      3: Does Priya believe the chocolate cake is moist and fluffy or dry and stale?
+      4: Does Nadia believe the central fountain is in pristine condition or in a state of disrepair?
+      5: Does Uma believe the ase has a smooth, even texutre or has become misshaptned and rough?
+
+    narrative_location:
+      1: |-
+        - 1: now describing office
+
+      2: |-
+        - 1: now describing backyard
+
+      3: |-
+        - 1: now describing bakery
+
+    entity_of_interest:
+      1: |- 
+        - app
+        - app's interface
+        - user
+
+      2: |-
+        - soil
+        - rainstorm
+        - nutrients
+      
+      3: |-
+        - chocolate cake
+
+    entity_of_interest_w_attribute:
+      1: |-
+        - user-friendliness of the app interface
+        - intuitiveness of the app interface
+        - user experience of the app user
+
+      2: |- 
+        - fertility of the soil
+        - existance of the rainstorm
+        - location of the nutrients
+
+      3: |-
+        - fluffiness of the chocolate cake
+        - moistness of the chocolate cake
+
+    character_private_info: 
+      1: 
+        Percival: |-
+          - 2: [Personal Desire] He wants to create a user-friendly app that will be popular among users.
+          - 3: [Personal Observation] Percival examines the app's interface, which appears to be intuitive and easy to navigate.
+          - 4: [Personal Belief] Percival believes that the app's interface is intuitive and user-friendly.
+
+        coworker: None
+
+      2: 
+        Nadia: |-
+          - 2: [Personal Desire] She wants to plant a beautiful rose garden as the centerpiece of the design.
+          - 3: [Personal Observation] Nadia observes that the soil in the backyard appears to be rich and fertile.
+          - 4: [Personal Belief] Nadia believes the soil is rich and fertile.
+
+        client: None
+
+      3: 
+        Priya: |- 
+          - 2: [Personal Desire] She wants to impress her customers with a delicious chocolate cake for a special event.
+          - 3: [Personal Observation] Priya observes that the cake she has baked looks perfectly moist and fluffy.
+
+        customers: None
+
+    character_location:
+      1: 
+        Percival: |-
+          - 1: Percival is now at office.
+
+        coworker: |-
+          - 5: Coworker is now at office.
+
+      2: 
+        Nadia: |-
+          - 1: Nadia is now at backyard.
+
+        client: None
+      
+      3: 
+        Priya: |-
+          - 1: Priya is now at bakery.
+
+        customers: None
+
+    example_questions:
+      1: ["Does Percival believe the app's interface is intuitive and user-friendly or corrupted and difficult to use?"]
+
+      2: ["Does Nadia believe the soil is rich and fertile or less fertile after the rainstorm?"]
+
+      3: ["Does Priya believe the chocolate cake is moist and fluffy or dry and stale?"]
+
+tomi:
+    tomi_example: 
+        1: "1: Amelia entered the kitchen.\n2: Noah entered the kitchen.\n3: The slacks is in the envelope.\n4: The envelope is in the kitchen.\n5: Noah moved the slacks to the treasure_chest.\n6: The treasure_chest is in the kitchen.\n7: Amelia exited the kitchen.\n8: Noah exited the kitchen.\n9: Amelia entered the kitchen.\n10: Amelia likes the carrot."
+
+        2: "1: Emma entered the kitchen.\n2: Aiden entered the kitchen.\n3: The broccoli is in the bottle.\n4: The bottle is in the kitchen.\n5: Emma moved the broccoli to the crate.\n6: The crate is in the kitchen.\n7: Aiden exited the kitchen." 
+
+        3: "1: Sophia entered the attic.\n2: Mia entered the crawlspace.\n3: Ava entered the attic.\n4: The banana is in the crate.\n5: The crate is in the attic.\n6: Mia exited the crawlspace.\n7: Sophia exited the attic.\n8: Ava moved the banana to the cupboard.\n9: The cupboard is in the attic.\n10: Mia likes orange." 
+
+    location_list:
+      1: [envelope, kitchen, treasure chest]
+
+      2: [bottle, crate, kitchen]
+
+      3: [attic, crate, crawlspace, cupboard]
+
+    room_list:
+      1: [kitchen]
+
+      2: [kitchen]
+
+      3: [attic, crawlspace]
+
+    available_characters:  
+      1: [Amelia, Noah]
+      
+      2: [Emma, Aiden]
+
+      3: [Sophia, Mia, Ava]
+
+    available_locations:
+      1: |-
+        - kitchen
+
+      2: |-
+        - kitchen
+
+      3: |-
+        - attic
+        - crawlspace
+
+    identify_locations:
+      1: |-
+        - kitchen
+      
+      2: |-
+        - kitchen
+
+      3: |-
+        - attic
+        - crawlspace
+
+    tom_reduction_questions:
+      1: "Where will Amy look for the melon?"
+      2: "Where does John think that Noah searches for the pineapple?"
+      3: "Where is the hat really?"
+      4: "Where was the skirt at the beginning?"
+      5: "Where does Oliver think that Jacob searches for the beans?"
+
+    tom_reduction_responses:
+      1: "Where will Amy look for the melon?"
+      2: "Where will Noah look for the pineapple?"
+      3: "Where is the hat really?"
+      4: "Where was the skirt at the beginning?"
+      5: "Where will Jacob look for the beans?"
+
+    narrative_location:
+      1: |-
+        - 1: now describing kitchen
+
+      2: |-
+        - 1: now describing kitchen
+
+      3: |-
+        - 1: now describing attic
+        - 2: now describing crawlspace
+        - 3: now describing attic
+        - 6: now describing crawlspace
+        - 7: now describing attic
+
+    entity_of_interest:
+      1: |-
+        - slacks
+        - envelope
+        - treasure_chest
+
+      2: |-
+        - broccoli
+        - bottle
+        - crate
+
+      3: |-
+        - banana
+        - crate
+        - cupboard
+
+    entity_of_interest_w_attribute:
+      1: |-
+        - location of the slacks
+        - fullness of the envelope
+        - fullness of the treasure_chest
+
+      2: |-
+        - location of the broccoli
+        - fullness of the bottle
+        - fullness of the crate
+
+      3: |-
+        - location of the banana
+        - fullness of the crate
+        - fullness of the cupboard
+
+    character_private_info: 
+      1: 
+        Amelia: |-
+          - 10: [Personal Preference] Amelia likes the carrot.
+        Noah: None
+
+      2:
+        Emma: None
+        Aiden: None
+      
+      3:
+        Sophia: None
+        Mia: |-
+          - 10: [Personal Preference] Mia likes orange.
+        Ava: None
+
+    character_location: 
+      1: 
+        Amelia: |-
+          - 1: Amelia is now at kitchen
+          - 7: Amelia is now at none
+          - 9: Amelia is now at kitchen
+
+        Noah: |-
+          - 2: Noah is now at kitchen
+          - 8: Noah is now at none
+
+      2: 
+        Emma: |-
+          - 1: Emma is now at kitchen
+
+        Aiden: |-
+          - 2: Aiden is now at kitchen
+          - 7: Aiden is now at none
+
+      3: 
+        Sophia: |-
+          - 1: Sophia is now at attic
+          - 7: Sophia is now at none
+
+        Mia: |-
+          - 2: Mia is now at crawlspace
+          - 6: Mia is now at none
+
+        Ava: |-
+          - 3: Ava is now at attic
+
+    example_questions:
+      1: ["Where will Noah look for the slacks?", "Where will Amelia look for the slacks?"]
+
+      2: ["Where will Aiden look for the broccoli?"]
+
+      3: ["Where will Ava look for the banana?", "Where will Sophia look for the banana?"]
+
+hitom:
+    hitom_example:
+      1: "1: Emily dislikes the plum.\n2: Nathan, Evelyn, William, Emily and Jacob entered the pantry.\n3: The plum is in the red pantry.\n4: Nathan made no movements and stayed in the pantry for 1 minute.\n5: Evelyn saw a monkey.\n6: Nathan exited the pantry.\n7: Evelyn moved the plum to the green bucket.\n8: Evelyn exited the pantry.\n9: William made no movements and stayed in the pantry for 1 minute.\n10: William exited the pantry.\n11: Emily made no movements and stayed in the pantry for 1 minute.\n12: Nathan saw a mouse.\n13: Emily exited the pantry.\n14: Jacob moved the plum to the red pantry.\n15: Jacob exited the pantry.\n16: Nathan, Evelyn, William, Emily and Jacob entered the waiting room."
+
+      2: "1: Evelyn, Isabella, Nathan, Ava and Lily entered the hallway.\n2: The melon is in the blue container.\n3: Evelyn moved the melon to the green treasure chest.\n4: Evelyn exited the hallway.\n5: Lily dislikes the cucumber.\n6: Isabella made no movements and stayed in the hallway for 1 minute.\n7: Isabella exited the hallway.\n8: Nathan moved the melon to the blue treasure chest.\n9: Nathan exited the hallway.\n10: Ava made no movements and stayed in the hallway for 1 minute.\n11: Ava exited the hallway.\n12: Lily made no movements and stayed in the hallway for 1 minute.\n13: Ava dislikes the spinach.\n14: Lily exited the hallway.\n15: Evelyn, Isabella, Nathan, Ava and Lily entered the waiting room.\n16: Nathan, Isabella and Evelyn entered the cellar.\n17: The spinach is in the red crate.\n18: Nathan moved the spinach to the blue bottle.\n19: Nathan exited the cellar.\n20: Isabella moved the spinach to the red bottle.\n21: Isabella exited the cellar.\n22: Nathan lost his phone.\n23: Evelyn made no movements and stayed in the cellar for 1 minute.\n24: Evelyn exited the cellar.\n25: Nathan, Isabella and Evelyn entered the waiting room.\n26: Isabella privately told Nathan that the spinach is in the blue bottle."
+
+      3: "1: William, Jack, Charlotte, Noah and Hannah entered the hall.\n2: Noah saw a monkey.\n3: The carrot is in the red basket.\n4: William made no movements and stayed in the hall for 1 minute.\n5: William exited the hall.\n6: Hannah saw a mouse.\n7: Jack made no movements and stayed in the hall for 1 minute.\n8: Jack exited the hall.\n9: Charlotte made no movements and stayed in the hall for 1 minute.\n10: Charlotte exited the hall.\n11: Charlotte dislikes the tomato.\n12: Noah moved the carrot to the green envelope.\n13: Noah exited the hall.\n14: Hannah moved the carrot to the red basket.\n15: Hannah exited the hall.\n16: William, Jack, Charlotte, Noah and Hannah entered the waiting room.\n17: Charlotte publicly claimed that carrot is in the green envelope.\n18: Hannah privately told Charlotte that the carrot is in the blue container."
+
+    location_list:
+      1: [pantry, waiting room, buckete]
+
+      2: [container, hallway, green treasrue chest, cellar, blue treasure chest, waiting room]
+
+      3: [envelope, hall, waiting room, basket, container]
+
+    room_list:
+      1: [pantry, waiting room]
+
+      2: [hallway, waiting room, cellar]
+
+      3: [hall, waiting room]
+
+    available_characters:
+        1: [Emily, Nathan, Evelyn, William, Jacob]
+
+        2: [Evelyn, Isabella, Nathan, Ava, Lily]
+
+        3: [William, Jack, Charlotte, Noah, Hannah]
+
+    available_locations:
+      1: |-
+        - pantry
+        - waiting room
+
+      2: |-
+        - hallway
+        - waiting room
+        - cellar
+
+      3: |-
+        - hall
+        - waiting room
+
+    identify_locations:
+      1: |-
+        - pantry
+        - waiting room
+
+      2: |-
+        - hallway
+        - waiting room
+        - cellar
+
+      3: |-
+        - hall
+        - waiting room
+
+    example_questions:
+      1: ["Where is the plum really?", "Where does William really think the plum is?", "Where does Nathan think William thinks the plum is?", "Where does Evelyn think Nathan thinks William thinks the plum is?", "Where does Jacob think Evelyn thinks Nathan thinks William thinks the plum is?"]
+
+      2: ["Where is the melon really?", "Where does Nathan really think the melon is?", "Where does Lily think Nathan thinks the melon is?", "Where does Isabella think Lily thinks Nathan thinks the melon is?", "Where doese Ava think Isabella thinks Lily thinks Nathan thinks the melon is?", "Where does Isabella think Lily thinks Nathan thinks the melon is?", "Where does Ava think Isabella thinks Lily thinks Nathan thinks the melon is?"]
+
+      3: ["Where is the carrot really?", "Where does William really think the carrot is?", "Where does Hannah think William thinks the carroy is?", "Where does Jack think Hannah thinks William thinks the carrot is?", "Where does Charlotte think Jack thinks Hannah thinks William thinks the carrot is?"]
+
+    tom_reduction_questions:
+      1: Where does Emily think Every thinks Nathan thinks the cabbage is?
+      2: Where does Aiden think Sohpia thinks Johnny thinks the peach is?
+      3: Where does Priya think the chocolate cake is?
+      4: Where does Joshua think Liam thinks Isla thinks Sophia thinks Marry thinks the carrot is?
+      5: Where is the peach really?
+
+    tom_reduction_responses:
+      1: Where will Nathan look for the cabbage?
+      2: Where will Johnny look for the peach?
+      3: Where does Priya think the chocolate cake is?
+      4: Where will Marry look for the carrot?
+      5: Where is the peach really?
+
+    narrative_location:
+      1: |-
+        -1: now describing pantry
+        -16: now describing waiting room
+
+      2: |-
+        -1: now describing hallway
+        -15: now describing waiting room
+        -16: now describing cellar
+        -25: now describing waiting room
+
+      3: |-
+        -1: now describing hall
+        -16: now describing waiting room
+
+    entity_of_interest:
+      1: |-
+        - plum
+        - red pantry
+        - green bucket
+
+      2: |-
+        - melon
+        - blue container
+        - green treasure chest
+        - blue treasure chest
+
+      3: |-
+        - carrot
+        - green envelope
+        - red basket
+        - blue container
+
+    entity_of_interest_w_attribute:
+      1: |-
+        - location of the plum
+        - fullness of the red pantry
+        - fullness of the green bucket
+
+      2: |-
+        - location of the melon
+        - fullness of the blue container-
+        - fullness of the green treasure chest
+        - fullness of the blue treasure chest
+
+      3: |-
+        - location of the carrot
+        - fullness of the green envelope
+        - fullness of the red basket
+        - fullness of the blue container
+
+    character_private_info: 
+      1:
+        Emily: |-
+          - 1: [Personal Preference] Emily dislikes the plum.
+
+        Nathan: |-
+          - 12: [Personal Observation] Nathan saw a mouse.
+
+        Evelyn: |-
+          - 5: [Personal Observation] Evelyn saw a monkey.
+
+        William: None
+
+        Jacob: None
+
+      2:
+        Evelyn: None
+
+        Isabella: |-
+          - 26: [Personal Observation] Isabella privately told Nathan that the spinach is in the blue bottle.
+
+        Nathan: |-
+          - 22: [Personal Observation] Nathan lost his phone.
+          - 26: [Personal Observation] Isabella privately told Nathan that the spinach is in the blue bottle.
+
+        Ava: |-
+          - 13: [Personal Preference] Ava dislikes the spinach.
+
+        Lily: |-
+          - 5: [Personal Preference] Lily dislikes the cucumber.
+
+      3:
+        William: None
+
+        Jack: None
+
+        Charlotte: |-
+          - 11: [Personal Preference] Charlotte dislikes the tomato.
+          - 18: [Personal Observation] Hannah privately told Charlotte that the carrot is in the blue container.
+
+        Noah: |-
+          - 2: [Personal Observation] Noah saw a monkey.
+
+        Hannah: |-
+          - 6: [Personal Observation] Hannah saw a mouse.
+          - 18: [Personal Observation] Hannah privately told Charlotte that the carrot is in the blue container.
+
+    character_location:
+      1: 
+        Emily: |-
+          - 2: Emily is now at pantry
+          - 13: Emily is now at none
+          - 16: Emily is now at waiting room
+
+        Nathan: |-
+          - 2: Nathan is now at pantry
+          - 6: Nathan is now at none
+          - 16: Nathan is now at waiting room
+
+        Evelyn: |-
+          - 2: Evelyn is now at pantry
+          - 8: Evelyn is now at none
+          - 16: Evelyn is now at waiting room
+
+        William: |-
+          - 2: William is now at pantry
+          - 10: William is now at none
+          - 16: William is now at waiting room
+
+        Jacob: |-
+          - 2: Jacob is now at pantry
+          - 15: Jacob is now at none
+          - 16: Jacob is now at waiting room
+
+      2: 
+        Evelyn: |-
+          - 1: Evelyn is now at hallway
+          - 4: Evelyn is now at none
+          - 15: Evelyn is now at waiting room
+          - 16: Evelyn is now at cellar
+          - 24: Evelyn is now at none
+          - 25: Evelyn is now at waiting room
+
+        Isabella: |-
+          - 1: Isabella is now at hallway
+          - 7: Isabella is now at none
+          - 15: Isabella is now at waiting room
+          - 16: Isabella is now at cellar
+          - 21: Isabella is now at none
+          - 25: Isabella is now at waiting room
+
+        Nathan: |-
+          - 1: Nathan is now at hallway
+          - 9: Nathan is now at none
+          - 15: Nathan is now at waiting room
+          - 16: Nathan is now at cellar
+          - 19: Nathan is now at none
+          - 25: Nathan is now at waiting room
+
+        Ava: |-
+          - 1: Ava is now at hallway
+          - 11: Ava is now at none
+          - 15: Ava is now at waiting room
+
+        Lily: |-
+          - 1: Lily is now at hallway
+          - 14: Lily is now at none
+          - 15: Lily is now at waiting room
+
+      3: 
+        William: |-
+          - 1: William is now at hall
+          - 4: William is now at none
+          - 16: William is now at waiting room
+
+        Jack: |-
+          - 1: Jack is now at hall
+          - 7: Jack is now at none
+          - 16: Jack is now at waiting room
+
+        Charlotte: |-
+          - 1: Charlotte is now at hall
+          - 10: Charlotte is now at none
+          - 16: Charlotte is now at waiting room
+
+        Noah: |-
+          - 1: Noah is now at hall
+          - 13: Noah is now at none
+          - 16: Noah is now at waiting room
+
+        Hannah: |-
+          - 1: Hannah is now at hall
+          - 15: Hannah is now at none
+          - 16: Hannah is now at waiting room
+
+opentom:
+    opentom_example:
+      1: "1: Leonel and Natalia shared a common love for coats.\n2: Leonel admired the way they draped elegantly over his shoulders, while Natalia delighted in their warmth and style.\n3: They both had an eye for fashion, and a coat was their statement piece.\n4: One day, as fate would have it, Leonel and Natalia found themselves in the master bedroom at the same time.\n5: They couldn't help but notice a coat, a stunning piece of clothing, placed carelessly in the bathtub.\n6: It seemed out of place, as if someone had forgotten it there.\n7: Natalia, unsure of how it ended up there, decided to leave the room, leaving Leonel alone.\n8: Leonel, a rather pessimistic person, believed that Natalia disliked coats.\n9: He wanted to prove her wrong and show her the beauty of this particular coat.\n10: With this misguided intention, Leonel carefully moved the coat from the bathtub to the center of the coat rack, hoping it would become the focal point of the room and draw attention.\n11: Unbeknownst to him, Natalia had already left and didn't witness his action.\n12: And with that, the story comes to an end, leaving the fate of the coat hanging in the balance.\n13: Will Leonel's efforts be in vain, or will Natalia be pleasantly surprised by the coat's new position? Only time will tell."
+
+      2: "1: Angelo and Oliver were both fond of belts.\n2: They often bonded over their shared passion for fashion accessories.\n3: One sunny afternoon, as they found themselves in the same room, they simultaneously expressed their admiration for a particular belt.\n5: Intrigued by their mutual interest, Oliver decided to investigate further.\n6: He strolled into the closet, his eyes scanning the shelves for any sign of the coveted accessory.\n7: Almost immediately, Angelo followed suit, curious to see if they could uncover the object of their desire together.\n8: As they entered the confined space, their eyes were drawn to an envelope placed strategically on the top shelf.\n9: It contained the very belt they had been coveting.\n11: Without a word, Oliver exited the closet, unaware of the intentions brewing in Angelo's considerate mind.\n12: As Angelo pondered the situation, he couldn't help but empathize with Oliver's longing for the belt.\n13: After all, they both shared the same appreciation for fashionable accessories.\n14: Determined to make things easier for both of them, Angelo made a swift decision.\n16: With a gentle hand, Angelo relocated the belt to the home entrance, ensuring it was ready to be worn.\n17: He hoped that this gesture would allow both of them to enjoy the belt before leaving.\n18: As Oliver remained unaware of Angelo's actions, the story came to an abrupt end, leaving the outcome of Angelo's kind act hanging in the air."      
+
+      3: "1: Hadley had always despised the hat.\n2: It was a simple, unremarkable hat, but for some reason, it irked Hadley to no end.\n3: On the other hand, Paxton adored the hat.\n4: He thought it was stylish and added a touch of flair to any outfit.\n5: It was a constant point of disagreement between them.\n6: One day, as fate would have it, both Hadley and Paxton found themselves in the pantry.\n7: Their eyes were drawn to a container on the shelf where the hat sat innocently.\n8: The hat seemed to mock Hadley, knowing how much Paxton admired it.\n10: Hadley, being a negativistic person, couldn't stand the sight of the hat any longer.\n11: Determined to rid themselves of the source of their disagreement, Hadley swiftly snatched the hat and moved towards the trash can.\n12: Paxton stood frozen, unable to comprehend what was happening before his eyes.\n13: And just like that, the main event unfolded, leaving the air heavy with tension and uncertainty." 
+
+    location_list:
+      1: [master bedroom, bathtub, coat rack]
+
+      2: [envelope, home entrance, closet]
+
+      3: [container, pantry, trash can]
+
+    room_list:
+      1: [master bedroom]
+
+      2: [closet, home entrance]
+
+      3: [pantry]
+
+    available_characters:
+      1: [Leonel, Natalia]
+
+      2: [Angelo, Oliver]
+
+      3: [Hadley, Paxton]
+
+    available_locations:
+      1: |-
+        - master bedroom
+
+      2: |-
+        - room
+        - closet
+
+      3: |-
+        - pantry
+
+    identify_locations:
+      1: |-
+        - master bedroom
+
+      2: |-
+        - room
+        - closet
+
+      3: |-
+        - pantry
+
+    example_questions:
+      1: ["As Natalia, what is your attitude towards Leonel's action of moving coat from bathtub to home entrance?", "From Leonel's perspective, is the coat in its initial location by the end of the story?", "From Leonel's perspective, where precisely does Natalia think that the coat is located by the end of the story?", "From Leonel's perspective, how does Natalia think bathtub's fullness would change by the end of the story?", "From Leonel's perspective, how would coat's accessibility change for Natalia by the end of the story?", "From narrator's perspective, where is coat located by the end of the story?", "From Leonel's perspective, where is the coat located precisely by the end of the story?", "From Natalia's perspective, does Leonel think that the coat is in its initial location by the end of the story?"]
+
+      2: ["As Oliver, what is your attitude towards Angelo's action of moving belt from envelope to home entrance?", "From Angelo's perspective, is the belt in its initial location by the end of the story?", "From Angelo's perspective, where precisely does Oliver think that the belt is located by the end of the story?", "From Angelo's perspective, how does Oliver think envelope's fullness would change by the end of the story?", "From Angelo's perspective, how would belt's accessibility change for Oliver by the end of the story?", "From narrator's perspective, where is belt located by the end of the story?", "From Angelo's perspective, where is the belt located precisely by the end of the story?", "From Oliver's perspective, does Angelo think that the belt is in its initial location by the end of the story?"]
+
+      3: ["As Praxton, what is your attitude towards Hadley's action of moving hat from container to trash can?", "From Hadley's perspective, is the hat in its initial location by the end of the story?", "From Hadley's perspective, where precisely does Praxton think that the hat is located by the end of the story?", "From Hadley's perspective, how does Praxton think container's fullness would change by the end of the story?", "From Hadley's perspective, how would hat's accessibility change for Praxton by the end of the story?", "From narrator's perspective, where is hat located by the end of the story?", "From Hadley's perspective, where is the hat located precisely by the end of the story?", "From Praxton's perspective, does Hadley think that the hat is in its initial location by the end of the story?"]
+
+    tom_reduction_questions:
+      1: As Praxton, what is your attitude towards Hadley's action of moving hat from container to trash can?
+      2: From Hadley's perspective, is the hat in its initial location by the end of the story?
+      3: From Hadley's perspective, where precisely does Praxton think that the hat is located by the end of the story?
+      4: From Hadley's perspective, how does Praxton think container's fullness would change by the end of the story?
+      5: From Hadley's perspective, how would hat's accessibility change for Praxton by the end of the story?
+      6: From narrator's perspective, where is hat located by the end of the story?
+      7: From Hadley's perspective, where is the hat located precisely by the end of the story?
+      8: From Praxton's perspective, does Hadley think that the hat is in its initial location by the end of the story?
+
+    tom_reduction_responses:
+      1: As Praxton, what is your attitude towards Hadley's action of moving hat from container to trash can?
+      2: From Hadley's perspective, is the hat in its initial location by the end of the story?"
+      3: From Praxton's perspective, where is the hat located by the end of the story?
+      4: From Praxton's perspective, how does the container's fullness change by the end of the story?
+      5: How would hat's accessibility change for Praxton by the end of the story?
+      6: Where is hat located by the end of the story?
+      7: From Hadley's perspective, where is the hat located by the end of the story?
+      8: Does Hadley think that the hat is in its initial location by the end of the story?
+
+    narrative_location:
+      1: |-
+        - 4: now describing master bedroom        
+
+      2: |-
+        - 6: now describing closet
+
+      3: |-
+        - 6: now describing pantry
+
+    entity_of_interest:
+      1: |-
+        - coat
+        - bathtub
+        - coat rack
+
+      2: |-
+        - belt
+        - envelope
+        - home entrance
+
+      3: |-
+        - hat
+        - container
+        - trash can
+
+    entity_of_interest_w_attribute:
+      1: 
+        - location of the coat
+        - accessibility of the coat
+        - fullness of the bathtub
+        - fullness of the coat rack
+
+      2: |-
+        - location of the belt
+        - accessibility of the belt
+        - fullness of the envelope
+        - fullness of the home entrance
+
+      3: |-
+        - location of the hat
+        - accessibility of the hat
+        - fullness of the container
+        - fullness of the trash can
+
+    character_private_info: 
+      1:
+        Leonel: |-
+          - 1: [Personal Preference] Leonel loves coats.
+          - 2: [Personal Preference] Leonel admires coats.
+          - 8: [Personality Trait] Leonel is a pessimistic person.
+          - 8: [Personal Belief] Leonel believes that Natalia dislikes coats.
+          - 9: [Personal Desire] Leonel wants to prove Natalia wrong and show her the beauty of the coat.
+
+        Natalia: |-
+          - 1: [Personal Preference] Natalia loves coats.
+          - 2: [Personal Preference] Natalia delights in the warmth and style of coats.
+          - 11: [Personal Status] Natalia has already left the room.
+
+      2:
+        Angelo: |-
+          - 12: [Personal Belief] Angelo believes that Oliver is longing for the belt.
+          - 14: [Personal Desire] Angelo wants to make things easier for both of them.
+        
+        Oliver: |-
+          - 18: [Personal Observation] Olivers remains unaware of Angelo's actions.
+
+      3:
+        Hadley: |-
+          - 1: [Personal Preference] Hadley despises the hat.
+          - 2: [Personal Preference] Hadley is irked by the hat.
+          - 10: [Personal Status] Hadley couldn't stand the sight of the hat any longer.
+          - 10: [Personality Trait] Hadley is a negativistic person.
+
+        Paxton: |-
+          - 3: [Personal Preference] Paxton adores the hat.
+          - 4: [Personal Preference] Paxton thinks the hat is stylish.
+
+    character_location:
+      1: 
+        Leonel: |-  
+          - 4: Leonel is now at master bedroom
+          - 12: Leonel is now at none
+
+        Natalia: |-
+          - 4: Natalia is now at master bedroom
+          - 7: Natalia is now at none
+
+      2: 
+        Angelo: |-
+          - 7: Angelo is now at closet
+          - 18: Angelo is now at none
+
+        Oliver: |-
+          - 6: Oliver is now at closet
+          - 11: Oliver is now at none
+
+      3: 
+        Hadley: |-
+          - 6: Hadley is now at pantry
+          - 13: Hadley is now at none
+
+        Paxton: |-
+          - 6: Paxton is now at pantry
+          - 13: Paxton is now at none

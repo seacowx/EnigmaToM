@@ -1,0 +1,340 @@
+universal:
+    system_prompt: "The following is a conversation determining a character's perception of the world based on a piece of narrative. The assistant is an expert in narrative understanding and is exceedingly good at judging whether the event is observed by the character or not."
+
+    character_mask_prompt_joint: "Complete Narraive\n{{indexed narrative}}\n\nCharacter: {{character}}\n\nGiven the narrative and a character, track the location of the character throughout the story. The output should be in the format of \"[Sentence Index]: [Location Change]\". Please follow these instructions:\n- Assume the initial location of the character is \"none\".\n- If the character's location never change in the narrative, simply put \"- 1: none\"\n- If the character's location is not explicitly mentioned throughout the narrative, simply put \"- 1: none\"\n- \"[Location Change]\" should include the character's previous and current location, connected by \"->\".\n- Write your answer as bullet points.\n- The previous location and the current location must be different.\n- Please make sure that the granularity of the locations are the same. Only record locations on a room-level. Containers such as treasure chest do not count as valid locations.\n- All of the location changes, if exist, are explicitly stated in the narrative. Do not make any assumption.\n- Generate the answers exactly as instructed without any explanation or note."
+
+    narrative_location_prompt: "Narrative:\n{{indexed narrative}}\n\nGiven the narrative, determine the location that each sentence is depicting. The output should be a list whose length equals to the number of sentences in a narrative. The elements in the list should correspond to the sentence at the index. Please follow these instructions:\n- Make sure that the granularity of the locations are the same. Only record locations on a room-level. Containers such as treasure chests do not count as valid locations.\n- All of the location changes, if exist, are explicitly stated in the narrative. Do not make any assumption.\n- If the sentence is not depicting anything about a location, assume the location is the same as that of the previous sentence.\n- If you are ensure of the current location, simply put \"unknown\".\n- Generate the answers exactly as instructed without any explanation or note."
+
+    narrative_location_correction_prompt: "The length of the location list you provided has {{result length}} elements but the original narrative contains {{narrative length}} sentences. Please make sure that the length of the location list matches the number of sentences in the narrative."
+
+    character_private_info: "Complete Narrative:\n{{indexed narrative}}\n\nCharacters:\n{{character list}}\n\nGiven the narrative and a list of characters, determine the indices of the sentences in which the information is privately known to the given characters. For each character, output a list of sentence indices in the format of \"[Index1, Index2, ...]\". Follow these instructions for determining private information:\n\n- Personal preferences, beliefs, and personality traits are privately known to a character.\n- Private conversations and observations made directly by the character are privately known.\n- Information regarding a character's covert actions or explicitly stated private actions are private.\n- Object locations are generally public unless explicitly stated as private.\n\nAll circumstances are explicitly mentioned in the narrative. Make no additional assumptions. If no private information is known to the character, answer with an empty list \"[]\"."
+
+    entity_of_interest_prompt: "Narrative:\n{{indexed narrative}}\n\nQuestions:\n{{question list}}\n\nGiven the narrative and a corresponding question, determine which entities' information is needed in order to correctly answer the question. List the entities in the format of \"[Entity1, Entity2, ...]\". Follow these instructions for determining the entities of interest:\n\n- Entities whose information is needed to answer the question are considered entities of interest.\n- Entities whose actions or characteristics are directly related to the question are considered entities of interest.\n- Entities whose information is needed to understand the context of the question are considered entities of interest."
+
+    entity_of_interest_prompt_w_attribute: "Narrative:\n{{indexed narrative}}\n\nQuestions:\n{{question list}}\n\nGiven the narrative and corresponding questions, determine which entities' information is needed in order to correctly answer the question. List the entities and their corresponding attribute in the format of \"[Attribute of Entity1, Attribute of Entity2, ...]\". Follow these instructions for determining the entities of interest:\n\n- Entities whose information is needed to answer the question are considered entities of interest.\n- Entities whose actions or characteristics are directly related to the question are considered entities of interest.\n- Entities whose information is needed to understand the context of the question are considered entities of interest."
+
+bigtom:
+    bigtom_example:
+        1: "1: Percival is a software developer working on an important project for his company.\n2: He wants to create a user-friendly app that will be popular among users.\n3: Percival examines the app's interface, which appears to be intuitive and easy to navigate.\n4: Percival believes that the app's interface is intuitive and user-friendly.\n5: A coworker brings in a box of donuts for the office to share.\n6: Percival proceeds to finalize the app and prepare it for launch."
+
+        2: "1: Nadia is a professional gardener, working on a landscape design for a client's backyard.\n2: She wants to plant a beautiful rose garden as the centerpiece of the design.\n3: Nadia observes that the soil in the backyard appears to be rich and fertile.\n4: Nadia believes the soil is rich and fertile.\n5:However, a heavy rainstorm occurs overnight, washing away many nutrients and leaving the soil less fertile.\n6: Nadia searches for compost and other nutrients before planting the rose garden."
+
+        3: "1: Priya is a professional baker in a small town in India.\n2: She wants to impress her customers with a delicious chocolate cake for a special event.\n3: Priya observes that the cake she has baked looks perfectly moist and fluffy.\n4: A street vendor outside the bakery starts selling freshly roasted peanuts.\n5: Priya decorates the cake for the event."
+
+    bigtom_question_example:
+      1: ["Does Percival believe the app's interface is intuitive and user-friendly or corrupted and difficult to use?"]
+
+      2: ["Does Nadia believe the soil is rich and fertile or less fertile after the rainstorm?"]
+
+      3: ["Does Priya believe the chocolate cake is moist and fluffy or dry and stale?"]
+
+    bigtom_location_response:
+      1: |-
+        ["office", "office", "office", "office", "office", "office"]
+
+      2: |-
+        ["backyard", "backyard", "backyard", "backyard", "backyard", "backyard"]
+
+      3: |-
+        ["bakery", "bakery", "bakery", "bakery", "bakery"]
+
+    bigtom_eoi_response:
+      1: ["app", "app's interface", "user"]
+
+      2: ["soil", "rainstorm", "nutrients"]
+
+      3: ["chocolate cake"]
+
+    bigtom_eoi_response_w_attribute:
+      1: ["user-friendliness of the app interface", "intuitiveness of the app interface", "user experience of the app user"]
+
+      2: ["fertility of the soil", "existance of the rainstorm", "location of the nutrients"]
+
+      3: ["fluffiness of the chocolate cake", "moistness of the cholocate cake"]
+
+    bigtom_response_private_info: 
+        1: |-
+          - Percival: [2, 3, 4]
+          - coworker: []
+
+        2: |-
+          - Nadia: [2, 3, 4]
+          - client: []
+
+        3: |-
+          - Priya: [2, 3]
+          - customers: []
+
+    bigtom_response_characters:
+      1: "[\"Percival\", \"coworker\"]"
+      2: "[\"Nadia\", \"client\"]"
+      3: "[\"Priya\", \"customers\"]"
+
+    bigtom_response_grouped:
+        1: 
+        Percival: |-
+          - 1: none -> office
+
+        coworker: |-
+          - 5: none -> office
+
+        2: 
+          Nadia: |-
+            - 1: none -> backyard
+
+          client: |-
+            - none
+        
+        3: 
+          Priya: |-
+            - 1: none -> bakery
+                
+          customers: |-
+            - none
+
+tomi:
+    tomi_example: 
+        1: "1: Amelia entered the kitchen.\n2: Noah entered the kitchen.\n3: The slacks is in the envelope.\n4: The envelope is in the kitchen.\n5: Noah moved the slacks to the treasure_chest.\n6: The treasure_chest is in the kitchen.\n7: Amelia exited the kitchen.\n8: Noah exited the kitchen.\n9: Amelia entered the kitchen.\n10: Amelia likes the carrot."
+
+        2: "1: Emma entered the kitchen.\n2: Aiden entered the kitchen.\n3: The broccoli is in the bottle.\n4: The bottle is in the kitchen.\n5: Emma moved the broccoli to the crate.\n6: The crate is in the kitchen.\n7: Aiden exited the kitchen." 
+
+        3: "1: Sophia entered the attic.\n2: Mia entered the crawlspace.\n3: Ava entered the attic.\n4: The banana is in the crate.\n5: The crate is in the attic.\n6: Mia exited the crawlspace.\n7: Sophia exited the attic.\n8: Ava moved the banana to the cupboard.\n9: The cupboard is in the attic." 
+
+    tomi_question_example:
+      1: ["Where will Noah look for the slacks?", "Where will Amelia look for the slacks?"]
+
+      2: ["Where will Aiden look for the broccoli?"]
+
+      3: ["Where will Ava look for the banana?", "Where will Sophia look for the banana?"]
+
+    tomi_location_response:
+      1: |-
+        ["kitchen", "kitchen", "kitchen", "kitchen", "kitchen", "kitchen", "kitchen", "kitchen", "kitchen", "kitchen"]
+
+      2: |-
+        ["kitchen", "kitchen", "kitchen", "kitchen", "kitchen", "kitchen", "kitchen"]
+
+      3: |-
+        ["attic", "crawlspace", "attic", "attic", "attic", "crawlspace", "attic", "attic", "attic"]
+
+    tomi_eoi_response:
+      1: ["slacks", "envelope", "tresure_chest"]
+
+      2: ["broccoli", "bottle", "crate"]
+
+      3: ["banana", "crate", "cupboard"]
+
+    tomi_eoi_response_w_attribute:
+      1: ["location of the slacks", "fullness of the envelope", "fullness of the treasure_chest"]
+
+      2: ["location of the broccoli", "fullness of the bottle", "fullness of the crate"]
+
+      3: ["location of the banana", "fullness of the crate", "fullness of the cupboard"]
+
+    tomi_response_private_info: 
+      1: |-
+        - Amelia: [10]
+        - Noah: []
+
+      2: |-
+        - Emma: []
+        - Aiden: []
+      
+      3: |-
+        - Sophia: []
+        - Mia: []
+        - Ava: []
+
+    tomi_response_characters:
+      1: "[\"Amelia\", \"Noah\"]"
+      
+      2: "[\"Emma\", \"Aiden\"]"
+
+      3: "[\"Sophia\", \"Mia\", \"Ava\"]"
+
+    tomi_response_grouped: 
+        1: 
+          Amelia: |-
+            - 1: none -> kitchen
+            - 7: kitchen -> none
+            - 9: none -> kitchen
+
+          Noah: |-
+            - 2: none -> kitchen
+            - 8: kitchen -> none
+
+        2: 
+          Emma: |-
+            - 1: none -> kitchen
+
+          Aiden: |-
+            - 2: none -> kitchen
+            - 7: kitchen -> none
+
+        3: 
+          Sophia: |-
+            - 1: none -> attic
+            - 7: attic -> none
+
+          Mia: |-
+            - 2: none -> crawlspace
+            - 6: crawlspace -> none
+
+          Ava: |-
+            - 3: none -> attic
+
+hitom:
+    hitom_example:
+        1: "1: Emily dislikes the plum.\n2: Nathan, Evelyn, William, Emily and Jacob entered the pantry.\n3: The plum is in the red pantry.\n4: Nathan made no movements and stayed in the pantry for 1 minute.\n5: Evelyn saw a monkey.\n6: Nathan exited the pantry.\n7: Evelyn moved the plum to the green bucket.\n8: Evelyn exited the pantry.\n9: William made no movements and stayed in the pantry for 1 minute.\n10: William exited the pantry.\n11: Emily made no movements and stayed in the pantry for 1 minute.\n12: Nathan saw a mouse.\n13: Emily exited the pantry.\n14: Jacob moved the plum to the red pantry.\n15: Jacob exited the pantry.\n16: Nathan, Evelyn, William, Emily and Jacob entered the waiting room."
+
+        2: "1: Evelyn, Isabella, Nathan, Ava and Lily entered the hallway.\n2: The melon is in the blue container.\n3: Evelyn moved the melon to the green treasure chest.\n4: Evelyn exited the hallway.\n5: Lily dislikes the cucumber.\n6: Isabella made no movements and stayed in the hallway for 1 minute.\n7: Isabella exited the hallway.\n8: Nathan moved the melon to the blue treasure chest.\n9: Nathan exited the hallway.\n10: Ava made no movements and stayed in the hallway for 1 minute.\n11: Ava exited the hallway.\n12: Lily made no movements and stayed in the hallway for 1 minute.\n13: Ava dislikes the spinach.\n14: Lily exited the hallway.\n15: Evelyn, Isabella, Nathan, Ava and Lily entered the waiting room.\n16: Nathan, Isabella and Evelyn entered the cellar.\n17: The spinach is in the red crate.\n18: Nathan moved the spinach to the blue bottle.\n19: Nathan exited the cellar.\n20: Isabella moved the spinach to the red bottle.\n21: Isabella exited the cellar.\n22: Nathan lost his phone.\n23: Evelyn made no movements and stayed in the cellar for 1 minute.\n24: Evelyn exited the cellar.\n25: Nathan, Isabella and Evelyn entered the waiting room.\n26: Isabella privately told Nathan that the spinach is in the blue bottle."
+
+        3: "1: William, Jack, Charlotte, Noah and Hannah entered the hall.\n2: Noah saw a monkey.\n3: The carrot is in the red basket.\n4: William made no movements and stayed in the hall for 1 minute.\n5: William exited the hall.\n6: Hannah saw a mouse.\n7: Jack made no movements and stayed in the hall for 1 minute.\n8: Jack exited the hall.\n9: Charlotte made no movements and stayed in the hall for 1 minute.\n10: Charlotte exited the hall.\n11: Charlotte dislikes the tomato.\n12: Noah moved the carrot to the green envelope.\n13: Noah exited the hall.\n14: Hannah moved the carrot to the red basket.\n15: Hannah exited the hall.\n16: William, Jack, Charlotte, Noah and Hannah entered the waiting room.\n17: Charlotte publicly claimed that carrot is in the green envelope.\n18: Hannah privately told Charlotte that the carrot is in the blue container."
+
+    hitom_question_example:
+        1: ["Where is the plum really?", "Where does William really think the plum is?", "Where does Nathan think William thinks the plum is?", "Where does Evelyn think Nathan thinks William thinks the plum is?", "Where does Jacob think Evelyn thinks Nathan thinks William thinks the plum is?"]
+
+        2: ["Where is the melon really?", "Where does Nathan really think the melon is?", "Where does Lily think Nathan thinks the melon is?", "Where does Isabella think Lily thinks Nathan thinks the melon is?", "Where doese Ava think Isabella thinks Lily thinks Nathan thinks the melon is?", "Where does Isabella think Lily thinks Nathan thinks the melon is?", "Where does Ava think Isabella thinks Lily thinks Nathan thinks the melon is?"]
+
+        3: ["Where is the carrot really?", "Where does William really think the carrot is?", "Where does Hannah think William thinks the carroy is?", "Where does Jack think Hannah thinks William thinks the carrot is?", "Where does Charlotte think Jack thinks Hannah thinks William thinks the carrot is?"]
+
+    hitom_location_response:
+        1: |-
+          ["pantry", "pantry", "pantry", "pantry", "pantry", "pantry", "pantry", "pantry", "pantry", "pantry", "pantry", "unknown", "pantry", "pantry", "pantry", "waiting room"]
+
+        2: |-
+          ["hallway", "hallway", "hallway", "hallway", "hallway", "hallway", "hallway", "hallway", "hallway", "hallway", "hallway", "hallway", "unknown", "hallway", "waiting room", "cellar", "cellar", "cellar", "cellar", "cellar", "cellar", "unknown", "cellar", "cellar", "waiting room", "waiting room"]
+
+        3: |-
+          ["hall", "hall", "hall", "hall", "hall", "hall", "hall", "hall", "hall", "hall", "unknown", "hall", "hall", "hall", "hall", "waiting room", "waiting room", "waiting room"]
+
+    hitom_eoi_response:
+        1: ["plum", "red pantry", "green bucket"]
+
+        2: ["melon", "blue container", "green treasure chest", "blue treasure chest"]
+
+        3: ["carrot", "green envelope", "red basket", "blue container"]
+
+    hitom_eoi_response_w_attribute:
+        1: ["location of the plum", "fullness of the red pantry", "fullness of the green bucket"]
+
+        2: ["location of the melon", "fullness of the blue container", "fullness of the green treasure chest", "fullness of the blue treasure chest"]
+
+        3: ["location of the carrot", "fullness of the green envelope", "fullness of the red basket", "fullness of the blue container"]
+
+    hitom_response_private_info: 
+        1: |-
+          - Emily: [1]
+          - Nathan: [12]
+          - Evelyn: [5]
+          - William: []
+          - Jacob: []
+
+        2: |-
+          - Evelyn: []
+          - Isabella: [26]
+          - Nathan: [22, 26]
+          - Ava: [13]
+          - Lily: [5]
+
+        3: |-
+          - William: []
+          - Jack: []
+          - Charlotte: [11, 18]
+          - Noah: [2]
+          - Hannah: [6, 7]
+
+    hitom_response_characters:
+        1: "[\"Emily\", \"Nathan\", \"Evelyn\", \"William\", \"Jacob\"]"
+
+        2: "[\"Evelyn\", \"Isabella\", \"Nathan\", \"Ava\", \"Lily\"]"
+
+        3: "[\"William\", \"Jack\", \"Charlotte\", \"Noah\", \"Hannah\"]"
+
+
+    hitom_response_grouped:
+        1: 
+          Emily: |-
+            - 2: none -> pantry
+            - 13: pantry -> none
+            - 16: none -> waiting room
+
+          Nathan: |-
+            - 2: none -> pantry
+            - 6: pantry -> none
+            - 16: none -> waiting room
+
+          Evelyn: |-
+            - 2: none -> pantry
+            - 8: pantry -> none
+            - 16: none -> waiting room
+
+          William: |-
+            - 2: none -> pantry
+            - 10: pantry -> none
+            - 16: none -> waiting room
+
+          Jacob: |-
+            - 2: none -> pantry
+            - 15: pantry -> none
+            - 16: none -> waiting room
+
+        2: 
+          Evelyn: |-
+            - 1: none -> hallway
+            - 15: hallway -> waiting room
+            - 16: waiting room -> cellar
+            - 24: cellar -> none
+            - 25: none -> waiting room
+
+          Isabella: |-
+            - 1: none -> hallway
+            - 7: hallway -> none
+            - 15: none -> waiting room
+            - 16: waiting room -> cellar
+            - 21: cellar -> none
+            - 25: none -> waiting room
+
+          Nathan: |-
+            - 1: none -> hallway
+            - 9: hallway -> none
+            - 15: none -> waiting room
+            - 16: waiting room -> cellar
+            - 19: cellar -> none
+            - 25: none -> waiting room
+
+          Ava: |-
+            - 1: none -> hallway
+            - 11: hallway -> none
+            - 15: none -> waiting room
+
+          Lily: |-
+            - 1: none -> hallway
+            - 14: hallway -> none
+            - 15: none -> waiting room
+
+        3: 
+          William: |-
+            - 1: none -> hall
+            - 5: hall -> none
+            - 16: none -> waiting room
+
+          Jack: |-
+            - 1: none -> hall
+            - 8: hall -> none
+            - 16: none -> waiting room
+
+          Charlotte: |-
+            - 1: none -> hall
+            - 10: hall -> none
+            - 16: none -> waiting room
+
+          Noah: |-
+            - 1: none -> hall
+            - 13: hall -> none
+            - 16: none -> waiting room
+
+          Hannah: |-
+            - 1: none -> hall
+            - 15: hall -> none
+            - 16: none -> waiting room

@@ -1,0 +1,3182 @@
+[
+    {
+        "id": "4193323609",
+        "prompt": "<Events>\n1: The festival grounds are illuminated by string lights.\n2: The scent of popcorn and sugar wafts through the air.\n3: Leslie enters the main tent unnoticed.\n4: Leslie blends in with the crowd outside the main tent.\n5: Isabella enters the storage trailer behind the booths.\n6: Isabella rearranges the storage trailer's contents.\n7: The stuffed rabbit is placed in the old wooden chest.\n8: Leslie reemerges into the night's festivities outside the main tent.\n9: Isabella transfers the stuffed rabbit to the main tent.\n10: Isabella shares her thoughts on the festival's marketing with the crowd.\n11: Isabella sends a secret message to Colton.\n\n<Available Rooms>\n- storage trailer\n- main tent\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: none",
+            "2: none",
+            "3: main tent",
+            "4: none",
+            "5: storage trailer",
+            "6: storage trailer",
+            "7: storage trailer",
+            "8: none",
+            "9: main tent",
+            "10: main tent",
+            "11: none"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "main tent"
+            },
+            {
+                "line_number": "2",
+                "location": "main tent"
+            },
+            {
+                "line_number": "3",
+                "location": "main tent"
+            },
+            {
+                "line_number": "4",
+                "location": "main tent"
+            },
+            {
+                "line_number": "5",
+                "location": "storage trailer"
+            },
+            {
+                "line_number": "6",
+                "location": "storage trailer"
+            },
+            {
+                "line_number": "7",
+                "location": "storage trailer"
+            },
+            {
+                "line_number": "8",
+                "location": "storage trailer"
+            },
+            {
+                "line_number": "9",
+                "location": "main tent"
+            },
+            {
+                "line_number": "10",
+                "location": "main tent"
+            },
+            {
+                "line_number": "11",
+                "location": "main tent"
+            }
+        ],
+        "available_location": [
+            "storage trailer",
+            "main tent"
+        ],
+        "narrative_location_vec": [
+            "main tent",
+            "main tent",
+            "main tent",
+            "main tent",
+            "storage trailer",
+            "storage trailer",
+            "storage trailer",
+            "storage trailer",
+            "main tent",
+            "main tent",
+            "main tent"
+        ]
+    },
+    {
+        "id": "8743865343",
+        "prompt": "<Events>\n1: The sun beats down on the amusement park.\n2: Daniel enters the employee break room.\n3: Daniel's message reaches Taylor's awareness.\n4: Daniel moves the stuffed rabbit to the wooden crate.\n5: Taylor shares information about new uniforms.\n6: Taylor becomes aware of Daniel's news about the stuffed rabbit.\n7: Daniel moves to the storage warehouse.\n8: Daniel shares his opinion about the new costume.\n9: Daniel returns to his duties.\n10: Daniel shares information about the break room's treasure.\n\n<Available Rooms>\n- storage warehouse\n- employee break room\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: none",
+            "2: employee break room",
+            "3: none",
+            "4: none",
+            "5: employee break room",
+            "6: employee break room",
+            "7: storage warehouse",
+            "8: none",
+            "9: none",
+            "10: employee break room"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "employee break room"
+            },
+            {
+                "line_number": "2",
+                "location": "employee break room"
+            },
+            {
+                "line_number": "3",
+                "location": "employee break room"
+            },
+            {
+                "line_number": "4",
+                "location": "employee break room"
+            },
+            {
+                "line_number": "5",
+                "location": "employee break room"
+            },
+            {
+                "line_number": "6",
+                "location": "employee break room"
+            },
+            {
+                "line_number": "7",
+                "location": "storage warehouse"
+            },
+            {
+                "line_number": "8",
+                "location": "storage warehouse"
+            },
+            {
+                "line_number": "9",
+                "location": "storage warehouse"
+            },
+            {
+                "line_number": "10",
+                "location": "employee break room"
+            }
+        ],
+        "available_location": [
+            "storage warehouse",
+            "employee break room"
+        ],
+        "narrative_location_vec": [
+            "employee break room",
+            "employee break room",
+            "employee break room",
+            "employee break room",
+            "employee break room",
+            "employee break room",
+            "storage warehouse",
+            "storage warehouse",
+            "storage warehouse",
+            "employee break room"
+        ]
+    },
+    {
+        "id": "5727090565",
+        "prompt": "<Events>\n1: The main floor of the old bookstore is quiet and filled with novels, poetry collections, and textbooks.\n2: The air inside the bookstore is thick with the smell of old paper and freshly brewed coffee.\n3: Samantha enters the main floor of the bookstore and takes in the warm atmosphere.\n4: Samantha moves the bookmark into the paper bag.\n5: The room settles around Samantha, and its calmness soothes her senses.\n6: Samantha discreetly shares a hint with Caleb and James.\n7: James disappears into the back room and returns to the main floor with confidence.\n8: James shares his plan to host author workshops with Samantha.\n9: James slides the bookmark from the bag into the cardboard box.\n10: Caleb observes the tranquil scene unfolding before him.\n\n<Available Rooms>\n- caf\u00e9\n- main floor\n- back room\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: main floor",
+            "2: main floor",
+            "3: main floor",
+            "4: main floor",
+            "5: main floor",
+            "6: main floor",
+            "7: back room -> main floor",
+            "8: main floor",
+            "9: main floor",
+            "10: main floor"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "main floor"
+            },
+            {
+                "line_number": "2",
+                "location": "main floor"
+            },
+            {
+                "line_number": "3",
+                "location": "main floor"
+            },
+            {
+                "line_number": "4",
+                "location": "main floor"
+            },
+            {
+                "line_number": "5",
+                "location": "main floor"
+            },
+            {
+                "line_number": "6",
+                "location": "main floor"
+            },
+            {
+                "line_number": "7",
+                "location": "main floor"
+            },
+            {
+                "line_number": "8",
+                "location": "main floor"
+            },
+            {
+                "line_number": "9",
+                "location": "main floor"
+            },
+            {
+                "line_number": "10",
+                "location": "main floor"
+            }
+        ],
+        "available_location": [
+            "caf\u00e9",
+            "main floor",
+            "back room"
+        ],
+        "narrative_location_vec": [
+            "main floor",
+            "main floor",
+            "main floor",
+            "main floor",
+            "main floor",
+            "main floor",
+            "main floor",
+            "main floor",
+            "main floor",
+            "main floor"
+        ]
+    },
+    {
+        "id": "3720548305",
+        "prompt": "<Events>\n1: The luxurious cruise ship 'Ocean Oasis' glides through the Caribbean Sea.\n2: Ryan enters the dimly lit crew lounge on the lower deck.\n3: Ryan leaves the crew lounge to address a technical issue.\n4: Ryan merges into the flow of people on the ship.\n5: Mason informs Ryan of a lighting issue on stage.\n6: Samantha enters the crew lounge and is greeted by the air conditioning.\n7: Ethan informs Samantha of a lighting issue on stage.\n\n<Available Rooms>\n- crew lounge\n- corridors\n- theater\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: crew lounge",
+            "2: crew lounge",
+            "3: corridors",
+            "4: corridors",
+            "5: theater",
+            "6: crew lounge",
+            "7: theater"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "crew lounge"
+            },
+            {
+                "line_number": "2",
+                "location": "crew lounge"
+            },
+            {
+                "line_number": "3",
+                "location": "corridors"
+            },
+            {
+                "line_number": "4",
+                "location": "corridors"
+            },
+            {
+                "line_number": "5",
+                "location": "theater"
+            },
+            {
+                "line_number": "6",
+                "location": "crew lounge"
+            },
+            {
+                "line_number": "7",
+                "location": "theater"
+            }
+        ],
+        "available_location": [
+            "crew lounge",
+            "corridors",
+            "theater"
+        ],
+        "narrative_location_vec": [
+            "crew lounge",
+            "crew lounge",
+            "corridors",
+            "corridors",
+            "theater",
+            "crew lounge",
+            "theater"
+        ]
+    },
+    {
+        "id": "1264063304",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "operations room"
+            },
+            {
+                "line_number": 1,
+                "location": "operations room"
+            },
+            {
+                "line_number": 2,
+                "location": "operations room"
+            },
+            {
+                "line_number": 3,
+                "location": "operations room"
+            },
+            {
+                "line_number": 4,
+                "location": "operations room"
+            },
+            {
+                "line_number": 5,
+                "location": "operations room"
+            }
+        ],
+        "available_location": [
+            "operations room"
+        ],
+        "narrative_location_vec": [
+            "operations room",
+            "operations room",
+            "operations room",
+            "operations room",
+            "operations room",
+            "operations room"
+        ]
+    },
+    {
+        "id": "2708967314",
+        "prompt": "<Events>\n1: Monitors and computers hum in the operations room.\n2: Kaitlyn fills Sydney in on contingency planning in the operations room.\n3: Sydney captures crucial details on her notes.\n4: Kaitlyn detects underlying urgency in the operations room.\n5: Sydney and Kaitlyn exchange a private message.\n6: Kaitlyn processes a tight timeline.\n7: Kaitlyn quickens her pace in the corridor.\n8: Sydney enters the briefing room.\n9: Kaitlyn's attention is momentarily diverted.\n10: Kaitlyn disappears from view in the operations room.\n11: Kaitlyn walks through an empty corridor.\n12: Soft fluorescent lights cast a sterile glow in the briefing room.\n13: Sydney traverses the threshold from the operations room.\n\n<Available Rooms>\n- corridor\n- briefing room\n- operations room\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: operations room",
+            "2: operations room",
+            "3: operations room",
+            "4: operations room",
+            "5: none",
+            "6: operations room",
+            "7: corridor",
+            "8: briefing room",
+            "9: operations room",
+            "10: none",
+            "11: corridor",
+            "12: briefing room",
+            "13: operations room"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "operations room"
+            },
+            {
+                "line_number": "2",
+                "location": "operations room"
+            },
+            {
+                "line_number": "3",
+                "location": "operations room"
+            },
+            {
+                "line_number": "4",
+                "location": "operations room"
+            },
+            {
+                "line_number": "5",
+                "location": "operations room"
+            },
+            {
+                "line_number": "6",
+                "location": "operations room"
+            },
+            {
+                "line_number": "7",
+                "location": "corridor"
+            },
+            {
+                "line_number": "8",
+                "location": "briefing room"
+            },
+            {
+                "line_number": "9",
+                "location": "operations room"
+            },
+            {
+                "line_number": "10",
+                "location": "operations room"
+            },
+            {
+                "line_number": "11",
+                "location": "corridor"
+            },
+            {
+                "line_number": "12",
+                "location": "briefing room"
+            },
+            {
+                "line_number": "13",
+                "location": "operations room"
+            }
+        ],
+        "available_location": [
+            "corridor",
+            "briefing room",
+            "operations room"
+        ],
+        "narrative_location_vec": [
+            "operations room",
+            "operations room",
+            "operations room",
+            "operations room",
+            "operations room",
+            "operations room",
+            "corridor",
+            "briefing room",
+            "operations room",
+            "operations room",
+            "corridor",
+            "briefing room",
+            "operations room"
+        ]
+    },
+    {
+        "id": "3897829618",
+        "prompt": "<Events>\n1: Amelia enters the back room.\n2: The back room contains shelves with various objects.\n3: Amelia completes her task by placing the wooden spoon in the metal toolbox.\n4: Emily observes Amelia from a hidden location.\n5: Emily enters the back room.\n6: Amelia transfers the wooden spoon to a canvas bag.\n7: Emily moves the wooden spoon from the canvas bag to the wooden chest.\n8: The back room is located in the pub.\n9: The room is dimly lit.\n\n<Available Rooms>\n\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "<Available Rooms>",
+            "1: Back room",
+            "2: Pub",
+            "3: None",
+            "",
+            "1: None",
+            "2: Back room",
+            "3: Back room",
+            "4: Back room",
+            "5: Back room",
+            "6: Back room",
+            "7: Back room",
+            "8: Pub",
+            "9: Back room"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "back room"
+            },
+            {
+                "line_number": "2",
+                "location": "pub"
+            },
+            {
+                "line_number": "3",
+                "location": "none"
+            },
+            {
+                "line_number": "1",
+                "location": "none"
+            },
+            {
+                "line_number": "2",
+                "location": "back room"
+            },
+            {
+                "line_number": "3",
+                "location": "back room"
+            },
+            {
+                "line_number": "4",
+                "location": "back room"
+            },
+            {
+                "line_number": "5",
+                "location": "back room"
+            },
+            {
+                "line_number": "6",
+                "location": "back room"
+            },
+            {
+                "line_number": "7",
+                "location": "back room"
+            },
+            {
+                "line_number": "8",
+                "location": "pub"
+            },
+            {
+                "line_number": "9",
+                "location": "back room"
+            }
+        ],
+        "available_location": [],
+        "narrative_location_vec": [
+            "none",
+            "back room",
+            "back room",
+            "back room",
+            "back room",
+            "back room",
+            "back room",
+            "pub",
+            "back room"
+        ]
+    },
+    {
+        "id": "5193393769",
+        "prompt": "<Events>\n1: William enters the cocktail lounge with a confident smile.\n2: Ava follows William into the cocktail lounge, scanning the room with intensity.\n3: William's conversation draws in potential clients and passersby, shifting the atmosphere.\n4: Ava takes a bar stool and begins discussing the local brewery scene.\n5: William discusses educational opportunities for his staff.\n6: Brody slips into the cocktail lounge unnoticed, scanning for a chance to insert himself into the conversation.\n\n<Available Rooms>\n- cocktail lounge\n- bar\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: cocktail lounge",
+            "2: cocktail lounge",
+            "3: cocktail lounge",
+            "4: bar",
+            "5: cocktail lounge",
+            "6: cocktail lounge"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "cocktail lounge"
+            },
+            {
+                "line_number": "2",
+                "location": "cocktail lounge"
+            },
+            {
+                "line_number": "3",
+                "location": "cocktail lounge"
+            },
+            {
+                "line_number": "4",
+                "location": "bar"
+            },
+            {
+                "line_number": "5",
+                "location": "cocktail lounge"
+            },
+            {
+                "line_number": "6",
+                "location": "cocktail lounge"
+            }
+        ],
+        "available_location": [
+            "cocktail lounge",
+            "bar"
+        ],
+        "narrative_location_vec": [
+            "cocktail lounge",
+            "cocktail lounge",
+            "cocktail lounge",
+            "bar",
+            "cocktail lounge",
+            "cocktail lounge"
+        ]
+    },
+    {
+        "id": "5163111390",
+        "prompt": "<Events>\n1: Brandon and Cooper enter the room, causing a shift from stagnation to calculated chaos.\n2: Cooper reviews the volunteer schedule out loud.\n3: Natalie enters the room and mentally prepares the space for her artistic touch.\n4: Cooper leaves the room, and Brandon and Natalie discuss the charity event's catalog and promotion.\n5: Cooper reenters the room and reasserts his confident presence.\n6: Natalie announces that social media will be crucial for promotion.\n7: Cooper exits the planning room for a brief respite.\n8: Cooper reenters the planning room and reasserts his role.\n9: Natalie draws the group's attention to review the volunteer schedule.\n10: The group reviews the volunteer schedule in silence.\n\n<Available Rooms>\n- planning room\n- the hallway\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: planning room",
+            "2: planning room",
+            "3: planning room",
+            "4: none",
+            "5: planning room",
+            "6: planning room",
+            "7: none",
+            "8: planning room",
+            "9: planning room",
+            "10: planning room"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "planning room"
+            },
+            {
+                "line_number": "2",
+                "location": "planning room"
+            },
+            {
+                "line_number": "3",
+                "location": "planning room"
+            },
+            {
+                "line_number": "4",
+                "location": "planning room"
+            },
+            {
+                "line_number": "5",
+                "location": "planning room"
+            },
+            {
+                "line_number": "6",
+                "location": "planning room"
+            },
+            {
+                "line_number": "7",
+                "location": "planning room"
+            },
+            {
+                "line_number": "8",
+                "location": "planning room"
+            },
+            {
+                "line_number": "9",
+                "location": "planning room"
+            },
+            {
+                "line_number": "10",
+                "location": "planning room"
+            }
+        ],
+        "available_location": [
+            "planning room",
+            "the hallway"
+        ],
+        "narrative_location_vec": [
+            "planning room",
+            "planning room",
+            "planning room",
+            "planning room",
+            "planning room",
+            "planning room",
+            "planning room",
+            "planning room",
+            "planning room",
+            "planning room"
+        ]
+    },
+    {
+        "id": "2537831534",
+        "prompt": "<Events>\n1: Fireplace crackles to life in the common room.\n2: Snow-covered peaks stand outside the lodge.\n3: William and Gavin enter the common room.\n4: Gavin discusses trails' upkeep needs.\n5: Patrons murmur in response to Gavin's account.\n6: William exits the common room.\n7: William re-enters the common room.\n8: Voice shares forecast details.\n9: Gavin exits the common room.\n10: Gavin re-enters the common room.\n11: William announces need for volunteers.\n\n<Available Rooms>\n- common room\n- mountain lodge\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: common room",
+            "2: common room",
+            "3: common room",
+            "4: common room",
+            "5: common room",
+            "6: none",
+            "7: common room",
+            "8: common room",
+            "9: none",
+            "10: common room",
+            "11: common room"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "common room"
+            },
+            {
+                "line_number": "2",
+                "location": "common room"
+            },
+            {
+                "line_number": "3",
+                "location": "common room"
+            },
+            {
+                "line_number": "4",
+                "location": "common room"
+            },
+            {
+                "line_number": "5",
+                "location": "common room"
+            },
+            {
+                "line_number": "6",
+                "location": "common room"
+            },
+            {
+                "line_number": "7",
+                "location": "common room"
+            },
+            {
+                "line_number": "8",
+                "location": "common room"
+            },
+            {
+                "line_number": "9",
+                "location": "common room"
+            },
+            {
+                "line_number": "10",
+                "location": "common room"
+            },
+            {
+                "line_number": "11",
+                "location": "common room"
+            }
+        ],
+        "available_location": [
+            "common room",
+            "mountain lodge"
+        ],
+        "narrative_location_vec": [
+            "common room",
+            "common room",
+            "common room",
+            "common room",
+            "common room",
+            "common room",
+            "common room",
+            "common room",
+            "common room",
+            "common room",
+            "common room"
+        ]
+    },
+    {
+        "id": "4879593855",
+        "prompt": "<Events>\n1: Morgan walks into the common room with the soft glow of the lamps.\n2: Morgan reviews the festival entertainment lineup.\n3: Morgan sends a private message to Logan.\n4: Morgan shares the details of the live music and fireworks with Ashley.\n5: Ashley enters the storage room.\n6: The storage room door creaks softly.\n7: A private message is exchanged in the kitchen.\n8: Alexis is inspired by Logan's message to create festive refreshments.\n\n<Available Rooms>\n- common room\n- kitchen\n- storage room\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: common room",
+            "2: common room",
+            "3: none",
+            "4: common room",
+            "5: storage room",
+            "6: storage room",
+            "7: none",
+            "8: kitchen"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "common room"
+            },
+            {
+                "line_number": "2",
+                "location": "common room"
+            },
+            {
+                "line_number": "3",
+                "location": "common room"
+            },
+            {
+                "line_number": "4",
+                "location": "common room"
+            },
+            {
+                "line_number": "5",
+                "location": "storage room"
+            },
+            {
+                "line_number": "6",
+                "location": "storage room"
+            },
+            {
+                "line_number": "7",
+                "location": "storage room"
+            },
+            {
+                "line_number": "8",
+                "location": "kitchen"
+            }
+        ],
+        "available_location": [
+            "common room",
+            "kitchen",
+            "storage room"
+        ],
+        "narrative_location_vec": [
+            "common room",
+            "common room",
+            "common room",
+            "common room",
+            "storage room",
+            "storage room",
+            "storage room",
+            "kitchen"
+        ]
+    },
+    {
+        "id": "5108372842",
+        "prompt": "<Events>\n1: The sun rises over the amusement park.\n2: The employee break room, storage warehouse, and game stalls are located in the park.\n3: Taylor receives a warning about the creaky beam on the main coaster.\n4: Taylor briefs Daniel on the festival schedule.\n5: Daniel enters the employee break room to find the schedule.\n6: Taylor enters the storage warehouse.\n7: Daniel exits the break room into the bright sunlight.\n8: Riley approaches the storage warehouse to meet Taylor.\n9: Victoria navigates the park to meet Taylor.\n\n<Available Rooms>\n- storage warehouse\n- employee break room\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: none",
+            "2: none",
+            "3: none",
+            "4: none",
+            "5: employee break room",
+            "6: storage warehouse",
+            "7: none",
+            "8: storage warehouse",
+            "9: none"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "employee break room"
+            },
+            {
+                "line_number": "2",
+                "location": "employee break room"
+            },
+            {
+                "line_number": "3",
+                "location": "employee break room"
+            },
+            {
+                "line_number": "4",
+                "location": "employee break room"
+            },
+            {
+                "line_number": "5",
+                "location": "employee break room"
+            },
+            {
+                "line_number": "6",
+                "location": "storage warehouse"
+            },
+            {
+                "line_number": "7",
+                "location": "storage warehouse"
+            },
+            {
+                "line_number": "8",
+                "location": "storage warehouse"
+            },
+            {
+                "line_number": "9",
+                "location": "storage warehouse"
+            }
+        ],
+        "available_location": [
+            "storage warehouse",
+            "employee break room"
+        ],
+        "narrative_location_vec": [
+            "employee break room",
+            "employee break room",
+            "employee break room",
+            "employee break room",
+            "employee break room",
+            "storage warehouse",
+            "storage warehouse",
+            "storage warehouse",
+            "storage warehouse"
+        ]
+    },
+    {
+        "id": "8733178519",
+        "prompt": "<Events>\n1: Caleb enters the back room of the bookstore.\n2: Soft sunlight seeps into the back room through grimy windows.\n3: Caleb moves the bookmark from a paper bag to a wooden chest.\n4: Caleb positions the bookmark in a cardboard box.\n5: Caleb leaves the back room.\n6: Nicholas enters the back room and is enveloped by the musty scent of aged books.\n7: Nicholas spots the misplaced bookmark on the wooden chest.\n8: Nicholas prepares to restore the bookmark to its original place.\n9: Samantha enters the back room, transitioning from the main bookstore.\n\n<Available Rooms>\n- main bookstore\n- back room\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: main bookstore",
+            "2: back room",
+            "3: back room",
+            "4: back room",
+            "5: none",
+            "6: back room",
+            "7: back room",
+            "8: back room",
+            "9: back room"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "main bookstore"
+            },
+            {
+                "line_number": "2",
+                "location": "back room"
+            },
+            {
+                "line_number": "3",
+                "location": "back room"
+            },
+            {
+                "line_number": "4",
+                "location": "back room"
+            },
+            {
+                "line_number": "5",
+                "location": "back room"
+            },
+            {
+                "line_number": "6",
+                "location": "back room"
+            },
+            {
+                "line_number": "7",
+                "location": "back room"
+            },
+            {
+                "line_number": "8",
+                "location": "back room"
+            },
+            {
+                "line_number": "9",
+                "location": "back room"
+            }
+        ],
+        "available_location": [
+            "main bookstore",
+            "back room"
+        ],
+        "narrative_location_vec": [
+            "main bookstore",
+            "back room",
+            "back room",
+            "back room",
+            "back room",
+            "back room",
+            "back room",
+            "back room",
+            "back room"
+        ]
+    },
+    {
+        "id": "6839054277",
+        "prompt": "<Events>\n1: Paige and Emily enter the conference room.\n2: Emily checks the room and the desk drawer.\n3: Emily places the silver letter opener in the desk drawer.\n4: Lucas enters the conference room.\n5: Lucas moves across the room.\n6: Lucas puts the silver letter opener in the metal file cabinet.\n\n<Available Rooms>\n- conference room\n- hallway\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: conference room",
+            "2: conference room",
+            "3: conference room",
+            "4: conference room",
+            "5: conference room",
+            "6: conference room"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "conference room"
+            },
+            {
+                "line_number": "2",
+                "location": "conference room"
+            },
+            {
+                "line_number": "3",
+                "location": "conference room"
+            },
+            {
+                "line_number": "4",
+                "location": "conference room"
+            },
+            {
+                "line_number": "5",
+                "location": "conference room"
+            },
+            {
+                "line_number": "6",
+                "location": "conference room"
+            }
+        ],
+        "available_location": [
+            "conference room",
+            "hallway"
+        ],
+        "narrative_location_vec": [
+            "conference room",
+            "conference room",
+            "conference room",
+            "conference room",
+            "conference room",
+            "conference room"
+        ]
+    },
+    {
+        "id": "6787519737",
+        "prompt": "<Events>\n1: The crew lounge is filled with soft lighting.\n2: The lounge is located at the heart of the ship.\n3: Mason enters the crew lounge.\n4: Mason scans the room and secures an item.\n5: The item is secured within the chest.\n6: Ethan and Samantha enter the crew lounge.\n7: Mason moves the object into the satchel.\n\n<Available Rooms>\n- crew lounge\n- kitchen\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: crew lounge",
+            "2: crew lounge",
+            "3: crew lounge",
+            "4: crew lounge",
+            "5: crew lounge",
+            "6: crew lounge",
+            "7: crew lounge"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "crew lounge"
+            },
+            {
+                "line_number": "2",
+                "location": "crew lounge"
+            },
+            {
+                "line_number": "3",
+                "location": "crew lounge"
+            },
+            {
+                "line_number": "4",
+                "location": "crew lounge"
+            },
+            {
+                "line_number": "5",
+                "location": "crew lounge"
+            },
+            {
+                "line_number": "6",
+                "location": "crew lounge"
+            },
+            {
+                "line_number": "7",
+                "location": "crew lounge"
+            }
+        ],
+        "available_location": [
+            "crew lounge",
+            "kitchen"
+        ],
+        "narrative_location_vec": [
+            "crew lounge",
+            "crew lounge",
+            "crew lounge",
+            "crew lounge",
+            "crew lounge",
+            "crew lounge",
+            "crew lounge"
+        ]
+    },
+    {
+        "id": "7383380966",
+        "prompt": "<Events>\n1: Sadie enters the operations center.\n2: Anthony enters the operations center.\n3: Sadie uses the walkie-talkie.\n4: Anthony dials the ride maintenance channel.\n5: Anthony checks the comms.\n6: The operations center is dimly lit.\n\n<Available Rooms>\n- operations center\n- theme park\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: operations center",
+            "2: operations center",
+            "3: operations center",
+            "4: operations center",
+            "5: operations center",
+            "6: operations center"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "operations center"
+            },
+            {
+                "line_number": "2",
+                "location": "operations center"
+            },
+            {
+                "line_number": "3",
+                "location": "operations center"
+            },
+            {
+                "line_number": "4",
+                "location": "operations center"
+            },
+            {
+                "line_number": "5",
+                "location": "operations center"
+            },
+            {
+                "line_number": "6",
+                "location": "operations center"
+            }
+        ],
+        "available_location": [
+            "operations center",
+            "theme park"
+        ],
+        "narrative_location_vec": [
+            "operations center",
+            "operations center",
+            "operations center",
+            "operations center",
+            "operations center",
+            "operations center"
+        ]
+    },
+    {
+        "id": "2151457273",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "operations room"
+            },
+            {
+                "line_number": 1,
+                "location": "operations room"
+            },
+            {
+                "line_number": 2,
+                "location": "operations room"
+            },
+            {
+                "line_number": 3,
+                "location": "operations room"
+            },
+            {
+                "line_number": 4,
+                "location": "operations room"
+            },
+            {
+                "line_number": 5,
+                "location": "operations room"
+            },
+            {
+                "line_number": 6,
+                "location": "operations room"
+            },
+            {
+                "line_number": 7,
+                "location": "operations room"
+            },
+            {
+                "line_number": 8,
+                "location": "operations room"
+            }
+        ],
+        "available_location": [
+            "operations room"
+        ],
+        "narrative_location_vec": [
+            "operations room",
+            "operations room",
+            "operations room",
+            "operations room",
+            "operations room",
+            "operations room",
+            "operations room",
+            "operations room",
+            "operations room"
+        ]
+    },
+    {
+        "id": "4629667481",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "conference room"
+            },
+            {
+                "line_number": 1,
+                "location": "conference room"
+            },
+            {
+                "line_number": 2,
+                "location": "conference room"
+            },
+            {
+                "line_number": 3,
+                "location": "conference room"
+            },
+            {
+                "line_number": 4,
+                "location": "conference room"
+            },
+            {
+                "line_number": 5,
+                "location": "conference room"
+            },
+            {
+                "line_number": 6,
+                "location": "conference room"
+            },
+            {
+                "line_number": 7,
+                "location": "conference room"
+            },
+            {
+                "line_number": 8,
+                "location": "conference room"
+            },
+            {
+                "line_number": 9,
+                "location": "conference room"
+            },
+            {
+                "line_number": 10,
+                "location": "conference room"
+            },
+            {
+                "line_number": 11,
+                "location": "conference room"
+            },
+            {
+                "line_number": 12,
+                "location": "conference room"
+            }
+        ],
+        "available_location": [
+            "conference room"
+        ],
+        "narrative_location_vec": [
+            "conference room",
+            "conference room",
+            "conference room",
+            "conference room",
+            "conference room",
+            "conference room",
+            "conference room",
+            "conference room",
+            "conference room",
+            "conference room",
+            "conference room",
+            "conference room",
+            "conference room"
+        ]
+    },
+    {
+        "id": "5871913672",
+        "prompt": "<Events>\n1: Lucas enters the hostel, and Brody slips in behind him.\n2: Lucas closes the hostel door.\n3: Lucas applies stickers to his harmonica.\n4: Lucas loops a chain around the harmonica.\n5: The harmonica becomes an eye-catching accessory.\n6: The evening light shines through the hostel windows.\n\n<Available Rooms>\n- hostel\n- communal room\n- hostel dorm\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: hostel",
+            "2: hostel",
+            "3: hostel",
+            "4: hostel",
+            "5: hostel",
+            "6: hostel"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "hostel"
+            },
+            {
+                "line_number": "2",
+                "location": "hostel"
+            },
+            {
+                "line_number": "3",
+                "location": "hostel"
+            },
+            {
+                "line_number": "4",
+                "location": "hostel"
+            },
+            {
+                "line_number": "5",
+                "location": "hostel"
+            },
+            {
+                "line_number": "6",
+                "location": "hostel"
+            }
+        ],
+        "available_location": [
+            "hostel",
+            "communal room",
+            "hostel dorm"
+        ],
+        "narrative_location_vec": [
+            "hostel",
+            "hostel",
+            "hostel",
+            "hostel",
+            "hostel",
+            "hostel"
+        ]
+    },
+    {
+        "id": "5352078880",
+        "prompt": "<Events>\n1: The conference room is dimly lit and contains luxurious leather chairs.\n2: Abigail enters the conference room and is aware of the upcoming event.\n3: The silver letter opener is enhanced with a gemstone and prepared for the ceremony.\n4: Jasmine enters the conference room and is aware of the refined atmosphere.\n5: Jasmine wraps a ceremonial cloth around the silver letter opener.\n6: The gardens are well-manicured and contain a fountain.\n\n<Available Rooms>\n- conference room\n- garden\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: conference room",
+            "2: conference room",
+            "3: conference room",
+            "4: conference room",
+            "5: conference room",
+            "6: garden"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "conference room"
+            },
+            {
+                "line_number": "2",
+                "location": "conference room"
+            },
+            {
+                "line_number": "3",
+                "location": "conference room"
+            },
+            {
+                "line_number": "4",
+                "location": "conference room"
+            },
+            {
+                "line_number": "5",
+                "location": "conference room"
+            },
+            {
+                "line_number": "6",
+                "location": "garden"
+            }
+        ],
+        "available_location": [
+            "conference room",
+            "garden"
+        ],
+        "narrative_location_vec": [
+            "conference room",
+            "conference room",
+            "conference room",
+            "conference room",
+            "conference room",
+            "garden"
+        ]
+    },
+    {
+        "id": "4970663731",
+        "prompt": "<Events>\n1: Alexis enters the back office.\n2: Alexis sees the shelves stacked with supplies.\n3: Alexis organizes the dog treats in a plastic storage bin.\n4: Tyler senses that there might be more to Alexis's task than meets the eye.\n5: Alexis relocates the dog treats to a canvas tote bag.\n6: Alexis exits the back office.\n7: William enters the back office.\n8: William sees the neatly stacked supplies.\n9: Lauren enters the back office.\n10: Lauren experiences the calm atmosphere in the back office.\n11: Lauren exits the back office.\n12: The vet shop's noise fills Lauren's senses.\n13: William re-enters the back office.\n14: Alexis is satisfied with her task.\n15: Alexis places the dog treats in a cardboard box.\n\n<Available Rooms>\n- back office\n- examination rooms\n- vet shop\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: back office",
+            "2: back office",
+            "3: back office",
+            "4: back office",
+            "5: back office",
+            "6: none",
+            "7: back office",
+            "8: back office",
+            "9: back office",
+            "10: back office",
+            "11: none",
+            "12: vet shop",
+            "13: back office",
+            "14: back office",
+            "15: back office"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "back office"
+            },
+            {
+                "line_number": "2",
+                "location": "back office"
+            },
+            {
+                "line_number": "3",
+                "location": "back office"
+            },
+            {
+                "line_number": "4",
+                "location": "back office"
+            },
+            {
+                "line_number": "5",
+                "location": "back office"
+            },
+            {
+                "line_number": "6",
+                "location": "back office"
+            },
+            {
+                "line_number": "7",
+                "location": "back office"
+            },
+            {
+                "line_number": "8",
+                "location": "back office"
+            },
+            {
+                "line_number": "9",
+                "location": "back office"
+            },
+            {
+                "line_number": "10",
+                "location": "back office"
+            },
+            {
+                "line_number": "11",
+                "location": "back office"
+            },
+            {
+                "line_number": "12",
+                "location": "vet shop"
+            },
+            {
+                "line_number": "13",
+                "location": "back office"
+            },
+            {
+                "line_number": "14",
+                "location": "back office"
+            },
+            {
+                "line_number": "15",
+                "location": "back office"
+            }
+        ],
+        "available_location": [
+            "back office",
+            "examination rooms",
+            "vet shop"
+        ],
+        "narrative_location_vec": [
+            "back office",
+            "back office",
+            "back office",
+            "back office",
+            "back office",
+            "back office",
+            "back office",
+            "back office",
+            "back office",
+            "back office",
+            "back office",
+            "vet shop",
+            "back office",
+            "back office",
+            "back office"
+        ]
+    },
+    {
+        "id": "4509329465",
+        "prompt": "<Events>\n1: The evening sun casts a warm orange glow over the crowded fairgrounds.\n2: The staff room is located behind a line of vibrant game stalls.\n3: Cooper enters the staff room and scans it to ensure no one is watching.\n4: Cooper places a stuffed rabbit in a cardboard box and then moves it to a wooden chest.\n5: Ethan watches Cooper from the doorway.\n6: Cooper adds a hand-drawn image to the stuffed rabbit.\n7: Eric, Ethan, and Matthew enter the staff room.\n\n<Available Rooms>\n- fairgrounds\n- staff room\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: fairgrounds",
+            "2: staff room",
+            "3: staff room",
+            "4: staff room",
+            "5: staff room",
+            "6: staff room",
+            "7: staff room"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "fairgrounds"
+            },
+            {
+                "line_number": "2",
+                "location": "staff room"
+            },
+            {
+                "line_number": "3",
+                "location": "staff room"
+            },
+            {
+                "line_number": "4",
+                "location": "staff room"
+            },
+            {
+                "line_number": "5",
+                "location": "staff room"
+            },
+            {
+                "line_number": "6",
+                "location": "staff room"
+            },
+            {
+                "line_number": "7",
+                "location": "staff room"
+            }
+        ],
+        "available_location": [
+            "fairgrounds",
+            "staff room"
+        ],
+        "narrative_location_vec": [
+            "fairgrounds",
+            "staff room",
+            "staff room",
+            "staff room",
+            "staff room",
+            "staff room",
+            "staff room"
+        ]
+    },
+    {
+        "id": "9405199551",
+        "prompt": "<Events>\n1: The control room is dimly lit with machinery and monitors.\n2: The submersible is in the dark ocean.\n3: Peyton enters the control room and reviews navigation charts.\n4: Peyton secures the diver's flashlight.\n5: Natalie enters the control room briefly.\n6: Natalie exits the control room.\n7: Peyton checks the equipment.\n8: Justin enters the control room.\n9: Peyton marks the diver's flashlight.\n\n<Available Rooms>\n- submersible\n- control room\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: control room",
+            "2: submersible",
+            "3: control room",
+            "4: submersible",
+            "5: control room",
+            "6: none",
+            "7: control room",
+            "8: control room",
+            "9: control room"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "control room"
+            },
+            {
+                "line_number": "2",
+                "location": "submersible"
+            },
+            {
+                "line_number": "3",
+                "location": "control room"
+            },
+            {
+                "line_number": "4",
+                "location": "submersible"
+            },
+            {
+                "line_number": "5",
+                "location": "control room"
+            },
+            {
+                "line_number": "6",
+                "location": "control room"
+            },
+            {
+                "line_number": "7",
+                "location": "control room"
+            },
+            {
+                "line_number": "8",
+                "location": "control room"
+            },
+            {
+                "line_number": "9",
+                "location": "control room"
+            }
+        ],
+        "available_location": [
+            "submersible",
+            "control room"
+        ],
+        "narrative_location_vec": [
+            "control room",
+            "submersible",
+            "control room",
+            "submersible",
+            "control room",
+            "control room",
+            "control room",
+            "control room",
+            "control room"
+        ]
+    },
+    {
+        "id": "8944748400",
+        "prompt": "<Events>\n1: The operations room is set up with computer screens, old maps, metal tables, chairs, lockers, and shelving units stocked with gear.\n2: William enters the operations room.\n3: William paints a tactical flashlight with neon blue paint.\n4: Jessica observes William painting the tactical flashlight from hiding.\n5: Parker and Jessica enter the operations room, and Jessica sees William and the painted flashlight.\n6: Jessica leaves the operations room.\n7: William wraps the painted tactical flashlight in paracord.\n\n<Available Rooms>\n- hallway\n- operations room\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: hallway",
+            "2: operations room",
+            "3: operations room",
+            "4: operations room",
+            "5: operations room",
+            "6: none",
+            "7: operations room"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "hallway"
+            },
+            {
+                "line_number": "2",
+                "location": "operations room"
+            },
+            {
+                "line_number": "3",
+                "location": "operations room"
+            },
+            {
+                "line_number": "4",
+                "location": "operations room"
+            },
+            {
+                "line_number": "5",
+                "location": "operations room"
+            },
+            {
+                "line_number": "6",
+                "location": "operations room"
+            },
+            {
+                "line_number": "7",
+                "location": "operations room"
+            }
+        ],
+        "available_location": [
+            "hallway",
+            "operations room"
+        ],
+        "narrative_location_vec": [
+            "hallway",
+            "operations room",
+            "operations room",
+            "operations room",
+            "operations room",
+            "operations room",
+            "operations room"
+        ]
+    },
+    {
+        "id": "1259631246",
+        "prompt": "<Events>\n1: The community room is filled with tables, chairs, and shelves of board games.\n2: Soft light spills through the large windows.\n3: Tessa and Samantha enter the community room.\n4: Tessa shares her game design feedback with the room's patrons.\n5: Tessa leaves the community room.\n6: Samantha enters the community room.\n7: Tessa shares her new game designs with the room.\n8: The room erupts in chatter and excitement.\n9: Samantha pushes through the crowd.\n\n<Available Rooms>\n- hallway\n- community room\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: community room",
+            "2: community room",
+            "3: community room",
+            "4: community room",
+            "5: none",
+            "6: community room",
+            "7: community room",
+            "8: community room",
+            "9: community room"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "community room"
+            },
+            {
+                "line_number": "2",
+                "location": "community room"
+            },
+            {
+                "line_number": "3",
+                "location": "community room"
+            },
+            {
+                "line_number": "4",
+                "location": "community room"
+            },
+            {
+                "line_number": "5",
+                "location": "community room"
+            },
+            {
+                "line_number": "6",
+                "location": "community room"
+            },
+            {
+                "line_number": "7",
+                "location": "community room"
+            },
+            {
+                "line_number": "8",
+                "location": "community room"
+            },
+            {
+                "line_number": "9",
+                "location": "community room"
+            }
+        ],
+        "available_location": [
+            "hallway",
+            "community room"
+        ],
+        "narrative_location_vec": [
+            "community room",
+            "community room",
+            "community room",
+            "community room",
+            "community room",
+            "community room",
+            "community room",
+            "community room",
+            "community room"
+        ]
+    },
+    {
+        "id": "5192281836",
+        "prompt": "<Events>\n1: The production room is dimly lit.\n2: The evening air is thick with anticipation.\n3: Light spills into the room, Aubrey enters, Lachlan follows.\n4: Lachlan steps forward, recites the lighting plan.\n5: Work lights hum louder, Aubrey moves into darkness.\n6: Work lights flicker, Aubrey moves into the production room.\n7: Aubrey assesses the space.\n8: Lachlan addresses the sound system issue.\n\n<Available Rooms>\n- hallway\n- production room\n- theater\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: hallway",
+            "2: hallway",
+            "3: production room",
+            "4: production room",
+            "5: production room",
+            "6: production room",
+            "7: production room",
+            "8: production room"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "hallway"
+            },
+            {
+                "line_number": "2",
+                "location": "hallway"
+            },
+            {
+                "line_number": "3",
+                "location": "production room"
+            },
+            {
+                "line_number": "4",
+                "location": "production room"
+            },
+            {
+                "line_number": "5",
+                "location": "production room"
+            },
+            {
+                "line_number": "6",
+                "location": "production room"
+            },
+            {
+                "line_number": "7",
+                "location": "production room"
+            },
+            {
+                "line_number": "8",
+                "location": "production room"
+            }
+        ],
+        "available_location": [
+            "hallway",
+            "production room",
+            "theater"
+        ],
+        "narrative_location_vec": [
+            "hallway",
+            "hallway",
+            "production room",
+            "production room",
+            "production room",
+            "production room",
+            "production room",
+            "production room"
+        ]
+    },
+    {
+        "id": "6478655423",
+        "prompt": "<Events>\n1: The cemetery is in a quiet state at dusk.\n2: Jessica entered the maintenance office.\n3: Jessica placed the lantern in the toolbox.\n4: News about the lantern spread, and it's hidden among the tools.\n5: Hannah entered the visitor center.\n6: Jessica is confident and expecting.\n7: Jessica secured the lantern's new home among the gardening equipment.\n\n<Available Rooms>\n- maintenance office\n- visitor center\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: maintenance office",
+            "2: maintenance office",
+            "3: maintenance office",
+            "4: maintenance office",
+            "5: visitor center",
+            "6: none",
+            "7: none"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "maintenance office"
+            },
+            {
+                "line_number": "2",
+                "location": "maintenance office"
+            },
+            {
+                "line_number": "3",
+                "location": "maintenance office"
+            },
+            {
+                "line_number": "4",
+                "location": "maintenance office"
+            },
+            {
+                "line_number": "5",
+                "location": "visitor center"
+            },
+            {
+                "line_number": "6",
+                "location": "visitor center"
+            },
+            {
+                "line_number": "7",
+                "location": "visitor center"
+            }
+        ],
+        "available_location": [
+            "maintenance office",
+            "visitor center"
+        ],
+        "narrative_location_vec": [
+            "maintenance office",
+            "maintenance office",
+            "maintenance office",
+            "maintenance office",
+            "visitor center",
+            "visitor center",
+            "visitor center"
+        ]
+    },
+    {
+        "id": "8227637575",
+        "prompt": "<Events>\n1: The community center is located in a quiet neighborhood.\n2: Elijah enters the art studio.\n3: Bryce enters the multipurpose room and then the art studio.\n4: Elijah organizes the harmonica in the plastic storage bin.\n5: Bryce sees the organized art studio and feels motivated.\n6: Bryce moves the harmonica to the cardboard box.\n7: Elijah notices a change in the art studio's arrangement.\n8: Elijah sends a private update to Bryce about the cardboard box.\n9: The community center continues to bustle around Elijah and Bryce.\n10: Elijah and Bryce leave the art studio.\n11: Elijah sees the art supplies in the studio.\n12: The art studio is ready for Bryce's supply organization.\n\n<Available Rooms>\n- multipurpose room\n- community center\n- art studio\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: community center",
+            "2: art studio",
+            "3: multipurpose room -> art studio",
+            "4: art studio",
+            "5: art studio",
+            "6: art studio",
+            "7: art studio",
+            "8: art studio",
+            "9: art studio",
+            "10: none",
+            "11: art studio",
+            "12: art studio"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "community center"
+            },
+            {
+                "line_number": "2",
+                "location": "art studio"
+            },
+            {
+                "line_number": "3",
+                "location": "art studio"
+            },
+            {
+                "line_number": "4",
+                "location": "art studio"
+            },
+            {
+                "line_number": "5",
+                "location": "art studio"
+            },
+            {
+                "line_number": "6",
+                "location": "art studio"
+            },
+            {
+                "line_number": "7",
+                "location": "art studio"
+            },
+            {
+                "line_number": "8",
+                "location": "art studio"
+            },
+            {
+                "line_number": "9",
+                "location": "art studio"
+            },
+            {
+                "line_number": "10",
+                "location": "art studio"
+            },
+            {
+                "line_number": "11",
+                "location": "art studio"
+            },
+            {
+                "line_number": "12",
+                "location": "art studio"
+            }
+        ],
+        "available_location": [
+            "multipurpose room",
+            "community center",
+            "art studio"
+        ],
+        "narrative_location_vec": [
+            "community center",
+            "art studio",
+            "art studio",
+            "art studio",
+            "art studio",
+            "art studio",
+            "art studio",
+            "art studio",
+            "art studio",
+            "art studio",
+            "art studio",
+            "art studio"
+        ]
+    },
+    {
+        "id": "3923775271",
+        "prompt": "<Events>\n1: Lucas enters the back room.\n2: Brody misses Lucas's message.\n3: Brody and Lucas see each other on the main sales floor.\n4: Lucas reorganizes the store, moving items to the main sales floor.\n5: Lucas surveys the inventory in the back room.\n6: Brody places the vintage typewriter in a plastic storage bin.\n\n<Available Rooms>\n- main sales floor\n- back room\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: back room",
+            "2: back room",
+            "3: main sales floor",
+            "4: main sales floor",
+            "5: back room",
+            "6: main sales floor"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "back room"
+            },
+            {
+                "line_number": "2",
+                "location": "back room"
+            },
+            {
+                "line_number": "3",
+                "location": "main sales floor"
+            },
+            {
+                "line_number": "4",
+                "location": "main sales floor"
+            },
+            {
+                "line_number": "5",
+                "location": "back room"
+            },
+            {
+                "line_number": "6",
+                "location": "main sales floor"
+            }
+        ],
+        "available_location": [
+            "main sales floor",
+            "back room"
+        ],
+        "narrative_location_vec": [
+            "back room",
+            "back room",
+            "main sales floor",
+            "main sales floor",
+            "back room",
+            "main sales floor"
+        ]
+    },
+    {
+        "id": "2977415445",
+        "prompt": "<Events>\n1: The student lounge is quiet, students are studying or chatting.\n2: The cafeteria is busy, students are eating or meeting.\n3: Dominic sends a message to Ryan, hinting at internship discoveries.\n4: Michael enters the student lounge, his presence is noticed.\n5: Michael enters the cafeteria, his arrival is unnoticed.\n6: Michael sends a message to Ryan, changing location to the cafeteria.\n7: Dominic checks his phone, learning Michael changed location to the cafeteria.\n8: Michael receives a message from Dominic, sharing internship opportunities.\n\n<Available Rooms>\n- university cafeteria\n- lounge\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: lounge",
+            "2: cafeteria",
+            "3: none",
+            "4: lounge",
+            "5: cafeteria",
+            "6: none",
+            "7: none",
+            "8: cafeteria"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "lounge"
+            },
+            {
+                "line_number": "2",
+                "location": "cafeteria"
+            },
+            {
+                "line_number": "3",
+                "location": "cafeteria"
+            },
+            {
+                "line_number": "4",
+                "location": "lounge"
+            },
+            {
+                "line_number": "5",
+                "location": "cafeteria"
+            },
+            {
+                "line_number": "6",
+                "location": "cafeteria"
+            },
+            {
+                "line_number": "7",
+                "location": "cafeteria"
+            },
+            {
+                "line_number": "8",
+                "location": "cafeteria"
+            }
+        ],
+        "available_location": [
+            "university cafeteria",
+            "lounge"
+        ],
+        "narrative_location_vec": [
+            "lounge",
+            "cafeteria",
+            "cafeteria",
+            "lounge",
+            "cafeteria",
+            "cafeteria",
+            "cafeteria",
+            "cafeteria"
+        ]
+    },
+    {
+        "id": "4609189862",
+        "prompt": "<Events>\n1: Caleb enters the ballroom and is enveloped by the soft golden light.\n2: Makayla shares information with Addison about the wedding attire.\n3: Caleb leaves the ballroom, and the ballroom is left to preparations.\n4: Makayla enters a suite and is enveloped by the soft glow of the lamps.\n5: Addison stands at the ballroom's entrance and appreciates the soft glow of the lights.\n6: Caleb receives an update that Addison is inside the ballroom.\n7: Makayla acknowledges Addison, and the final seating details are confirmed.\n\n<Available Rooms>\n- ballroom\n- suite\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: ballroom",
+            "2: ballroom",
+            "3: none",
+            "4: suite",
+            "5: ballroom",
+            "6: ballroom",
+            "7: ballroom"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "ballroom"
+            },
+            {
+                "line_number": "2",
+                "location": "ballroom"
+            },
+            {
+                "line_number": "3",
+                "location": "ballroom"
+            },
+            {
+                "line_number": "4",
+                "location": "suite"
+            },
+            {
+                "line_number": "5",
+                "location": "ballroom"
+            },
+            {
+                "line_number": "6",
+                "location": "ballroom"
+            },
+            {
+                "line_number": "7",
+                "location": "ballroom"
+            }
+        ],
+        "available_location": [
+            "ballroom",
+            "suite"
+        ],
+        "narrative_location_vec": [
+            "ballroom",
+            "ballroom",
+            "ballroom",
+            "suite",
+            "ballroom",
+            "ballroom",
+            "ballroom"
+        ]
+    },
+    {
+        "id": "5126476523",
+        "prompt": "<Events>\n1: Gabriella enters the main bar area and becomes aware of the rich aroma of malt and hops.\n2: Elijah enters the main bar area and becomes aware of the crowd.\n3: Elijah announces a beer festival and tells a story about the pub's founding.\n4: Eric enters the main bar area and becomes aware of the warm ambiance.\n5: The main bar area contains warm wooden accents and vintage brewing equipment.\n6: The space is filled with a cozy atmosphere and contains the scent of freshly poured beers and the sound of conversation.\n\n<Available Rooms>\n\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "Since the list of available rooms is not provided, I will assume a common list of rooms for a bar area. ",
+            "",
+            "<Available Rooms>",
+            "1. Main Bar Area",
+            "2. Back Room",
+            "3. Patio",
+            "4. Storage Room",
+            "5. Office",
+            "6. none",
+            "",
+            "1: Main Bar Area",
+            "2: Main Bar Area",
+            "3: Main Bar Area",
+            "4: Main Bar Area",
+            "5: Main Bar Area",
+            "6: Main Bar Area"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "main bar area"
+            },
+            {
+                "line_number": "2",
+                "location": "main bar area"
+            },
+            {
+                "line_number": "3",
+                "location": "main bar area"
+            },
+            {
+                "line_number": "4",
+                "location": "main bar area"
+            },
+            {
+                "line_number": "5",
+                "location": "main bar area"
+            },
+            {
+                "line_number": "6",
+                "location": "main bar area"
+            }
+        ],
+        "available_location": [],
+        "narrative_location_vec": [
+            "main bar area",
+            "main bar area",
+            "main bar area",
+            "main bar area",
+            "main bar area",
+            "main bar area"
+        ]
+    },
+    {
+        "id": "1703418744",
+        "prompt": "<Events>\n1: The hostel dorm is warmly lit by soft lanterns and a large window allows the fading evening light to pour in.\n2: Julia enters the dorm and James quietly makes his way to his bed, while Nicholas and Amelia enter the dorm.\n3: James adjusts the harmonica's reeds and raises it to his lips.\n4: The others become aware of Nicholas and Amelia's arrival.\n5: James plays the harmonica and Julia's fragrance is released.\n6: The fragrance and music create a quiet magic.\n\n<Available Rooms>\n\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "<Available Rooms>",
+            "1. Hostel Dorm",
+            "2. None",
+            "3. None",
+            "4. None",
+            "5. None",
+            "6. None",
+            "",
+            "1: Hostel Dorm",
+            "2: Hostel Dorm",
+            "3: Hostel Dorm",
+            "4: Hostel Dorm",
+            "5: Hostel Dorm",
+            "6: Hostel Dorm"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "hostel dorm"
+            },
+            {
+                "line_number": "2",
+                "location": "hostel dorm"
+            },
+            {
+                "line_number": "3",
+                "location": "hostel dorm"
+            },
+            {
+                "line_number": "4",
+                "location": "hostel dorm"
+            },
+            {
+                "line_number": "5",
+                "location": "hostel dorm"
+            },
+            {
+                "line_number": "6",
+                "location": "hostel dorm"
+            }
+        ],
+        "available_location": [],
+        "narrative_location_vec": [
+            "hostel dorm",
+            "hostel dorm",
+            "hostel dorm",
+            "hostel dorm",
+            "hostel dorm",
+            "hostel dorm"
+        ]
+    },
+    {
+        "id": "4069940888",
+        "prompt": "<Events>\n1: The old community center stood quiet on a warm afternoon.\n2: Tyler stepped into the multipurpose room.\n3: The cardboard box on the table creaked under the added weight of the harmonica.\n4: Tyler placed the harmonica in the cardboard box.\n5: Tyler plucked the harmonica's reeds, changing its key.\n6: Matthew entered the room.\n7: Tyler secured the harmonica in the wooden chest.\n\n<Available Rooms>\n- community center\n- multipurpose room\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: community center",
+            "2: multipurpose room",
+            "3: multipurpose room",
+            "4: multipurpose room",
+            "5: multipurpose room",
+            "6: multipurpose room",
+            "7: none"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "community center"
+            },
+            {
+                "line_number": "2",
+                "location": "multipurpose room"
+            },
+            {
+                "line_number": "3",
+                "location": "multipurpose room"
+            },
+            {
+                "line_number": "4",
+                "location": "multipurpose room"
+            },
+            {
+                "line_number": "5",
+                "location": "multipurpose room"
+            },
+            {
+                "line_number": "6",
+                "location": "multipurpose room"
+            },
+            {
+                "line_number": "7",
+                "location": "multipurpose room"
+            }
+        ],
+        "available_location": [
+            "community center",
+            "multipurpose room"
+        ],
+        "narrative_location_vec": [
+            "community center",
+            "multipurpose room",
+            "multipurpose room",
+            "multipurpose room",
+            "multipurpose room",
+            "multipurpose room",
+            "multipurpose room"
+        ]
+    },
+    {
+        "id": "6367705739",
+        "prompt": "<Events>\n1: Austin enters the operations room.\n2: Austin moves the tactical flashlight from the duffel bag to the toolbox.\n3: Makayla is aware of the sound of equipment meeting metal.\n4: Austin leaves the operations room.\n5: Owen, Makayla, Austin, and Charlotte enter the operations room.\n\n<Available Rooms>\n- storage units\n- operations room\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: operations room",
+            "2: operations room",
+            "3: operations room",
+            "4: none",
+            "5: operations room"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "operations room"
+            },
+            {
+                "line_number": "2",
+                "location": "operations room"
+            },
+            {
+                "line_number": "3",
+                "location": "operations room"
+            },
+            {
+                "line_number": "4",
+                "location": "operations room"
+            },
+            {
+                "line_number": "5",
+                "location": "operations room"
+            }
+        ],
+        "available_location": [
+            "storage units",
+            "operations room"
+        ],
+        "narrative_location_vec": [
+            "operations room",
+            "operations room",
+            "operations room",
+            "operations room",
+            "operations room"
+        ]
+    },
+    {
+        "id": "4868214231",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "main pavilion"
+            },
+            {
+                "line_number": 1,
+                "location": "main pavilion"
+            },
+            {
+                "line_number": 2,
+                "location": "main pavilion"
+            },
+            {
+                "line_number": 3,
+                "location": "main pavilion"
+            },
+            {
+                "line_number": 4,
+                "location": "main pavilion"
+            },
+            {
+                "line_number": 5,
+                "location": "main pavilion"
+            },
+            {
+                "line_number": 6,
+                "location": "main pavilion"
+            },
+            {
+                "line_number": 7,
+                "location": "main pavilion"
+            }
+        ],
+        "available_location": [
+            "main pavilion"
+        ],
+        "narrative_location_vec": [
+            "main pavilion",
+            "main pavilion",
+            "main pavilion",
+            "main pavilion",
+            "main pavilion",
+            "main pavilion",
+            "main pavilion",
+            "main pavilion"
+        ]
+    },
+    {
+        "id": "5613232413",
+        "prompt": "<Events>\n1: Morning sunlight filters through the student lounge windows.\n2: Freshly brewed coffee scent wafts through the air.\n3: Alexis focuses on Sophia's words about programming languages.\n4: Laptops sit side by side on the table.\n5: Alexis shares new competition tactics with Sophia.\n6: Sophia enters the student lounge.\n7: Sophia exits the student lounge into the hallway.\n8: Sophia experiences a moment of stillness in the hallway.\n9: Justin enters the student lounge.\n10: Justin spots two young women with laptops in the lounge.\n\n<Available Rooms>\n- hallway\n- student lounge\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: student lounge",
+            "2: student lounge",
+            "3: student lounge",
+            "4: student lounge",
+            "5: student lounge",
+            "6: student lounge",
+            "7: hallway",
+            "8: hallway",
+            "9: student lounge",
+            "10: student lounge"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "student lounge"
+            },
+            {
+                "line_number": "2",
+                "location": "student lounge"
+            },
+            {
+                "line_number": "3",
+                "location": "student lounge"
+            },
+            {
+                "line_number": "4",
+                "location": "student lounge"
+            },
+            {
+                "line_number": "5",
+                "location": "student lounge"
+            },
+            {
+                "line_number": "6",
+                "location": "student lounge"
+            },
+            {
+                "line_number": "7",
+                "location": "hallway"
+            },
+            {
+                "line_number": "8",
+                "location": "hallway"
+            },
+            {
+                "line_number": "9",
+                "location": "student lounge"
+            },
+            {
+                "line_number": "10",
+                "location": "student lounge"
+            }
+        ],
+        "available_location": [
+            "hallway",
+            "student lounge"
+        ],
+        "narrative_location_vec": [
+            "student lounge",
+            "student lounge",
+            "student lounge",
+            "student lounge",
+            "student lounge",
+            "student lounge",
+            "hallway",
+            "hallway",
+            "student lounge",
+            "student lounge"
+        ]
+    },
+    {
+        "id": "4499112908",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "back room"
+            },
+            {
+                "line_number": 1,
+                "location": "back room"
+            },
+            {
+                "line_number": 2,
+                "location": "back room"
+            },
+            {
+                "line_number": 3,
+                "location": "back room"
+            },
+            {
+                "line_number": 4,
+                "location": "back room"
+            },
+            {
+                "line_number": 5,
+                "location": "back room"
+            },
+            {
+                "line_number": 6,
+                "location": "back room"
+            }
+        ],
+        "available_location": [
+            "back room"
+        ],
+        "narrative_location_vec": [
+            "back room",
+            "back room",
+            "back room",
+            "back room",
+            "back room",
+            "back room",
+            "back room"
+        ]
+    },
+    {
+        "id": "2602946874",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "back office"
+            },
+            {
+                "line_number": 1,
+                "location": "back office"
+            },
+            {
+                "line_number": 2,
+                "location": "back office"
+            },
+            {
+                "line_number": 3,
+                "location": "back office"
+            },
+            {
+                "line_number": 4,
+                "location": "back office"
+            },
+            {
+                "line_number": 5,
+                "location": "back office"
+            },
+            {
+                "line_number": 6,
+                "location": "back office"
+            },
+            {
+                "line_number": 7,
+                "location": "back office"
+            },
+            {
+                "line_number": 8,
+                "location": "back office"
+            }
+        ],
+        "available_location": [
+            "back office"
+        ],
+        "narrative_location_vec": [
+            "back office",
+            "back office",
+            "back office",
+            "back office",
+            "back office",
+            "back office",
+            "back office",
+            "back office",
+            "back office"
+        ]
+    },
+    {
+        "id": "1179785149",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "staff room"
+            },
+            {
+                "line_number": 1,
+                "location": "staff room"
+            },
+            {
+                "line_number": 2,
+                "location": "staff room"
+            },
+            {
+                "line_number": 3,
+                "location": "staff room"
+            },
+            {
+                "line_number": 4,
+                "location": "staff room"
+            },
+            {
+                "line_number": 5,
+                "location": "staff room"
+            },
+            {
+                "line_number": 6,
+                "location": "staff room"
+            }
+        ],
+        "available_location": [
+            "staff room"
+        ],
+        "narrative_location_vec": [
+            "staff room",
+            "staff room",
+            "staff room",
+            "staff room",
+            "staff room",
+            "staff room",
+            "staff room"
+        ]
+    },
+    {
+        "id": "8069482623",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "operations room"
+            },
+            {
+                "line_number": 1,
+                "location": "operations room"
+            },
+            {
+                "line_number": 2,
+                "location": "operations room"
+            },
+            {
+                "line_number": 3,
+                "location": "operations room"
+            },
+            {
+                "line_number": 4,
+                "location": "operations room"
+            },
+            {
+                "line_number": 5,
+                "location": "operations room"
+            },
+            {
+                "line_number": 6,
+                "location": "operations room"
+            },
+            {
+                "line_number": 7,
+                "location": "operations room"
+            },
+            {
+                "line_number": 8,
+                "location": "operations room"
+            },
+            {
+                "line_number": 9,
+                "location": "operations room"
+            },
+            {
+                "line_number": 10,
+                "location": "operations room"
+            }
+        ],
+        "available_location": [
+            "operations room"
+        ],
+        "narrative_location_vec": [
+            "operations room",
+            "operations room",
+            "operations room",
+            "operations room",
+            "operations room",
+            "operations room",
+            "operations room",
+            "operations room",
+            "operations room",
+            "operations room",
+            "operations room"
+        ]
+    },
+    {
+        "id": "5340298881",
+        "prompt": "<Events>\n1: Samantha enters the crew lounge.\n2: Mason enters the crew lounge.\n3: Ethan listens in on Samantha's conversation.\n4: Mason exits the crew lounge.\n5: Mason re-enters the crew lounge.\n6: Mason shares surprise guest performer details.\n7: Samantha shares next stop details.\n\n<Available Rooms>\n- crew lounge\n- restaurant\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: crew lounge",
+            "2: crew lounge",
+            "3: crew lounge",
+            "4: none",
+            "5: crew lounge",
+            "6: crew lounge",
+            "7: crew lounge"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "crew lounge"
+            },
+            {
+                "line_number": "2",
+                "location": "crew lounge"
+            },
+            {
+                "line_number": "3",
+                "location": "crew lounge"
+            },
+            {
+                "line_number": "4",
+                "location": "crew lounge"
+            },
+            {
+                "line_number": "5",
+                "location": "crew lounge"
+            },
+            {
+                "line_number": "6",
+                "location": "crew lounge"
+            },
+            {
+                "line_number": "7",
+                "location": "crew lounge"
+            }
+        ],
+        "available_location": [
+            "crew lounge",
+            "restaurant"
+        ],
+        "narrative_location_vec": [
+            "crew lounge",
+            "crew lounge",
+            "crew lounge",
+            "crew lounge",
+            "crew lounge",
+            "crew lounge",
+            "crew lounge"
+        ]
+    },
+    {
+        "id": "3740671121",
+        "prompt": "<Events>\n1: Peyton and Mason enter the consulate meeting room.\n2: Peyton and Mason move to their designated positions, shifting the atmosphere of the room.\n3: Peyton moves the silver letter opener from the metal file cabinet to the cardboard storage box.\n4: Julia and Joshua enter the consulate meeting room.\n5: Joshua moves the silver letter opener from the leather briefcase to the wooden desk drawer.\n6: The security officer relocates the silver letter opener, maintaining order in the room.\n\n<Available Rooms>\n- consulate meeting room\n- desk drawer\n- briefcase\n- leather briefcase\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: consulate meeting room",
+            "2: consulate meeting room",
+            "3: consulate meeting room",
+            "4: consulate meeting room",
+            "5: consulate meeting room",
+            "6: consulate meeting room"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "consulate meeting room"
+            },
+            {
+                "line_number": "2",
+                "location": "consulate meeting room"
+            },
+            {
+                "line_number": "3",
+                "location": "consulate meeting room"
+            },
+            {
+                "line_number": "4",
+                "location": "consulate meeting room"
+            },
+            {
+                "line_number": "5",
+                "location": "consulate meeting room"
+            },
+            {
+                "line_number": "6",
+                "location": "consulate meeting room"
+            }
+        ],
+        "available_location": [
+            "consulate meeting room",
+            "desk drawer",
+            "briefcase",
+            "leather briefcase"
+        ],
+        "narrative_location_vec": [
+            "consulate meeting room",
+            "consulate meeting room",
+            "consulate meeting room",
+            "consulate meeting room",
+            "consulate meeting room",
+            "consulate meeting room"
+        ]
+    },
+    {
+        "id": "8504086823",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "multipurpose room"
+            },
+            {
+                "line_number": 1,
+                "location": "multipurpose room"
+            },
+            {
+                "line_number": 2,
+                "location": "multipurpose room"
+            },
+            {
+                "line_number": 3,
+                "location": "multipurpose room"
+            },
+            {
+                "line_number": 4,
+                "location": "multipurpose room"
+            },
+            {
+                "line_number": 5,
+                "location": "multipurpose room"
+            }
+        ],
+        "available_location": [
+            "multipurpose room"
+        ],
+        "narrative_location_vec": [
+            "multipurpose room",
+            "multipurpose room",
+            "multipurpose room",
+            "multipurpose room",
+            "multipurpose room",
+            "multipurpose room"
+        ]
+    },
+    {
+        "id": "1394077131",
+        "prompt": "<Events>\n1: Lachlan and Aubrey enter the production room.\n2: Aubrey assigns her schedule to Lachlan.\n3: Aubrey puts the script in her leather satchel.\n4: Aubrey leaves the production room and then re-enters it.\n5: Aubrey confirms the script is in its new location.\n6: Aubrey puts the script in a cardboard box.\n7: Aubrey hands Lachlan his schedule.\n8: Lachlan puts the script in a plastic storage bin.\n9: The production room becomes more organized.\n\n<Available Rooms>\n- corridor\n- production room\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: production room",
+            "2: production room",
+            "3: production room",
+            "4: none",
+            "5: production room",
+            "6: production room",
+            "7: production room",
+            "8: production room",
+            "9: production room"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "production room"
+            },
+            {
+                "line_number": "2",
+                "location": "production room"
+            },
+            {
+                "line_number": "3",
+                "location": "production room"
+            },
+            {
+                "line_number": "4",
+                "location": "production room"
+            },
+            {
+                "line_number": "5",
+                "location": "production room"
+            },
+            {
+                "line_number": "6",
+                "location": "production room"
+            },
+            {
+                "line_number": "7",
+                "location": "production room"
+            },
+            {
+                "line_number": "8",
+                "location": "production room"
+            },
+            {
+                "line_number": "9",
+                "location": "production room"
+            }
+        ],
+        "available_location": [
+            "corridor",
+            "production room"
+        ],
+        "narrative_location_vec": [
+            "production room",
+            "production room",
+            "production room",
+            "production room",
+            "production room",
+            "production room",
+            "production room",
+            "production room",
+            "production room"
+        ]
+    },
+    {
+        "id": "3047802796",
+        "prompt": "<Events>\n1: The sun is shining over the hotel.\n2: The suite is filled with containers and storage units.\n3: Addison enters the suite and inspects the area.\n4: Addison puts the silver picture frame in a plastic storage bin.\n5: Makayla arrives at the suite.\n6: Makayla checks the areas they worked on.\n7: Addison confirms the location of the silver picture frame to Makayla, and Makayla texts Caleb.\n8: Caleb arrives at the suite.\n9: Caleb leaves the suite.\n10: Addison moves the silver picture frame to a wooden chest.\n11: The suite is becoming polished.\n12: Caleb re-enters the suite.\n13: The atmosphere in the suite shifts.\n14: Makayla moves the silver picture frame to a cardboard box.\n\n<Available Rooms>\n- hallway\n- hotel suite\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: hotel suite",
+            "2: hotel suite",
+            "3: hotel suite",
+            "4: hotel suite",
+            "5: hotel suite",
+            "6: hotel suite",
+            "7: hotel suite",
+            "8: hotel suite",
+            "9: none",
+            "10: hotel suite",
+            "11: hotel suite",
+            "12: hotel suite",
+            "13: hotel suite",
+            "14: hotel suite"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "hotel suite"
+            },
+            {
+                "line_number": "2",
+                "location": "hotel suite"
+            },
+            {
+                "line_number": "3",
+                "location": "hotel suite"
+            },
+            {
+                "line_number": "4",
+                "location": "hotel suite"
+            },
+            {
+                "line_number": "5",
+                "location": "hotel suite"
+            },
+            {
+                "line_number": "6",
+                "location": "hotel suite"
+            },
+            {
+                "line_number": "7",
+                "location": "hotel suite"
+            },
+            {
+                "line_number": "8",
+                "location": "hotel suite"
+            },
+            {
+                "line_number": "9",
+                "location": "hotel suite"
+            },
+            {
+                "line_number": "10",
+                "location": "hotel suite"
+            },
+            {
+                "line_number": "11",
+                "location": "hotel suite"
+            },
+            {
+                "line_number": "12",
+                "location": "hotel suite"
+            },
+            {
+                "line_number": "13",
+                "location": "hotel suite"
+            },
+            {
+                "line_number": "14",
+                "location": "hotel suite"
+            }
+        ],
+        "available_location": [
+            "hallway",
+            "hotel suite"
+        ],
+        "narrative_location_vec": [
+            "hotel suite",
+            "hotel suite",
+            "hotel suite",
+            "hotel suite",
+            "hotel suite",
+            "hotel suite",
+            "hotel suite",
+            "hotel suite",
+            "hotel suite",
+            "hotel suite",
+            "hotel suite",
+            "hotel suite",
+            "hotel suite",
+            "hotel suite"
+        ]
+    },
+    {
+        "id": "2994425117",
+        "prompt": "<Events>\n1: The rustic visitor center stood alone at the edge of a dense forest.\n2: Jaxon entered the visitor center.\n3: Jaxon relocated the compass to the leather pouch and then to its permanent home \u2013 the chest.\n4: Parker entered the visitor center and saw the wooden chest.\n5: Parker recognized the wooden chest.\n6: Jaxon paused outside the visitor center.\n7: A bird called in the distance.\n8: Parker entered the visitor center.\n9: Parker relocated the compass to the leather pouch.\n10: Jaxon heard Parker's reassuring words and Anthony overheard them.\n11: Anthony learned the compass was in the leather pouch.\n12: Jaxon and Anthony crossed paths in the visitor center.\n13: Anthony moved the compass to the plastic toolbox.\n\n<Available Rooms>\n- plastic toolbox\n- visitor center\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: visitor center",
+            "2: visitor center",
+            "3: visitor center",
+            "4: visitor center",
+            "5: visitor center",
+            "6: none",
+            "7: none",
+            "8: visitor center",
+            "9: visitor center",
+            "10: visitor center",
+            "11: visitor center",
+            "12: visitor center",
+            "13: visitor center"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "visitor center"
+            },
+            {
+                "line_number": "2",
+                "location": "visitor center"
+            },
+            {
+                "line_number": "3",
+                "location": "visitor center"
+            },
+            {
+                "line_number": "4",
+                "location": "visitor center"
+            },
+            {
+                "line_number": "5",
+                "location": "visitor center"
+            },
+            {
+                "line_number": "6",
+                "location": "visitor center"
+            },
+            {
+                "line_number": "7",
+                "location": "visitor center"
+            },
+            {
+                "line_number": "8",
+                "location": "visitor center"
+            },
+            {
+                "line_number": "9",
+                "location": "visitor center"
+            },
+            {
+                "line_number": "10",
+                "location": "visitor center"
+            },
+            {
+                "line_number": "11",
+                "location": "visitor center"
+            },
+            {
+                "line_number": "12",
+                "location": "visitor center"
+            },
+            {
+                "line_number": "13",
+                "location": "visitor center"
+            }
+        ],
+        "available_location": [
+            "plastic toolbox",
+            "visitor center"
+        ],
+        "narrative_location_vec": [
+            "visitor center",
+            "visitor center",
+            "visitor center",
+            "visitor center",
+            "visitor center",
+            "visitor center",
+            "visitor center",
+            "visitor center",
+            "visitor center",
+            "visitor center",
+            "visitor center",
+            "visitor center",
+            "visitor center"
+        ]
+    },
+    {
+        "id": "1793904358",
+        "prompt": "<Events>\n1: Parker and Joshua enter the press box.\n2: Joshua stores the walkie-talkie in his backpack.\n3: Parker moves the walkie-talkie to a storage space among the toolkit.\n4: Joshua leaves the press box.\n5: The walkie-talkie is moved to Parker's personal backpack.\n6: Joshua re-enters the press box.\n7: Joshua moves the walkie-talkie to a duffel bag.\n8: Joshua pretends the relocation did not occur.\n\n<Available Rooms>\n- press box\n- stadium\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: press box",
+            "2: press box",
+            "3: press box",
+            "4: none",
+            "5: press box",
+            "6: press box",
+            "7: press box",
+            "8: press box"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "press box"
+            },
+            {
+                "line_number": "2",
+                "location": "press box"
+            },
+            {
+                "line_number": "3",
+                "location": "press box"
+            },
+            {
+                "line_number": "4",
+                "location": "press box"
+            },
+            {
+                "line_number": "5",
+                "location": "press box"
+            },
+            {
+                "line_number": "6",
+                "location": "press box"
+            },
+            {
+                "line_number": "7",
+                "location": "press box"
+            },
+            {
+                "line_number": "8",
+                "location": "press box"
+            }
+        ],
+        "available_location": [
+            "press box",
+            "stadium"
+        ],
+        "narrative_location_vec": [
+            "press box",
+            "press box",
+            "press box",
+            "press box",
+            "press box",
+            "press box",
+            "press box",
+            "press box"
+        ]
+    },
+    {
+        "id": "6293452880",
+        "prompt": "AUTOMATIC",
+        "original_generation": "AUTOMATIC",
+        "response": [
+            {
+                "line_number": 0,
+                "location": "backstage tent"
+            },
+            {
+                "line_number": 1,
+                "location": "backstage tent"
+            },
+            {
+                "line_number": 2,
+                "location": "backstage tent"
+            },
+            {
+                "line_number": 3,
+                "location": "backstage tent"
+            },
+            {
+                "line_number": 4,
+                "location": "backstage tent"
+            },
+            {
+                "line_number": 5,
+                "location": "backstage tent"
+            },
+            {
+                "line_number": 6,
+                "location": "backstage tent"
+            },
+            {
+                "line_number": 7,
+                "location": "backstage tent"
+            },
+            {
+                "line_number": 8,
+                "location": "backstage tent"
+            },
+            {
+                "line_number": 9,
+                "location": "backstage tent"
+            }
+        ],
+        "available_location": [
+            "backstage tent"
+        ],
+        "narrative_location_vec": [
+            "backstage tent",
+            "backstage tent",
+            "backstage tent",
+            "backstage tent",
+            "backstage tent",
+            "backstage tent",
+            "backstage tent",
+            "backstage tent",
+            "backstage tent",
+            "backstage tent"
+        ]
+    },
+    {
+        "id": "9160244338",
+        "prompt": "<Events>\n1: The hospital staff lounge is quiet.\n2: The lounge is illuminated by fluorescent lights.\n3: Mia sits in a chair, and Jasmine enters the lounge.\n4: Jasmine puts the stethoscope in a canvas bag.\n5: Madison enters the hospital staff lounge.\n6: Madison moves the stethoscope from the canvas bag to a metal toolbox.\n7: The stethoscope is now in the metal toolbox.\n8: Mia gets up and leaves the lounge.\n9: Amelia enters the hospital staff lounge.\n\n<Available Rooms>\n- toolbox\n- hospital staff lounge\n\nThe given events describe characters' activities in several rooms. Based on the list of available rooms, enumerate through the events and determine the room that the event takes place in. The output should be expressed as a list in the following format:\n1: <Room 1>\n2: <Room 2>\n...\n\nPlease adhere to the following instructions:\n- All of the room changes are explicitly stated in the event. Do not make any assumption.\n- Room must be selected from the provided list of <Available Rooms>. Do not provide any other locations.\n- If a character left a room without specifying the destination, assume the character is at \"none\".\n- Adhere to the given template.\n\nGenerate the correct room changes exactly as instructed without any explanation or note.",
+        "original_generation": [
+            "1: hospital staff lounge",
+            "2: hospital staff lounge",
+            "3: hospital staff lounge",
+            "4: hospital staff lounge",
+            "5: hospital staff lounge",
+            "6: hospital staff lounge",
+            "7: hospital staff lounge",
+            "8: none",
+            "9: hospital staff lounge"
+        ],
+        "response": [
+            {
+                "line_number": "1",
+                "location": "hospital staff lounge"
+            },
+            {
+                "line_number": "2",
+                "location": "hospital staff lounge"
+            },
+            {
+                "line_number": "3",
+                "location": "hospital staff lounge"
+            },
+            {
+                "line_number": "4",
+                "location": "hospital staff lounge"
+            },
+            {
+                "line_number": "5",
+                "location": "hospital staff lounge"
+            },
+            {
+                "line_number": "6",
+                "location": "hospital staff lounge"
+            },
+            {
+                "line_number": "7",
+                "location": "hospital staff lounge"
+            },
+            {
+                "line_number": "8",
+                "location": "hospital staff lounge"
+            },
+            {
+                "line_number": "9",
+                "location": "hospital staff lounge"
+            }
+        ],
+        "available_location": [
+            "toolbox",
+            "hospital staff lounge"
+        ],
+        "narrative_location_vec": [
+            "hospital staff lounge",
+            "hospital staff lounge",
+            "hospital staff lounge",
+            "hospital staff lounge",
+            "hospital staff lounge",
+            "hospital staff lounge",
+            "hospital staff lounge",
+            "hospital staff lounge",
+            "hospital staff lounge"
+        ]
+    }
+]
