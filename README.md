@@ -1,13 +1,7 @@
 # EnigmaToM
 This repository contains the code and data for EnigmaToM. We are still in the process of cleaning up the code and will update this README file constantly as we progress.
 
-# TODOs
-- [] Clean up the code and add comments
-- [] Add more details to the README file
-- [] Add requirements.txt file
-- [] Add script for easy inference 
-    - [] Allow user to specify different models
-    - [] Allow user to specify different datasets
+The Enigma neural knowledge base is now available at https://huggingface.co/collections/SeacowX/enigma-models
 
 <!-- # Data Usage -->
 <!-- --- -->
